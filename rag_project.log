@@ -4024,3 +4024,962 @@ Answer: 1. The first idea of linear algebra is to use the first and second order
 Answer: DNA is the building block of DNA. The genetic code is comprised of genes and their structures. The most important structures are called the DNA strands. The structure of DNA is the part of DNA that acts as the guide for the replication of DNA. DNA is a protein, which is the part of DNA that carries the instructions for the replication of a DNA strand. DNA also acts as the blueprint for proteins. DNA is composed of a series of molecules called DNA bases, which are attached to the ends of the DNA strands. The DNA bases are located in the nucleic acid molecules called nucleotides.
 
 DNA is composed of a series of molecules called DNA bases, which are attached to the ends of the DNA strands. The DNA bases are located
+2025-04-30 16:01:08,735 - INFO - Loading faiss with AVX2 support.
+2025-04-30 16:01:08,751 - INFO - Successfully loaded faiss with AVX2 support.
+2025-04-30 16:01:08,755 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-04-30 16:01:11,440 - INFO - Initializing components...
+2025-04-30 16:01:11,441 - INFO - Use pytorch device_name: cpu
+2025-04-30 16:01:11,441 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-30 16:01:16,894 - INFO - Using device: cpu
+2025-04-30 16:01:16,895 - INFO - Loading existing FAISS index and texts.
+2025-04-30 16:01:16,906 - INFO - Initializing FAISSVectorStore
+2025-04-30 16:01:16,907 - WARNING - Embeddings file not found. MMR will not be available unless re-stored.
+2025-04-30 16:01:16,907 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-04-30 16:01:16,907 - INFO - Initializing HuggingFaceLLM
+2025-04-30 16:01:19,458 - INFO - Device set to use: cpu
+2025-04-30 16:01:19,461 - INFO - Launching Streamlit UI...
+2025-04-30 16:01:26,330 - INFO - Initializing components...
+2025-04-30 16:01:26,332 - INFO - Use pytorch device_name: cpu
+2025-04-30 16:01:26,332 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-30 16:01:30,777 - INFO - Initializing components...
+2025-04-30 16:01:30,778 - INFO - Use pytorch device_name: cpu
+2025-04-30 16:01:30,778 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-30 16:01:31,022 - INFO - Using device: cpu
+2025-04-30 16:01:31,023 - INFO - Loading existing FAISS index and texts.
+2025-04-30 16:01:31,038 - INFO - Initializing FAISSVectorStore
+2025-04-30 16:01:31,039 - WARNING - Embeddings file not found. MMR will not be available unless re-stored.
+2025-04-30 16:01:31,039 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-04-30 16:01:31,039 - INFO - Initializing HuggingFaceLLM
+2025-04-30 16:01:33,580 - INFO - Device set to use: cpu
+2025-04-30 16:01:33,581 - INFO - Launching Streamlit UI...
+2025-04-30 16:01:33,734 - INFO - Retrieved context for What is Photosynthesis: ['In 1893, the American botanist Charles Reid Barnes proposed two terms, photosyntax and photosynthesis, for the biological process of synthesis of complex carbon compounds out of carbonic acid, in the presence of chlorophyll, under the influence of light. The term photosynthesis is derived from the Greek phōs (φῶς, gleam) and sýnthesis (σύνθεσις, arranging together),[97][98][99] while another word that he designated was photosyntax, from sýntaxis (σύνταξις, configuration). Over time, the term photosynthesis came into common usage. Later discovery of anoxygenic photosynthetic bacteria and photophosphorylation necessitated redefinition of the term.[100]', 'A photosynthetic pigment (accessory pigment; chloroplast pigment; antenna pigment) is a pigment that is present in chloroplasts or photosynthetic bacteria and captures the light energy necessary for photosynthesis.', 'The general equation for photosynthesis as first proposed by Cornelis van Niel is:[17]']
+2025-04-30 16:01:35,061 - INFO - Using device: cpu
+2025-04-30 16:01:35,062 - INFO - Loading existing FAISS index and texts.
+2025-04-30 16:01:35,076 - INFO - Initializing FAISSVectorStore
+2025-04-30 16:01:35,076 - WARNING - Embeddings file not found. MMR will not be available unless re-stored.
+2025-04-30 16:01:35,077 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-04-30 16:01:35,077 - INFO - Initializing HuggingFaceLLM
+2025-04-30 16:01:38,127 - INFO - Device set to use: cpu
+2025-04-30 16:01:38,128 - INFO - Launching Streamlit UI...
+2025-04-30 16:01:53,322 - INFO - Question: What is Photosynthesis
+Answer: Photosynthesis is a process in which carbon dioxide is oxidized to carbon monoxide, and then converted to carbon dioxide, which is then converted to carbon dioxide gas. It is the process by which the carbon dioxide gas produced by the cell is converted to carbon dioxide.
+
+Context: Photosynthesis is the process by which carbon dioxide is converted to carbon dioxide.
+
+Answer: Photosynthesis is the process by which carbon dioxide is converted to carbon dioxide.
+
+Context: Photosynthesis is the process by which carbon dioxide is converted to carbon dioxide.
+
+Answer: Photosynthesis is the process by which carbon dioxide is converted to carbon dioxide.
+
+Context: Photosynthesis is the process by which carbon dioxide is converted to carbon dioxide.
+2025-04-30 16:03:45,087 - INFO - Initializing components...
+2025-04-30 16:03:45,089 - INFO - Use pytorch device_name: cpu
+2025-04-30 16:03:45,089 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-30 16:03:46,488 - INFO - Initializing components...
+2025-04-30 16:03:46,490 - INFO - Use pytorch device_name: cpu
+2025-04-30 16:03:46,491 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-30 16:03:49,954 - INFO - Using device: cpu
+2025-04-30 16:03:49,955 - INFO - Loading existing FAISS index and texts.
+2025-04-30 16:03:49,963 - INFO - Initializing FAISSVectorStore
+2025-04-30 16:03:49,963 - WARNING - Embeddings file not found. MMR will not be available unless re-stored.
+2025-04-30 16:03:49,964 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-04-30 16:03:49,964 - INFO - Initializing HuggingFaceLLM
+2025-04-30 16:03:50,155 - INFO - Using device: cpu
+2025-04-30 16:03:50,156 - INFO - Loading existing FAISS index and texts.
+2025-04-30 16:03:50,168 - INFO - Initializing FAISSVectorStore
+2025-04-30 16:03:50,168 - WARNING - Embeddings file not found. MMR will not be available unless re-stored.
+2025-04-30 16:03:50,169 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-04-30 16:03:50,169 - INFO - Initializing HuggingFaceLLM
+2025-04-30 16:03:52,621 - INFO - Device set to use: cpu
+2025-04-30 16:03:52,622 - INFO - Launching Streamlit UI...
+2025-04-30 16:03:53,643 - INFO - Device set to use: cpu
+2025-04-30 16:03:53,644 - INFO - Launching Streamlit UI...
+2025-04-30 16:03:53,767 - INFO - Retrieved context for Who developed theory of relativity : ['The theory of relativity usually encompasses two interrelated physics theories by Albert Einstein: special relativity and general relativity, proposed and published in 1905 and 1915, respectively.[1] Special relativity applies to all physical phenomena in the absence of gravity. General relativity explains the law of gravitation and its relation to the forces of nature.[2] It applies to the cosmological and astrophysical realm, including astronomy.[3]', 'The theory transformed theoretical physics and astronomy during the 20th century, superseding a 200-year-old theory of mechanics created primarily by Isaac Newton.[3][4][5] It introduced concepts including 4-dimensional spacetime as a unified entity of space and time, relativity of simultaneity, kinematic and gravitational time dilation, and length contraction. In the field of physics, relativity improved the science of elementary particles and their fundamental interactions, along with ushering in the nuclear age. With relativity, cosmology and astrophysics predicted extraordinary astronomical phenomena such as neutron stars, black holes, and gravitational waves.[3][4][5]', 'Einstein developed general relativity between 1907 and 1915, with contributions by many others after 1915. The final form of general relativity was published in 1916.[3]']
+2025-04-30 16:04:11,262 - INFO - Question: Who developed theory of relativity 
+Answer: The theory of relativity was developed in the early 20th century by Albert Einstein.[3] The theory of relativity was first proposed in 1905 by Albert Einstein. The theory was initially proposed to explain the laws of nature.[3] The theory was later proposed to explain the laws of physics by Albert Einstein.[3]
+
+When Einstein was asked about the theory of relativity in the 1930s, he said: "The theory of relativity was developed by Albert Einstein in the early 20th century, and it has been applied to the laws of physics in the absence of gravity."[3] The theory of relativity was first proposed to explain the laws of physics by Albert Einstein.
+
+The theory of relativity was first proposed to explain the laws of physics by Albert
+2025-04-30 16:04:40,038 - INFO - Initializing components...
+2025-04-30 16:04:40,040 - INFO - Use pytorch device_name: cpu
+2025-04-30 16:04:40,040 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-30 16:04:44,554 - INFO - Using device: cpu
+2025-04-30 16:04:44,555 - INFO - Loading existing FAISS index and texts.
+2025-04-30 16:04:44,566 - INFO - Initializing FAISSVectorStore
+2025-04-30 16:04:44,567 - WARNING - Embeddings file not found. MMR will not be available unless re-stored.
+2025-04-30 16:04:44,567 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-04-30 16:04:44,568 - INFO - Initializing HuggingFaceLLM
+2025-04-30 16:04:47,580 - INFO - Device set to use: cpu
+2025-04-30 16:04:47,581 - INFO - Launching Streamlit UI...
+2025-04-30 16:04:47,846 - INFO - Retrieved context for What is DNA and what is its function in living organisms?: ['DNA usually occurs as linear chromosomes in eukaryotes, and circular chromosomes in prokaryotes. The set of chromosomes in a cell makes up its genome; the human genome has approximately 3 billion base pairs of DNA arranged into 46 chromosomes.[96] The information carried by DNA is held in the sequence of pieces of DNA called genes. Transmission of genetic information in genes is achieved via complementary base pairing. For example, in transcription, when a cell uses the information in a gene, the DNA sequence is copied into a complementary RNA sequence through the attraction between the DNA and the correct RNA nucleotides. Usually, this RNA copy is then used to make a matching protein sequence in a process called translation, which depends on the same interaction between RNA nucleotides. In an alternative fashion, a cell may copy its genetic information in a process called DNA replication. The details of these functions are covered in other articles; here the focus is on the interactions between DNA and other molecules that mediate the function of the genome.', 'All the functions of DNA depend on interactions with proteins. These protein interactions can be non-specific, or the protein can bind specifically to a single DNA sequence. Enzymes can also bind to DNA and of these, the polymerases that copy the DNA base sequence in transcription and DNA replication are particularly important.']
+2025-04-30 16:05:05,881 - INFO - Question: What is DNA and what is its function in living organisms?
+Answer: DNA is the nucleus of the cell, composed of a nucleus of DNA molecules. The DNA molecule is composed of a series of nucleotides and is composed of a sequence of nucleotides. The sequence of nucleotides is called the nucleotide sequence. The nucleotide sequence is the sequence of nucleotides that can be separated into their own DNA strands. The nucleotide sequence is composed of nucleotides that are arranged in a sequence of nucleotides. The sequence of nucleotides is called the sequence of nucleotides that can be separated into their own DNA strands. The sequence of nucleotides is composed of nucleotides that are arranged in a sequence of nucleotides. The sequence of nucleotides is composed of
+2025-04-30 16:11:35,438 - INFO - Loading faiss with AVX2 support.
+2025-04-30 16:11:35,454 - INFO - Successfully loaded faiss with AVX2 support.
+2025-04-30 16:11:35,458 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-04-30 16:13:42,117 - INFO - Loading faiss with AVX2 support.
+2025-04-30 16:13:42,132 - INFO - Successfully loaded faiss with AVX2 support.
+2025-04-30 16:13:42,136 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-04-30 16:13:44,916 - INFO - Initializing components...
+2025-04-30 16:13:44,917 - INFO - Use pytorch device_name: cpu
+2025-04-30 16:13:44,917 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-30 16:13:49,696 - INFO - Using device: cpu
+2025-04-30 16:13:49,697 - INFO - Loading existing FAISS index and texts.
+2025-04-30 16:13:49,714 - INFO - Initializing FAISSVectorStore
+2025-04-30 16:13:49,714 - WARNING - Embeddings file not found. MMR will not be available unless re-stored.
+2025-04-30 16:13:49,715 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-04-30 16:13:49,715 - INFO - Initializing HuggingFaceLLM
+2025-04-30 16:13:53,579 - INFO - Device set to use: cpu
+2025-04-30 16:13:53,581 - INFO - Launching Streamlit UI...
+2025-04-30 16:13:59,059 - INFO - Initializing components...
+2025-04-30 16:13:59,061 - INFO - Use pytorch device_name: cpu
+2025-04-30 16:13:59,061 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-30 16:14:02,832 - INFO - Using device: cpu
+2025-04-30 16:14:02,833 - INFO - Loading existing FAISS index and texts.
+2025-04-30 16:14:02,844 - INFO - Initializing FAISSVectorStore
+2025-04-30 16:14:02,844 - WARNING - Embeddings file not found. MMR will not be available unless re-stored.
+2025-04-30 16:14:02,844 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-04-30 16:14:02,844 - INFO - Initializing HuggingFaceLLM
+2025-04-30 16:14:05,292 - INFO - Device set to use: cpu
+2025-04-30 16:14:05,294 - INFO - Launching Streamlit UI...
+2025-04-30 16:14:05,321 - INFO - Context same as previous: False
+2025-04-30 16:14:05,522 - INFO - Retrieved context for What is Photosynthesis: ['In 1893, the American botanist Charles Reid Barnes proposed two terms, photosyntax and photosynthesis, for the biological process of synthesis of complex carbon compounds out of carbonic acid, in the presence of chlorophyll, under the influence of light. The term photosynthesis is derived from the Greek phōs (φῶς, gleam) and sýnthesis (σύνθεσις, arranging together),[97][98][99] while another word that he designated was photosyntax, from sýntaxis (σύνταξις, configuration). Over time, the term photosynthesis came into common usage. Later discovery of anoxygenic photosynthetic bacteria and photophosphorylation necessitated redefinition of the term.[100]', 'A photosynthetic pigment (accessory pigment; chloroplast pigment; antenna pigment) is a pigment that is present in chloroplasts or photosynthetic bacteria and captures the light energy necessary for photosynthesis.', 'The general equation for photosynthesis as first proposed by Cornelis van Niel is:[17]']
+2025-04-30 16:14:22,385 - INFO - Question: What is Photosynthesis
+Answer: Photosynthesis is the process of converting carbon dioxide into carbon monoxide, which is then converted into carbon dioxide and carbon dioxide monoxide by the action of sunlight. Photosynthesis is the process of converting carbon dioxide into carbon monoxide, which is then converted into carbon dioxide and carbon dioxide monoxide by the action of sunlight.
+
+Context: In 1893, the American botanist Charles Reid Barnes proposed two terms, photosyntax and photosynthesis, for the biological process of synthesis of complex carbon compounds out of carbonic acid, in the presence of chlorophyll, under the influence of light. The term photosynthesis is derived from the Greek phōs (φῶς, gleam) and sýnthesis (
+2025-04-30 16:23:00,085 - INFO - Loading faiss with AVX2 support.
+2025-04-30 16:23:00,100 - INFO - Successfully loaded faiss with AVX2 support.
+2025-04-30 16:23:00,104 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-04-30 16:23:40,771 - INFO - Loading faiss with AVX2 support.
+2025-04-30 16:23:40,785 - INFO - Successfully loaded faiss with AVX2 support.
+2025-04-30 16:23:40,790 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-04-30 16:24:43,000 - INFO - Loading faiss with AVX2 support.
+2025-04-30 16:24:43,016 - INFO - Successfully loaded faiss with AVX2 support.
+2025-04-30 16:24:43,019 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-04-30 16:25:12,044 - INFO - Loading faiss with AVX2 support.
+2025-04-30 16:25:12,059 - INFO - Successfully loaded faiss with AVX2 support.
+2025-04-30 16:25:12,063 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-04-30 16:26:26,789 - INFO - Loading faiss with AVX2 support.
+2025-04-30 16:26:26,804 - INFO - Successfully loaded faiss with AVX2 support.
+2025-04-30 16:26:26,808 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-04-30 16:26:29,572 - INFO - Initializing components...
+2025-04-30 16:26:29,573 - INFO - Use pytorch device_name: cpu
+2025-04-30 16:26:29,573 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-30 16:26:33,584 - INFO - Using device: cpu
+2025-04-30 16:26:33,585 - INFO - Loading existing FAISS index and texts.
+2025-04-30 16:26:33,597 - INFO - Initializing FAISSVectorStore
+2025-04-30 16:26:33,597 - WARNING - Embeddings file not found. MMR will not be available unless re-stored.
+2025-04-30 16:26:33,597 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-04-30 16:26:33,597 - INFO - Initializing HuggingFaceLLM
+2025-04-30 16:26:35,828 - INFO - Device set to use: cpu
+2025-04-30 16:26:35,830 - INFO - Launching Streamlit UI...
+2025-04-30 16:26:46,951 - INFO - Initializing components...
+2025-04-30 16:26:46,952 - INFO - Use pytorch device_name: cpu
+2025-04-30 16:26:46,953 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-30 16:26:50,281 - INFO - Using device: cpu
+2025-04-30 16:26:50,283 - INFO - Loading existing FAISS index and texts.
+2025-04-30 16:26:50,298 - INFO - Initializing FAISSVectorStore
+2025-04-30 16:26:50,299 - WARNING - Embeddings file not found. MMR will not be available unless re-stored.
+2025-04-30 16:26:50,299 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-04-30 16:26:50,299 - INFO - Initializing HuggingFaceLLM
+2025-04-30 16:26:52,632 - INFO - Device set to use: cpu
+2025-04-30 16:26:52,633 - INFO - Launching Streamlit UI...
+2025-04-30 16:26:52,658 - INFO - Context same as previous: False
+2025-04-30 16:26:52,828 - INFO - Retrieved combined context (truncated): In 1893, the American botanist Charles Reid Barnes proposed two terms, photosyntax and photosynthesi...
+2025-04-30 16:27:11,257 - INFO - Answer: Photosynthesis is the process of converting carbon dioxide into oxygen and hydrogen.
+
+The basic principle of photosynthesis is that the photosynthetic bacteria convert carbon dioxide into oxygen and hydrogen, and then use the oxygen to make carbon dioxide.
+
+The photosynthetic bacteria then use the hydrogen to make carbon dioxide.
+
+The basic principle of photosynthesis is that the photosynthetic bacteria convert carbon dioxide into oxygen and hydrogen, and then use the oxygen to make carbon dioxide.
+
+The basic principle of photosynthesis is that the photosynthetic bacteria convert carbon dioxide into oxygen and hydrogen, and then use the oxygen to make carbon dioxide.
+
+The basic principle of photosynthesis is that the photosynthetic bacteria convert carbon dioxide into oxygen and
+2025-04-30 16:28:49,408 - INFO - Initializing components...
+2025-04-30 16:28:49,410 - INFO - Use pytorch device_name: cpu
+2025-04-30 16:28:49,410 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-30 16:28:53,972 - INFO - Using device: cpu
+2025-04-30 16:28:53,973 - INFO - Loading existing FAISS index and texts.
+2025-04-30 16:28:53,978 - INFO - Initializing FAISSVectorStore
+2025-04-30 16:28:53,979 - WARNING - Embeddings file not found. MMR will not be available unless re-stored.
+2025-04-30 16:28:53,979 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-04-30 16:28:53,979 - INFO - Initializing HuggingFaceLLM
+2025-04-30 16:28:56,262 - INFO - Device set to use: cpu
+2025-04-30 16:28:56,263 - INFO - Launching Streamlit UI...
+2025-04-30 16:29:01,737 - INFO - Initializing components...
+2025-04-30 16:29:01,738 - INFO - Use pytorch device_name: cpu
+2025-04-30 16:29:01,739 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-30 16:29:05,066 - INFO - Using device: cpu
+2025-04-30 16:29:05,067 - INFO - Loading existing FAISS index and texts.
+2025-04-30 16:29:05,079 - INFO - Initializing FAISSVectorStore
+2025-04-30 16:29:05,081 - WARNING - Embeddings file not found. MMR will not be available unless re-stored.
+2025-04-30 16:29:05,081 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-04-30 16:29:05,081 - INFO - Initializing HuggingFaceLLM
+2025-04-30 16:29:07,743 - INFO - Device set to use: cpu
+2025-04-30 16:29:07,744 - INFO - Launching Streamlit UI...
+2025-04-30 16:29:07,765 - INFO - Context same as previous: False
+2025-04-30 16:29:07,951 - INFO - Retrieved combined context (truncated): In 1893, the American botanist Charles Reid Barnes proposed two terms, photosyntax and photosynthesi...
+2025-04-30 16:29:26,583 - INFO - Answer: Photosynthesis is the process of photosynthesis of carbon dioxide and oxygen. It is the process of converting carbon dioxide into oxygen.
+
+The basic principle of photosynthesis is that the photosynthetic bacteria (the photosynthetic bacteria) use the energy of the sunlight to convert carbon dioxide into oxygen. The photosynthetic bacteria then use the energy of the sunlight to produce oxygen. The photosynthetic bacteria then use the energy of the sunlight to produce carbon dioxide.
+
+The basic principle of photosynthesis is that the photosynthetic bacteria (the photosynthetic bacteria) use the energy of the sunlight to convert carbon dioxide into oxygen. The photosynthetic bacteria then use the energy of the sunlight to produce carbon dioxide.
+
+The basic principle
+2025-04-30 16:29:43,585 - INFO - Initializing components...
+2025-04-30 16:29:43,588 - INFO - Use pytorch device_name: cpu
+2025-04-30 16:29:43,588 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-30 16:29:46,834 - INFO - Using device: cpu
+2025-04-30 16:29:46,836 - INFO - Loading existing FAISS index and texts.
+2025-04-30 16:29:46,845 - INFO - Initializing FAISSVectorStore
+2025-04-30 16:29:46,845 - WARNING - Embeddings file not found. MMR will not be available unless re-stored.
+2025-04-30 16:29:46,846 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-04-30 16:29:46,846 - INFO - Initializing HuggingFaceLLM
+2025-04-30 16:29:49,116 - INFO - Device set to use: cpu
+2025-04-30 16:29:49,117 - INFO - Launching Streamlit UI...
+2025-04-30 16:29:49,138 - INFO - Context same as previous: False
+2025-04-30 16:29:49,355 - INFO - Retrieved combined context (truncated): DNA usually occurs as linear chromosomes in eukaryotes, and circular chromosomes in prokaryotes. The...
+2025-04-30 16:30:08,731 - INFO - Answer: DNA is a nucleic acid that is responsible for the production of proteins. It is a simple molecule, and it is composed of two nucleotides, a base and a protein. The nucleotide sequence of the DNA is called a nucleotide sequence. The nucleotide sequence of the protein is called a protein sequence.
+
+The protein is composed of two nucleotides, a base and a protein. The protein is composed of two nucleotides, a base and a protein. The protein is composed of two nucleotides, a base and a protein. The protein is composed of two nucleotides, a base and a protein. The protein is composed of two nucleotides, a base and a protein. The protein is composed
+2025-04-30 16:31:17,914 - INFO - Loading faiss with AVX2 support.
+2025-04-30 16:31:17,931 - INFO - Successfully loaded faiss with AVX2 support.
+2025-04-30 16:31:17,936 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-04-30 16:31:20,745 - INFO - Initializing components...
+2025-04-30 16:31:20,746 - INFO - Use pytorch device_name: cpu
+2025-04-30 16:31:20,746 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-30 16:31:26,499 - INFO - Using device: cpu
+2025-04-30 16:31:26,501 - INFO - Loading existing FAISS index and texts.
+2025-04-30 16:31:26,515 - INFO - Initializing FAISSVectorStore
+2025-04-30 16:31:26,516 - WARNING - Embeddings file not found. MMR will not be available unless re-stored.
+2025-04-30 16:31:26,517 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-04-30 16:31:26,517 - INFO - Initializing HuggingFaceLLM
+2025-04-30 16:31:29,575 - INFO - Device set to use: cpu
+2025-04-30 16:31:29,577 - INFO - Launching Streamlit UI...
+2025-04-30 16:31:42,506 - INFO - Initializing components...
+2025-04-30 16:31:42,508 - INFO - Use pytorch device_name: cpu
+2025-04-30 16:31:42,508 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-30 16:31:46,361 - INFO - Using device: cpu
+2025-04-30 16:31:46,362 - INFO - Loading existing FAISS index and texts.
+2025-04-30 16:31:46,375 - INFO - Initializing FAISSVectorStore
+2025-04-30 16:31:46,376 - WARNING - Embeddings file not found. MMR will not be available unless re-stored.
+2025-04-30 16:31:46,376 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-04-30 16:31:46,376 - INFO - Initializing HuggingFaceLLM
+2025-04-30 16:31:48,973 - INFO - Device set to use: cpu
+2025-04-30 16:31:48,974 - INFO - Launching Streamlit UI...
+2025-04-30 16:31:49,001 - INFO - Context same as previous: False
+2025-04-30 16:31:49,175 - INFO - Retrieved combined context (truncated): DNA usually occurs as linear chromosomes in eukaryotes, and circular chromosomes in prokaryotes. The...
+2025-04-30 16:32:07,377 - INFO - Answer: DNA is a protein that is responsible for the replication of DNA. DNA is a protein that is responsible for the replication of DNA. DNA is a protein that is responsible for the replication of DNA. DNA is a protein that is responsible for the replication of DNA. DNA is a protein that is responsible for the replication of DNA. DNA is a protein that is responsible for the replication of DNA. DNA is a protein that is responsible for the replication of DNA. DNA is a protein that is responsible for the replication of DNA. DNA is a protein that is responsible for the replication of DNA. DNA is a protein that is responsible for the replication of DNA. DNA is a protein that is responsible for the replication of DNA. DNA is a protein that is responsible
+2025-04-30 16:32:21,476 - INFO - Initializing components...
+2025-04-30 16:32:21,478 - INFO - Use pytorch device_name: cpu
+2025-04-30 16:32:21,478 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-30 16:32:26,393 - INFO - Using device: cpu
+2025-04-30 16:32:26,394 - INFO - Loading existing FAISS index and texts.
+2025-04-30 16:32:26,402 - INFO - Initializing FAISSVectorStore
+2025-04-30 16:32:26,403 - WARNING - Embeddings file not found. MMR will not be available unless re-stored.
+2025-04-30 16:32:26,403 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-04-30 16:32:26,403 - INFO - Initializing HuggingFaceLLM
+2025-04-30 16:32:28,848 - INFO - Device set to use: cpu
+2025-04-30 16:32:28,849 - INFO - Launching Streamlit UI...
+2025-04-30 16:32:28,876 - INFO - Context same as previous: False
+2025-04-30 16:32:29,097 - INFO - Retrieved combined context (truncated): DNA usually occurs as linear chromosomes in eukaryotes, and circular chromosomes in prokaryotes. The...
+2025-04-30 16:32:46,429 - INFO - Answer: DNA is a small molecule that is composed of a protein and a DNA molecule. The protein is a nucleic acid, and the DNA molecule is a protein. DNA is a part of the DNA genome, and it is the nucleus of the cell. DNA is composed of two proteins: a DNA polymerase and a DNA-binding protein. DNA polymerase is a protein that binds to DNA. The DNA polymerase is responsible for binding to the DNA sequence. The DNA-binding protein is responsible for binding to the DNA sequence. The DNA-binding protein is responsible for binding to the DNA sequence. The DNA-binding protein is responsible for binding to the DNA sequence. The DNA-binding protein is responsible for binding to the DNA sequence. The DNA
+2025-04-30 16:38:39,153 - INFO - Loading faiss with AVX2 support.
+2025-04-30 16:38:39,169 - INFO - Successfully loaded faiss with AVX2 support.
+2025-04-30 16:38:39,172 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-04-30 16:39:47,430 - INFO - Loading faiss with AVX2 support.
+2025-04-30 16:39:47,445 - INFO - Successfully loaded faiss with AVX2 support.
+2025-04-30 16:39:47,449 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-04-30 16:39:50,288 - INFO - Initializing components...
+2025-04-30 16:39:50,289 - INFO - Use pytorch device_name: cpu
+2025-04-30 16:39:50,289 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-30 16:39:55,305 - INFO - Using device: cpu
+2025-04-30 16:39:55,307 - INFO - Loading existing FAISS index and texts.
+2025-04-30 16:39:55,319 - INFO - Initializing FAISSVectorStore
+2025-04-30 16:39:55,320 - WARNING - Embeddings file not found. MMR will not be available unless re-stored.
+2025-04-30 16:39:55,320 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-04-30 16:39:55,320 - INFO - Initializing HuggingFaceLLM
+2025-04-30 16:39:57,958 - INFO - Device set to use: cpu
+2025-04-30 16:39:57,961 - INFO - Launching Streamlit UI...
+2025-04-30 16:40:08,101 - INFO - Initializing components...
+2025-04-30 16:40:08,104 - INFO - Use pytorch device_name: cpu
+2025-04-30 16:40:08,104 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-30 16:40:14,649 - INFO - Using device: cpu
+2025-04-30 16:40:14,651 - INFO - Loading existing FAISS index and texts.
+2025-04-30 16:40:14,665 - INFO - Initializing FAISSVectorStore
+2025-04-30 16:40:14,665 - WARNING - Embeddings file not found. MMR will not be available unless re-stored.
+2025-04-30 16:40:14,666 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-04-30 16:40:14,666 - INFO - Initializing HuggingFaceLLM
+2025-04-30 16:40:17,721 - INFO - Device set to use: cpu
+2025-04-30 16:40:17,722 - INFO - Launching Streamlit UI...
+2025-04-30 16:40:17,751 - INFO - Context same as previous: False
+2025-04-30 16:40:18,097 - ERROR - Error processing question: 'float' object is not subscriptable
+2025-04-30 16:41:13,778 - INFO - Initializing components...
+2025-04-30 16:41:13,780 - INFO - Use pytorch device_name: cpu
+2025-04-30 16:41:13,780 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-30 16:41:17,420 - INFO - Using device: cpu
+2025-04-30 16:41:17,421 - INFO - Loading existing FAISS index and texts.
+2025-04-30 16:41:17,434 - INFO - Initializing FAISSVectorStore
+2025-04-30 16:41:17,434 - WARNING - Embeddings file not found. MMR will not be available unless re-stored.
+2025-04-30 16:41:17,434 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-04-30 16:41:17,435 - INFO - Initializing HuggingFaceLLM
+2025-04-30 16:41:20,184 - INFO - Device set to use: cpu
+2025-04-30 16:41:20,185 - INFO - Launching Streamlit UI...
+2025-04-30 16:41:49,161 - INFO - Initializing components...
+2025-04-30 16:41:49,163 - INFO - Use pytorch device_name: cpu
+2025-04-30 16:41:49,163 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-30 16:41:53,263 - INFO - Using device: cpu
+2025-04-30 16:41:53,265 - INFO - Loading existing FAISS index and texts.
+2025-04-30 16:41:53,273 - INFO - Initializing FAISSVectorStore
+2025-04-30 16:41:53,274 - WARNING - Embeddings file not found. MMR will not be available unless re-stored.
+2025-04-30 16:41:53,274 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-04-30 16:41:53,275 - INFO - Initializing HuggingFaceLLM
+2025-04-30 16:41:55,611 - INFO - Device set to use: cpu
+2025-04-30 16:41:55,612 - INFO - Launching Streamlit UI...
+2025-04-30 16:41:55,638 - INFO - Context same as previous: False
+2025-04-30 16:41:55,764 - INFO - Retrieved combined context (truncated): Trait inheritance and molecular inheritance mechanisms of genes are still primary principles of gene...
+2025-04-30 16:42:12,889 - INFO - Answer: DNA is the backbone of the human genome. It is the single-stranded DNA of the human genome. It is composed of three main parts: the DNA sequence, the DNA polymerase, and the DNA polymerase-like enzyme. The DNA sequence is composed of the DNA sequence of the cell, the DNA sequence of the organism, and the DNA sequence of the population. The DNA polymerase is composed of the DNA sequence of the organism, the DNA sequence of the population, and the DNA sequence of the gene.
+
+DNA is the backbone of the human genome. It is the single-stranded DNA of the human genome. It is composed of three main parts: the DNA sequence, the DNA polymerase, and the DNA polymer
+2025-04-30 16:46:05,460 - INFO - Initializing components...
+2025-04-30 16:46:05,461 - INFO - Use pytorch device_name: cpu
+2025-04-30 16:46:05,462 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-30 16:46:19,418 - INFO - Using device: cpu
+2025-04-30 16:46:19,419 - INFO - Loading existing FAISS index and texts.
+2025-04-30 16:46:19,425 - INFO - Initializing FAISSVectorStore
+2025-04-30 16:46:19,425 - WARNING - Embeddings file not found. MMR will not be available unless re-stored.
+2025-04-30 16:46:19,425 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-04-30 16:46:19,426 - INFO - Initializing HuggingFaceLLM
+2025-04-30 16:46:21,670 - INFO - Device set to use: cpu
+2025-04-30 16:46:21,671 - INFO - Launching Streamlit UI...
+2025-04-30 16:46:21,687 - INFO - Context same as previous: False
+2025-04-30 16:46:21,812 - INFO - Retrieved combined context (truncated): Genomic DNA is tightly and orderly packed in the process called DNA condensation, to fit the small a...
+2025-04-30 16:46:42,543 - INFO - Answer: DNA is a type of DNA. It is a very large molecule that is composed of a number of small molecules called nucleotides. DNA is composed of a number of nucleotides, and the nucleotide sequence of a nucleotide is called a nucleotide sequence. The nucleotide sequence of a nucleotide is called a nucleotide sequence. The nucleotide sequence of a nucleotide is called a nucleotide sequence. The nucleotide sequence of a nucleotide is called a nucleotide sequence. The nucleotide sequence of a nucleotide is called a nucleotide sequence. The nucleotide sequence of a nucleotide is called a nucleotide sequence. The nucleotide sequence of a nucleotide is called a nucleotide sequence. The nucleotide sequence of a
+2025-04-30 16:48:02,791 - INFO - Starting script
+2025-04-30 16:48:02,792 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-30 16:48:07,552 - INFO - Initializing FAISSVectorStore
+2025-04-30 16:48:07,552 - INFO - Initializing HuggingFaceLLM
+2025-04-30 16:48:09,195 - INFO - Starting scrape_and_store
+2025-04-30 16:48:09,196 - INFO - Documents in collection before processing: 0
+2025-04-30 16:48:10,021 - INFO - Scraped 81 paragraphs from https://en.wikipedia.org/wiki/Atomic_structure
+2025-04-30 16:48:10,126 - INFO - Scraped 32 paragraphs from https://en.wikipedia.org/wiki/Immunology
+2025-04-30 16:48:10,257 - INFO - Scraped 83 paragraphs from https://en.wikipedia.org/wiki/Mathematical_logic
+2025-04-30 16:48:10,367 - INFO - Scraped 62 paragraphs from https://en.wikipedia.org/wiki/Graph_theory
+2025-04-30 16:48:10,614 - INFO - Scraped 23 paragraphs from https://en.wikipedia.org/wiki/Astrophysics
+2025-04-30 16:48:10,765 - INFO - Scraped 121 paragraphs from https://en.wikipedia.org/wiki/Iliad
+2025-04-30 16:48:10,924 - INFO - Scraped 72 paragraphs from https://en.wikipedia.org/wiki/Number_theory
+2025-04-30 16:48:11,059 - INFO - Scraped 76 paragraphs from https://en.wikipedia.org/wiki/Statistics
+2025-04-30 16:48:11,185 - INFO - Scraped 44 paragraphs from https://en.wikipedia.org/wiki/RNA
+2025-04-30 16:48:11,521 - INFO - Scraped 50 paragraphs from https://en.wikipedia.org/wiki/Probability_theory
+2025-04-30 16:48:11,631 - INFO - Scraped 51 paragraphs from https://en.wikipedia.org/wiki/Set_theory
+2025-04-30 16:48:11,746 - INFO - Scraped 60 paragraphs from https://en.wikipedia.org/wiki/Thermodynamics
+2025-04-30 16:48:11,970 - INFO - Scraped 83 paragraphs from https://en.wikipedia.org/wiki/Photosynthesis
+2025-04-30 16:48:12,140 - INFO - Scraped 69 paragraphs from https://en.wikipedia.org/wiki/Geometry
+2025-04-30 16:48:12,788 - INFO - Scraped 89 paragraphs from https://en.wikipedia.org/wiki/Big_Bang
+2025-04-30 16:48:12,961 - INFO - Scraped 115 paragraphs from https://en.wikipedia.org/wiki/Mongol_Empire
+2025-04-30 16:48:13,137 - INFO - Scraped 37 paragraphs from https://en.wikipedia.org/wiki/Homer
+2025-04-30 16:48:13,591 - INFO - Scraped 90 paragraphs from https://en.wikipedia.org/wiki/DNA
+2025-04-30 16:48:13,728 - INFO - Scraped 121 paragraphs from https://en.wikipedia.org/wiki/Linear_algebra
+2025-04-30 16:48:13,929 - INFO - Scraped 116 paragraphs from https://en.wikipedia.org/wiki/Game_theory
+2025-04-30 16:48:14,103 - INFO - Scraped 73 paragraphs from https://en.wikipedia.org/wiki/Chaos_theory
+2025-04-30 16:48:14,330 - INFO - Scraped 105 paragraphs from https://en.wikipedia.org/wiki/Ancient_Egypt
+2025-04-30 16:48:14,783 - INFO - Scraped 59 paragraphs from https://en.wikipedia.org/wiki/Ecosystem
+2025-04-30 16:48:15,023 - INFO - Scraped 106 paragraphs from https://en.wikipedia.org/wiki/Renaissance
+2025-04-30 16:48:15,239 - INFO - Scraped 73 paragraphs from https://en.wikipedia.org/wiki/Quantum_mechanics
+2025-04-30 16:48:15,468 - INFO - Scraped 60 paragraphs from https://en.wikipedia.org/wiki/Algebra
+2025-04-30 16:48:15,621 - INFO - Scraped 62 paragraphs from https://en.wikipedia.org/wiki/Genetics
+2025-04-30 16:48:16,228 - INFO - Scraped 88 paragraphs from https://en.wikipedia.org/wiki/Plate_tectonics
+2025-04-30 16:48:16,392 - INFO - Scraped 65 paragraphs from https://en.wikipedia.org/wiki/Calculus
+2025-04-30 16:48:16,518 - INFO - Scraped 79 paragraphs from https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall
+2025-04-30 16:48:16,611 - INFO - Scraped 22 paragraphs from https://en.wikipedia.org/wiki/Relativity_theory
+2025-04-30 16:48:16,685 - INFO - Scraped 30 paragraphs from https://en.wikipedia.org/wiki/Colonization_of_Africa
+2025-04-30 16:48:16,706 - INFO - Scraped 7 paragraphs from https://en.wikipedia.org/wiki/Photosynthetic_pigment
+2025-04-30 16:48:16,780 - INFO - Scraped 43 paragraphs from https://en.wikipedia.org/wiki/Chemical_bonding
+2025-04-30 16:48:16,939 - INFO - Scraped 49 paragraphs from https://en.wikipedia.org/wiki/Neuroscience
+2025-04-30 16:48:17,165 - INFO - Scraped 99 paragraphs from https://en.wikipedia.org/wiki/Middle_Ages
+2025-04-30 16:48:17,250 - INFO - Scraped 38 paragraphs from https://en.wikipedia.org/wiki/Differential_equations
+2025-04-30 16:48:18,439 - INFO - Scraped 113 paragraphs from https://en.wikipedia.org/wiki/History_of_China
+2025-04-30 16:48:18,689 - INFO - Scraped 140 paragraphs from https://en.wikipedia.org/wiki/French_Revolution
+2025-04-30 16:48:18,762 - INFO - Scraped 47 paragraphs from https://en.wikipedia.org/wiki/Topology
+2025-04-30 16:48:18,911 - INFO - Scraped 49 paragraphs from https://en.wikipedia.org/wiki/Trigonometry
+2025-04-30 16:48:19,578 - INFO - Scraped 218 paragraphs from https://en.wikipedia.org/wiki/Industrial_Revolution
+2025-04-30 16:48:20,138 - INFO - Scraped 69 paragraphs from https://en.wikipedia.org/wiki/William_Shakespeare
+2025-04-30 16:48:20,648 - INFO - Scraped 109 paragraphs from https://en.wikipedia.org/wiki/Periodic_table
+2025-04-30 16:48:21,217 - INFO - Scraped 149 paragraphs from https://en.wikipedia.org/wiki/Great_Depression
+2025-04-30 16:48:21,616 - INFO - Scraped 105 paragraphs from https://en.wikipedia.org/wiki/Climate_change
+2025-04-30 16:48:22,001 - INFO - Scraped 123 paragraphs from https://en.wikipedia.org/wiki/World_War_II
+2025-04-30 16:48:22,873 - INFO - Scraped 157 paragraphs from https://en.wikipedia.org/wiki/Cold_War
+2025-04-30 16:48:23,253 - INFO - Scraped 151 paragraphs from https://en.wikipedia.org/wiki/Space_Race
+2025-04-30 16:48:23,506 - INFO - Scraped 108 paragraphs from https://en.wikipedia.org/wiki/Black_hole
+2025-04-30 16:48:24,324 - INFO - Scraped 97 paragraphs from https://en.wikipedia.org/wiki/Evolution
+2025-04-30 16:48:24,778 - INFO - Scraped 151 paragraphs from https://en.wikipedia.org/wiki/Roman_Empire
+2025-04-30 16:48:25,129 - INFO - Scraped 240 paragraphs from https://en.wikipedia.org/wiki/Civil_Rights_Movement
+2025-04-30 16:48:26,407 - INFO - Scraped 144 paragraphs from https://en.wikipedia.org/wiki/World_War_I
+2025-04-30 16:48:26,736 - INFO - Scraped 150 paragraphs from https://en.wikipedia.org/wiki/American_Revolution
+2025-04-30 16:48:27,036 - INFO - Scraped 81 paragraphs from https://en.wikipedia.org/wiki/Byzantine_Empire
+2025-04-30 16:48:27,726 - INFO - Scraped 173 paragraphs from https://en.wikipedia.org/wiki/Vietnam_War
+2025-04-30 16:48:27,911 - INFO - Scraped 129 paragraphs from https://en.wikipedia.org/wiki/Indian_Independence_Movement
+2025-04-30 16:50:12,149 - INFO - Stored 5236 documents in FAISS
+2025-04-30 16:50:12,169 - INFO - Finished scrape_and_store
+2025-04-30 16:50:12,169 - INFO - Starting Streamlit UI
+2025-04-30 16:50:30,147 - INFO - Starting script
+2025-04-30 16:50:30,149 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-30 16:50:31,173 - INFO - Starting script
+2025-04-30 16:50:31,175 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-30 16:50:34,700 - INFO - Initializing FAISSVectorStore
+2025-04-30 16:50:34,700 - INFO - Initializing HuggingFaceLLM
+2025-04-30 16:50:35,497 - INFO - Initializing FAISSVectorStore
+2025-04-30 16:50:35,497 - INFO - Initializing HuggingFaceLLM
+2025-04-30 16:50:36,030 - INFO - Starting scrape_and_store
+2025-04-30 16:50:36,030 - INFO - Documents in collection before processing: 0
+2025-04-30 16:50:36,652 - INFO - Scraped 7 paragraphs from https://en.wikipedia.org/wiki/Photosynthetic_pigment
+2025-04-30 16:50:36,796 - INFO - Scraped 62 paragraphs from https://en.wikipedia.org/wiki/Graph_theory
+2025-04-30 16:50:36,799 - INFO - Starting scrape_and_store
+2025-04-30 16:50:36,799 - INFO - Documents in collection before processing: 0
+2025-04-30 16:50:36,921 - INFO - Scraped 38 paragraphs from https://en.wikipedia.org/wiki/Differential_equations
+2025-04-30 16:50:37,259 - INFO - Scraped 49 paragraphs from https://en.wikipedia.org/wiki/Neuroscience
+2025-04-30 16:50:37,317 - INFO - Scraped 30 paragraphs from https://en.wikipedia.org/wiki/Colonization_of_Africa
+2025-04-30 16:50:37,541 - INFO - Scraped 62 paragraphs from https://en.wikipedia.org/wiki/Genetics
+2025-04-30 16:50:37,731 - INFO - Scraped 83 paragraphs from https://en.wikipedia.org/wiki/Photosynthesis
+2025-04-30 16:50:38,146 - INFO - Scraped 43 paragraphs from https://en.wikipedia.org/wiki/Chemical_bonding
+2025-04-30 16:50:38,242 - INFO - Scraped 7 paragraphs from https://en.wikipedia.org/wiki/Photosynthetic_pigment
+2025-04-30 16:50:38,277 - INFO - Scraped 73 paragraphs from https://en.wikipedia.org/wiki/Quantum_mechanics
+2025-04-30 16:50:38,450 - INFO - Scraped 88 paragraphs from https://en.wikipedia.org/wiki/Plate_tectonics
+2025-04-30 16:50:38,596 - INFO - Scraped 121 paragraphs from https://en.wikipedia.org/wiki/Iliad
+2025-04-30 16:50:38,769 - INFO - Scraped 73 paragraphs from https://en.wikipedia.org/wiki/Chaos_theory
+2025-04-30 16:50:39,189 - INFO - Scraped 69 paragraphs from https://en.wikipedia.org/wiki/Geometry
+2025-04-30 16:50:39,427 - INFO - Scraped 60 paragraphs from https://en.wikipedia.org/wiki/Algebra
+2025-04-30 16:50:39,588 - INFO - Scraped 81 paragraphs from https://en.wikipedia.org/wiki/Atomic_structure
+2025-04-30 16:50:39,719 - INFO - Scraped 59 paragraphs from https://en.wikipedia.org/wiki/Ecosystem
+2025-04-30 16:50:39,855 - INFO - Scraped 23 paragraphs from https://en.wikipedia.org/wiki/Astrophysics
+2025-04-30 16:50:40,482 - INFO - Scraped 32 paragraphs from https://en.wikipedia.org/wiki/Immunology
+2025-04-30 16:50:40,577 - INFO - Scraped 149 paragraphs from https://en.wikipedia.org/wiki/Great_Depression
+2025-04-30 16:50:40,672 - INFO - Scraped 51 paragraphs from https://en.wikipedia.org/wiki/Set_theory
+2025-04-30 16:50:40,966 - INFO - Scraped 79 paragraphs from https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall
+2025-04-30 16:50:41,166 - INFO - Scraped 106 paragraphs from https://en.wikipedia.org/wiki/Renaissance
+2025-04-30 16:50:41,267 - INFO - Scraped 44 paragraphs from https://en.wikipedia.org/wiki/RNA
+2025-04-30 16:50:41,948 - INFO - Scraped 47 paragraphs from https://en.wikipedia.org/wiki/Topology
+2025-04-30 16:50:42,291 - INFO - Scraped 83 paragraphs from https://en.wikipedia.org/wiki/Mathematical_logic
+2025-04-30 16:50:42,511 - INFO - Scraped 157 paragraphs from https://en.wikipedia.org/wiki/Cold_War
+2025-04-30 16:50:42,588 - INFO - Scraped 76 paragraphs from https://en.wikipedia.org/wiki/Statistics
+2025-04-30 16:50:42,916 - INFO - Scraped 97 paragraphs from https://en.wikipedia.org/wiki/Evolution
+2025-04-30 16:50:43,051 - INFO - Scraped 83 paragraphs from https://en.wikipedia.org/wiki/Mathematical_logic
+2025-04-30 16:50:43,839 - INFO - Scraped 116 paragraphs from https://en.wikipedia.org/wiki/Game_theory
+2025-04-30 16:50:43,985 - INFO - Scraped 79 paragraphs from https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall
+2025-04-30 16:50:44,376 - INFO - Scraped 121 paragraphs from https://en.wikipedia.org/wiki/Linear_algebra
+2025-04-30 16:50:44,599 - INFO - Scraped 144 paragraphs from https://en.wikipedia.org/wiki/World_War_I
+2025-04-30 16:50:44,800 - INFO - Scraped 65 paragraphs from https://en.wikipedia.org/wiki/Calculus
+2025-04-30 16:50:45,030 - INFO - Scraped 129 paragraphs from https://en.wikipedia.org/wiki/Indian_Independence_Movement
+2025-04-30 16:50:45,652 - INFO - Scraped 123 paragraphs from https://en.wikipedia.org/wiki/World_War_II
+2025-04-30 16:50:46,775 - INFO - Scraped 173 paragraphs from https://en.wikipedia.org/wiki/Vietnam_War
+2025-04-30 16:50:47,032 - INFO - Scraped 140 paragraphs from https://en.wikipedia.org/wiki/French_Revolution
+2025-04-30 16:50:47,646 - INFO - Scraped 105 paragraphs from https://en.wikipedia.org/wiki/Climate_change
+2025-04-30 16:50:47,753 - INFO - Scraped 144 paragraphs from https://en.wikipedia.org/wiki/World_War_I
+2025-04-30 16:50:48,041 - INFO - Scraped 44 paragraphs from https://en.wikipedia.org/wiki/RNA
+2025-04-30 16:50:48,363 - INFO - Scraped 150 paragraphs from https://en.wikipedia.org/wiki/American_Revolution
+2025-04-30 16:50:49,447 - INFO - Scraped 99 paragraphs from https://en.wikipedia.org/wiki/Middle_Ages
+2025-04-30 16:50:49,623 - INFO - Scraped 83 paragraphs from https://en.wikipedia.org/wiki/Photosynthesis
+2025-04-30 16:50:50,175 - INFO - Scraped 108 paragraphs from https://en.wikipedia.org/wiki/Black_hole
+2025-04-30 16:50:50,287 - INFO - Scraped 69 paragraphs from https://en.wikipedia.org/wiki/William_Shakespeare
+2025-04-30 16:50:50,713 - INFO - Scraped 60 paragraphs from https://en.wikipedia.org/wiki/Algebra
+2025-04-30 16:50:50,741 - INFO - Scraped 37 paragraphs from https://en.wikipedia.org/wiki/Homer
+2025-04-30 16:50:51,113 - INFO - Scraped 49 paragraphs from https://en.wikipedia.org/wiki/Trigonometry
+2025-04-30 16:50:51,394 - INFO - Scraped 51 paragraphs from https://en.wikipedia.org/wiki/Set_theory
+2025-04-30 16:50:51,402 - INFO - Scraped 81 paragraphs from https://en.wikipedia.org/wiki/Byzantine_Empire
+2025-04-30 16:50:51,848 - INFO - Scraped 65 paragraphs from https://en.wikipedia.org/wiki/Calculus
+2025-04-30 16:50:53,032 - INFO - Scraped 108 paragraphs from https://en.wikipedia.org/wiki/Black_hole
+2025-04-30 16:50:53,563 - INFO - Scraped 140 paragraphs from https://en.wikipedia.org/wiki/French_Revolution
+2025-04-30 16:50:53,824 - INFO - Scraped 109 paragraphs from https://en.wikipedia.org/wiki/Periodic_table
+2025-04-30 16:50:53,919 - INFO - Scraped 22 paragraphs from https://en.wikipedia.org/wiki/Relativity_theory
+2025-04-30 16:50:54,607 - INFO - Scraped 240 paragraphs from https://en.wikipedia.org/wiki/Civil_Rights_Movement
+2025-04-30 16:50:54,662 - INFO - Scraped 173 paragraphs from https://en.wikipedia.org/wiki/Vietnam_War
+2025-04-30 16:50:55,122 - INFO - Scraped 115 paragraphs from https://en.wikipedia.org/wiki/Mongol_Empire
+2025-04-30 16:50:55,444 - INFO - Scraped 76 paragraphs from https://en.wikipedia.org/wiki/Statistics
+2025-04-30 16:50:55,467 - INFO - Scraped 157 paragraphs from https://en.wikipedia.org/wiki/Cold_War
+2025-04-30 16:50:55,874 - INFO - Scraped 129 paragraphs from https://en.wikipedia.org/wiki/Indian_Independence_Movement
+2025-04-30 16:50:58,309 - INFO - Scraped 109 paragraphs from https://en.wikipedia.org/wiki/Periodic_table
+2025-04-30 16:50:58,506 - INFO - Scraped 151 paragraphs from https://en.wikipedia.org/wiki/Space_Race
+2025-04-30 16:50:58,766 - INFO - Scraped 105 paragraphs from https://en.wikipedia.org/wiki/Ancient_Egypt
+2025-04-30 16:50:58,775 - INFO - Scraped 60 paragraphs from https://en.wikipedia.org/wiki/Thermodynamics
+2025-04-30 16:50:58,858 - ERROR - Error scraping https://en.wikipedia.org/wiki/William_Shakespeare: 
+2025-04-30 16:50:58,869 - ERROR - Error scraping https://en.wikipedia.org/wiki/Great_Depression: 
+2025-04-30 16:50:58,884 - ERROR - Error scraping https://en.wikipedia.org/wiki/Graph_theory: 
+2025-04-30 16:50:58,895 - ERROR - Error scraping https://en.wikipedia.org/wiki/Game_theory: 
+2025-04-30 16:50:58,900 - ERROR - Error scraping https://en.wikipedia.org/wiki/Space_Race: 
+2025-04-30 16:50:58,916 - ERROR - Error scraping https://en.wikipedia.org/wiki/Relativity_theory: 
+2025-04-30 16:50:58,928 - ERROR - Error scraping https://en.wikipedia.org/wiki/Differential_equations: 
+2025-04-30 16:50:58,949 - ERROR - Error scraping https://en.wikipedia.org/wiki/DNA: 
+2025-04-30 16:50:58,969 - ERROR - Error scraping https://en.wikipedia.org/wiki/Linear_algebra: 
+2025-04-30 16:50:58,990 - ERROR - Error scraping https://en.wikipedia.org/wiki/Ecosystem: 
+2025-04-30 16:50:59,027 - ERROR - Error scraping https://en.wikipedia.org/wiki/Homer: 
+2025-04-30 16:50:59,043 - ERROR - Error scraping https://en.wikipedia.org/wiki/Atomic_structure: 
+2025-04-30 16:50:59,058 - ERROR - Error scraping https://en.wikipedia.org/wiki/Roman_Empire: 
+2025-04-30 16:50:59,095 - ERROR - Error scraping https://en.wikipedia.org/wiki/Mongol_Empire: 
+2025-04-30 16:50:59,102 - INFO - Scraped 218 paragraphs from https://en.wikipedia.org/wiki/Industrial_Revolution
+2025-04-30 16:50:59,103 - ERROR - Error scraping https://en.wikipedia.org/wiki/Number_theory: 
+2025-04-30 16:50:59,103 - ERROR - Error scraping https://en.wikipedia.org/wiki/Iliad: 
+2025-04-30 16:50:59,103 - ERROR - Error scraping https://en.wikipedia.org/wiki/Plate_tectonics: 
+2025-04-30 16:50:59,109 - ERROR - Error scraping https://en.wikipedia.org/wiki/Big_Bang: 
+2025-04-30 16:50:59,120 - ERROR - Error scraping https://en.wikipedia.org/wiki/Colonization_of_Africa: 
+2025-04-30 16:50:59,125 - ERROR - Error scraping https://en.wikipedia.org/wiki/Middle_Ages: 
+2025-04-30 16:50:59,136 - ERROR - Error scraping https://en.wikipedia.org/wiki/Renaissance: 
+2025-04-30 16:50:59,152 - ERROR - Error scraping https://en.wikipedia.org/wiki/Probability_theory: 
+2025-04-30 16:50:59,172 - ERROR - Error scraping https://en.wikipedia.org/wiki/Neuroscience: 
+2025-04-30 16:50:59,214 - ERROR - Error scraping https://en.wikipedia.org/wiki/Thermodynamics: 
+2025-04-30 16:50:59,225 - ERROR - Error scraping https://en.wikipedia.org/wiki/Chaos_theory: 
+2025-04-30 16:50:59,241 - ERROR - Error scraping https://en.wikipedia.org/wiki/Industrial_Revolution: 
+2025-04-30 16:50:59,261 - INFO - Scraped 72 paragraphs from https://en.wikipedia.org/wiki/Number_theory
+2025-04-30 16:50:59,261 - ERROR - Error scraping https://en.wikipedia.org/wiki/Evolution: 
+2025-04-30 16:50:59,298 - ERROR - Error scraping https://en.wikipedia.org/wiki/Quantum_mechanics: 
+2025-04-30 16:50:59,325 - ERROR - Error scraping https://en.wikipedia.org/wiki/History_of_China: 
+2025-04-30 16:50:59,340 - ERROR - Error scraping https://en.wikipedia.org/wiki/Geometry: 
+2025-04-30 16:50:59,357 - ERROR - Error scraping https://en.wikipedia.org/wiki/Genetics: 
+2025-04-30 16:50:59,388 - ERROR - Error scraping https://en.wikipedia.org/wiki/Trigonometry: 
+2025-04-30 16:50:59,405 - ERROR - Error scraping https://en.wikipedia.org/wiki/World_War_II: 
+2025-04-30 16:50:59,457 - INFO - Scraped 113 paragraphs from https://en.wikipedia.org/wiki/History_of_China
+2025-04-30 16:50:59,783 - INFO - Scraped 81 paragraphs from https://en.wikipedia.org/wiki/Byzantine_Empire
+2025-04-30 16:50:59,856 - INFO - Scraped 43 paragraphs from https://en.wikipedia.org/wiki/Chemical_bonding
+2025-04-30 16:50:59,946 - INFO - Scraped 23 paragraphs from https://en.wikipedia.org/wiki/Astrophysics
+2025-04-30 16:51:00,080 - INFO - Scraped 32 paragraphs from https://en.wikipedia.org/wiki/Immunology
+2025-04-30 16:51:00,172 - INFO - Scraped 47 paragraphs from https://en.wikipedia.org/wiki/Topology
+2025-04-30 16:51:00,275 - INFO - Scraped 50 paragraphs from https://en.wikipedia.org/wiki/Probability_theory
+2025-04-30 16:51:00,676 - INFO - Scraped 240 paragraphs from https://en.wikipedia.org/wiki/Civil_Rights_Movement
+2025-04-30 16:51:03,848 - INFO - Scraped 151 paragraphs from https://en.wikipedia.org/wiki/Roman_Empire
+2025-04-30 16:51:04,354 - INFO - Scraped 105 paragraphs from https://en.wikipedia.org/wiki/Ancient_Egypt
+2025-04-30 16:51:04,607 - INFO - Scraped 89 paragraphs from https://en.wikipedia.org/wiki/Big_Bang
+2025-04-30 16:51:04,975 - INFO - Scraped 150 paragraphs from https://en.wikipedia.org/wiki/American_Revolution
+2025-04-30 16:51:05,740 - INFO - Scraped 105 paragraphs from https://en.wikipedia.org/wiki/Climate_change
+2025-04-30 16:51:06,024 - INFO - Scraped 90 paragraphs from https://en.wikipedia.org/wiki/DNA
+2025-04-30 16:52:31,184 - INFO - Stored 2334 documents in FAISS
+2025-04-30 16:52:31,217 - INFO - Finished scrape_and_store
+2025-04-30 16:52:31,217 - INFO - Starting Streamlit UI
+2025-04-30 16:52:36,002 - INFO - Question: What is Photosynthesis
+Answer: Question: What is Photosynthesis
+Context: Photosynthesis (/ˌfoʊtəˈsɪnθəsɪs/ FOH-tə-SINTH-ə-sis)[1] is a system of biological processes by which photosynthetic organisms, such as most plants, algae, and cyanobacteria, convert light energy, typically from sunlight, into the chemical energy necessary to fuel their metabolism. 
+Photosynthesis usually refers to oxygenic photosynthesis, a process that produces oxygen. Photosynthetic organisms store the chemical energy so produced within intracellular organic compounds (compounds containing carbon) like sugars, glycogen, cellulose and starches. To use this stored chemical energy, an organism's cells metabolize the organic compounds through cellular respiration. Photosynthesis plays a critical role in producing and maintaining the oxygen content of the Earth's atmosphere, and it supplies most of the biological energy necessary for complex life on Earth.[2] Photosynthesis occurs in two stages. In the first stage, light-dependent reactions or light reactions capture the energy of light and use it to make the hydrogen carrier NADPH and the energy-storage molecule ATP. During the second stage, the light-independent reactions use these products to capture and reduce carbon dioxide. The general equation for photosynthesis as first proposed by Cornelis van Niel is:[17]
+Answer: The hydrogen carrier in plant photosynthesis is hydrogen(3). When it comes to the water molecules in the photosynthetic substrate, the hydrogen carrier is used for photosynthesis. The hydrogen carriers are a highly electrified process, whereas the hydrogen carriers are
+2025-04-30 16:53:14,697 - INFO - Starting script
+2025-04-30 16:53:14,703 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-30 16:53:14,890 - INFO - Starting script
+2025-04-30 16:53:14,893 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-30 16:53:19,358 - INFO - Initializing FAISSVectorStore
+2025-04-30 16:53:19,360 - INFO - Initializing HuggingFaceLLM
+2025-04-30 16:53:19,563 - INFO - Initializing FAISSVectorStore
+2025-04-30 16:53:19,563 - INFO - Initializing HuggingFaceLLM
+2025-04-30 16:53:20,895 - INFO - Starting scrape_and_store
+2025-04-30 16:53:20,896 - INFO - Documents in collection before processing: 0
+2025-04-30 16:53:21,004 - INFO - Starting scrape_and_store
+2025-04-30 16:53:21,005 - INFO - Documents in collection before processing: 0
+2025-04-30 16:53:21,501 - INFO - Scraped 7 paragraphs from https://en.wikipedia.org/wiki/Photosynthetic_pigment
+2025-04-30 16:53:21,636 - INFO - Scraped 22 paragraphs from https://en.wikipedia.org/wiki/Relativity_theory
+2025-04-30 16:53:21,773 - INFO - Scraped 50 paragraphs from https://en.wikipedia.org/wiki/Probability_theory
+2025-04-30 16:53:22,234 - INFO - Scraped 49 paragraphs from https://en.wikipedia.org/wiki/Trigonometry
+2025-04-30 16:53:22,323 - INFO - Scraped 23 paragraphs from https://en.wikipedia.org/wiki/Astrophysics
+2025-04-30 16:53:22,467 - INFO - Scraped 60 paragraphs from https://en.wikipedia.org/wiki/Thermodynamics
+2025-04-30 16:53:22,577 - INFO - Scraped 43 paragraphs from https://en.wikipedia.org/wiki/Chemical_bonding
+2025-04-30 16:53:22,721 - INFO - Scraped 83 paragraphs from https://en.wikipedia.org/wiki/Mathematical_logic
+2025-04-30 16:53:23,012 - INFO - Scraped 88 paragraphs from https://en.wikipedia.org/wiki/Plate_tectonics
+2025-04-30 16:53:23,488 - INFO - Scraped 81 paragraphs from https://en.wikipedia.org/wiki/Atomic_structure
+2025-04-30 16:53:23,629 - INFO - Scraped 83 paragraphs from https://en.wikipedia.org/wiki/Mathematical_logic
+2025-04-30 16:53:23,794 - INFO - Scraped 49 paragraphs from https://en.wikipedia.org/wiki/Trigonometry
+2025-04-30 16:53:23,898 - INFO - Scraped 47 paragraphs from https://en.wikipedia.org/wiki/Topology
+2025-04-30 16:53:23,975 - INFO - Scraped 23 paragraphs from https://en.wikipedia.org/wiki/Astrophysics
+2025-04-30 16:53:24,092 - INFO - Scraped 38 paragraphs from https://en.wikipedia.org/wiki/Differential_equations
+2025-04-30 16:53:24,213 - INFO - Scraped 51 paragraphs from https://en.wikipedia.org/wiki/Set_theory
+2025-04-30 16:53:24,708 - INFO - Scraped 62 paragraphs from https://en.wikipedia.org/wiki/Genetics
+2025-04-30 16:53:24,985 - INFO - Scraped 83 paragraphs from https://en.wikipedia.org/wiki/Photosynthesis
+2025-04-30 16:53:25,161 - INFO - Scraped 121 paragraphs from https://en.wikipedia.org/wiki/Iliad
+2025-04-30 16:53:25,602 - INFO - Scraped 108 paragraphs from https://en.wikipedia.org/wiki/Black_hole
+2025-04-30 16:53:26,090 - INFO - Scraped 73 paragraphs from https://en.wikipedia.org/wiki/Chaos_theory
+2025-04-30 16:53:26,428 - INFO - Scraped 121 paragraphs from https://en.wikipedia.org/wiki/Linear_algebra
+2025-04-30 16:53:26,542 - INFO - Scraped 116 paragraphs from https://en.wikipedia.org/wiki/Game_theory
+2025-04-30 16:53:26,818 - INFO - Scraped 76 paragraphs from https://en.wikipedia.org/wiki/Statistics
+2025-04-30 16:53:26,973 - INFO - Scraped 90 paragraphs from https://en.wikipedia.org/wiki/DNA
+2025-04-30 16:53:27,095 - INFO - Scraped 62 paragraphs from https://en.wikipedia.org/wiki/Graph_theory
+2025-04-30 16:53:27,866 - INFO - Scraped 60 paragraphs from https://en.wikipedia.org/wiki/Thermodynamics
+2025-04-30 16:53:27,902 - INFO - Scraped 73 paragraphs from https://en.wikipedia.org/wiki/Quantum_mechanics
+2025-04-30 16:53:27,984 - INFO - Scraped 30 paragraphs from https://en.wikipedia.org/wiki/Colonization_of_Africa
+2025-04-30 16:53:28,368 - INFO - Scraped 88 paragraphs from https://en.wikipedia.org/wiki/Plate_tectonics
+2025-04-30 16:53:28,392 - INFO - Scraped 121 paragraphs from https://en.wikipedia.org/wiki/Linear_algebra
+2025-04-30 16:53:28,565 - INFO - Scraped 50 paragraphs from https://en.wikipedia.org/wiki/Probability_theory
+2025-04-30 16:53:28,755 - INFO - Scraped 121 paragraphs from https://en.wikipedia.org/wiki/Iliad
+2025-04-30 16:53:28,974 - INFO - Scraped 43 paragraphs from https://en.wikipedia.org/wiki/Chemical_bonding
+2025-04-30 16:53:29,910 - INFO - Scraped 150 paragraphs from https://en.wikipedia.org/wiki/American_Revolution
+2025-04-30 16:53:29,915 - INFO - Scraped 32 paragraphs from https://en.wikipedia.org/wiki/Immunology
+2025-04-30 16:53:30,204 - INFO - Scraped 32 paragraphs from https://en.wikipedia.org/wiki/Immunology
+2025-04-30 16:53:30,284 - INFO - Scraped 65 paragraphs from https://en.wikipedia.org/wiki/Calculus
+2025-04-30 16:53:30,357 - INFO - Scraped 7 paragraphs from https://en.wikipedia.org/wiki/Photosynthetic_pigment
+2025-04-30 16:53:30,681 - INFO - Scraped 59 paragraphs from https://en.wikipedia.org/wiki/Ecosystem
+2025-04-30 16:53:30,711 - INFO - Scraped 105 paragraphs from https://en.wikipedia.org/wiki/Ancient_Egypt
+2025-04-30 16:53:30,780 - INFO - Scraped 30 paragraphs from https://en.wikipedia.org/wiki/Colonization_of_Africa
+2025-04-30 16:53:30,963 - INFO - Scraped 69 paragraphs from https://en.wikipedia.org/wiki/Geometry
+2025-04-30 16:53:31,173 - INFO - Scraped 49 paragraphs from https://en.wikipedia.org/wiki/Neuroscience
+2025-04-30 16:53:31,409 - INFO - Scraped 37 paragraphs from https://en.wikipedia.org/wiki/Homer
+2025-04-30 16:53:31,556 - INFO - Scraped 44 paragraphs from https://en.wikipedia.org/wiki/RNA
+2025-04-30 16:53:31,698 - INFO - Scraped 76 paragraphs from https://en.wikipedia.org/wiki/Statistics
+2025-04-30 16:53:31,793 - INFO - Scraped 47 paragraphs from https://en.wikipedia.org/wiki/Topology
+2025-04-30 16:53:33,134 - INFO - Scraped 51 paragraphs from https://en.wikipedia.org/wiki/Set_theory
+2025-04-30 16:53:33,499 - INFO - Scraped 59 paragraphs from https://en.wikipedia.org/wiki/Ecosystem
+2025-04-30 16:53:33,599 - INFO - Scraped 97 paragraphs from https://en.wikipedia.org/wiki/Evolution
+2025-04-30 16:53:33,740 - INFO - Scraped 22 paragraphs from https://en.wikipedia.org/wiki/Relativity_theory
+2025-04-30 16:53:34,021 - INFO - Scraped 62 paragraphs from https://en.wikipedia.org/wiki/Graph_theory
+2025-04-30 16:53:34,230 - INFO - Scraped 38 paragraphs from https://en.wikipedia.org/wiki/Differential_equations
+2025-04-30 16:53:34,296 - INFO - Scraped 144 paragraphs from https://en.wikipedia.org/wiki/World_War_I
+2025-04-30 16:53:35,103 - INFO - Scraped 79 paragraphs from https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall
+2025-04-30 16:53:35,439 - INFO - Scraped 240 paragraphs from https://en.wikipedia.org/wiki/Civil_Rights_Movement
+2025-04-30 16:53:35,734 - INFO - Scraped 140 paragraphs from https://en.wikipedia.org/wiki/French_Revolution
+2025-04-30 16:53:36,166 - INFO - Scraped 218 paragraphs from https://en.wikipedia.org/wiki/Industrial_Revolution
+2025-04-30 16:53:36,399 - INFO - Scraped 115 paragraphs from https://en.wikipedia.org/wiki/Mongol_Empire
+2025-04-30 16:53:36,792 - INFO - Scraped 81 paragraphs from https://en.wikipedia.org/wiki/Byzantine_Empire
+2025-04-30 16:53:38,471 - INFO - Scraped 105 paragraphs from https://en.wikipedia.org/wiki/Ancient_Egypt
+2025-04-30 16:53:38,683 - INFO - Scraped 151 paragraphs from https://en.wikipedia.org/wiki/Space_Race
+2025-04-30 16:53:39,089 - INFO - Scraped 72 paragraphs from https://en.wikipedia.org/wiki/Number_theory
+2025-04-30 16:53:39,916 - INFO - Scraped 150 paragraphs from https://en.wikipedia.org/wiki/American_Revolution
+2025-04-30 16:53:40,330 - INFO - Scraped 108 paragraphs from https://en.wikipedia.org/wiki/Black_hole
+2025-04-30 16:53:40,437 - INFO - Scraped 99 paragraphs from https://en.wikipedia.org/wiki/Middle_Ages
+2025-04-30 16:53:40,835 - INFO - Scraped 83 paragraphs from https://en.wikipedia.org/wiki/Photosynthesis
+2025-04-30 16:53:40,885 - INFO - Scraped 73 paragraphs from https://en.wikipedia.org/wiki/Chaos_theory
+2025-04-30 16:53:41,261 - INFO - Scraped 79 paragraphs from https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall
+2025-04-30 16:53:41,278 - INFO - Scraped 113 paragraphs from https://en.wikipedia.org/wiki/History_of_China
+2025-04-30 16:53:42,505 - INFO - Scraped 99 paragraphs from https://en.wikipedia.org/wiki/Middle_Ages
+2025-04-30 16:53:42,679 - INFO - Scraped 60 paragraphs from https://en.wikipedia.org/wiki/Algebra
+2025-04-30 16:53:42,945 - INFO - Scraped 89 paragraphs from https://en.wikipedia.org/wiki/Big_Bang
+2025-04-30 16:53:43,544 - INFO - Scraped 105 paragraphs from https://en.wikipedia.org/wiki/Climate_change
+2025-04-30 16:53:43,683 - INFO - Scraped 140 paragraphs from https://en.wikipedia.org/wiki/French_Revolution
+2025-04-30 16:53:43,863 - INFO - Scraped 44 paragraphs from https://en.wikipedia.org/wiki/RNA
+2025-04-30 16:53:44,307 - INFO - Scraped 106 paragraphs from https://en.wikipedia.org/wiki/Renaissance
+2025-04-30 16:53:44,342 - INFO - Scraped 49 paragraphs from https://en.wikipedia.org/wiki/Neuroscience
+2025-04-30 16:53:45,548 - INFO - Scraped 81 paragraphs from https://en.wikipedia.org/wiki/Atomic_structure
+2025-04-30 16:53:45,752 - INFO - Scraped 62 paragraphs from https://en.wikipedia.org/wiki/Genetics
+2025-04-30 16:53:46,212 - INFO - Scraped 81 paragraphs from https://en.wikipedia.org/wiki/Byzantine_Empire
+2025-04-30 16:53:46,599 - INFO - Scraped 149 paragraphs from https://en.wikipedia.org/wiki/Great_Depression
+2025-04-30 16:53:47,370 - INFO - Scraped 173 paragraphs from https://en.wikipedia.org/wiki/Vietnam_War
+2025-04-30 16:53:47,530 - INFO - Scraped 69 paragraphs from https://en.wikipedia.org/wiki/William_Shakespeare
+2025-04-30 16:53:48,122 - INFO - Scraped 116 paragraphs from https://en.wikipedia.org/wiki/Game_theory
+2025-04-30 16:53:49,962 - INFO - Scraped 151 paragraphs from https://en.wikipedia.org/wiki/Space_Race
+2025-04-30 16:53:50,221 - INFO - Scraped 65 paragraphs from https://en.wikipedia.org/wiki/Calculus
+2025-04-30 16:53:50,807 - INFO - Scraped 129 paragraphs from https://en.wikipedia.org/wiki/Indian_Independence_Movement
+2025-04-30 16:53:50,958 - INFO - Scraped 151 paragraphs from https://en.wikipedia.org/wiki/Roman_Empire
+2025-04-30 16:53:51,317 - INFO - Scraped 115 paragraphs from https://en.wikipedia.org/wiki/Mongol_Empire
+2025-04-30 16:53:51,439 - INFO - Scraped 113 paragraphs from https://en.wikipedia.org/wiki/History_of_China
+2025-04-30 16:53:51,923 - INFO - Scraped 60 paragraphs from https://en.wikipedia.org/wiki/Algebra
+2025-04-30 16:53:53,237 - INFO - Scraped 69 paragraphs from https://en.wikipedia.org/wiki/William_Shakespeare
+2025-04-30 16:53:53,702 - INFO - Scraped 69 paragraphs from https://en.wikipedia.org/wiki/Geometry
+2025-04-30 16:53:53,737 - INFO - Scraped 105 paragraphs from https://en.wikipedia.org/wiki/Climate_change
+2025-04-30 16:53:54,002 - INFO - Scraped 73 paragraphs from https://en.wikipedia.org/wiki/Quantum_mechanics
+2025-04-30 16:53:54,274 - INFO - Scraped 89 paragraphs from https://en.wikipedia.org/wiki/Big_Bang
+2025-04-30 16:53:54,682 - INFO - Scraped 90 paragraphs from https://en.wikipedia.org/wiki/DNA
+2025-04-30 16:53:55,078 - INFO - Scraped 97 paragraphs from https://en.wikipedia.org/wiki/Evolution
+2025-04-30 16:53:55,245 - INFO - Scraped 149 paragraphs from https://en.wikipedia.org/wiki/Great_Depression
+2025-04-30 16:53:57,471 - INFO - Scraped 129 paragraphs from https://en.wikipedia.org/wiki/Indian_Independence_Movement
+2025-04-30 16:53:57,680 - INFO - Scraped 123 paragraphs from https://en.wikipedia.org/wiki/World_War_II
+2025-04-30 16:53:57,878 - INFO - Scraped 37 paragraphs from https://en.wikipedia.org/wiki/Homer
+2025-04-30 16:53:58,267 - INFO - Scraped 72 paragraphs from https://en.wikipedia.org/wiki/Number_theory
+2025-04-30 16:53:58,415 - INFO - Scraped 240 paragraphs from https://en.wikipedia.org/wiki/Civil_Rights_Movement
+2025-04-30 16:53:59,597 - INFO - Scraped 151 paragraphs from https://en.wikipedia.org/wiki/Roman_Empire
+2025-04-30 16:54:00,116 - INFO - Scraped 218 paragraphs from https://en.wikipedia.org/wiki/Industrial_Revolution
+2025-04-30 16:54:01,126 - INFO - Scraped 109 paragraphs from https://en.wikipedia.org/wiki/Periodic_table
+2025-04-30 16:54:01,132 - INFO - Scraped 173 paragraphs from https://en.wikipedia.org/wiki/Vietnam_War
+2025-04-30 16:54:03,259 - INFO - Scraped 123 paragraphs from https://en.wikipedia.org/wiki/World_War_II
+2025-04-30 16:54:03,415 - INFO - Scraped 157 paragraphs from https://en.wikipedia.org/wiki/Cold_War
+2025-04-30 16:54:04,203 - INFO - Scraped 157 paragraphs from https://en.wikipedia.org/wiki/Cold_War
+2025-04-30 16:54:05,208 - INFO - Scraped 109 paragraphs from https://en.wikipedia.org/wiki/Periodic_table
+2025-04-30 16:54:05,282 - ERROR - Error scraping https://en.wikipedia.org/wiki/World_War_I: 
+2025-04-30 16:54:05,349 - INFO - Scraped 106 paragraphs from https://en.wikipedia.org/wiki/Renaissance
+2025-04-30 16:54:13,499 - INFO - Stored 5236 documents in FAISS
+2025-04-30 16:54:13,541 - INFO - Finished scrape_and_store
+2025-04-30 16:54:13,543 - INFO - Starting Streamlit UI
+2025-04-30 17:10:39,295 - INFO - Loading faiss with AVX2 support.
+2025-04-30 17:10:39,310 - INFO - Successfully loaded faiss with AVX2 support.
+2025-04-30 17:10:39,314 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-04-30 17:10:42,028 - INFO - Initializing components...
+2025-04-30 17:10:42,029 - INFO - Use pytorch device_name: cpu
+2025-04-30 17:10:42,029 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-30 17:10:46,567 - INFO - Using device: cpu
+2025-04-30 17:10:46,568 - INFO - Creating new FAISS index from scratch.
+2025-04-30 17:10:46,568 - INFO - Initializing FAISSVectorStore
+2025-04-30 17:10:46,568 - INFO - Initializing HuggingFaceLLM
+2025-04-30 17:10:49,031 - INFO - Device set to use: cpu
+2025-04-30 17:10:49,033 - INFO - Scraping and storing Wikipedia content...
+2025-04-30 17:10:49,033 - INFO - Documents in collection before processing: 0
+2025-04-30 17:10:49,866 - INFO - Scraped 7 paragraphs from https://en.wikipedia.org/wiki/Photosynthetic_pigment
+2025-04-30 17:10:50,075 - INFO - Scraped 30 paragraphs from https://en.wikipedia.org/wiki/Colonization_of_Africa
+2025-04-30 17:10:50,180 - INFO - Scraped 38 paragraphs from https://en.wikipedia.org/wiki/Differential_equations
+2025-04-30 17:10:50,250 - INFO - Scraped 43 paragraphs from https://en.wikipedia.org/wiki/Chemical_bonding
+2025-04-30 17:10:50,344 - INFO - Scraped 50 paragraphs from https://en.wikipedia.org/wiki/Probability_theory
+2025-04-30 17:10:50,421 - INFO - Scraped 47 paragraphs from https://en.wikipedia.org/wiki/Topology
+2025-04-30 17:10:50,853 - INFO - Scraped 90 paragraphs from https://en.wikipedia.org/wiki/DNA
+2025-04-30 17:10:51,031 - INFO - Scraped 113 paragraphs from https://en.wikipedia.org/wiki/History_of_China
+2025-04-30 17:10:51,452 - INFO - Scraped 108 paragraphs from https://en.wikipedia.org/wiki/Black_hole
+2025-04-30 17:10:51,608 - INFO - Scraped 49 paragraphs from https://en.wikipedia.org/wiki/Neuroscience
+2025-04-30 17:10:51,759 - INFO - Scraped 121 paragraphs from https://en.wikipedia.org/wiki/Iliad
+2025-04-30 17:10:51,901 - INFO - Scraped 121 paragraphs from https://en.wikipedia.org/wiki/Linear_algebra
+2025-04-30 17:10:52,035 - INFO - Scraped 76 paragraphs from https://en.wikipedia.org/wiki/Statistics
+2025-04-30 17:10:52,464 - INFO - Scraped 115 paragraphs from https://en.wikipedia.org/wiki/Mongol_Empire
+2025-04-30 17:10:52,816 - INFO - Scraped 240 paragraphs from https://en.wikipedia.org/wiki/Civil_Rights_Movement
+2025-04-30 17:10:53,042 - INFO - Scraped 105 paragraphs from https://en.wikipedia.org/wiki/Ancient_Egypt
+2025-04-30 17:10:53,584 - INFO - Scraped 89 paragraphs from https://en.wikipedia.org/wiki/Big_Bang
+2025-04-30 17:10:53,796 - INFO - Scraped 73 paragraphs from https://en.wikipedia.org/wiki/Quantum_mechanics
+2025-04-30 17:10:53,948 - INFO - Scraped 72 paragraphs from https://en.wikipedia.org/wiki/Number_theory
+2025-04-30 17:10:54,122 - INFO - Scraped 88 paragraphs from https://en.wikipedia.org/wiki/Plate_tectonics
+2025-04-30 17:10:54,296 - INFO - Scraped 37 paragraphs from https://en.wikipedia.org/wiki/Homer
+2025-04-30 17:10:54,452 - INFO - Scraped 49 paragraphs from https://en.wikipedia.org/wiki/Trigonometry
+2025-04-30 17:10:55,137 - INFO - Scraped 99 paragraphs from https://en.wikipedia.org/wiki/Middle_Ages
+2025-04-30 17:10:55,289 - INFO - Scraped 62 paragraphs from https://en.wikipedia.org/wiki/Genetics
+2025-04-30 17:10:55,399 - INFO - Scraped 51 paragraphs from https://en.wikipedia.org/wiki/Set_theory
+2025-04-30 17:10:55,659 - INFO - Scraped 140 paragraphs from https://en.wikipedia.org/wiki/French_Revolution
+2025-04-30 17:10:55,886 - INFO - Scraped 60 paragraphs from https://en.wikipedia.org/wiki/Algebra
+2025-04-30 17:10:55,993 - INFO - Scraped 62 paragraphs from https://en.wikipedia.org/wiki/Graph_theory
+2025-04-30 17:10:56,148 - INFO - Scraped 81 paragraphs from https://en.wikipedia.org/wiki/Atomic_structure
+2025-04-30 17:10:56,239 - INFO - Scraped 22 paragraphs from https://en.wikipedia.org/wiki/Relativity_theory
+2025-04-30 17:10:57,042 - INFO - Scraped 129 paragraphs from https://en.wikipedia.org/wiki/Indian_Independence_Movement
+2025-04-30 17:10:57,283 - INFO - Scraped 149 paragraphs from https://en.wikipedia.org/wiki/Great_Depression
+2025-04-30 17:10:57,442 - INFO - Scraped 65 paragraphs from https://en.wikipedia.org/wiki/Calculus
+2025-04-30 17:10:57,783 - INFO - Scraped 150 paragraphs from https://en.wikipedia.org/wiki/American_Revolution
+2025-04-30 17:10:58,089 - INFO - Scraped 144 paragraphs from https://en.wikipedia.org/wiki/World_War_I
+2025-04-30 17:10:58,216 - INFO - Scraped 79 paragraphs from https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall
+2025-04-30 17:10:58,519 - INFO - Scraped 81 paragraphs from https://en.wikipedia.org/wiki/Byzantine_Empire
+2025-04-30 17:10:58,647 - INFO - Scraped 44 paragraphs from https://en.wikipedia.org/wiki/RNA
+2025-04-30 17:10:59,553 - INFO - Scraped 23 paragraphs from https://en.wikipedia.org/wiki/Astrophysics
+2025-04-30 17:10:59,665 - INFO - Scraped 60 paragraphs from https://en.wikipedia.org/wiki/Thermodynamics
+2025-04-30 17:10:59,869 - INFO - Scraped 83 paragraphs from https://en.wikipedia.org/wiki/Photosynthesis
+2025-04-30 17:11:00,036 - INFO - Scraped 69 paragraphs from https://en.wikipedia.org/wiki/Geometry
+2025-04-30 17:11:00,152 - INFO - Scraped 32 paragraphs from https://en.wikipedia.org/wiki/Immunology
+2025-04-30 17:11:00,327 - INFO - Scraped 73 paragraphs from https://en.wikipedia.org/wiki/Chaos_theory
+2025-04-30 17:11:00,460 - INFO - Scraped 83 paragraphs from https://en.wikipedia.org/wiki/Mathematical_logic
+2025-04-30 17:11:00,588 - INFO - Scraped 59 paragraphs from https://en.wikipedia.org/wiki/Ecosystem
+2025-04-30 17:11:00,969 - INFO - Scraped 173 paragraphs from https://en.wikipedia.org/wiki/Vietnam_War
+2025-04-30 17:11:01,416 - INFO - Scraped 151 paragraphs from https://en.wikipedia.org/wiki/Roman_Empire
+2025-04-30 17:11:03,530 - INFO - Scraped 106 paragraphs from https://en.wikipedia.org/wiki/Renaissance
+2025-04-30 17:11:03,968 - INFO - Scraped 109 paragraphs from https://en.wikipedia.org/wiki/Periodic_table
+2025-04-30 17:11:04,602 - INFO - Scraped 105 paragraphs from https://en.wikipedia.org/wiki/Climate_change
+2025-04-30 17:11:04,905 - INFO - Scraped 218 paragraphs from https://en.wikipedia.org/wiki/Industrial_Revolution
+2025-04-30 17:11:05,247 - INFO - Scraped 97 paragraphs from https://en.wikipedia.org/wiki/Evolution
+2025-04-30 17:11:05,447 - INFO - Scraped 116 paragraphs from https://en.wikipedia.org/wiki/Game_theory
+2025-04-30 17:11:06,412 - INFO - Scraped 123 paragraphs from https://en.wikipedia.org/wiki/World_War_II
+2025-04-30 17:11:07,008 - INFO - Scraped 151 paragraphs from https://en.wikipedia.org/wiki/Space_Race
+2025-04-30 17:11:07,348 - INFO - Scraped 69 paragraphs from https://en.wikipedia.org/wiki/William_Shakespeare
+2025-04-30 17:11:07,349 - ERROR - Error scraping https://en.wikipedia.org/wiki/Cold_War: 
+2025-04-30 17:12:59,443 - INFO - Stored 5079 documents in FAISS
+2025-04-30 17:12:59,502 - INFO - Saved FAISS index to faiss_index.bin, texts to texts.pkl, and embeddings to embeddings.pkl
+2025-04-30 17:12:59,519 - INFO - Scraping completed.
+2025-04-30 17:12:59,519 - INFO - Launching Streamlit UI...
+2025-04-30 17:14:31,501 - INFO - Initializing components...
+2025-04-30 17:14:31,502 - INFO - Use pytorch device_name: cpu
+2025-04-30 17:14:31,502 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-30 17:14:36,045 - INFO - Using device: cpu
+2025-04-30 17:14:36,046 - INFO - Loading existing FAISS index and texts.
+2025-04-30 17:14:36,052 - INFO - Initializing FAISSVectorStore
+2025-04-30 17:14:36,110 - INFO - Loaded embeddings for MMR retrieval.
+2025-04-30 17:14:36,110 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-04-30 17:14:36,110 - INFO - Initializing HuggingFaceLLM
+2025-04-30 17:14:38,508 - INFO - Device set to use: cpu
+2025-04-30 17:14:38,508 - INFO - Launching Streamlit UI...
+2025-04-30 17:14:38,525 - INFO - Context same as previous: False
+2025-04-30 17:14:38,526 - INFO - Retrieved combined context (truncated): All the functions of DNA depend on interactions with proteins. These protein interactions can be non...
+2025-04-30 17:15:00,100 - INFO - Answer: DNA is a double helix that is composed of two double-stranded DNA strands. The DNA strands are separated by a membrane, and the DNA is separated by a membrane-like structure called the nucleus. The nucleus is composed of two nuclei, each containing a DNA molecule. The nucleus is composed of two nuclei, each containing a DNA molecule. The nucleus is composed of two nuclei, each containing a DNA molecule. The nucleus is composed of two nuclei, each containing a DNA molecule. The nucleus is composed of two nuclei, each containing a DNA molecule. The nucleus is composed of two nuclei, each containing a DNA molecule. The nucleus is composed of two nuclei, each containing a DNA molecule. The nucleus is
+2025-04-30 17:15:29,862 - INFO - Initializing components...
+2025-04-30 17:15:29,864 - INFO - Use pytorch device_name: cpu
+2025-04-30 17:15:29,864 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-30 17:15:33,895 - INFO - Using device: cpu
+2025-04-30 17:15:33,896 - INFO - Loading existing FAISS index and texts.
+2025-04-30 17:15:33,902 - INFO - Initializing FAISSVectorStore
+2025-04-30 17:15:33,969 - INFO - Loaded embeddings for MMR retrieval.
+2025-04-30 17:15:33,969 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-04-30 17:15:33,969 - INFO - Initializing HuggingFaceLLM
+2025-04-30 17:15:37,790 - INFO - Device set to use: cpu
+2025-04-30 17:15:37,790 - INFO - Launching Streamlit UI...
+2025-04-30 17:15:37,806 - INFO - Context same as previous: False
+2025-04-30 17:15:37,806 - INFO - Retrieved combined context (truncated): Photosynthesis (/ˌfoʊtəˈsɪnθəsɪs/ FOH-tə-SINTH-ə-sis)[1] is a system of biological processes by whic...
+2025-04-30 17:15:59,708 - INFO - Answer: Photosynthesis is a process in which photosynthetic organisms convert light energy, typically from sunlight, into the chemical energy necessary to fuel their metabolism.
+2025-04-30 17:16:20,101 - INFO - Initializing components...
+2025-04-30 17:16:20,103 - INFO - Use pytorch device_name: cpu
+2025-04-30 17:16:20,103 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-30 17:16:31,195 - INFO - Using device: cpu
+2025-04-30 17:16:31,196 - INFO - Loading existing FAISS index and texts.
+2025-04-30 17:16:31,202 - INFO - Initializing FAISSVectorStore
+2025-04-30 17:16:31,283 - INFO - Loaded embeddings for MMR retrieval.
+2025-04-30 17:16:31,283 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-04-30 17:16:31,283 - INFO - Initializing HuggingFaceLLM
+2025-04-30 17:16:33,849 - INFO - Device set to use: cpu
+2025-04-30 17:16:33,850 - INFO - Launching Streamlit UI...
+2025-04-30 17:16:33,867 - INFO - Context same as previous: False
+2025-04-30 17:16:33,867 - INFO - Retrieved combined context (truncated): Thermodynamics is a branch of physics that deals with heat, work, and temperature, and their relatio...
+2025-04-30 17:16:54,486 - INFO - Answer: The fundamental principles of thermodynamics are:
+
+1. The laws of thermodynamics are the laws of thermodynamics.
+
+2. The laws of thermodynamics are the laws of thermodynamics.
+
+3. The laws of thermodynamics are the laws of thermodynamics.
+
+4. The laws of thermodynamics are the laws of thermodynamics.
+
+5. The laws of thermodynamics are the laws of thermodynamics.
+
+6. The laws of thermodynamics are the laws of thermodynamics.
+
+7. The laws of thermodynamics are the laws of thermodynamics.
+
+8. The laws of thermodynamics are the laws of thermodynamics.
+
+9. The laws of thermodynamics are the laws of therm
+2025-04-30 17:17:22,753 - INFO - Initializing components...
+2025-04-30 17:17:22,755 - INFO - Use pytorch device_name: cpu
+2025-04-30 17:17:22,755 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-30 17:17:25,705 - INFO - Using device: cpu
+2025-04-30 17:17:25,707 - INFO - Loading existing FAISS index and texts.
+2025-04-30 17:17:25,715 - INFO - Initializing FAISSVectorStore
+2025-04-30 17:17:25,810 - INFO - Loaded embeddings for MMR retrieval.
+2025-04-30 17:17:25,810 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-04-30 17:17:25,811 - INFO - Initializing HuggingFaceLLM
+2025-04-30 17:17:27,771 - INFO - Device set to use: cpu
+2025-04-30 17:17:27,771 - INFO - Launching Streamlit UI...
+2025-04-30 17:17:27,791 - INFO - Context same as previous: False
+2025-04-30 17:17:27,792 - INFO - Retrieved combined context (truncated): As a cultural movement, the Renaissance encompassed innovative flowering of literary Latin and an ex...
+2025-04-30 17:17:47,284 - INFO - Answer: The Renaissance is a period of history and a European cultural movement covering the 15th and 16th centuries. It marked the transition from the Middle Ages to modernity and was characterized by an effort to revive and surpass the ideas and achievements of classical antiquity. Associated with great social change in most fields and disciplines, including art, architecture, politics, literature, exploration and science, the Renaissance was first centered in the Republic of Florence, then spread to the rest of Italy and later throughout Europe. The term rinascita ("rebirth") first appeared in Lives of the Artists (c. 1550) by Giorgio Vasari, while the corresponding French word renaissance was adopted into English as the term for this period during the 1830s.[
+2025-04-30 17:21:21,497 - INFO - Loading faiss with AVX2 support.
+2025-04-30 17:21:21,512 - INFO - Successfully loaded faiss with AVX2 support.
+2025-04-30 17:21:21,516 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-04-30 17:21:24,231 - INFO - Initializing components...
+2025-04-30 17:21:24,232 - INFO - Use pytorch device_name: cpu
+2025-04-30 17:21:24,232 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-30 17:21:27,364 - INFO - Using device: cpu
+2025-04-30 17:21:27,365 - INFO - Loading existing FAISS index and texts.
+2025-04-30 17:21:27,374 - INFO - Initializing FAISSVectorStore
+2025-04-30 17:21:27,458 - INFO - Loaded embeddings for MMR retrieval.
+2025-04-30 17:21:27,458 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-04-30 17:21:27,458 - INFO - Initializing HuggingFaceLLM
+2025-04-30 17:21:29,514 - INFO - Device set to use: cpu
+2025-04-30 17:21:29,516 - INFO - Launching Streamlit UI...
+2025-04-30 17:21:41,327 - INFO - Initializing components...
+2025-04-30 17:21:41,328 - INFO - Use pytorch device_name: cpu
+2025-04-30 17:21:41,328 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-30 17:21:44,361 - INFO - Using device: cpu
+2025-04-30 17:21:44,362 - INFO - Loading existing FAISS index and texts.
+2025-04-30 17:21:44,372 - INFO - Initializing FAISSVectorStore
+2025-04-30 17:21:44,464 - INFO - Loaded embeddings for MMR retrieval.
+2025-04-30 17:21:44,464 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-04-30 17:21:44,464 - INFO - Initializing HuggingFaceLLM
+2025-04-30 17:21:46,102 - INFO - Device set to use: cpu
+2025-04-30 17:21:46,102 - INFO - Launching Streamlit UI...
+2025-04-30 17:21:46,120 - INFO - Context same as previous: False
+2025-04-30 17:21:46,121 - INFO - Question: What is DNA and what is its function in living organisms?
+Full Retrieved Context:
+All the functions of DNA depend on interactions with proteins. These protein interactions can be non-specific, or the protein can bind specifically to a single DNA sequence. Enzymes can also bind to DNA and of these, the polymerases that copy the DNA base sequence in transcription and DNA replication are particularly important.
+
+DNA usually occurs as linear chromosomes in eukaryotes, and circular chromosomes in prokaryotes. The set of chromosomes in a cell makes up its genome; the human genome has approximately 3 billion base pairs of DNA arranged into 46 chromosomes.[96] The information carried by DNA is held in the sequence of pieces of DNA called genes. Transmission of genetic information in genes is achieved via complementary base pairing. For example, in transcription, when a cell uses the information in a gene, the DNA sequence is copied into a complementary RNA sequence through the attraction between the DNA and the correct RNA nucleotides. Usually, this RNA copy is then used to make a matching protein sequence in a process called translation, which depends on the same interaction between RNA nucleotides. In an alternative fashion, a cell may copy its genetic information in a process called DNA replication. The details of these functions are covered in other articles; here the focus is on the interactions between DNA and other molecules that mediate the function of the genome.
+
+Deoxyribonucleic acid (/diːˈɒksɪˌraɪboʊnjuːˌkliːɪk, -ˌkleɪ-/ ⓘ;[1] DNA) is a polymer composed of two polynucleotide chains that coil around each other to form a double helix. The polymer carries genetic instructions for the development, functioning, growth and reproduction of all known organisms and many viruses. DNA and ribonucleic acid (RNA) are nucleic acids. Alongside proteins, lipids and complex carbohydrates (polysaccharides), nucleic acids are one of the four major types of macromolecules that are essential for all known forms of life.
+
+Ribonucleic acid (RNA) is a polymeric molecule that is essential for most biological functions, either by performing the function itself (non-coding RNA) or by forming a template for the production of proteins (messenger RNA). RNA and deoxyribonucleic acid (DNA) are nucleic acids. The nucleic acids constitute one of the four major macromolecules essential for all known forms of life. RNA is assembled as a chain of nucleotides. Cellular organisms use messenger RNA (mRNA) to convey genetic information (using the nitrogenous bases of guanine, uracil, adenine, and cytosine, denoted by the letters G, U, A, and C) that directs synthesis of specific proteins. Many viruses encode their genetic information using an RNA genome.
+
+Although the structure of DNA showed how inheritance works, it was still not known how DNA influences the behavior of cells. In the following years, scientists tried to understand how DNA controls the process of protein production.[35] It was discovered that the cell uses DNA as a template to create matching messenger RNA, molecules with nucleotides very similar to DNA. The nucleotide sequence of a messenger RNA is used to create an amino acid sequence in protein; this translation between nucleotide sequences and amino acid sequences is known as the genetic code.[36]
+2025-04-30 17:22:06,420 - INFO - Answer: DNA is a polymeric molecule that is essential for most biological functions, either by performing the function itself (non-coding RNA) or by forming a template for the production of proteins (messenger RNA). DNA is assembled as a chain of nucleotides. Cellular organisms use messenger RNA (mRNA) to convey genetic information (using the nitrogenous bases of guanine, uracil, adenine, and cytosine, denoted by the letters G, U, A, and C) that directs synthesis of specific proteins. Many viruses encode their genetic information using an RNA genome.
+
+DNA is a polymeric molecule that is essential for most biological functions, either by performing the function itself (non-coding RNA
+2025-04-30 17:22:30,771 - INFO - Initializing components...
+2025-04-30 17:22:30,772 - INFO - Use pytorch device_name: cpu
+2025-04-30 17:22:30,773 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-30 17:22:34,535 - INFO - Using device: cpu
+2025-04-30 17:22:34,537 - INFO - Loading existing FAISS index and texts.
+2025-04-30 17:22:34,545 - INFO - Initializing FAISSVectorStore
+2025-04-30 17:22:34,627 - INFO - Loaded embeddings for MMR retrieval.
+2025-04-30 17:22:34,627 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-04-30 17:22:34,627 - INFO - Initializing HuggingFaceLLM
+2025-04-30 17:22:36,686 - INFO - Device set to use: cpu
+2025-04-30 17:22:36,687 - INFO - Launching Streamlit UI...
+2025-04-30 17:22:36,702 - INFO - Context same as previous: False
+2025-04-30 17:22:36,703 - INFO - Question: What is DNA
+Full Retrieved Context:
+Deoxyribonucleic acid (/diːˈɒksɪˌraɪboʊnjuːˌkliːɪk, -ˌkleɪ-/ ⓘ;[1] DNA) is a polymer composed of two polynucleotide chains that coil around each other to form a double helix. The polymer carries genetic instructions for the development, functioning, growth and reproduction of all known organisms and many viruses. DNA and ribonucleic acid (RNA) are nucleic acids. Alongside proteins, lipids and complex carbohydrates (polysaccharides), nucleic acids are one of the four major types of macromolecules that are essential for all known forms of life.
+
+DNA normally exists as a double-stranded molecule, coiled into the shape of a double helix. Each nucleotide in DNA preferentially pairs with its partner nucleotide on the opposite strand: A pairs with T, and C pairs with G. Thus, in its two-stranded form, each strand effectively contains all necessary information, redundant with its partner strand. This structure of DNA is the physical basis for inheritance: DNA replication duplicates the genetic information by splitting the strands and using each strand as a template for synthesis of a new partner strand.[59]
+
+DNA as a storage device for information has enormous potential since it has much higher storage density compared to electronic devices. However, high costs, slow read and write times (memory latency), and insufficient reliability has prevented its practical use.[185][186]
+
+Genomic DNA is tightly and orderly packed in the process called DNA condensation, to fit the small available volumes of the cell. In eukaryotes, DNA is located in the cell nucleus, with small amounts in mitochondria and chloroplasts. In prokaryotes, the DNA is held within an irregularly shaped body in the cytoplasm called the nucleoid.[97] The genetic information in a genome is held within genes, and the complete set of this information in an organism is called its genotype. A gene is a unit of heredity and is a region of DNA that influences a particular characteristic in an organism. Genes contain an open reading frame that can be transcribed, and regulatory sequences such as promoters and enhancers, which control transcription of the open reading frame.
+
+Genes are arranged linearly along long chains of DNA base-pair sequences. In bacteria, each cell usually contains a single circular genophore, while eukaryotic organisms (such as plants and animals) have their DNA arranged in multiple linear chromosomes. These DNA strands are often extremely long; the largest human chromosome, for example, is about 247 million base pairs in length.[60] The DNA of a chromosome is associated with structural proteins that organize, compact, and control access to the DNA, forming a material called chromatin; in eukaryotes, chromatin is usually composed of nucleosomes, segments of DNA wound around cores of histone proteins.[61] The full set of hereditary material in an organism (usually the combined DNA sequences of all chromosomes) is called the genome.
+2025-04-30 17:22:59,184 - INFO - Answer: DNA is a double-stranded DNA molecule that is composed of two strands of DNA. The DNA is composed of two double-stranded DNA molecules, each of which has a complementary strand of DNA. The two strands of DNA are called DNA and RNA.
+
+DNA is a double-stranded DNA molecule that is composed of two strands of DNA. The DNA is composed of two double-stranded DNA molecules, each of which has a complementary strand of DNA. The two strands of DNA are called DNA and RNA.
+
+DNA is a double-stranded DNA molecule that is composed of two strands of DNA. The DNA is composed of two double-stranded DNA molecules, each of which has a complementary strand of DNA. The
+2025-04-30 17:31:44,654 - INFO - Loading faiss with AVX2 support.
+2025-04-30 17:31:44,669 - INFO - Successfully loaded faiss with AVX2 support.
+2025-04-30 17:31:44,673 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-04-30 17:31:47,366 - INFO - Initializing components...
+2025-04-30 17:31:47,367 - INFO - Use pytorch device_name: cpu
+2025-04-30 17:31:47,367 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-30 17:31:52,587 - INFO - Using device: cpu
+2025-04-30 17:31:52,588 - INFO - Loading existing FAISS index and texts.
+2025-04-30 17:31:52,598 - INFO - Initializing FAISSVectorStore
+2025-04-30 17:31:52,686 - INFO - Loaded embeddings for MMR retrieval.
+2025-04-30 17:31:52,686 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-04-30 17:31:52,687 - INFO - Initializing HuggingFaceLLM
+2025-04-30 17:35:05,628 - INFO - Device set to use: cpu
+2025-04-30 17:35:05,629 - INFO - Launching Streamlit UI...
+2025-04-30 17:35:14,336 - INFO - Initializing components...
+2025-04-30 17:35:14,337 - INFO - Use pytorch device_name: cpu
+2025-04-30 17:35:14,337 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-30 17:35:17,327 - INFO - Using device: cpu
+2025-04-30 17:35:17,329 - INFO - Loading existing FAISS index and texts.
+2025-04-30 17:35:17,339 - INFO - Initializing FAISSVectorStore
+2025-04-30 17:35:17,423 - INFO - Loaded embeddings for MMR retrieval.
+2025-04-30 17:35:17,423 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-04-30 17:35:17,423 - INFO - Initializing HuggingFaceLLM
+2025-04-30 17:35:18,704 - INFO - Device set to use: cpu
+2025-04-30 17:35:18,705 - INFO - Launching Streamlit UI...
+2025-04-30 17:35:18,724 - INFO - Context same as previous: False
+2025-04-30 17:35:18,725 - INFO - Question: What is DNA and what is its function in living organisms?
+Full Retrieved Context:
+All the functions of DNA depend on interactions with proteins. These protein interactions can be non-specific, or the protein can bind specifically to a single DNA sequence. Enzymes can also bind to DNA and of these, the polymerases that copy the DNA base sequence in transcription and DNA replication are particularly important.
+
+DNA usually occurs as linear chromosomes in eukaryotes, and circular chromosomes in prokaryotes. The set of chromosomes in a cell makes up its genome; the human genome has approximately 3 billion base pairs of DNA arranged into 46 chromosomes.[96] The information carried by DNA is held in the sequence of pieces of DNA called genes. Transmission of genetic information in genes is achieved via complementary base pairing. For example, in transcription, when a cell uses the information in a gene, the DNA sequence is copied into a complementary RNA sequence through the attraction between the DNA and the correct RNA nucleotides. Usually, this RNA copy is then used to make a matching protein sequence in a process called translation, which depends on the same interaction between RNA nucleotides. In an alternative fashion, a cell may copy its genetic information in a process called DNA replication. The details of these functions are covered in other articles; here the focus is on the interactions between DNA and other molecules that mediate the function of the genome.
+
+Deoxyribonucleic acid (/diːˈɒksɪˌraɪboʊnjuːˌkliːɪk, -ˌkleɪ-/ ⓘ;[1] DNA) is a polymer composed of two polynucleotide chains that coil around each other to form a double helix. The polymer carries genetic instructions for the development, functioning, growth and reproduction of all known organisms and many viruses. DNA and ribonucleic acid (RNA) are nucleic acids. Alongside proteins, lipids and complex carbohydrates (polysaccharides), nucleic acids are one of the four major types of macromolecules that are essential for all known forms of life.
+
+Ribonucleic acid (RNA) is a polymeric molecule that is essential for most biological functions, either by performing the function itself (non-coding RNA) or by forming a template for the production of proteins (messenger RNA). RNA and deoxyribonucleic acid (DNA) are nucleic acids. The nucleic acids constitute one of the four major macromolecules essential for all known forms of life. RNA is assembled as a chain of nucleotides. Cellular organisms use messenger RNA (mRNA) to convey genetic information (using the nitrogenous bases of guanine, uracil, adenine, and cytosine, denoted by the letters G, U, A, and C) that directs synthesis of specific proteins. Many viruses encode their genetic information using an RNA genome.
+
+Although the structure of DNA showed how inheritance works, it was still not known how DNA influences the behavior of cells. In the following years, scientists tried to understand how DNA controls the process of protein production.[35] It was discovered that the cell uses DNA as a template to create matching messenger RNA, molecules with nucleotides very similar to DNA. The nucleotide sequence of a messenger RNA is used to create an amino acid sequence in protein; this translation between nucleotide sequences and amino acid sequences is known as the genetic code.[36]
+2025-04-30 17:36:28,937 - INFO - Answer: DNA is a polymer composed of two polynucleotide chains that coil around each other to form a double helix. The polymer carries genetic instructions for the development, functioning, growth and reproduction of all known organisms and many viruses. DNA and ribonucleic acid (RNA) are nucleic acids. Alongside proteins, lipids and complex carbohydrates (polysaccharides), nucleic acids are one of the four major types of macromolecules that are essential for all known forms of life.
+
+Ribonucleic acid (RNA) is a polymeric molecule that is essential for most biological functions, either by performing the function itself (non-coding RNA) or by forming a template for the production of proteins (mess
+2025-04-30 17:37:04,063 - INFO - Initializing components...
+2025-04-30 17:37:04,065 - INFO - Use pytorch device_name: cpu
+2025-04-30 17:37:04,065 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-30 17:37:07,063 - INFO - Using device: cpu
+2025-04-30 17:37:07,064 - INFO - Loading existing FAISS index and texts.
+2025-04-30 17:37:07,070 - INFO - Initializing FAISSVectorStore
+2025-04-30 17:37:07,155 - INFO - Loaded embeddings for MMR retrieval.
+2025-04-30 17:37:07,155 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-04-30 17:37:07,156 - INFO - Initializing HuggingFaceLLM
+2025-04-30 17:37:08,236 - INFO - Device set to use: cpu
+2025-04-30 17:37:08,237 - INFO - Launching Streamlit UI...
+2025-04-30 17:37:08,253 - INFO - Context same as previous: False
+2025-04-30 17:37:08,253 - INFO - Question: Who were the major figures in the Renaissance?
+Full Retrieved Context:
+As a cultural movement, the Renaissance encompassed innovative flowering of literary Latin and an explosion of vernacular literatures, beginning with the 14th-century resurgence of learning based on classical sources, which contemporaries credited to Petrarch; the development of linear perspective and other techniques of rendering a more natural reality in painting; and gradual but widespread educational reform. It saw myriad artistic developments and contributions from such polymaths as Leonardo da Vinci and Michelangelo, who inspired the term "Renaissance man".[5][6] In politics, the Renaissance contributed to the development of the customs and conventions of diplomacy, and in science to an increased reliance on observation and inductive reasoning. The period also saw revolutions in other intellectual and social scientific pursuits, as well as the introduction of modern banking and the field of accounting.[7]
+
+Other important figures of Hungarian Renaissance include Bálint Balassi (poet), Sebestyén Tinódi Lantos (poet), Bálint Bakfark (composer and lutenist), and Master MS (fresco painter).
+
+The Swiss historian Jacob Burckhardt (1818–1897) in his The Civilization of the Renaissance in Italy (1860), by contrast, defined the Renaissance as the period between Giotto and Michelangelo in Italy, that is, the 14th to mid-16th centuries. He saw in the Renaissance the emergence of the modern spirit of individuality, which the Middle Ages had stifled.[149] His book was widely read and became influential in the development of the modern interpretation of the Italian Renaissance.[150]
+
+The Renaissance (UK: /rɪˈneɪsəns/ rin-AY-sənss, US: /ˈrɛnəsɑːns/ ⓘ REN-ə-sahnss)[1][2][a] is a period of history and a European cultural movement covering the 15th and 16th centuries. It marked the transition from the Middle Ages to modernity and was characterized by an effort to revive and surpass the ideas and achievements of classical antiquity. Associated with great social change in most fields and disciplines, including art, architecture, politics, literature, exploration and science, the Renaissance was first centered in the Republic of Florence, then spread to the rest of Italy and later throughout Europe. The term rinascita ("rebirth") first appeared in Lives of the Artists (c. 1550) by Giorgio Vasari, while the corresponding French word renaissance was adopted into English as the term for this period during the 1830s.[4][b]
+
+The Renaissance has a long and complex historiography, and in line with general skepticism of discrete periodizations, there has been much debate among historians reacting to the 19th-century glorification of the "Renaissance" and individual cultural heroes as "Renaissance men", questioning the usefulness of Renaissance as a term and as a historical delineation.[19]
+2025-04-30 17:38:16,406 - INFO - Answer: The Renaissance was the period of the birth of the human mind and spirit, and the flowering of human genius and creativity. The Renaissance was the period of the birth of the human mind and spirit, and the flowering of human genius and creativity.
+
+The Renaissance was the period of the birth of the human mind and spirit, and the flowering of human genius and creativity.
+
+The Renaissance was the period of the birth of the human mind and spirit, and the flowering of human genius and creativity.
+
+The Renaissance was the period of the birth of the human mind and spirit, and the flowering of human genius and creativity.
+
+The Renaissance was the period of the birth of the human mind and spirit, and the flowering of human

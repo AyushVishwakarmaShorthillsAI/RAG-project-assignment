@@ -18,7 +18,7 @@ class HuggingFaceLLM(BaseLLM):
     """Concrete LLM using HuggingFace transformers."""
     def __init__(self):
         logging.info("Initializing HuggingFaceLLM")
-        model_name = "facebook/opt-350m"
+        model_name = "EleutherAI/gpt-neo-1.3B"
         self.tokenizer = AutoTokenizer.from_pretrained(model_name)
         self.model = AutoModelForCausalLM.from_pretrained(model_name)
         device = 0 if torch.cuda.is_available() else -1
@@ -29,9 +29,9 @@ class HuggingFaceLLM(BaseLLM):
             tokenizer=self.tokenizer,
             device=device,
             max_new_tokens=150,
-            temperature=0.7,  # Increase for more diversity
-            top_p=0.9,        # Add top-p sampling for better output
-            do_sample=True    # Enable sampling to avoid repetition
+            temperature=0.6,  # Increased for better diversity
+            top_p=0.9,
+            do_sample=True
         )
     
     def generate(self, prompt: str) -> str:
@@ -39,7 +39,7 @@ class HuggingFaceLLM(BaseLLM):
             response = self.generator(
                 prompt,
                 max_new_tokens=150,
-                temperature=0.7,
+                temperature=0.6,
                 top_p=0.9,
                 do_sample=True,
                 num_return_sequences=1

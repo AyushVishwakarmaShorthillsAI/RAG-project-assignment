@@ -6,7 +6,6 @@ from sentence_transformers import SentenceTransformer
 from typing import List, Optional
 import pickle
 import os
-from sklearn.metrics.pairwise import cosine_similarity
 
 # Configure logging
 logging.basicConfig(filename='rag_project.log', level=logging.INFO,
@@ -27,16 +26,16 @@ class FAISSVectorStore(BaseVectorStore):
     def __init__(self, embedding_model: SentenceTransformer, dimension: int = 384):
         logging.info("Initializing FAISSVectorStore")
         self.embedding_model = embedding_model
-        self.index = faiss.IndexFlatL2(dimension)  # L2 distance index
+        self.index = faiss.IndexFlatL2(dimension) 
         self.texts = []
-        self.embeddings = []  # Store for MMR post-processing
+        self.embeddings = []  
 
     def store(self, texts: List[str], embeddings: List[List[float]]):
         if not texts:
             logging.warning("No texts provided for storing.")
             return
         embeddings_np = np.array(embeddings, dtype=np.float32)
-        faiss.normalize_L2(embeddings_np)  # Normalize for better retrieval
+        faiss.normalize_L2(embeddings_np)  
         self.index.add(embeddings_np)
         self.texts.extend(texts)
         self.embeddings.extend(embeddings_np.tolist())
@@ -55,19 +54,20 @@ class FAISSVectorStore(BaseVectorStore):
 
         return selected_texts
 
-    def _mmr(self, query_embedding, doc_embeddings, texts, k=5, lambda_param=0.5) -> List[str]:
+    def _mmr(self, query_embedding, doc_embeddings, texts, k=10, lambda_param=0.5) -> List[str]:
         selected = []
         selected_indices = []
-        similarity_to_query = cosine_similarity(doc_embeddings, [query_embedding])
+        # Use pre-stored embeddings for MMR
+        similarity_to_query = np.dot(doc_embeddings, np.array(query_embedding).reshape(-1, 1)).flatten()
 
         while len(selected) < k and len(selected) < len(texts):
             scores = []
             for i in range(len(texts)):
                 if i in selected_indices:
                     continue
-                relevance = similarity_to_query[i][0]
+                relevance = similarity_to_query[i]
                 diversity = max(
-                    cosine_similarity([doc_embeddings[i]], [doc_embeddings[j]])[0][0]
+                    np.dot(doc_embeddings[i], doc_embeddings[j])
                     for j in selected_indices
                 ) if selected_indices else 0
                 mmr_score = lambda_param * relevance - (1 - lambda_param) * diversity

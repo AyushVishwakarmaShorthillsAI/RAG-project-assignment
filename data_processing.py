@@ -11,7 +11,7 @@ except ImportError:
     from vector_store import BaseVectorStore
 
 # Configure logging
-logging.basicConfig(filename='rag_project.log', level=logging.INFO, 
+logging.basicConfig(filename='rag_project.log', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 async def scrape_and_store(scraper: BaseScraper, vector_store: BaseVectorStore, urls: List[str], 

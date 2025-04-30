@@ -32,25 +32,38 @@ logger.addHandler(logging.StreamHandler(sys.stdout))
 
 RUN_FLAG = False  # Prevents multiple Streamlit executions
 
-
 def run_ui(rag_pipeline: RAGPipeline):
     """Streamlit UI for querying the RAG pipeline."""
     st.title("RAG-LLM Q&A System")
+
+    # Initialize session state
+    if 'last_question' not in st.session_state:
+        st.session_state.last_question = None
+    if 'answer' not in st.session_state:
+        st.session_state.answer = None
+    if 'response_time' not in st.session_state:
+        st.session_state.response_time = None
 
     with st.form("query_form"):
         question = st.text_input("Enter your question:")
         submitted = st.form_submit_button("Get Answer")
 
-        if submitted:
-            if question.strip():
+        if submitted and question.strip():
+            # Only process if the question is new
+            if question != st.session_state.last_question:
                 start = time.time()
                 answer = rag_pipeline.process(question)
                 duration = time.time() - start
-                st.markdown(f"**Answer:** {answer}")
-                st.markdown(f"**Response Time:** {duration:.2f} seconds")
+                # Update session state
+                st.session_state.last_question = question
+                st.session_state.answer = answer
+                st.session_state.response_time = duration
+            # Display the result
+            if st.session_state.answer:
+                st.markdown(f"**Answer:** {st.session_state.answer}")
+                st.markdown(f"**Response Time:** {st.session_state.response_time:.2f} seconds")
             else:
                 st.warning("Please enter a valid question.")
-
 
 async def main_async():
     global RUN_FLAG
@@ -154,6 +167,9 @@ async def main_async():
     except Exception as e:
         logger.exception(f"Application failed: {e}")
 
-
+# Run the async function within Streamlit's event loop
 if __name__ == "__main__":
-    asyncio.run(main_async())
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
+    loop.run_until_complete(main_async())
+    loop.close()
