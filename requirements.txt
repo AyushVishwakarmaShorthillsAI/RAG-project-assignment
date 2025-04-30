@@ -1,0 +1,8 @@
+torch
+aiohttp
+faiss-cpu
+sentence-transformers
+transformers
+streamlit
+beautifulsoup4
+numpy

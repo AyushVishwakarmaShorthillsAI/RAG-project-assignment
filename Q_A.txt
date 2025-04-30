@@ -1,0 +1,32 @@
+Questions and Possible Answers
+
+    What was a key cause of the Industrial Revolution?
+        Topic: Industrial Revolution
+        Possible Answer: A key cause of the Industrial Revolution was the development and widespread use of the steam engine, along with the availability of coal and iron as resources. This technological advancement, starting in Britain in the late 18th century, enabled mechanized production, transformed industries, and spurred urbanization.
+    How does photosynthesis convert sunlight into energy?
+        Topic: Photosynthesis
+        Possible Answer: Photosynthesis converts sunlight into energy through two main stages: the light-dependent reactions, where chlorophyll in plant cells captures sunlight to produce ATP and NADPH, and the light-independent reactions (Calvin cycle), where these energy carriers help convert carbon dioxide and water into glucose, a form of chemical energy.
+    What were the main events of the American Revolution?
+        Topic: American Revolution
+        Possible Answer: The main events of the American Revolution include the Boston Tea Party (1773), the Battles of Lexington and Concord (1775), the Declaration of Independence (1776), the Battle of Saratoga (1777), and the surrender of British General Cornwallis at Yorktown (1781), leading to American independence.
+    What is the role of DNA in genetic inheritance?
+        Topic: DNA
+        Possible Answer: DNA (deoxyribonucleic acid) serves as the hereditary material in humans and almost all other organisms. Its role in genetic inheritance is to store genetic information, encode proteins through gene expression, and pass traits from parents to offspring via replication during cell division.
+    What are the fundamental principles of thermodynamics?
+        Topic: Thermodynamics
+        Possible Answer: The fundamental principles of thermodynamics include the four laws: (1) Zeroth Law establishes temperature equilibrium, (2) First Law (Law of Energy Conservation) states energy cannot be created or destroyed, (3) Second Law introduces entropy and the direction of heat flow, and (4) Third Law states that the entropy of a perfect crystal approaches zero as temperature nears absolute zero.
+    Who were the major figures in the Renaissance?
+        Topic: Renaissance
+        Possible Answer: Major figures in the Renaissance include Leonardo da Vinci (artist and inventor), Michelangelo (sculptor and painter), Raphael (painter), Niccolò Machiavelli (political philosopher), and Desiderius Erasmus (humanist scholar), who contributed to art, science, and intellectual revival in Europe (14th–17th centuries).
+    What is the significance of plate tectonics in shaping Earth's surface?
+        Topic: Plate Tectonics
+        Possible Answer: Plate tectonics is significant in shaping Earth's surface as it explains the movement of lithospheric plates, leading to the formation of mountains (e.g., Himalayas), ocean basins, and continents. It also causes earthquakes and volcanic activity, driving the dynamic reshaping of the planet’s crust.
+    What are the key concepts in linear algebra?
+        Topic: Linear Algebra
+        Possible Answer: Key concepts in linear algebra include vectors, matrices, determinants, eigenvalues, and linear transformations. These are used to solve systems of linear equations, analyze multidimensional spaces, and underpin applications in computer graphics, machine learning, and physics.
+    What were the major consequences of the Cold War?
+        Topic: Cold War
+        Possible Answer: Major consequences of the Cold War include the division of Europe into Eastern and Western blocs, the arms race and nuclear proliferation, the fall of the Berlin Wall (1989) and Soviet Union (1991), and the spread of ideological conflicts, shaping global politics and alliances.
+    How did the Mongol Empire expand its territory?
+        Topic: Mongol Empire
+        Possible Answer: The Mongol Empire expanded its territory through a highly organized military under Genghis Khan and his successors, using innovative tactics like cavalry mobility, psychological warfare, and alliances. They conquered vast regions, including China, Central Asia, and parts of Europe and the Middle East, from the 13th to 14th centuries.
