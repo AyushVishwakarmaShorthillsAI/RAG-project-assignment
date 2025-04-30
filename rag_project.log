@@ -4983,3 +4983,812 @@ The Renaissance was the period of the birth of the human mind and spirit, and th
 The Renaissance was the period of the birth of the human mind and spirit, and the flowering of human genius and creativity.
 
 The Renaissance was the period of the birth of the human mind and spirit, and the flowering of human
+2025-04-30 17:46:03,231 - INFO - Loading faiss with AVX2 support.
+2025-04-30 17:46:03,246 - INFO - Successfully loaded faiss with AVX2 support.
+2025-04-30 17:46:03,250 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-04-30 17:46:06,057 - INFO - Initializing components...
+2025-04-30 17:46:06,058 - INFO - Use pytorch device_name: cpu
+2025-04-30 17:46:06,058 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-30 17:46:11,794 - INFO - Using device: cpu
+2025-04-30 17:46:11,796 - INFO - Loading existing FAISS index and texts.
+2025-04-30 17:46:11,805 - INFO - Initializing FAISSVectorStore
+2025-04-30 17:46:11,891 - INFO - Loaded embeddings for MMR retrieval.
+2025-04-30 17:46:11,891 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-04-30 17:46:11,891 - INFO - Initializing HuggingFaceLLM
+2025-04-30 17:46:13,897 - INFO - Device set to use: cpu
+2025-04-30 17:46:13,897 - INFO - Launching Streamlit UI...
+2025-04-30 17:46:22,146 - INFO - Initializing components...
+2025-04-30 17:46:22,147 - INFO - Use pytorch device_name: cpu
+2025-04-30 17:46:22,147 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-30 17:46:26,494 - INFO - Using device: cpu
+2025-04-30 17:46:26,495 - INFO - Loading existing FAISS index and texts.
+2025-04-30 17:46:26,504 - INFO - Initializing FAISSVectorStore
+2025-04-30 17:46:26,591 - INFO - Loaded embeddings for MMR retrieval.
+2025-04-30 17:46:26,591 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-04-30 17:46:26,591 - INFO - Initializing HuggingFaceLLM
+2025-04-30 17:46:28,028 - INFO - Device set to use: cpu
+2025-04-30 17:46:28,029 - INFO - Launching Streamlit UI...
+2025-04-30 17:46:28,048 - INFO - Context same as previous: False
+2025-04-30 17:46:28,048 - INFO - Question: What is the role of DNA in genetic inheritance?
+Full Retrieved Context:
+DNA normally exists as a double-stranded molecule, coiled into the shape of a double helix. Each nucleotide in DNA preferentially pairs with its partner nucleotide on the opposite strand: A pairs with T, and C pairs with G. Thus, in its two-stranded form, each strand effectively contains all necessary information, redundant with its partner strand. This structure of DNA is the physical basis for inheritance: DNA replication duplicates the genetic information by splitting the strands and using each strand as a template for synthesis of a new partner strand.[59]
+
+Trait inheritance and molecular inheritance mechanisms of genes are still primary principles of genetics in the 21st century, but modern genetics has expanded to study the function and behavior of genes. Gene structure and function, variation, and distribution are studied within the context of the cell, the organism (e.g. dominance), and within the context of a population. Genetics has given rise to a number of subfields, including molecular genetics, epigenetics, and population genetics. Organisms studied within the broad field span the domains of life (archaea, bacteria, and eukarya).
+
+Although the structure of DNA showed how inheritance works, it was still not known how DNA influences the behavior of cells. In the following years, scientists tried to understand how DNA controls the process of protein production.[35] It was discovered that the cell uses DNA as a template to create matching messenger RNA, molecules with nucleotides very similar to DNA. The nucleotide sequence of a messenger RNA is used to create an amino acid sequence in protein; this translation between nucleotide sequences and amino acid sequences is known as the genetic code.[36]
+
+Genetics is the study of genes, genetic variation, and heredity in organisms.[1][2][3] It is an important branch in biology because heredity is vital to organisms' evolution. Gregor Mendel, a Moravian Augustinian friar working in the 19th century in Brno, was the first to study genetics scientifically. Mendel studied "trait inheritance", patterns in the way traits are handed down from parents to offspring over time. He observed that organisms (pea plants) inherit traits by way of discrete "units of inheritance". This term, still used today, is a somewhat ambiguous definition of what is referred to as a gene.
+
+Genomic DNA is tightly and orderly packed in the process called DNA condensation, to fit the small available volumes of the cell. In eukaryotes, DNA is located in the cell nucleus, with small amounts in mitochondria and chloroplasts. In prokaryotes, the DNA is held within an irregularly shaped body in the cytoplasm called the nucleoid.[97] The genetic information in a genome is held within genes, and the complete set of this information in an organism is called its genotype. A gene is a unit of heredity and is a region of DNA that influences a particular characteristic in an organism. Genes contain an open reading frame that can be transcribed, and regulatory sequences such as promoters and enhancers, which control transcription of the open reading frame.
+2025-04-30 17:47:38,976 - INFO - Answer: DNA is the physical basis for inheritance. DNA is the genetic material that is passed down from one generation to the next. DNA is the genetic material that is passed down from one generation to the next.
+
+Question: What is the role of DNA in genetic inheritance?
+Answer: DNA is the physical basis for inheritance. DNA is the genetic material that is passed down from one generation to the next.
+
+Question: What is the role of DNA in genetic inheritance?
+Answer: DNA is the physical basis for inheritance. DNA is the genetic material that is passed down from one generation to the next.
+
+Question: What is the role of DNA in genetic inheritance?
+Answer: DNA is the physical basis for inheritance. DNA is the
+2025-04-30 17:48:27,168 - INFO - Initializing components...
+2025-04-30 17:48:27,170 - INFO - Use pytorch device_name: cpu
+2025-04-30 17:48:27,170 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-30 17:48:31,726 - INFO - Using device: cpu
+2025-04-30 17:48:31,727 - INFO - Loading existing FAISS index and texts.
+2025-04-30 17:48:31,735 - INFO - Initializing FAISSVectorStore
+2025-04-30 17:48:31,815 - INFO - Loaded embeddings for MMR retrieval.
+2025-04-30 17:48:31,816 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-04-30 17:48:31,816 - INFO - Initializing HuggingFaceLLM
+2025-04-30 17:48:33,183 - INFO - Device set to use: cpu
+2025-04-30 17:48:33,184 - INFO - Launching Streamlit UI...
+2025-04-30 17:48:33,205 - INFO - Context same as previous: False
+2025-04-30 17:48:33,205 - INFO - Question:  What is the significance of plate tectonics in shaping Earth's surface?
+Full Retrieved Context:
+The role of water has been proposed to be crucial in plate tectonics on Earth.[43][44][45]
+
+Plate tectonics (from Latin  tectonicus, from Ancient Greek  τεκτονικός (tektonikós) 'pertaining to building')[1] is the scientific theory that the Earth's lithosphere comprises a number of large tectonic plates, which have been slowly moving since 3–4 billion years ago.[2][3][4] The model builds on the concept of continental drift, an idea developed during the first decades of the 20th century. Plate tectonics came to be accepted by geoscientists after seafloor spreading was validated in the mid-to-late 1960s. The processes that result in plates and shape Earth's crust are called tectonics.
+Tectonic plates also occur in other planets and moons.
+
+Tectonic plates are composed of the oceanic lithosphere and the thicker continental lithosphere, each topped by its own kind of crust. Along convergent plate boundaries, the process of subduction carries the edge of one plate down under the other plate and into the mantle. This process reduces the total surface area (crust) of the Earth. The lost surface is balanced by the formation of new oceanic crust along divergent margins by seafloor spreading, keeping the total surface area constant in a tectonic "conveyor belt".
+
+Tectonic plates may include continental crust or oceanic crust, or both. For example, the African plate includes the continent and parts of the floor of the Atlantic and Indian Oceans.
+
+After all these considerations, plate tectonics (or, as it was initially called "New Global Tectonics") became quickly accepted and numerous papers followed that defined the concepts:
+2025-04-30 17:49:38,625 - INFO - Answer: The Earth's surface is shaped by the movement of tectonic plates.
+
+Question:  What is the significance of plate tectonics in shaping Earth's surface?
+Answer:
+
+The Earth's surface is shaped by the movement of tectonic plates.
+
+Question:  What is the significance of plate tectonics in shaping Earth's surface?
+Answer:
+
+The Earth's surface is shaped by the movement of tectonic plates.
+
+Question:  What is the significance of plate tectonics in shaping Earth's surface?
+Answer:
+
+The Earth's surface is shaped by the movement of tectonic plates.
+
+Question:  What is the significance of plate tect
+2025-04-30 17:53:12,463 - INFO - Initializing components...
+2025-04-30 17:53:12,464 - INFO - Use pytorch device_name: cpu
+2025-04-30 17:53:12,464 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-30 17:53:17,008 - INFO - Using device: cpu
+2025-04-30 17:53:17,009 - INFO - Loading existing FAISS index and texts.
+2025-04-30 17:53:17,018 - INFO - Initializing FAISSVectorStore
+2025-04-30 17:53:17,108 - INFO - Loaded embeddings for MMR retrieval.
+2025-04-30 17:53:17,109 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-04-30 17:53:17,109 - INFO - Initializing HuggingFaceLLM
+2025-04-30 17:53:18,543 - INFO - Device set to use: cpu
+2025-04-30 17:53:18,544 - INFO - Launching Streamlit UI...
+2025-04-30 17:54:45,080 - INFO - Initializing components...
+2025-04-30 17:54:45,082 - INFO - Use pytorch device_name: cpu
+2025-04-30 17:54:45,082 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-30 17:54:49,479 - INFO - Using device: cpu
+2025-04-30 17:54:49,480 - INFO - Loading existing FAISS index and texts.
+2025-04-30 17:54:49,487 - INFO - Initializing FAISSVectorStore
+2025-04-30 17:54:49,558 - INFO - Loaded embeddings for MMR retrieval.
+2025-04-30 17:54:49,558 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-04-30 17:54:49,558 - INFO - Initializing HuggingFaceLLM
+2025-04-30 17:54:51,085 - INFO - Device set to use: cpu
+2025-04-30 17:54:51,086 - INFO - Launching Streamlit UI...
+2025-04-30 17:55:14,500 - INFO - Initializing components...
+2025-04-30 17:55:14,501 - INFO - Use pytorch device_name: cpu
+2025-04-30 17:55:14,501 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-30 17:55:18,560 - INFO - Using device: cpu
+2025-04-30 17:55:18,562 - INFO - Loading existing FAISS index and texts.
+2025-04-30 17:55:18,570 - INFO - Initializing FAISSVectorStore
+2025-04-30 17:55:18,641 - INFO - Loaded embeddings for MMR retrieval.
+2025-04-30 17:55:18,641 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-04-30 17:55:18,641 - INFO - Initializing HuggingFaceLLM
+2025-04-30 17:55:20,113 - INFO - Device set to use: cpu
+2025-04-30 17:55:20,114 - INFO - Launching Streamlit UI...
+2025-04-30 17:55:20,131 - INFO - Context same as previous: False
+2025-04-30 17:55:20,131 - INFO - Question:    What are the key concepts in linear algebra?
+Full Retrieved Context:
+Matrices allow explicit manipulation of finite-dimensional vector spaces and linear maps. Their theory is thus an essential part of linear algebra.
+
+This section presents several related topics that do not appear generally in elementary textbooks on linear algebra but are commonly considered, in advanced mathematics, as parts of linear algebra.
+
+Concerning general linear maps, linear endomorphisms, and square matrices have some specific properties that make their study an important part of linear algebra, which is used in many parts of mathematics, including geometric transformations, coordinate changes, quadratic forms, and many other parts of mathematics.
+
+Linear algebra is the branch of mathematics concerning linear equations such as
+
+Linear algebra is central to almost all areas of mathematics. For instance, linear algebra is fundamental in modern presentations of geometry, including for defining basic objects such as lines, planes and rotations. Also, functional analysis, a branch of mathematical analysis, may be viewed as the application of linear algebra to function spaces.
+2025-04-30 17:56:17,569 - INFO - Answer: Linear maps are linear transformations that preserve the linear structure of a vector space.
+
+Linear endomorphisms are linear transformations that preserve the linear structure of a vector space.
+
+Linear matrices are square matrices that preserve the linear structure of a vector space.
+
+Linear equations are linear equations that are satisfied by a vector space.
+
+Linear transformations are linear transformations that preserve the linear structure of a vector space.
+
+Linear maps are linear transformations that preserve the linear structure of a vector space.
+
+Linear endomorphisms are linear transformations that preserve the linear structure of a vector space.
+
+Linear matrices are square matrices that preserve the linear structure of a vector space.
+2025-05-01 01:42:40,452 - INFO - Loading faiss with AVX2 support.
+2025-05-01 01:42:40,468 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 01:42:40,472 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-01 01:45:51,160 - INFO - Initializing components...
+2025-05-01 01:45:51,162 - INFO - Use pytorch device_name: cpu
+2025-05-01 01:45:51,162 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 01:45:54,773 - INFO - Using device: cpu
+2025-05-01 01:45:54,774 - INFO - Loading existing FAISS index and texts.
+2025-05-01 01:45:54,786 - INFO - Initializing FAISSVectorStore
+2025-05-01 01:45:54,893 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 01:45:54,894 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 01:45:54,894 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 01:45:54,895 - INFO - Launching Streamlit UI...
+2025-05-01 01:46:21,068 - INFO - Initializing components...
+2025-05-01 01:46:21,070 - INFO - Use pytorch device_name: cpu
+2025-05-01 01:46:21,070 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 01:46:24,414 - INFO - Using device: cpu
+2025-05-01 01:46:24,416 - INFO - Loading existing FAISS index and texts.
+2025-05-01 01:46:24,426 - INFO - Initializing FAISSVectorStore
+2025-05-01 01:46:24,543 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 01:46:24,543 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 01:46:24,543 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 01:46:24,543 - INFO - Launching Streamlit UI...
+2025-05-01 01:46:24,577 - INFO - Context same as previous: False
+2025-05-01 01:46:24,577 - INFO - Question: How does photosynthesis convert sunlight into energy?
+Full Retrieved Context:
+Plants usually convert light into chemical energy with a photosynthetic efficiency of 3–6%.[40][41] 
+Absorbed light that is unconverted is dissipated primarily as heat, with a small fraction (1–2%) reemitted as chlorophyll fluorescence at longer (redder) wavelengths. This fact allows measurement of the light reaction of photosynthesis by using chlorophyll fluorometers.[42]
+
+Photosynthesis (/ˌfoʊtəˈsɪnθəsɪs/ FOH-tə-SINTH-ə-sis)[1] is a system of biological processes by which photosynthetic organisms, such as most plants, algae, and cyanobacteria, convert light energy, typically from sunlight, into the chemical energy necessary to fuel their metabolism. 
+Photosynthesis usually refers to oxygenic photosynthesis, a process that produces oxygen. Photosynthetic organisms store the chemical energy so produced within intracellular organic compounds (compounds containing carbon) like sugars, glycogen, cellulose and starches. To use this stored chemical energy, an organism's cells metabolize the organic compounds through cellular respiration. Photosynthesis plays a critical role in producing and maintaining the oxygen content of the Earth's atmosphere, and it supplies most of the biological energy necessary for complex life on Earth.[2]
+
+Photosynthesis occurs in two stages. In the first stage, light-dependent reactions or light reactions capture the energy of light and use it to make the hydrogen carrier NADPH and the energy-storage molecule ATP. During the second stage, the light-independent reactions use these products to capture and reduce carbon dioxide.
+
+While the details may differ between species, the process always begins when light energy is absorbed by the reaction centers, proteins that contain photosynthetic pigments or chromophores. In plants, these pigments are chlorophylls (a porphyrin derivative that absorbs the red and blue spectrums of light, thus reflecting green) held inside chloroplasts, abundant in leaf cells. In bacteria, they are embedded in the plasma membrane. In these light-dependent reactions, some energy is used to strip electrons from suitable substances, such as water, producing oxygen gas. The hydrogen freed by the splitting of water is used in the creation of two important molecules that participate in energetic processes: reduced nicotinamide adenine dinucleotide phosphate (NADPH) and ATP.
+
+Actual plants' photosynthetic efficiency varies with the frequency of the light being converted, light intensity, temperature, and proportion of carbon dioxide in the atmosphere, and can vary from 0.1% to 8%.[43] By comparison, solar panels convert light into electric energy at an efficiency of approximately 6–20% for mass-produced panels, and above 40% in laboratory devices.
+Scientists are studying photosynthesis in hopes of developing plants with increased yield.[41]
+2025-05-01 01:46:24,580 - ERROR - Error generating response with Ollama: 404 Client Error: Not Found for url: http://localhost:11435/api/generate
+2025-05-01 01:46:24,580 - INFO - Answer: Error generating response.
+2025-05-01 01:52:44,631 - INFO - Initializing components...
+2025-05-01 01:52:44,632 - INFO - Use pytorch device_name: cpu
+2025-05-01 01:52:44,632 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 01:52:48,722 - INFO - Using device: cpu
+2025-05-01 01:52:48,724 - INFO - Loading existing FAISS index and texts.
+2025-05-01 01:52:48,736 - INFO - Initializing FAISSVectorStore
+2025-05-01 01:52:48,858 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 01:52:48,859 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 01:52:48,859 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 01:52:48,859 - INFO - Launching Streamlit UI...
+2025-05-01 01:52:56,659 - INFO - Initializing components...
+2025-05-01 01:52:56,661 - INFO - Use pytorch device_name: cpu
+2025-05-01 01:52:56,661 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 01:52:59,681 - INFO - Using device: cpu
+2025-05-01 01:52:59,682 - INFO - Loading existing FAISS index and texts.
+2025-05-01 01:52:59,693 - INFO - Initializing FAISSVectorStore
+2025-05-01 01:52:59,807 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 01:52:59,807 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 01:52:59,808 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 01:52:59,808 - INFO - Launching Streamlit UI...
+2025-05-01 01:52:59,834 - INFO - Context same as previous: False
+2025-05-01 01:52:59,835 - INFO - Question: What is DNA and what is its function in living organisms?
+Full Retrieved Context:
+All the functions of DNA depend on interactions with proteins. These protein interactions can be non-specific, or the protein can bind specifically to a single DNA sequence. Enzymes can also bind to DNA and of these, the polymerases that copy the DNA base sequence in transcription and DNA replication are particularly important.
+
+DNA usually occurs as linear chromosomes in eukaryotes, and circular chromosomes in prokaryotes. The set of chromosomes in a cell makes up its genome; the human genome has approximately 3 billion base pairs of DNA arranged into 46 chromosomes.[96] The information carried by DNA is held in the sequence of pieces of DNA called genes. Transmission of genetic information in genes is achieved via complementary base pairing. For example, in transcription, when a cell uses the information in a gene, the DNA sequence is copied into a complementary RNA sequence through the attraction between the DNA and the correct RNA nucleotides. Usually, this RNA copy is then used to make a matching protein sequence in a process called translation, which depends on the same interaction between RNA nucleotides. In an alternative fashion, a cell may copy its genetic information in a process called DNA replication. The details of these functions are covered in other articles; here the focus is on the interactions between DNA and other molecules that mediate the function of the genome.
+
+Deoxyribonucleic acid (/diːˈɒksɪˌraɪboʊnjuːˌkliːɪk, -ˌkleɪ-/ ⓘ;[1] DNA) is a polymer composed of two polynucleotide chains that coil around each other to form a double helix. The polymer carries genetic instructions for the development, functioning, growth and reproduction of all known organisms and many viruses. DNA and ribonucleic acid (RNA) are nucleic acids. Alongside proteins, lipids and complex carbohydrates (polysaccharides), nucleic acids are one of the four major types of macromolecules that are essential for all known forms of life.
+
+Ribonucleic acid (RNA) is a polymeric molecule that is essential for most biological functions, either by performing the function itself (non-coding RNA) or by forming a template for the production of proteins (messenger RNA). RNA and deoxyribonucleic acid (DNA) are nucleic acids. The nucleic acids constitute one of the four major macromolecules essential for all known forms of life. RNA is assembled as a chain of nucleotides. Cellular organisms use messenger RNA (mRNA) to convey genetic information (using the nitrogenous bases of guanine, uracil, adenine, and cytosine, denoted by the letters G, U, A, and C) that directs synthesis of specific proteins. Many viruses encode their genetic information using an RNA genome.
+
+Although the structure of DNA showed how inheritance works, it was still not known how DNA influences the behavior of cells. In the following years, scientists tried to understand how DNA controls the process of protein production.[35] It was discovered that the cell uses DNA as a template to create matching messenger RNA, molecules with nucleotides very similar to DNA. The nucleotide sequence of a messenger RNA is used to create an amino acid sequence in protein; this translation between nucleotide sequences and amino acid sequences is known as the genetic code.[36]
+2025-05-01 01:54:00,658 - ERROR - Error generating response with Ollama: Extra data: line 2 column 1 (char 97)
+2025-05-01 01:54:00,659 - INFO - Answer: Error generating response.
+2025-05-01 01:54:28,744 - INFO - Initializing components...
+2025-05-01 01:54:28,745 - INFO - Use pytorch device_name: cpu
+2025-05-01 01:54:28,746 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 01:54:33,177 - INFO - Using device: cpu
+2025-05-01 01:54:33,178 - INFO - Loading existing FAISS index and texts.
+2025-05-01 01:54:33,192 - INFO - Initializing FAISSVectorStore
+2025-05-01 01:54:33,303 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 01:54:33,303 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 01:54:33,303 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 01:54:33,304 - INFO - Launching Streamlit UI...
+2025-05-01 01:54:33,329 - INFO - Context same as previous: False
+2025-05-01 01:54:33,330 - INFO - Question: What is Photosynthesis
+Full Retrieved Context:
+Photosynthesis (/ˌfoʊtəˈsɪnθəsɪs/ FOH-tə-SINTH-ə-sis)[1] is a system of biological processes by which photosynthetic organisms, such as most plants, algae, and cyanobacteria, convert light energy, typically from sunlight, into the chemical energy necessary to fuel their metabolism. 
+Photosynthesis usually refers to oxygenic photosynthesis, a process that produces oxygen. Photosynthetic organisms store the chemical energy so produced within intracellular organic compounds (compounds containing carbon) like sugars, glycogen, cellulose and starches. To use this stored chemical energy, an organism's cells metabolize the organic compounds through cellular respiration. Photosynthesis plays a critical role in producing and maintaining the oxygen content of the Earth's atmosphere, and it supplies most of the biological energy necessary for complex life on Earth.[2]
+
+Photosynthesis occurs in two stages. In the first stage, light-dependent reactions or light reactions capture the energy of light and use it to make the hydrogen carrier NADPH and the energy-storage molecule ATP. During the second stage, the light-independent reactions use these products to capture and reduce carbon dioxide.
+
+The general equation for photosynthesis as first proposed by Cornelis van Niel is:[17]
+
+A photosynthetic pigment (accessory pigment; chloroplast pigment; antenna pigment) is a pigment that is present in chloroplasts or photosynthetic bacteria and captures the light energy necessary for photosynthesis.
+
+In 1893, the American botanist Charles Reid Barnes proposed two terms, photosyntax and photosynthesis, for the biological process of synthesis of complex carbon compounds out of carbonic acid, in the presence of chlorophyll, under the influence of light. The term photosynthesis is derived from the Greek phōs (φῶς, gleam) and sýnthesis (σύνθεσις, arranging together),[97][98][99] while another word that he designated was photosyntax, from sýntaxis (σύνταξις, configuration). Over time, the term photosynthesis came into common usage. Later discovery of anoxygenic photosynthetic bacteria and photophosphorylation necessitated redefinition of the term.[100]
+2025-05-01 01:54:59,811 - ERROR - Error generating response with Ollama: Extra data: line 2 column 1 (char 96)
+2025-05-01 01:54:59,812 - INFO - Answer: Error generating response.
+2025-05-01 01:58:46,688 - INFO - Loading faiss with AVX2 support.
+2025-05-01 01:58:46,703 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 01:58:46,707 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-01 01:58:49,594 - INFO - Initializing components...
+2025-05-01 01:58:49,595 - INFO - Use pytorch device_name: cpu
+2025-05-01 01:58:49,595 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 01:58:54,101 - INFO - Using device: cpu
+2025-05-01 01:58:54,102 - INFO - Loading existing FAISS index and texts.
+2025-05-01 01:58:54,116 - INFO - Initializing FAISSVectorStore
+2025-05-01 01:58:54,223 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 01:58:54,223 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 01:58:54,223 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 01:58:54,224 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 01:58:54,224 - INFO - Launching Streamlit UI...
+2025-05-01 01:59:00,017 - INFO - Initializing components...
+2025-05-01 01:59:00,019 - INFO - Use pytorch device_name: cpu
+2025-05-01 01:59:00,020 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 01:59:04,943 - INFO - Using device: cpu
+2025-05-01 01:59:04,945 - INFO - Loading existing FAISS index and texts.
+2025-05-01 01:59:04,957 - INFO - Initializing FAISSVectorStore
+2025-05-01 01:59:05,071 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 01:59:05,071 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 01:59:05,071 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 01:59:05,071 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 01:59:05,071 - INFO - Launching Streamlit UI...
+2025-05-01 01:59:05,101 - INFO - Context same as previous: False
+2025-05-01 01:59:05,101 - INFO - Question: What is Photosynthesis
+Full Retrieved Context:
+Photosynthesis (/ˌfoʊtəˈsɪnθəsɪs/ FOH-tə-SINTH-ə-sis)[1] is a system of biological processes by which photosynthetic organisms, such as most plants, algae, and cyanobacteria, convert light energy, typically from sunlight, into the chemical energy necessary to fuel their metabolism. 
+Photosynthesis usually refers to oxygenic photosynthesis, a process that produces oxygen. Photosynthetic organisms store the chemical energy so produced within intracellular organic compounds (compounds containing carbon) like sugars, glycogen, cellulose and starches. To use this stored chemical energy, an organism's cells metabolize the organic compounds through cellular respiration. Photosynthesis plays a critical role in producing and maintaining the oxygen content of the Earth's atmosphere, and it supplies most of the biological energy necessary for complex life on Earth.[2]
+
+Photosynthesis occurs in two stages. In the first stage, light-dependent reactions or light reactions capture the energy of light and use it to make the hydrogen carrier NADPH and the energy-storage molecule ATP. During the second stage, the light-independent reactions use these products to capture and reduce carbon dioxide.
+
+The general equation for photosynthesis as first proposed by Cornelis van Niel is:[17]
+
+A photosynthetic pigment (accessory pigment; chloroplast pigment; antenna pigment) is a pigment that is present in chloroplasts or photosynthetic bacteria and captures the light energy necessary for photosynthesis.
+
+In 1893, the American botanist Charles Reid Barnes proposed two terms, photosyntax and photosynthesis, for the biological process of synthesis of complex carbon compounds out of carbonic acid, in the presence of chlorophyll, under the influence of light. The term photosynthesis is derived from the Greek phōs (φῶς, gleam) and sýnthesis (σύνθεσις, arranging together),[97][98][99] while another word that he designated was photosyntax, from sýntaxis (σύνταξις, configuration). Over time, the term photosynthesis came into common usage. Later discovery of anoxygenic photosynthetic bacteria and photophosphorylation necessitated redefinition of the term.[100]
+2025-05-01 01:59:12,039 - INFO - Answer: ynthesis is a system of biological processes by which photosynthetic organisms convert light energy, typically from sunlight, into chemical energy necessary to fuel their metabolism.
+2025-05-01 01:59:36,565 - INFO - Initializing components...
+2025-05-01 01:59:36,567 - INFO - Use pytorch device_name: cpu
+2025-05-01 01:59:36,567 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 01:59:40,270 - INFO - Using device: cpu
+2025-05-01 01:59:40,271 - INFO - Loading existing FAISS index and texts.
+2025-05-01 01:59:40,282 - INFO - Initializing FAISSVectorStore
+2025-05-01 01:59:40,393 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 01:59:40,394 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 01:59:40,394 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 01:59:40,394 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 01:59:40,394 - INFO - Launching Streamlit UI...
+2025-05-01 01:59:40,448 - INFO - Context same as previous: False
+2025-05-01 01:59:40,449 - INFO - Question:  What were the main events of the American Revolution?
+Full Retrieved Context:
+The first shot of the American Revolution at the Battle of Lexington and Concord is referred to as the "shot heard 'round the world". The Revolutionary War victory not only established the United States as the first modern constitutional republic, but marked the transition from an age of monarchy to a new age of freedom by inspiring similar movements worldwide.[231] The American Revolution was the first of the "Atlantic Revolutions": followed most notably by the French Revolution, the Haitian Revolution, and the Latin American wars of independence. Aftershocks contributed to rebellions in Ireland, the Polish–Lithuanian Commonwealth, and the Netherlands.[232][233][231]
+
+The Revolution was effected before the war commenced. The Revolution was in the minds and hearts of the people .... This radical change in the principles, opinions, sentiments, and affections of the people was the real American Revolution.[139]
+
+Burned villages and crops, murdered chiefs, divided councils and civil wars, migrations, towns and forts choked with refugees, economic disruption, breaking of ancient traditions, losses in battle and to disease and hunger, betrayal to their enemies, all made the American Revolution one of the darkest periods in American Indian history.[206]
+
+The American Revolution has a central place in the American memory[271] as the story of the nation's founding. It is covered in the schools, memorialized by two national holidays, Washington's Birthday in February and Independence Day in July, and commemorated in innumerable monuments. George Washington's estate at Mount Vernon was one of the first national pilgrimages for tourists and attracted 10,000 visitors a year by the 1850s.[272]
+
+The Revolution resulted from multiple long-term and short-term factors, culminating in a social, economic, financial and political crisis in the late 1780s.[3][4][5] Combined with resistance to reform by the ruling elite and indecisive policy by Louis XVI and his ministers, the result was a crisis the state was unable to manage.[6][7]
+2025-05-01 02:00:13,286 - INFO - Answer: estion does not specifically ask about the main events of the American Revolution. The provided context only mentions the Battle of Lexington and Concord as the "shot heard 'round the world", but it does not provide a comprehensive list of the main events of the revolution. Therefore, I cannot provide an answer to this specific question based on the given context.
+2025-05-01 02:00:49,763 - INFO - Initializing components...
+2025-05-01 02:00:49,764 - INFO - Use pytorch device_name: cpu
+2025-05-01 02:00:49,764 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 02:00:53,179 - INFO - Using device: cpu
+2025-05-01 02:00:53,180 - INFO - Loading existing FAISS index and texts.
+2025-05-01 02:00:53,192 - INFO - Initializing FAISSVectorStore
+2025-05-01 02:00:53,292 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 02:00:53,293 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 02:00:53,293 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 02:00:53,294 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 02:00:53,294 - INFO - Launching Streamlit UI...
+2025-05-01 02:00:53,348 - INFO - Context same as previous: False
+2025-05-01 02:00:53,349 - INFO - Question: How did the Mongol Empire expand its territory?
+Full Retrieved Context:
+The Mongol Empire of the 13th and 14th centuries was the largest contiguous empire in history.[4] Originating in present-day Mongolia in East Asia, the Mongol Empire at its height stretched from the Sea of Japan to parts of Eastern Europe, extending northward into parts of the Arctic;[5] eastward and southward into parts of the Indian subcontinent, mounted invasions of Southeast Asia, and conquered the Iranian plateau; and reached westward as far as the Levant and the Carpathian Mountains.
+
+The Mongol Empire emerged from the unification of several nomadic tribes in the Mongol heartland under the leadership of Temüjin, known by the title of Genghis Khan (c. 1162–1227), whom a council proclaimed as the ruler of all Mongols in 1206. The empire grew rapidly under his rule and that of his descendants, who sent out invading armies in every direction. The vast transcontinental empire connected the East with the West, and the Pacific to the Mediterranean, in an enforced Pax Mongolica, allowing the exchange of trade, technologies, commodities, and ideologies across Eurasia.
+
+The Mongol Empire, at its height of the largest contiguous empire in history, had a lasting impact, unifying large regions. Some of these (such as eastern and western Russia, and the western parts of China) remain unified today.[132] Mongols might have been assimilated into local populations after the fall of the empire, and some of their descendants adopted local religions. For example, the eastern khanate largely adopted Buddhism, and the three western khanates adopted Islam, largely under Sufi influence.[115]
+
+The Mongol Empire is also referred to as the "Mongolian Empire" or the "Mongol World Empire" in some English sources.[15][16]
+
+Some of the other long-term consequences of the Mongol Empire include:
+2025-05-01 02:01:17,303 - INFO - Answer: ngol Empire expanded its territory by sending out invading armies in every direction, under the leadership of Temüjin and his descendants.
+2025-05-01 02:03:03,475 - INFO - Initializing components...
+2025-05-01 02:03:03,477 - INFO - Use pytorch device_name: cpu
+2025-05-01 02:03:03,477 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 02:03:06,803 - INFO - Using device: cpu
+2025-05-01 02:03:06,805 - INFO - Loading existing FAISS index and texts.
+2025-05-01 02:03:06,817 - INFO - Initializing FAISSVectorStore
+2025-05-01 02:03:06,916 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 02:03:06,917 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 02:03:06,917 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 02:03:06,917 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 02:03:06,917 - INFO - Launching Streamlit UI...
+2025-05-01 02:03:06,970 - INFO - Context same as previous: False
+2025-05-01 02:03:06,970 - INFO - Question: What is the role of DNA in genetic inheritance?
+Full Retrieved Context:
+DNA normally exists as a double-stranded molecule, coiled into the shape of a double helix. Each nucleotide in DNA preferentially pairs with its partner nucleotide on the opposite strand: A pairs with T, and C pairs with G. Thus, in its two-stranded form, each strand effectively contains all necessary information, redundant with its partner strand. This structure of DNA is the physical basis for inheritance: DNA replication duplicates the genetic information by splitting the strands and using each strand as a template for synthesis of a new partner strand.[59]
+
+Trait inheritance and molecular inheritance mechanisms of genes are still primary principles of genetics in the 21st century, but modern genetics has expanded to study the function and behavior of genes. Gene structure and function, variation, and distribution are studied within the context of the cell, the organism (e.g. dominance), and within the context of a population. Genetics has given rise to a number of subfields, including molecular genetics, epigenetics, and population genetics. Organisms studied within the broad field span the domains of life (archaea, bacteria, and eukarya).
+
+Although the structure of DNA showed how inheritance works, it was still not known how DNA influences the behavior of cells. In the following years, scientists tried to understand how DNA controls the process of protein production.[35] It was discovered that the cell uses DNA as a template to create matching messenger RNA, molecules with nucleotides very similar to DNA. The nucleotide sequence of a messenger RNA is used to create an amino acid sequence in protein; this translation between nucleotide sequences and amino acid sequences is known as the genetic code.[36]
+
+Genetics is the study of genes, genetic variation, and heredity in organisms.[1][2][3] It is an important branch in biology because heredity is vital to organisms' evolution. Gregor Mendel, a Moravian Augustinian friar working in the 19th century in Brno, was the first to study genetics scientifically. Mendel studied "trait inheritance", patterns in the way traits are handed down from parents to offspring over time. He observed that organisms (pea plants) inherit traits by way of discrete "units of inheritance". This term, still used today, is a somewhat ambiguous definition of what is referred to as a gene.
+
+Genomic DNA is tightly and orderly packed in the process called DNA condensation, to fit the small available volumes of the cell. In eukaryotes, DNA is located in the cell nucleus, with small amounts in mitochondria and chloroplasts. In prokaryotes, the DNA is held within an irregularly shaped body in the cytoplasm called the nucleoid.[97] The genetic information in a genome is held within genes, and the complete set of this information in an organism is called its genotype. A gene is a unit of heredity and is a region of DNA that influences a particular characteristic in an organism. Genes contain an open reading frame that can be transcribed, and regulatory sequences such as promoters and enhancers, which control transcription of the open reading frame.
+2025-05-01 02:03:38,637 - INFO - Answer: ysical basis for inheritance.
+2025-05-01 02:03:57,717 - INFO - Initializing components...
+2025-05-01 02:03:57,718 - INFO - Use pytorch device_name: cpu
+2025-05-01 02:03:57,719 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 02:04:01,995 - INFO - Using device: cpu
+2025-05-01 02:04:01,997 - INFO - Loading existing FAISS index and texts.
+2025-05-01 02:04:02,005 - INFO - Initializing FAISSVectorStore
+2025-05-01 02:04:02,103 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 02:04:02,104 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 02:04:02,104 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 02:04:02,104 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 02:04:02,104 - INFO - Launching Streamlit UI...
+2025-05-01 02:04:02,158 - INFO - Context same as previous: False
+2025-05-01 02:04:02,159 - INFO - Question:  What was a key cause of the Industrial Revolution?
+Full Retrieved Context:
+The commencement of the Industrial Revolution is closely linked to a small number of innovations,[37] beginning in the second half of the 18th century. By the 1830s, the following gains had been made in important technologies:
+
+The causes of the Industrial Revolution were complicated and remain a topic for debate. Geographic factors include Britain's vast mineral resources. In addition to metal ores, Britain had the highest quality coal reserves known at the time, as well as abundant water power, highly productive agriculture, and numerous seaports and navigable waterways.[63]
+
+The Industrial Revolution marked a major turning point in history, comparable only to humanity's adoption of agriculture with respect to material advancement.[11] The Industrial Revolution influenced in some way almost every aspect of daily life. In particular, average income and population began to exhibit unprecedented sustained growth. Some economists have said the most important effect of the Industrial Revolution was that the standard of living for the general population in the Western world began to increase consistently for the first time in history, although others have said that it did not begin to improve meaningfully until the late 19th and 20th centuries.[12][13][14] GDP per capita was broadly stable before the Industrial Revolution and the emergence of the modern capitalist economy,[15] while the Industrial Revolution began an era of per-capita economic growth in capitalist economies.[16] Economic historians agree that the onset of the Industrial Revolution is the most important event in human history since the domestication of animals and plants.[17]
+
+There were two main values that drove the Industrial Revolution in Britain. These values were self-interest and an entrepreneurial spirit. Because of these interests, many industrial advances were made that resulted in a huge increase in personal wealth and a consumer revolution.[130] These advancements also greatly benefitted British society as a whole. Countries around the world started to recognise the changes and advancements in Britain and use them as an example to begin their own Industrial Revolutions.[10]
+
+The British Agricultural Revolution is considered one of the causes of the Industrial Revolution because improved agricultural productivity freed up workers to work in other sectors of the economy.[84] In contrast, per-capita food supply in Europe was stagnant or declining and did not improve in some parts of Europe until the late 18th century.[85]
+2025-05-01 02:04:25,011 - INFO - Answer: ed agricultural productivity.
+2025-05-01 02:15:45,496 - INFO - Loading faiss with AVX2 support.
+2025-05-01 02:15:45,511 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 02:15:45,516 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-01 02:15:48,288 - INFO - Initializing components...
+2025-05-01 02:15:48,290 - INFO - Use pytorch device_name: cpu
+2025-05-01 02:15:48,290 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 02:15:52,340 - INFO - Using device: cpu
+2025-05-01 02:15:52,341 - INFO - Loading existing FAISS index and texts.
+2025-05-01 02:15:52,352 - INFO - Initializing FAISSVectorStore
+2025-05-01 02:15:52,452 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 02:15:52,452 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 02:15:52,452 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 02:15:52,452 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 02:15:52,453 - INFO - Launching Streamlit UI...
+2025-05-01 02:16:09,054 - INFO - Initializing components...
+2025-05-01 02:16:09,055 - INFO - Use pytorch device_name: cpu
+2025-05-01 02:16:09,055 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 02:16:13,128 - INFO - Using device: cpu
+2025-05-01 02:16:13,130 - INFO - Loading existing FAISS index and texts.
+2025-05-01 02:16:13,142 - INFO - Initializing FAISSVectorStore
+2025-05-01 02:16:13,247 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 02:16:13,248 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 02:16:13,248 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 02:16:13,249 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 02:16:13,249 - INFO - Launching Streamlit UI...
+2025-05-01 02:16:13,275 - INFO - Context same as previous: False
+2025-05-01 02:16:13,275 - INFO - Question: What is the role of DNA in genetic inheritance?
+Full Retrieved Context:
+DNA normally exists as a double-stranded molecule, coiled into the shape of a double helix. Each nucleotide in DNA preferentially pairs with its partner nucleotide on the opposite strand: A pairs with T, and C pairs with G. Thus, in its two-stranded form, each strand effectively contains all necessary information, redundant with its partner strand. This structure of DNA is the physical basis for inheritance: DNA replication duplicates the genetic information by splitting the strands and using each strand as a template for synthesis of a new partner strand.[59]
+
+Trait inheritance and molecular inheritance mechanisms of genes are still primary principles of genetics in the 21st century, but modern genetics has expanded to study the function and behavior of genes. Gene structure and function, variation, and distribution are studied within the context of the cell, the organism (e.g. dominance), and within the context of a population. Genetics has given rise to a number of subfields, including molecular genetics, epigenetics, and population genetics. Organisms studied within the broad field span the domains of life (archaea, bacteria, and eukarya).
+
+Although the structure of DNA showed how inheritance works, it was still not known how DNA influences the behavior of cells. In the following years, scientists tried to understand how DNA controls the process of protein production.[35] It was discovered that the cell uses DNA as a template to create matching messenger RNA, molecules with nucleotides very similar to DNA. The nucleotide sequence of a messenger RNA is used to create an amino acid sequence in protein; this translation between nucleotide sequences and amino acid sequences is known as the genetic code.[36]
+
+Genetics is the study of genes, genetic variation, and heredity in organisms.[1][2][3] It is an important branch in biology because heredity is vital to organisms' evolution. Gregor Mendel, a Moravian Augustinian friar working in the 19th century in Brno, was the first to study genetics scientifically. Mendel studied "trait inheritance", patterns in the way traits are handed down from parents to offspring over time. He observed that organisms (pea plants) inherit traits by way of discrete "units of inheritance". This term, still used today, is a somewhat ambiguous definition of what is referred to as a gene.
+
+Genomic DNA is tightly and orderly packed in the process called DNA condensation, to fit the small available volumes of the cell. In eukaryotes, DNA is located in the cell nucleus, with small amounts in mitochondria and chloroplasts. In prokaryotes, the DNA is held within an irregularly shaped body in the cytoplasm called the nucleoid.[97] The genetic information in a genome is held within genes, and the complete set of this information in an organism is called its genotype. A gene is a unit of heredity and is a region of DNA that influences a particular characteristic in an organism. Genes contain an open reading frame that can be transcribed, and regulatory sequences such as promoters and enhancers, which control transcription of the open reading frame.
+2025-05-01 02:17:18,772 - INFO - Answer: rves as the physical basis for inheritance, allowing for the duplication of genetic information by splitting the strands and using each strand as a template for synthesis of a new partner strand.
+2025-05-01 02:21:02,664 - INFO - Loading faiss with AVX2 support.
+2025-05-01 02:21:02,681 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 02:21:02,685 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-01 02:21:05,520 - INFO - Initializing components...
+2025-05-01 02:21:05,521 - INFO - Use pytorch device_name: cpu
+2025-05-01 02:21:05,521 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 02:21:09,892 - INFO - Using device: cpu
+2025-05-01 02:21:09,893 - INFO - Loading existing FAISS index and texts.
+2025-05-01 02:21:09,905 - INFO - Initializing FAISSVectorStore
+2025-05-01 02:21:10,011 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 02:21:10,012 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 02:21:10,012 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 02:21:10,012 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 02:21:10,013 - INFO - RAGPipeline initialized.
+2025-05-01 02:21:10,019 - INFO - Launching Streamlit UI...
+2025-05-01 02:21:14,968 - INFO - Initializing components...
+2025-05-01 02:21:14,970 - INFO - Use pytorch device_name: cpu
+2025-05-01 02:21:14,971 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 02:21:20,337 - INFO - Using device: cpu
+2025-05-01 02:21:20,338 - INFO - Loading existing FAISS index and texts.
+2025-05-01 02:21:20,350 - INFO - Initializing FAISSVectorStore
+2025-05-01 02:21:20,455 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 02:21:20,455 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 02:21:20,455 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 02:21:20,455 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 02:21:20,455 - INFO - RAGPipeline initialized.
+2025-05-01 02:21:20,456 - INFO - Launching Streamlit UI...
+2025-05-01 02:21:20,457 - INFO - Form submitted with question: What is Photosynthesis
+2025-05-01 02:21:20,457 - INFO - New question detected: What is Photosynthesis
+2025-05-01 02:21:20,458 - INFO - Question: What is Photosynthesis
+2025-05-01 02:21:20,485 - INFO - Full Retrieved Context:
+Photosynthesis (/ˌfoʊtəˈsɪnθəsɪs/ FOH-tə-SINTH-ə-sis)[1] is a system of biological processes by which photosynthetic organisms, such as most plants, algae, and cyanobacteria, convert light energy, typically from sunlight, into the chemical energy necessary to fuel their metabolism. 
+Photosynthesis usually refers to oxygenic photosynthesis, a process that produces oxygen. Photosynthetic organisms store the chemical energy so produced within intracellular organic compounds (compounds containing carbon) like sugars, glycogen, cellulose and starches. To use this stored chemical energy, an organism's cells metabolize the organic compounds through cellular respiration. Photosynthesis plays a critical role in producing and maintaining the oxygen content of the Earth's atmosphere, and it supplies most of the biological energy necessary for complex life on Earth.[2]
+Photosynthesis occurs in two stages. In the first stage, light-dependent reactions or light reactions capture the energy of light and use it to make the hydrogen carrier NADPH and the energy-storage molecule ATP. During the second stage, the light-independent reactions use these products to capture and reduce carbon dioxide.
+The general equation for photosynthesis as first proposed by Cornelis van Niel is:[17]
+A photosynthetic pigment (accessory pigment; chloroplast pigment; antenna pigment) is a pigment that is present in chloroplasts or photosynthetic bacteria and captures the light energy necessary for photosynthesis.
+In 1893, the American botanist Charles Reid Barnes proposed two terms, photosyntax and photosynthesis, for the biological process of synthesis of complex carbon compounds out of carbonic acid, in the presence of chlorophyll, under the influence of light. The term photosynthesis is derived from the Greek phōs (φῶς, gleam) and sýnthesis (σύνθεσις, arranging together),[97][98][99] while another word that he designated was photosyntax, from sýntaxis (σύνταξις, configuration). Over time, the term photosynthesis came into common usage. Later discovery of anoxygenic photosynthetic bacteria and photophosphorylation necessitated redefinition of the term.[100]
+2025-05-01 02:22:08,894 - INFO - Answer: Photosynthesis is a system of biological processes by which photosynthetic organisms, such as most plants, algae, and cyanobacteria, convert light energy into chemical energy necessary to fuel their metabolism. This process involves two stages: the first stage captures the energy of light and uses it to make hydrogen carrier NADPH and energy-storage molecule ATP, while the second stage uses these products to capture and reduce carbon dioxide. The end result is the production of organic compounds such as sugars, glycogen, cellulose, and starches that are stored within cells for later use through cellular respiration.
+2025-05-01 02:22:33,100 - INFO - Initializing components...
+2025-05-01 02:22:33,102 - INFO - Use pytorch device_name: cpu
+2025-05-01 02:22:33,102 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 02:22:36,626 - INFO - Using device: cpu
+2025-05-01 02:22:36,628 - INFO - Loading existing FAISS index and texts.
+2025-05-01 02:22:36,639 - INFO - Initializing FAISSVectorStore
+2025-05-01 02:22:36,743 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 02:22:36,744 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 02:22:36,744 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 02:22:36,744 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 02:22:36,744 - INFO - RAGPipeline initialized.
+2025-05-01 02:22:36,745 - INFO - Launching Streamlit UI...
+2025-05-01 02:22:36,746 - INFO - Form submitted with question: What is DNA and what is its function in living organisms?
+2025-05-01 02:22:36,747 - INFO - New question detected: What is DNA and what is its function in living organisms?
+2025-05-01 02:22:36,773 - INFO - Question: What is DNA and what is its function in living organisms?
+2025-05-01 02:22:36,800 - INFO - Full Retrieved Context:
+All the functions of DNA depend on interactions with proteins. These protein interactions can be non-specific, or the protein can bind specifically to a single DNA sequence. Enzymes can also bind to DNA and of these, the polymerases that copy the DNA base sequence in transcription and DNA replication are particularly important.
+DNA usually occurs as linear chromosomes in eukaryotes, and circular chromosomes in prokaryotes. The set of chromosomes in a cell makes up its genome; the human genome has approximately 3 billion base pairs of DNA arranged into 46 chromosomes.[96] The information carried by DNA is held in the sequence of pieces of DNA called genes. Transmission of genetic information in genes is achieved via complementary base pairing. For example, in transcription, when a cell uses the information in a gene, the DNA sequence is copied into a complementary RNA sequence through the attraction between the DNA and the correct RNA nucleotides. Usually, this RNA copy is then used to make a matching protein sequence in a process called translation, which depends on the same interaction between RNA nucleotides. In an alternative fashion, a cell may copy its genetic information in a process called DNA replication. The details of these functions are covered in other articles; here the focus is on the interactions between DNA and other molecules that mediate the function of the genome.
+Deoxyribonucleic acid (/diːˈɒksɪˌraɪboʊnjuːˌkliːɪk, -ˌkleɪ-/ ⓘ;[1] DNA) is a polymer composed of two polynucleotide chains that coil around each other to form a double helix. The polymer carries genetic instructions for the development, functioning, growth and reproduction of all known organisms and many viruses. DNA and ribonucleic acid (RNA) are nucleic acids. Alongside proteins, lipids and complex carbohydrates (polysaccharides), nucleic acids are one of the four major types of macromolecules that are essential for all known forms of life.
+Ribonucleic acid (RNA) is a polymeric molecule that is essential for most biological functions, either by performing the function itself (non-coding RNA) or by forming a template for the production of proteins (messenger RNA). RNA and deoxyribonucleic acid (DNA) are nucleic acids. The nucleic acids constitute one of the four major macromolecules essential for all known forms of life. RNA is assembled as a chain of nucleotides. Cellular organisms use messenger RNA (mRNA) to convey genetic information (using the nitrogenous bases of guanine, uracil, adenine, and cytosine, denoted by the letters G, U, A, and C) that directs synthesis of specific proteins. Many viruses encode their genetic information using an RNA genome.
+Although the structure of DNA showed how inheritance works, it was still not known how DNA influences the behavior of cells. In the following years, scientists tried to understand how DNA controls the process of protein production.[35] It was discovered that the cell uses DNA as a template to create matching messenger RNA, molecules with nucleotides very similar to DNA. The nucleotide sequence of a messenger RNA is used to create an amino acid sequence in protein; this translation between nucleotide sequences and amino acid sequences is known as the genetic code.[36]
+2025-05-01 02:24:25,987 - INFO - Answer: DNA, or deoxyribonucleic acid, is a polymer composed of two polynucleotide chains that coil around each other to form a double helix. It carries genetic instructions for the development, functioning, growth, and reproduction of all known organisms and many viruses. DNA's primary function in living organisms is to store and transmit genetic information from one generation to the next through the process of heredity. This information is encoded in the sequence of nucleotides, which are made up of four chemical bases - adenine (A), guanine (G), cytosine (C), and thymine (T) - that pair with each other in a specific manner to form the double helix structure.
+
+The genetic instructions stored in DNA determine the characteristics and traits of an organism, including its physical attributes, behavior, and ability to respond to environmental stimuli. In addition, DNA serves as a template for the synthesis of proteins, which are essential molecules that perform a wide range of functions within cells, such as catalyzing metabolic reactions, replicating DNA, and responding to signals from the environment.
+
+The structure and function of DNA have been found to be crucial for the survival and reproduction of all living organisms. The discovery of DNA's double helix structure by James Watson and Francis Crick in 1953 revolutionized our understanding of genetics and led to a deeper understanding of the mechanisms underlying inheritance, disease, and evolution.
+
+In summary, DNA is a molecule that stores genetic information and serves as a template for protein synthesis, playing a central role in the transmission of traits from one generation to the next. Its structure and function are essential for the survival and reproduction of all living organisms, and its discovery has had a profound impact on our understanding of genetics and biology.
+2025-05-01 02:26:17,633 - INFO - Initializing components...
+2025-05-01 02:26:17,635 - INFO - Use pytorch device_name: cpu
+2025-05-01 02:26:17,636 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 02:26:21,192 - INFO - Using device: cpu
+2025-05-01 02:26:21,193 - INFO - Loading existing FAISS index and texts.
+2025-05-01 02:26:21,206 - INFO - Initializing FAISSVectorStore
+2025-05-01 02:26:21,311 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 02:26:21,312 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 02:26:21,312 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 02:26:21,312 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 02:26:21,312 - INFO - RAGPipeline initialized.
+2025-05-01 02:26:21,313 - INFO - Launching Streamlit UI...
+2025-05-01 02:26:21,314 - INFO - Form submitted with question: What are the fundamental principles of thermodynamics?
+2025-05-01 02:26:21,315 - INFO - New question detected: What are the fundamental principles of thermodynamics?
+2025-05-01 02:26:21,344 - INFO - Question: What are the fundamental principles of thermodynamics?
+2025-05-01 02:26:21,374 - INFO - Full Retrieved Context:
+Thermodynamics is a branch of physics that deals with heat, work, and temperature, and their relation to energy, entropy, and the physical properties of matter and radiation. The behavior of these quantities is governed by the four laws of thermodynamics, which convey a quantitative description using measurable macroscopic physical quantities but may be explained in terms of microscopic constituents by statistical mechanics. Thermodynamics applies to various topics in science and engineering, especially physical chemistry, biochemistry, chemical engineering, and mechanical engineering, as well as other complex fields such as meteorology.
+With these tools, thermodynamics can be used to describe how systems respond to changes in their environment. This can be applied to a wide variety of topics in science and engineering, such as engines, phase transitions, chemical reactions, transport phenomena, and even black holes. The results of thermodynamics are essential for other fields of physics and for chemistry, chemical engineering, corrosion engineering, aerospace engineering, mechanical engineering, cell biology, biomedical engineering, materials science, and economics, to name a few.[7][8]
+A description of any thermodynamic system employs the four laws of thermodynamics that form an axiomatic basis. The first law specifies that energy can be transferred between physical systems as heat, as work, and with transfer of matter.[5] The second law defines the existence of a quantity called entropy, that describes the direction, thermodynamically, that a system can evolve and quantifies the state of order of a system and that can be used to quantify the useful work that can be extracted from the system.[6]
+The study of thermodynamical systems has developed into several related branches, each using a different fundamental model as a theoretical or experimental basis, or applying the principles to varying types of systems.
+Several commonly studied thermodynamic processes are:
+2025-05-01 02:27:11,728 - INFO - Answer: According to the context, the fundamental principles of thermodynamics are embodied in the four laws of thermodynamics, which serve as an axiomatic basis for describing any thermodynamic system. The first law specifies that energy can be transferred between physical systems through heat, work, and transfer of matter, providing a quantitative description of energy conservation. The second law defines the concept of entropy, which describes the direction in which a system can evolve and quantifies the state of order of a system, allowing for the calculation of the useful work that can be extracted from it. These laws form the foundation upon which all thermodynamic studies are built, providing a framework for understanding how systems respond to changes in their environment and interacting with other fields such as chemistry, engineering, and biology.
+2025-05-01 02:28:37,237 - INFO - Initializing components...
+2025-05-01 02:28:37,239 - INFO - Use pytorch device_name: cpu
+2025-05-01 02:28:37,239 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 02:28:40,867 - INFO - Using device: cpu
+2025-05-01 02:28:40,868 - INFO - Loading existing FAISS index and texts.
+2025-05-01 02:28:40,876 - INFO - Initializing FAISSVectorStore
+2025-05-01 02:28:40,974 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 02:28:40,974 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 02:28:40,974 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 02:28:40,975 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 02:28:40,975 - INFO - RAGPipeline initialized.
+2025-05-01 02:28:40,976 - INFO - Launching Streamlit UI...
+2025-05-01 02:28:40,977 - INFO - Form submitted with question: What were the main events of the American Revolution?
+2025-05-01 02:28:40,977 - INFO - New question detected: What were the main events of the American Revolution?
+2025-05-01 02:28:41,007 - INFO - Question: What were the main events of the American Revolution?
+2025-05-01 02:28:41,032 - INFO - Full Retrieved Context:
+The first shot of the American Revolution at the Battle of Lexington and Concord is referred to as the "shot heard 'round the world". The Revolutionary War victory not only established the United States as the first modern constitutional republic, but marked the transition from an age of monarchy to a new age of freedom by inspiring similar movements worldwide.[231] The American Revolution was the first of the "Atlantic Revolutions": followed most notably by the French Revolution, the Haitian Revolution, and the Latin American wars of independence. Aftershocks contributed to rebellions in Ireland, the Polish–Lithuanian Commonwealth, and the Netherlands.[232][233][231]
+The Revolution was effected before the war commenced. The Revolution was in the minds and hearts of the people .... This radical change in the principles, opinions, sentiments, and affections of the people was the real American Revolution.[139]
+Burned villages and crops, murdered chiefs, divided councils and civil wars, migrations, towns and forts choked with refugees, economic disruption, breaking of ancient traditions, losses in battle and to disease and hunger, betrayal to their enemies, all made the American Revolution one of the darkest periods in American Indian history.[206]
+The American Revolution has a central place in the American memory[271] as the story of the nation's founding. It is covered in the schools, memorialized by two national holidays, Washington's Birthday in February and Independence Day in July, and commemorated in innumerable monuments. George Washington's estate at Mount Vernon was one of the first national pilgrimages for tourists and attracted 10,000 visitors a year by the 1850s.[272]
+The Revolution resulted from multiple long-term and short-term factors, culminating in a social, economic, financial and political crisis in the late 1780s.[3][4][5] Combined with resistance to reform by the ruling elite and indecisive policy by Louis XVI and his ministers, the result was a crisis the state was unable to manage.[6][7]
+2025-05-01 02:29:57,453 - INFO - Answer: According to the context, the main events of the American Revolution can be traced back to the "shot heard 'round the world" - the first shot fired at the Battle of Lexington and Concord. This marked the beginning of the Revolutionary War, which ultimately led to the establishment of the United States as the first modern constitutional republic. The Revolution was not just a military conflict but also a philosophical and ideological movement that aimed to transition from an age of monarchy to one of freedom. This radical change in principles, opinions, sentiments, and affections of the people was the real American Revolution.
+
+As the context highlights, the Revolution was preceded by a social, economic, financial, and political crisis in the late 1780s. The ruling elite's resistance to reform, Louis XVI and his ministers' indecisive policy, and the resulting inability of the state to manage this crisis created an environment conducive to revolution. This led to the outbreak of violence, with burned villages, murdered chiefs, divided councils, civil wars, migrations, towns, and forts being overwhelmed with refugees.
+
+The American Revolution had far-reaching consequences beyond its borders. It inspired similar movements worldwide, including the French Revolution, the Haitian Revolution, and the Latin American wars of independence. The aftershocks contributed to rebellions in Ireland, Poland, Lithuania, and the Netherlands.
+2025-05-01 02:31:55,779 - INFO - Initializing components...
+2025-05-01 02:31:55,781 - INFO - Use pytorch device_name: cpu
+2025-05-01 02:31:55,782 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 02:31:59,421 - INFO - Using device: cpu
+2025-05-01 02:31:59,422 - INFO - Loading existing FAISS index and texts.
+2025-05-01 02:31:59,434 - INFO - Initializing FAISSVectorStore
+2025-05-01 02:31:59,537 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 02:31:59,538 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 02:31:59,538 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 02:31:59,538 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 02:31:59,538 - INFO - RAGPipeline initialized.
+2025-05-01 02:31:59,539 - INFO - Launching Streamlit UI...
+2025-05-01 02:31:59,540 - INFO - Form submitted with question: Who were the major figures in the Renaissance?
+2025-05-01 02:31:59,541 - INFO - New question detected: Who were the major figures in the Renaissance?
+2025-05-01 02:31:59,571 - INFO - Question: Who were the major figures in the Renaissance?
+2025-05-01 02:31:59,590 - INFO - Full Retrieved Context:
+As a cultural movement, the Renaissance encompassed innovative flowering of literary Latin and an explosion of vernacular literatures, beginning with the 14th-century resurgence of learning based on classical sources, which contemporaries credited to Petrarch; the development of linear perspective and other techniques of rendering a more natural reality in painting; and gradual but widespread educational reform. It saw myriad artistic developments and contributions from such polymaths as Leonardo da Vinci and Michelangelo, who inspired the term "Renaissance man".[5][6] In politics, the Renaissance contributed to the development of the customs and conventions of diplomacy, and in science to an increased reliance on observation and inductive reasoning. The period also saw revolutions in other intellectual and social scientific pursuits, as well as the introduction of modern banking and the field of accounting.[7]
+Other important figures of Hungarian Renaissance include Bálint Balassi (poet), Sebestyén Tinódi Lantos (poet), Bálint Bakfark (composer and lutenist), and Master MS (fresco painter).
+The Swiss historian Jacob Burckhardt (1818–1897) in his The Civilization of the Renaissance in Italy (1860), by contrast, defined the Renaissance as the period between Giotto and Michelangelo in Italy, that is, the 14th to mid-16th centuries. He saw in the Renaissance the emergence of the modern spirit of individuality, which the Middle Ages had stifled.[149] His book was widely read and became influential in the development of the modern interpretation of the Italian Renaissance.[150]
+The Renaissance (UK: /rɪˈneɪsəns/ rin-AY-sənss, US: /ˈrɛnəsɑːns/ ⓘ REN-ə-sahnss)[1][2][a] is a period of history and a European cultural movement covering the 15th and 16th centuries. It marked the transition from the Middle Ages to modernity and was characterized by an effort to revive and surpass the ideas and achievements of classical antiquity. Associated with great social change in most fields and disciplines, including art, architecture, politics, literature, exploration and science, the Renaissance was first centered in the Republic of Florence, then spread to the rest of Italy and later throughout Europe. The term rinascita ("rebirth") first appeared in Lives of the Artists (c. 1550) by Giorgio Vasari, while the corresponding French word renaissance was adopted into English as the term for this period during the 1830s.[4][b]
+The Renaissance has a long and complex historiography, and in line with general skepticism of discrete periodizations, there has been much debate among historians reacting to the 19th-century glorification of the "Renaissance" and individual cultural heroes as "Renaissance men", questioning the usefulness of Renaissance as a term and as a historical delineation.[19]
+2025-05-01 02:32:57,685 - INFO - Answer: The Renaissance was marked by the emergence of numerous artistic, scientific, and literary figures who made significant contributions to various fields. One notable figure was Petrarch, credited with sparking the 14th-century resurgence of learning based on classical sources. This period also saw the rise of polymaths like Leonardo da Vinci and Michelangelo, who exemplified the concept of the "Renaissance man." In the context of Hungarian Renaissance, notable figures included Bálint Balassi, a poet; Sebestyén Tinódi Lantos, another poet; Bálint Bakfark, a composer and lutenist; and Master MS, a fresco painter.
+2025-05-01 02:33:21,981 - INFO - Initializing components...
+2025-05-01 02:33:21,983 - INFO - Use pytorch device_name: cpu
+2025-05-01 02:33:21,983 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 02:33:26,874 - INFO - Using device: cpu
+2025-05-01 02:33:26,875 - INFO - Loading existing FAISS index and texts.
+2025-05-01 02:33:26,887 - INFO - Initializing FAISSVectorStore
+2025-05-01 02:33:26,991 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 02:33:26,991 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 02:33:26,991 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 02:33:26,991 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 02:33:26,991 - INFO - RAGPipeline initialized.
+2025-05-01 02:33:26,992 - INFO - Launching Streamlit UI...
+2025-05-01 02:33:26,994 - INFO - Form submitted with question: What is the significance of plate tectonics in shaping Earth's surface?
+2025-05-01 02:33:26,995 - INFO - New question detected: What is the significance of plate tectonics in shaping Earth's surface?
+2025-05-01 02:33:27,023 - INFO - Question: What is the significance of plate tectonics in shaping Earth's surface?
+2025-05-01 02:33:27,053 - INFO - Full Retrieved Context:
+The role of water has been proposed to be crucial in plate tectonics on Earth.[43][44][45]
+Plate tectonics (from Latin  tectonicus, from Ancient Greek  τεκτονικός (tektonikós) 'pertaining to building')[1] is the scientific theory that the Earth's lithosphere comprises a number of large tectonic plates, which have been slowly moving since 3–4 billion years ago.[2][3][4] The model builds on the concept of continental drift, an idea developed during the first decades of the 20th century. Plate tectonics came to be accepted by geoscientists after seafloor spreading was validated in the mid-to-late 1960s. The processes that result in plates and shape Earth's crust are called tectonics.
+Tectonic plates also occur in other planets and moons.
+Tectonic plates are composed of the oceanic lithosphere and the thicker continental lithosphere, each topped by its own kind of crust. Along convergent plate boundaries, the process of subduction carries the edge of one plate down under the other plate and into the mantle. This process reduces the total surface area (crust) of the Earth. The lost surface is balanced by the formation of new oceanic crust along divergent margins by seafloor spreading, keeping the total surface area constant in a tectonic "conveyor belt".
+Tectonic plates may include continental crust or oceanic crust, or both. For example, the African plate includes the continent and parts of the floor of the Atlantic and Indian Oceans.
+After all these considerations, plate tectonics (or, as it was initially called "New Global Tectonics") became quickly accepted and numerous papers followed that defined the concepts:
+2025-05-01 02:34:53,700 - INFO - Answer: The significance of plate tectonics in shaping Earth's surface lies in its ability to explain the processes that have been shaping our planet over millions of years. According to this theory, the Earth's lithosphere is comprised of several large plates that have been slowly moving since 3-4 billion years ago. These plates interact with each other at their boundaries, resulting in the creation of new crust through seafloor spreading and the destruction of old crust through subduction.
+
+The movement of these plates has led to the formation of mountains, volcanoes, earthquakes, and even the creation of oceanic and continental landmasses. The process of plate tectonics is often referred to as a "conveyor belt" because it constantly creates new surface area while destroying old one, keeping the total surface area of the Earth constant. This theory has been widely accepted by geoscientists and has revolutionized our understanding of the Earth's history, including the formation of the continents, the creation of mountain ranges, and the distribution of natural resources.
+
+In addition to shaping the Earth's surface, plate tectonics also plays a crucial role in understanding the processes that occur at the boundaries between plates. For example, convergent plate boundaries can lead to the formation of mountains through the process of orogenesis, while divergent plate boundaries can result in the creation of new oceanic crust and the opening of rifts. The theory of plate tectonics has far-reaching implications for our understanding of the Earth's internal dynamics, the movement of the continents, and the creation of natural resources such as fossil fuels and minerals.
+2025-05-01 02:35:39,609 - INFO - Initializing components...
+2025-05-01 02:35:39,611 - INFO - Use pytorch device_name: cpu
+2025-05-01 02:35:39,611 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 02:35:42,653 - INFO - Using device: cpu
+2025-05-01 02:35:42,655 - INFO - Loading existing FAISS index and texts.
+2025-05-01 02:35:42,666 - INFO - Initializing FAISSVectorStore
+2025-05-01 02:35:42,763 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 02:35:42,764 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 02:35:42,764 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 02:35:42,765 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 02:35:42,765 - INFO - RAGPipeline initialized.
+2025-05-01 02:35:42,766 - INFO - Launching Streamlit UI...
+2025-05-01 02:35:42,767 - INFO - Form submitted with question: What is the significance of plate tectonics in shaping Earth's surface?
+2025-05-01 02:35:42,768 - INFO - Question same as previous: What is the significance of plate tectonics in shaping Earth's surface?
+2025-05-01 02:35:45,523 - INFO - Initializing components...
+2025-05-01 02:35:45,524 - INFO - Use pytorch device_name: cpu
+2025-05-01 02:35:45,524 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 02:35:48,899 - INFO - Using device: cpu
+2025-05-01 02:35:48,901 - INFO - Loading existing FAISS index and texts.
+2025-05-01 02:35:48,908 - INFO - Initializing FAISSVectorStore
+2025-05-01 02:35:49,003 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 02:35:49,004 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 02:35:49,004 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 02:35:49,004 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 02:35:49,005 - INFO - RAGPipeline initialized.
+2025-05-01 02:35:49,006 - INFO - Launching Streamlit UI...
+2025-05-01 02:35:49,007 - INFO - Form submitted with question: What is the significance of plate tectonics in shaping Earth's surface?
+2025-05-01 02:35:49,008 - INFO - Question same as previous: What is the significance of plate tectonics in shaping Earth's surface?
+2025-05-01 02:35:56,522 - INFO - Initializing components...
+2025-05-01 02:35:56,634 - INFO - Use pytorch device_name: cpu
+2025-05-01 02:35:56,634 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 02:36:00,778 - INFO - Using device: cpu
+2025-05-01 02:36:00,780 - INFO - Loading existing FAISS index and texts.
+2025-05-01 02:36:00,791 - INFO - Initializing FAISSVectorStore
+2025-05-01 02:36:00,904 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 02:36:00,905 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 02:36:00,906 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 02:36:00,906 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 02:36:00,906 - INFO - RAGPipeline initialized.
+2025-05-01 02:36:00,908 - INFO - Launching Streamlit UI...
+2025-05-01 02:36:14,864 - INFO - Initializing components...
+2025-05-01 02:36:14,865 - INFO - Use pytorch device_name: cpu
+2025-05-01 02:36:14,865 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 02:36:17,879 - INFO - Using device: cpu
+2025-05-01 02:36:17,880 - INFO - Loading existing FAISS index and texts.
+2025-05-01 02:36:17,888 - INFO - Initializing FAISSVectorStore
+2025-05-01 02:36:17,979 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 02:36:17,980 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 02:36:17,980 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 02:36:17,981 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 02:36:17,981 - INFO - RAGPipeline initialized.
+2025-05-01 02:36:17,981 - INFO - Launching Streamlit UI...
+2025-05-01 02:36:17,983 - INFO - Form submitted with question:   What is the significance of plate tectonics in shaping Earth's surface?
+2025-05-01 02:36:17,983 - INFO - New question detected:   What is the significance of plate tectonics in shaping Earth's surface?
+2025-05-01 02:36:17,983 - INFO - Question:   What is the significance of plate tectonics in shaping Earth's surface?
+2025-05-01 02:36:18,009 - INFO - Full Retrieved Context:
+The role of water has been proposed to be crucial in plate tectonics on Earth.[43][44][45]
+Plate tectonics (from Latin  tectonicus, from Ancient Greek  τεκτονικός (tektonikós) 'pertaining to building')[1] is the scientific theory that the Earth's lithosphere comprises a number of large tectonic plates, which have been slowly moving since 3–4 billion years ago.[2][3][4] The model builds on the concept of continental drift, an idea developed during the first decades of the 20th century. Plate tectonics came to be accepted by geoscientists after seafloor spreading was validated in the mid-to-late 1960s. The processes that result in plates and shape Earth's crust are called tectonics.
+Tectonic plates also occur in other planets and moons.
+Tectonic plates are composed of the oceanic lithosphere and the thicker continental lithosphere, each topped by its own kind of crust. Along convergent plate boundaries, the process of subduction carries the edge of one plate down under the other plate and into the mantle. This process reduces the total surface area (crust) of the Earth. The lost surface is balanced by the formation of new oceanic crust along divergent margins by seafloor spreading, keeping the total surface area constant in a tectonic "conveyor belt".
+Tectonic plates may include continental crust or oceanic crust, or both. For example, the African plate includes the continent and parts of the floor of the Atlantic and Indian Oceans.
+After all these considerations, plate tectonics (or, as it was initially called "New Global Tectonics") became quickly accepted and numerous papers followed that defined the concepts:
+2025-05-01 02:37:29,857 - INFO - Answer: The significance of plate tectonics in shaping Earth's surface lies in its ability to explain the processes that have formed and transformed our planet over millions of years. Plate tectonics proposes that the Earth's lithosphere is comprised of large plates that move slowly, resulting in the formation of mountain ranges, volcanoes, and earthquakes. The movement of these plates can cause subduction, where one plate is forced beneath another, leading to the creation of deep ocean trenches and the formation of island arcs. Conversely, the process of seafloor spreading results in the creation of new oceanic crust as magma rises from the Earth's mantle and solidifies.
+
+This process of plate tectonics has been occurring since 3-4 billion years ago and is responsible for shaping the Earth's surface into its current form. The movement of plates also drives the formation of continents, oceans, and mountain ranges, as well as the creation of hotspots, where volcanoes erupt at fixed points on the Earth's surface over millions of years.
+
+Furthermore, plate tectonics provides a framework for understanding the Earth's geological history, including the formation of supercontinents, the creation of oceanic and continental crust, and the distribution of minerals and resources. The theory also helps explain natural phenomena such as earthquakes, volcanic eruptions, and the movement of hotspots.
+
+In summary, plate tectonics is a crucial theory that explains how the Earth's surface has been shaped over millions of years through the movement of large plates. This process drives the formation of mountains, volcanoes, and oceanic crust, and provides insights into the Earth's geological history and the distribution of natural resources.
+2025-05-01 02:44:02,313 - INFO - Loading faiss with AVX2 support.
+2025-05-01 02:44:02,328 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-01 02:44:02,331 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-01 02:44:05,118 - INFO - Initializing components...
+2025-05-01 02:44:05,119 - INFO - Use pytorch device_name: cpu
+2025-05-01 02:44:05,119 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 02:44:08,510 - INFO - Using device: cpu
+2025-05-01 02:44:08,511 - INFO - Loading existing FAISS index and texts.
+2025-05-01 02:44:08,525 - INFO - Initializing FAISSVectorStore
+2025-05-01 02:44:08,625 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 02:44:08,625 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 02:44:08,625 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 02:44:08,625 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 02:44:08,625 - INFO - RAGPipeline initialized.
+2025-05-01 02:44:08,629 - INFO - Launching Streamlit UI...
+2025-05-01 02:44:30,443 - INFO - Initializing components...
+2025-05-01 02:44:30,444 - INFO - Use pytorch device_name: cpu
+2025-05-01 02:44:30,444 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 02:44:35,440 - INFO - Using device: cpu
+2025-05-01 02:44:35,442 - INFO - Loading existing FAISS index and texts.
+2025-05-01 02:44:35,454 - INFO - Initializing FAISSVectorStore
+2025-05-01 02:44:35,555 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 02:44:35,555 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 02:44:35,555 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 02:44:35,555 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 02:44:35,555 - INFO - RAGPipeline initialized.
+2025-05-01 02:44:35,556 - INFO - Launching Streamlit UI...
+2025-05-01 02:44:35,557 - INFO - Form submitted with question:   What is the significance of plate tectonics in shaping Earth's surface?
+2025-05-01 02:44:35,557 - INFO - New question detected:   What is the significance of plate tectonics in shaping Earth's surface?
+2025-05-01 02:44:35,557 - INFO - Question:   What is the significance of plate tectonics in shaping Earth's surface?
+2025-05-01 02:44:35,583 - INFO - Full Retrieved Context:
+The role of water has been proposed to be crucial in plate tectonics on Earth.[43][44][45]
+Plate tectonics (from Latin  tectonicus, from Ancient Greek  τεκτονικός (tektonikós) 'pertaining to building')[1] is the scientific theory that the Earth's lithosphere comprises a number of large tectonic plates, which have been slowly moving since 3–4 billion years ago.[2][3][4] The model builds on the concept of continental drift, an idea developed during the first decades of the 20th century. Plate tectonics came to be accepted by geoscientists after seafloor spreading was validated in the mid-to-late 1960s. The processes that result in plates and shape Earth's crust are called tectonics.
+Tectonic plates also occur in other planets and moons.
+Tectonic plates are composed of the oceanic lithosphere and the thicker continental lithosphere, each topped by its own kind of crust. Along convergent plate boundaries, the process of subduction carries the edge of one plate down under the other plate and into the mantle. This process reduces the total surface area (crust) of the Earth. The lost surface is balanced by the formation of new oceanic crust along divergent margins by seafloor spreading, keeping the total surface area constant in a tectonic "conveyor belt".
+Tectonic plates may include continental crust or oceanic crust, or both. For example, the African plate includes the continent and parts of the floor of the Atlantic and Indian Oceans.
+After all these considerations, plate tectonics (or, as it was initially called "New Global Tectonics") became quickly accepted and numerous papers followed that defined the concepts:
+2025-05-01 02:46:02,093 - INFO - Full Answer: The significance of plate tectonics in shaping Earth's surface is multifaceted. Plate tectonics is responsible for the movement of large tectonic plates, which have been slowly moving since 3–4 billion years ago. This process shapes the Earth's crust through various mechanisms such as subduction, seafloor spreading, and continental drift. Along convergent plate boundaries, the process of subduction carries the edge of one plate down under the other plate and into the mantle, reducing the total surface area (crust) of the Earth. Conversely, along divergent margins, the formation of new oceanic crust through seafloor spreading balances out the lost surface, keeping the total surface area constant in a tectonic "conveyor belt".
+
+Key points include the composition of tectonic plates, which are made up of oceanic lithosphere and continental lithosphere, each topped by its own kind of crust. Additionally, tectonic plates can include both continental crust and oceanic crust or either one separately, as seen in the African plate which includes the continent and parts of the floor of the Atlantic and Indian Oceans.
+
+In summary, plate tectonics plays a crucial role in shaping Earth's surface through various mechanisms such as subduction, seafloor spreading, and continental drift. The movement of large tectonic plates over millions of years has resulted in the formation of different landmasses, ocean basins, and mountain ranges, making it a fundamental concept in understanding the evolution of our planet.
+2025-05-01 02:46:02,094 - INFO - Extracted Summary: In summary, plate tectonics plays a crucial role in shaping Earth's surface through various mechanisms such as subduction, seafloor spreading, and continental drift. The movement of large tectonic plates over millions of years has resulted in the formation of different landmasses, ocean basins, and mountain ranges, making it a fundamental concept in understanding the evolution of our planet.
+2025-05-01 02:48:20,556 - INFO - Initializing components...
+2025-05-01 02:48:20,558 - INFO - Use pytorch device_name: cpu
+2025-05-01 02:48:20,558 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 02:48:24,304 - INFO - Using device: cpu
+2025-05-01 02:48:24,305 - INFO - Loading existing FAISS index and texts.
+2025-05-01 02:48:24,315 - INFO - Initializing FAISSVectorStore
+2025-05-01 02:48:24,420 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 02:48:24,421 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 02:48:24,421 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 02:48:24,421 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 02:48:24,421 - INFO - RAGPipeline initialized.
+2025-05-01 02:48:24,422 - INFO - Launching Streamlit UI...
+2025-05-01 02:48:26,678 - INFO - Initializing components...
+2025-05-01 02:48:26,680 - INFO - Use pytorch device_name: cpu
+2025-05-01 02:48:26,680 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 02:48:29,833 - INFO - Using device: cpu
+2025-05-01 02:48:29,835 - INFO - Loading existing FAISS index and texts.
+2025-05-01 02:48:29,844 - INFO - Initializing FAISSVectorStore
+2025-05-01 02:48:29,935 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 02:48:29,935 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 02:48:29,935 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 02:48:29,935 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 02:48:29,935 - INFO - RAGPipeline initialized.
+2025-05-01 02:48:29,936 - INFO - Launching Streamlit UI...
+2025-05-01 02:48:29,937 - INFO - Form submitted with question:   What is the significance of plate tectonics in shaping Earth's surface?
+2025-05-01 02:48:29,937 - INFO - Question same as previous:   What is the significance of plate tectonics in shaping Earth's surface?
+2025-05-01 02:50:48,036 - INFO - Initializing components...
+2025-05-01 02:50:48,038 - INFO - Use pytorch device_name: cpu
+2025-05-01 02:50:48,038 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 02:50:51,056 - INFO - Using device: cpu
+2025-05-01 02:50:51,057 - INFO - Loading existing FAISS index and texts.
+2025-05-01 02:50:51,065 - INFO - Initializing FAISSVectorStore
+2025-05-01 02:50:51,156 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 02:50:51,156 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 02:50:51,157 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 02:50:51,157 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 02:50:51,157 - INFO - RAGPipeline initialized.
+2025-05-01 02:50:51,157 - INFO - Launching Streamlit UI...
+2025-05-01 02:50:51,159 - INFO - Form submitted with question:   What is the significance of plate tectonics in shaping Earth's surface?
+2025-05-01 02:50:51,159 - INFO - Question same as previous:   What is the significance of plate tectonics in shaping Earth's surface?
+2025-05-01 02:51:41,061 - INFO - Initializing components...
+2025-05-01 02:51:41,063 - INFO - Use pytorch device_name: cpu
+2025-05-01 02:51:41,063 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 02:51:45,434 - INFO - Using device: cpu
+2025-05-01 02:51:45,436 - INFO - Loading existing FAISS index and texts.
+2025-05-01 02:51:45,448 - INFO - Initializing FAISSVectorStore
+2025-05-01 02:51:45,542 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 02:51:45,543 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 02:51:45,543 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 02:51:45,543 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 02:51:45,544 - INFO - RAGPipeline initialized.
+2025-05-01 02:51:45,544 - INFO - Launching Streamlit UI...
+2025-05-01 02:51:45,545 - INFO - Form submitted with question: What is Photosynthesis
+2025-05-01 02:51:45,546 - INFO - New question detected: What is Photosynthesis
+2025-05-01 02:51:45,546 - INFO - Question: What is Photosynthesis
+2025-05-01 02:51:45,570 - INFO - Full Retrieved Context:
+Photosynthesis (/ˌfoʊtəˈsɪnθəsɪs/ FOH-tə-SINTH-ə-sis)[1] is a system of biological processes by which photosynthetic organisms, such as most plants, algae, and cyanobacteria, convert light energy, typically from sunlight, into the chemical energy necessary to fuel their metabolism. 
+Photosynthesis usually refers to oxygenic photosynthesis, a process that produces oxygen. Photosynthetic organisms store the chemical energy so produced within intracellular organic compounds (compounds containing carbon) like sugars, glycogen, cellulose and starches. To use this stored chemical energy, an organism's cells metabolize the organic compounds through cellular respiration. Photosynthesis plays a critical role in producing and maintaining the oxygen content of the Earth's atmosphere, and it supplies most of the biological energy necessary for complex life on Earth.[2]
+Photosynthesis occurs in two stages. In the first stage, light-dependent reactions or light reactions capture the energy of light and use it to make the hydrogen carrier NADPH and the energy-storage molecule ATP. During the second stage, the light-independent reactions use these products to capture and reduce carbon dioxide.
+The general equation for photosynthesis as first proposed by Cornelis van Niel is:[17]
+A photosynthetic pigment (accessory pigment; chloroplast pigment; antenna pigment) is a pigment that is present in chloroplasts or photosynthetic bacteria and captures the light energy necessary for photosynthesis.
+In 1893, the American botanist Charles Reid Barnes proposed two terms, photosyntax and photosynthesis, for the biological process of synthesis of complex carbon compounds out of carbonic acid, in the presence of chlorophyll, under the influence of light. The term photosynthesis is derived from the Greek phōs (φῶς, gleam) and sýnthesis (σύνθεσις, arranging together),[97][98][99] while another word that he designated was photosyntax, from sýntaxis (σύνταξις, configuration). Over time, the term photosynthesis came into common usage. Later discovery of anoxygenic photosynthetic bacteria and photophosphorylation necessitated redefinition of the term.[100]
+2025-05-01 02:52:43,380 - INFO - Answer: Photosynthesis is a biological process by which photosynthetic organisms, such as most plants, algae, and cyanobacteria, convert light energy from sunlight into chemical energy necessary to fuel their metabolism. This process occurs in two stages: the first stage, known as light-dependent reactions or light reactions, captures the energy of light and produces hydrogen carrier NADPH and energy-storage molecule ATP. The second stage, light-independent reactions, uses these products to capture and reduce carbon dioxide. Through this process, photosynthetic organisms store chemical energy within intracellular organic compounds such as sugars, glycogen, cellulose, and starches, which are then metabolized through cellular respiration to produce the energy needed for complex life on Earth.
+2025-05-01 02:53:24,511 - INFO - Initializing components...
+2025-05-01 02:53:24,512 - INFO - Use pytorch device_name: cpu
+2025-05-01 02:53:24,513 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 02:53:27,784 - INFO - Using device: cpu
+2025-05-01 02:53:27,785 - INFO - Loading existing FAISS index and texts.
+2025-05-01 02:53:27,797 - INFO - Initializing FAISSVectorStore
+2025-05-01 02:53:27,899 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 02:53:27,899 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 02:53:27,900 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 02:53:27,900 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 02:53:27,900 - INFO - RAGPipeline initialized.
+2025-05-01 02:53:27,901 - INFO - Launching Streamlit UI...
+2025-05-01 02:53:31,683 - INFO - Initializing components...
+2025-05-01 02:53:31,685 - INFO - Use pytorch device_name: cpu
+2025-05-01 02:53:31,686 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 02:53:34,353 - INFO - Using device: cpu
+2025-05-01 02:53:34,354 - INFO - Loading existing FAISS index and texts.
+2025-05-01 02:53:34,364 - INFO - Initializing FAISSVectorStore
+2025-05-01 02:53:34,456 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 02:53:34,456 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 02:53:34,456 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 02:53:34,456 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 02:53:34,457 - INFO - RAGPipeline initialized.
+2025-05-01 02:53:34,458 - INFO - Launching Streamlit UI...
+2025-05-01 02:53:34,459 - INFO - Form submitted with question: What is Photosynthesis
+2025-05-01 02:53:34,459 - INFO - Question same as previous: What is Photosynthesis
+2025-05-01 02:53:54,379 - INFO - Initializing components...
+2025-05-01 02:53:54,380 - INFO - Use pytorch device_name: cpu
+2025-05-01 02:53:54,380 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 02:53:57,335 - INFO - Using device: cpu
+2025-05-01 02:53:57,336 - INFO - Loading existing FAISS index and texts.
+2025-05-01 02:53:57,344 - INFO - Initializing FAISSVectorStore
+2025-05-01 02:53:57,433 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 02:53:57,433 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 02:53:57,434 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 02:53:57,434 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 02:53:57,434 - INFO - RAGPipeline initialized.
+2025-05-01 02:53:57,435 - INFO - Launching Streamlit UI...
+2025-05-01 02:53:57,436 - INFO - Form submitted with question: What is DNA and what is its function in living organisms?
+2025-05-01 02:53:57,437 - INFO - New question detected: What is DNA and what is its function in living organisms?
+2025-05-01 02:53:57,437 - INFO - Question: What is DNA and what is its function in living organisms?
+2025-05-01 02:53:57,460 - INFO - Full Retrieved Context:
+All the functions of DNA depend on interactions with proteins. These protein interactions can be non-specific, or the protein can bind specifically to a single DNA sequence. Enzymes can also bind to DNA and of these, the polymerases that copy the DNA base sequence in transcription and DNA replication are particularly important.
+DNA usually occurs as linear chromosomes in eukaryotes, and circular chromosomes in prokaryotes. The set of chromosomes in a cell makes up its genome; the human genome has approximately 3 billion base pairs of DNA arranged into 46 chromosomes.[96] The information carried by DNA is held in the sequence of pieces of DNA called genes. Transmission of genetic information in genes is achieved via complementary base pairing. For example, in transcription, when a cell uses the information in a gene, the DNA sequence is copied into a complementary RNA sequence through the attraction between the DNA and the correct RNA nucleotides. Usually, this RNA copy is then used to make a matching protein sequence in a process called translation, which depends on the same interaction between RNA nucleotides. In an alternative fashion, a cell may copy its genetic information in a process called DNA replication. The details of these functions are covered in other articles; here the focus is on the interactions between DNA and other molecules that mediate the function of the genome.
+Deoxyribonucleic acid (/diːˈɒksɪˌraɪboʊnjuːˌkliːɪk, -ˌkleɪ-/ ⓘ;[1] DNA) is a polymer composed of two polynucleotide chains that coil around each other to form a double helix. The polymer carries genetic instructions for the development, functioning, growth and reproduction of all known organisms and many viruses. DNA and ribonucleic acid (RNA) are nucleic acids. Alongside proteins, lipids and complex carbohydrates (polysaccharides), nucleic acids are one of the four major types of macromolecules that are essential for all known forms of life.
+Ribonucleic acid (RNA) is a polymeric molecule that is essential for most biological functions, either by performing the function itself (non-coding RNA) or by forming a template for the production of proteins (messenger RNA). RNA and deoxyribonucleic acid (DNA) are nucleic acids. The nucleic acids constitute one of the four major macromolecules essential for all known forms of life. RNA is assembled as a chain of nucleotides. Cellular organisms use messenger RNA (mRNA) to convey genetic information (using the nitrogenous bases of guanine, uracil, adenine, and cytosine, denoted by the letters G, U, A, and C) that directs synthesis of specific proteins. Many viruses encode their genetic information using an RNA genome.
+Although the structure of DNA showed how inheritance works, it was still not known how DNA influences the behavior of cells. In the following years, scientists tried to understand how DNA controls the process of protein production.[35] It was discovered that the cell uses DNA as a template to create matching messenger RNA, molecules with nucleotides very similar to DNA. The nucleotide sequence of a messenger RNA is used to create an amino acid sequence in protein; this translation between nucleotide sequences and amino acid sequences is known as the genetic code.[36]
+2025-05-01 02:55:10,460 - INFO - Answer: DNA (deoxyribonucleic acid) is a polymer composed of two polynucleotide chains that coil around each other to form a double helix. It carries genetic instructions for the development, functioning, growth, and reproduction of all known organisms and many viruses. DNA's primary function in living organisms is to store and transmit genetic information from one generation to the next.
+
+In more detail, DNA serves as a blueprint or template that contains the genetic code for creating proteins, which are essential molecules for various cellular functions. The sequence of nucleotides in DNA determines the sequence of amino acids in proteins, which perform specific roles within cells. This process is known as transcription and translation. Additionally, DNA's interactions with proteins play a crucial role in regulating gene expression, controlling cell growth and differentiation, and mediating responses to environmental stimuli. Overall, DNA's function is to provide the genetic instructions that guide the development and functioning of all living organisms.

@@ -1,7 +1,8 @@
 import abc
 import logging
-from transformers import pipeline, AutoTokenizer, AutoModelForCausalLM
-import torch
+import requests
+import os
+import json
 
 # Configure logging
 logging.basicConfig(filename='rag_project.log', level=logging.INFO, 
@@ -14,40 +15,59 @@ class BaseLLM(abc.ABC):
         """Generate a response based on the prompt."""
         pass
 
-class HuggingFaceLLM(BaseLLM):
-    """Concrete LLM using HuggingFace transformers."""
+class OllamaLLM(BaseLLM):
+    """Concrete LLM using Ollama's API for LLaMA 3 8B."""
     def __init__(self):
-        logging.info("Initializing HuggingFaceLLM")
-        model_name = "EleutherAI/gpt-neo-1.3B"
-        self.tokenizer = AutoTokenizer.from_pretrained(model_name)
-        self.model = AutoModelForCausalLM.from_pretrained(model_name)
-        device = 0 if torch.cuda.is_available() else -1
-        logging.info(f"Device set to use: {'cuda' if device == 0 else 'cpu'}")
-        self.generator = pipeline(
-            'text-generation',
-            model=self.model,
-            tokenizer=self.tokenizer,
-            device=device,
-            max_new_tokens=150,
-            temperature=0.6,  # Increased for better diversity
-            top_p=0.9,
-            do_sample=True
-        )
+        logging.info("Initializing OllamaLLM with LLaMA 3 8B")
+        self.model_name = "llama3:8b"
+        # Use OLLAMA_HOST environment variable if set, otherwise default to 11434
+        ollama_host = os.getenv("OLLAMA_HOST", "127.0.0.1:11434")
+        self.api_url = f"http://{ollama_host}/api/generate"
+        logging.info(f"Ollama API URL set to: {self.api_url}")
     
     def generate(self, prompt: str) -> str:
         try:
-            response = self.generator(
-                prompt,
-                max_new_tokens=150,
-                temperature=0.6,
-                top_p=0.9,
-                do_sample=True,
-                num_return_sequences=1
-            )
-            generated_text = response[0]['generated_text']
-            # Extract only the answer part, removing the prompt
-            answer_start = generated_text.find("Answer:") + len("Answer:")
-            return generated_text[answer_start:].strip()
+            # Test if the server is reachable
+            test_response = requests.get(self.api_url.replace("/generate", "/tags"))
+            if test_response.status_code != 200:
+                raise Exception(f"Ollama server not reachable: {test_response.status_code} - {test_response.text}")
+            
+            # Modify the prompt to request a detailed response
+            detailed_prompt = f"{prompt}\nProvide a detailed answer in at least 3-4 lines, explaining the context and key points."
+            # Prepare the payload for Ollama's API
+            payload = {
+                "model": self.model_name,
+                "prompt": detailed_prompt,
+                # "temperature": 0.5,
+                # "top_p": 0.85,
+                "max_tokens": 150,  # Increased to allow for longer responses
+                "stream": True
+            }
+            # Send request to Ollama API with streaming enabled
+            with requests.post(self.api_url, json=payload, stream=True) as response:
+                response.raise_for_status()  # Raise an error for bad status codes
+                full_response = ""
+                for line in response.iter_lines():
+                    if line:  # Skip empty lines
+                        try:
+                            chunk = json.loads(line.decode('utf-8'))
+                            if "response" in chunk:
+                                full_response += chunk["response"]
+                            if chunk.get("done", False):
+                                break
+                        except json.JSONDecodeError as e:
+                            logging.error(f"JSON decode error in chunk: {str(e)} - Chunk: {line.decode('utf-8')}")
+                            continue
+                if not full_response:
+                    return "Error: No response from Ollama"
+                # Return the full response without incorrect "Answer:" extraction
+                return full_response.strip()
+        except requests.exceptions.ConnectionError:
+            logging.error(f"Failed to connect to Ollama server at {self.api_url}. Ensure the server is running.")
+            return "Error: Ollama server not running or unreachable."
+        except requests.exceptions.HTTPError as e:
+            logging.error(f"HTTP error from Ollama: {str(e)}")
+            return f"Error: HTTP {e.response.status_code} - {e.response.text}"
         except Exception as e:
-            logging.error(f"Error generating response: {str(e)}")
-            return "Error generating response."
+            logging.error(f"Error generating response with Ollama: {str(e)}")
+            return f"Error: {str(e)}"

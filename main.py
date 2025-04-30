@@ -9,13 +9,13 @@ import os
 try:
     from .scraper import WikipediaScraper
     from .vector_store import FAISSVectorStore
-    from .llm import HuggingFaceLLM
+    from .llm import OllamaLLM
     from .rag_pipeline import RAGPipeline
     from .data_processing import scrape_and_store
 except ImportError:
     from scraper import WikipediaScraper
     from vector_store import FAISSVectorStore
-    from llm import HuggingFaceLLM
+    from llm import OllamaLLM
     from rag_pipeline import RAGPipeline
     from data_processing import scrape_and_store
 
@@ -43,14 +43,23 @@ def run_ui(rag_pipeline: RAGPipeline):
         st.session_state.answer = None
     if 'response_time' not in st.session_state:
         st.session_state.response_time = None
+    if 'query_processed' not in st.session_state:
+        st.session_state.query_processed = False
+    if 'form_submitted' not in st.session_state:
+        st.session_state.form_submitted = False
+
+    logger.info("Launching Streamlit UI...")
 
     with st.form("query_form"):
         question = st.text_input("Enter your question:")
         submitted = st.form_submit_button("Get Answer")
 
         if submitted and question.strip():
-            # Only process if the question is new
+            logger.info(f"Form submitted with question: {question}")
+            # Check if the question has changed
             if question != st.session_state.last_question:
+                logger.info(f"New question detected: {question}")
+                rag_pipeline.process.cache_clear()
                 start = time.time()
                 answer = rag_pipeline.process(question)
                 duration = time.time() - start
@@ -58,12 +67,19 @@ def run_ui(rag_pipeline: RAGPipeline):
                 st.session_state.last_question = question
                 st.session_state.answer = answer
                 st.session_state.response_time = duration
-            # Display the result
-            if st.session_state.answer:
-                st.markdown(f"**Answer:** {st.session_state.answer}")
-                st.markdown(f"**Response Time:** {st.session_state.response_time:.2f} seconds")
+                st.session_state.query_processed = True
+                st.session_state.form_submitted = True
             else:
-                st.warning("Please enter a valid question.")
+                logger.info(f"Question same as previous: {question}")
+
+        # Display the result only if the form was submitted and processed
+        if st.session_state.form_submitted and st.session_state.answer:
+            st.markdown(f"**Answer:** {st.session_state.answer}")
+            st.markdown(f"**Response Time:** {st.session_state.response_time:.2f} seconds")
+            # Reset form_submitted to prevent re-display on re-render
+            st.session_state.form_submitted = False
+        elif submitted and not question.strip():
+            st.warning("Please enter a valid question.")
 
 async def main_async():
     global RUN_FLAG
@@ -92,7 +108,7 @@ async def main_async():
             logger.info("Creating new FAISS index from scratch.")
             vector_store = FAISSVectorStore(embedding_model)
 
-        llm = HuggingFaceLLM()
+        llm = OllamaLLM()
         rag_pipeline = RAGPipeline(vector_store, llm, embedding_model)
 
         # Only scrape if files don't exist
@@ -161,7 +177,6 @@ async def main_async():
             await scrape_and_store(scraper, vector_store, urls, index_path, texts_path)
             logger.info("Scraping completed.")
 
-        logger.info("Launching Streamlit UI...")
         run_ui(rag_pipeline)
 
     except Exception as e:

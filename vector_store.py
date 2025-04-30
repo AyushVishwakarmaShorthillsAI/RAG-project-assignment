@@ -54,7 +54,7 @@ class FAISSVectorStore(BaseVectorStore):
 
         return selected_texts
 
-    def _mmr(self, query_embedding, doc_embeddings, texts, k=10, lambda_param=0.5) -> List[str]:
+    def _mmr(self, query_embedding, doc_embeddings, texts, k=5, lambda_param=0.5) -> List[str]:
         selected = []
         selected_indices = []
         # Use pre-stored embeddings for MMR
