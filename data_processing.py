@@ -1,49 +1,28 @@
-import asyncio
 import logging
+import asyncio
 from typing import List
-import torch
-import os
-try:
-    from .scraper import BaseScraper
-    from .vector_store import BaseVectorStore
-except ImportError:
-    from scraper import BaseScraper
-    from vector_store import BaseVectorStore
+from scraper import WikipediaScraper
+from vector_store import FAISSVectorStore
 
-# Configure logging
-logging.basicConfig(filename='rag_project.log', level=logging.INFO,
-                    format='%(asctime)s - %(levelname)s - %(message)s')
-
-async def scrape_and_store(scraper: BaseScraper, vector_store: BaseVectorStore, urls: List[str], 
-                         index_path: str = "faiss_index.bin", texts_path: str = "texts.pkl"):
-    """Scrape data asynchronously and store in vector store, or load existing data."""
-    # Check if FAISS index and texts exist
-    if os.path.exists(index_path) and os.path.exists(texts_path):
-        logging.info("Existing FAISS index and texts found. Skipping scraping.")
-        return
+async def scrape_and_store(scraper: WikipediaScraper, vector_store: FAISSVectorStore, urls: List[str], index_path: str, texts_path: str):
+    """Scrape content from URLs and store in the vector store."""
+    tasks = []
+    for url in urls:
+        tasks.append(scraper.scrape(url))
     
-    doc_count = len(vector_store.texts) if hasattr(vector_store, 'texts') else 0
-    logging.info(f"Documents in collection before processing: {doc_count}")
-    if doc_count == 0:
-        tasks = [scraper.scrape(url) for url in urls]
-        all_texts = []
-        for future in asyncio.as_completed(tasks):
-            texts = await future
-            all_texts.extend(texts)
+    results = await asyncio.gather(*tasks, return_exceptions=True)
+    
+    for url, result in zip(urls, results):
+        if isinstance(result, Exception):
+            logging.error(f"Failed to scrape {url}: {str(result)}")
+            continue
+        if not result:
+            logging.warning(f"No content scraped from {url}")
+            continue
         
-        batch_size = 64
-        embeddings = []
-        for i in range(0, len(all_texts), batch_size):
-            batch = all_texts[i:i + batch_size]
-            embeddings.extend(
-                vector_store.embedding_model.encode(
-                    batch,
-                    show_progress_bar=False,
-                    device="cuda" if torch.cuda.is_available() else "cpu"
-                ).tolist()
-            )
-        
-        vector_store.store(all_texts, embeddings)
-        vector_store.save(index_path, texts_path)
-    else:
-        logging.info("Collection already contains data. Skipping scraping and storing.")
+        texts = result
+        embeddings = vector_store.embedding_model.encode(texts).tolist()
+        vector_store.store(texts, embeddings)
+        logging.info(f"Stored content from {url}")
+    
+    vector_store.save(index_path, texts_path)

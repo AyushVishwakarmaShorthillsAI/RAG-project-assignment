@@ -1,116 +1,61 @@
-import abc
-import logging
-import faiss
-import numpy as np
-from sentence_transformers import SentenceTransformer
-from typing import List, Optional
 import pickle
-import os
+import faiss
+import logging
+import numpy as np
 
-# Configure logging
-logging.basicConfig(filename='rag_project.log', level=logging.INFO,
-                    format='%(asctime)s - %(levelname)s - %(message)s')
-
-class BaseVectorStore(abc.ABC):
-    """Abstract base class for vector stores."""
-    @abc.abstractmethod
-    def store(self, texts: List[str], embeddings: List[List[float]]):
-        pass
-
-    @abc.abstractmethod
-    def query(self, query_embedding: List[float], top_k: int, use_mmr: bool) -> List[str]:
-        pass
-
-class FAISSVectorStore(BaseVectorStore):
-    """Concrete vector store using FAISS for faster retrieval."""
-    def __init__(self, embedding_model: SentenceTransformer, dimension: int = 384):
-        logging.info("Initializing FAISSVectorStore")
+class FAISSVectorStore:
+    """Vector store using FAISS for efficient similarity search."""
+    
+    def __init__(self, embedding_model):
         self.embedding_model = embedding_model
-        self.index = faiss.IndexFlatL2(dimension) 
+        self.dimension = 384  # Dimension for 'all-MiniLM-L6-v2'
+        self.index = faiss.IndexFlatL2(self.dimension)
         self.texts = []
-        self.embeddings = []  
-
-    def store(self, texts: List[str], embeddings: List[List[float]]):
-        if not texts:
-            logging.warning("No texts provided for storing.")
+        logging.info("FAISSVector Ferrari initialized.")
+    
+    def store(self, texts: list, embeddings: list):
+        """Store texts and their embeddings in the vector store."""
+        if not texts or not embeddings or len(texts) != len(embeddings):
+            logging.warning("No texts or embeddings provided, or mismatch in lengths.")
             return
-        embeddings_np = np.array(embeddings, dtype=np.float32)
-        faiss.normalize_L2(embeddings_np)  
-        self.index.add(embeddings_np)
+        
+        embeddings_array = np.array(embeddings, dtype=np.float32)
+        self.index.add(embeddings_array)
         self.texts.extend(texts)
-        self.embeddings.extend(embeddings_np.tolist())
-        logging.info(f"Stored {len(texts)} documents in FAISS")
-
-    def query(self, query_embedding: List[float], top_k: int = 5, use_mmr: bool = False) -> List[str]:
-        query_np = np.array([query_embedding], dtype=np.float32)
-        faiss.normalize_L2(query_np)
-
-        _, indices = self.index.search(query_np, top_k * 2 if use_mmr else top_k)
-        selected_texts = [self.texts[i] for i in indices[0]]
-
-        if use_mmr:
-            selected_embeddings = [self.embeddings[i] for i in indices[0]]
-            return self._mmr(query_embedding, selected_embeddings, selected_texts, top_k)
-
+        logging.info(f"Stored {len(texts)} texts and embeddings.")
+    
+    def query(self, query_embedding: list, top_k: int = 5) -> list:
+        """Query the vector store for the top_k most similar texts."""
+        if self.index.ntotal == 0:
+            logging.warning("Vector store index is empty. Cannot query.")
+            return []
+        
+        query_array = np.array([query_embedding], dtype=np.float32)
+        distances, indices = self.index.search(query_array, top_k)
+        
+        # Filter out invalid indices
+        valid_indices = [i for i in indices[0] if i >= 0 and i < len(self.texts)]
+        if not valid_indices:
+            logging.warning("No valid indices returned from FAISS search.")
+            return []
+        
+        selected_texts = [self.texts[i] for i in valid_indices]
+        logging.info(f"Queried vector store: Retrieved {len(selected_texts)} contexts.")
         return selected_texts
-
-    def _mmr(self, query_embedding, doc_embeddings, texts, k=5, lambda_param=0.5) -> List[str]:
-        selected = []
-        selected_indices = []
-        # Use pre-stored embeddings for MMR
-        similarity_to_query = np.dot(doc_embeddings, np.array(query_embedding).reshape(-1, 1)).flatten()
-
-        while len(selected) < k and len(selected) < len(texts):
-            scores = []
-            for i in range(len(texts)):
-                if i in selected_indices:
-                    continue
-                relevance = similarity_to_query[i]
-                diversity = max(
-                    np.dot(doc_embeddings[i], doc_embeddings[j])
-                    for j in selected_indices
-                ) if selected_indices else 0
-                mmr_score = lambda_param * relevance - (1 - lambda_param) * diversity
-                scores.append((mmr_score, i))
-
-            scores.sort(reverse=True)
-            _, best_idx = scores[0]
-            selected.append(texts[best_idx])
-            selected_indices.append(best_idx)
-
-        return selected
-
-    def save(self, index_path: str = "faiss_index.bin", texts_path: str = "texts.pkl", emb_path: str = "embeddings.pkl"):
+    
+    def save(self, index_path: str, texts_path: str):
+        """Save the FAISS index and texts to disk."""
         faiss.write_index(self.index, index_path)
         with open(texts_path, 'wb') as f:
             pickle.dump(self.texts, f)
-        with open(emb_path, 'wb') as f:
-            pickle.dump(self.embeddings, f)
-        logging.info(f"Saved FAISS index to {index_path}, texts to {texts_path}, and embeddings to {emb_path}")
+        logging.info(f"Saved FAISS index to {index_path} and texts to {texts_path}.")
     
-    @classmethod
-    def load(cls, embedding_model: SentenceTransformer,
-            index_path: str = "faiss_index.bin",
-            texts_path: str = "texts.pkl",
-            emb_path: str = "embeddings.pkl"):
-        if not (os.path.exists(index_path) and os.path.exists(texts_path)):
-            raise FileNotFoundError("FAISS index or texts file not found")
-
-        index = faiss.read_index(index_path)
+    @staticmethod
+    def load(embedding_model, index_path: str, texts_path: str):
+        """Load a FAISSVectorStore from disk."""
+        vector_store = FAISSVectorStore(embedding_model)
+        vector_store.index = faiss.read_index(index_path)
         with open(texts_path, 'rb') as f:
-            texts = pickle.load(f)
-
-        instance = cls(embedding_model)
-        instance.index = index
-        instance.texts = texts
-
-        if os.path.exists(emb_path):
-            with open(emb_path, 'rb') as f:
-                instance.embeddings = pickle.load(f)
-            logging.info("Loaded embeddings for MMR retrieval.")
-        else:
-            instance.embeddings = []
-            logging.warning("Embeddings file not found. MMR will not be available unless re-stored.")
-
-        logging.info(f"Loaded FAISS index from {index_path} and texts from {texts_path}")
-        return instance
+            vector_store.texts = pickle.load(f)
+        logging.info(f"Loaded FAISS index from {index_path} and texts from {texts_path}.")
+        return vector_store

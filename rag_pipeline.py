@@ -29,15 +29,16 @@ class RAGPipeline:
         context_str = "\n".join(contexts)
         logging.info(f"Full Retrieved Context:\n{context_str}")
         
-        # Prepare the prompt with context and question
+        # Prepare the prompt with context and question, requesting only a summary
         prompt = (
             f"Context:\n{context_str}\n\n"
             f"Question: {question}\n"
-            f"Based on the provided context, answer the question in brief, "
-            f"explaining the key points and providing context."
+            f"Provide a brief answer in not more than 3 sentences that directly addresses the question using scientific reasoning. "
+            f"The answer must be based on established scientific principles or historical scientific developments relevant to the question. "
+            f"Do not include additional details, historical context, or unrelated information beyond the core scientific answer."
         )
         
         # Generate response using the LLM
         answer = self.llm.generate(prompt)
         logging.info(f"Answer: {answer}")
-        return answer
+        return answer.strip()

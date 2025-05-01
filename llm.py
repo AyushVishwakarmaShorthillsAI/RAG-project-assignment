@@ -32,15 +32,13 @@ class OllamaLLM(BaseLLM):
             if test_response.status_code != 200:
                 raise Exception(f"Ollama server not reachable: {test_response.status_code} - {test_response.text}")
             
-            # Modify the prompt to request a detailed response
-            detailed_prompt = f"{prompt}\nProvide a detailed answer in at least 3-4 lines, explaining the context and key points."
-            # Prepare the payload for Ollama's API
+            # Use the original prompt without modifying it to request a detailed response
             payload = {
                 "model": self.model_name,
-                "prompt": detailed_prompt,
+                "prompt": prompt,
                 # "temperature": 0.5,
                 # "top_p": 0.85,
-                "max_tokens": 150,  # Increased to allow for longer responses
+                "max_tokens": 150,  # Kept to allow flexibility, but controlled by RAGPipeline
                 "stream": True
             }
             # Send request to Ollama API with streaming enabled

@@ -21,7 +21,7 @@ except ImportError:
 
 from sentence_transformers import SentenceTransformer
 
-# Logging setup
+# Logging setup for general application logs
 logging.basicConfig(
     filename='rag_project.log',
     level=logging.INFO,
@@ -29,6 +29,20 @@ logging.basicConfig(
 )
 logger = logging.getLogger()
 logger.addHandler(logging.StreamHandler(sys.stdout))
+
+# Separate logger for Q&A interactions
+qa_logger = logging.getLogger('qa_interactions')
+qa_handler = logging.FileHandler('qa_interactions.log')
+qa_handler.setFormatter(logging.Formatter('%(asctime)s - Question: %(message)s'))
+qa_logger.addHandler(qa_handler)
+qa_logger.setLevel(logging.INFO)
+
+# Logger for answers to ensure proper formatting
+qa_answer_logger = logging.getLogger('qa_interactions_answer')
+qa_answer_handler = logging.FileHandler('qa_interactions.log', mode='a')
+qa_answer_handler.setFormatter(logging.Formatter('%(asctime)s - Answer: %(message)s'))
+qa_answer_logger.addHandler(qa_answer_handler)
+qa_answer_logger.setLevel(logging.INFO)
 
 RUN_FLAG = False  # Prevents multiple Streamlit executions
 
@@ -63,6 +77,9 @@ def run_ui(rag_pipeline: RAGPipeline):
                 start = time.time()
                 answer = rag_pipeline.process(question)
                 duration = time.time() - start
+                # Log Q&A pair to qa_interactions.log
+                qa_logger.info(question)
+                qa_answer_logger.info(answer)
                 # Update session state
                 st.session_state.last_question = question
                 st.session_state.answer = answer
@@ -114,34 +131,32 @@ async def main_async():
         # Only scrape if files don't exist
         if not os.path.exists(index_path) or not os.path.exists(texts_path):
             urls = [
+                # Wikipedia (50 URLs)
+                "https://en.wikipedia.org/wiki/Photosynthesis",
+                "https://en.wikipedia.org/wiki/Renaissance",
+                "https://en.wikipedia.org/wiki/DNA",
+                "https://en.wikipedia.org/wiki/Quantum_mechanics",
+                "https://en.wikipedia.org/wiki/World_War_II",
+                "https://en.wikipedia.org/wiki/Calculus",
+                "https://en.wikipedia.org/wiki/Black_hole",
+                "https://en.wikipedia.org/wiki/Climate_change",
+                "https://en.wikipedia.org/wiki/Industrial_Revolution",
+                "https://en.wikipedia.org/wiki/William_Shakespeare",
+                "https://en.wikipedia.org/wiki/Ancient_Egypt",
                 "https://en.wikipedia.org/wiki/Evolution",
                 "https://en.wikipedia.org/wiki/Genetics",
                 "https://en.wikipedia.org/wiki/Periodic_table",
                 "https://en.wikipedia.org/wiki/Chemical_bonding",
                 "https://en.wikipedia.org/wiki/Plate_tectonics",
                 "https://en.wikipedia.org/wiki/Big_Bang",
-                "https://en.wikipedia.org/wiki/Black_hole",
-                "https://en.wikipedia.org/wiki/Photosynthesis",
-                "https://en.wikipedia.org/wiki/Quantum_mechanics",
-                "https://en.wikipedia.org/wiki/Relativity_theory",
-                "https://en.wikipedia.org/wiki/Climate_change",
-                "https://en.wikipedia.org/wiki/Ecosystem",
-                "https://en.wikipedia.org/wiki/Neuroscience",
-                "https://en.wikipedia.org/wiki/Immunology",
-                "https://en.wikipedia.org/wiki/DNA",
-                "https://en.wikipedia.org/wiki/RNA",
                 "https://en.wikipedia.org/wiki/Photosynthetic_pigment",
                 "https://en.wikipedia.org/wiki/Atomic_structure",
                 "https://en.wikipedia.org/wiki/Thermodynamics",
                 "https://en.wikipedia.org/wiki/Astrophysics",
                 "https://en.wikipedia.org/wiki/World_War_I",
-                "https://en.wikipedia.org/wiki/World_War_II",
-                "https://en.wikipedia.org/wiki/Renaissance",
-                "https://en.wikipedia.org/wiki/Industrial_Revolution",
                 "https://en.wikipedia.org/wiki/French_Revolution",
                 "https://en.wikipedia.org/wiki/American_Revolution",
                 "https://en.wikipedia.org/wiki/Cold_War",
-                "https://en.wikipedia.org/wiki/Ancient_Egypt",
                 "https://en.wikipedia.org/wiki/Roman_Empire",
                 "https://en.wikipedia.org/wiki/Middle_Ages",
                 "https://en.wikipedia.org/wiki/Great_Depression",
@@ -154,7 +169,6 @@ async def main_async():
                 "https://en.wikipedia.org/wiki/Mongol_Empire",
                 "https://en.wikipedia.org/wiki/History_of_China",
                 "https://en.wikipedia.org/wiki/Vietnam_War",
-                "https://en.wikipedia.org/wiki/Calculus",
                 "https://en.wikipedia.org/wiki/Algebra",
                 "https://en.wikipedia.org/wiki/Geometry",
                 "https://en.wikipedia.org/wiki/Trigonometry",
@@ -168,15 +182,67 @@ async def main_async():
                 "https://en.wikipedia.org/wiki/Topology",
                 "https://en.wikipedia.org/wiki/Chaos_theory",
                 "https://en.wikipedia.org/wiki/Graph_theory",
-                "https://en.wikipedia.org/wiki/Mathematical_logic",
-                "https://en.wikipedia.org/wiki/William_Shakespeare",
-                "https://en.wikipedia.org/wiki/Homer",
-                "https://en.wikipedia.org/wiki/Iliad",
+                # NASA (10 URLs)
+                "https://www.nasa.gov/solar-system/mars/",
+                "https://www.nasa.gov/mission/hubble-space-telescope/",
+                "https://www.nasa.gov/science-research/earth-science/climate/",
+                "https://www.nasa.gov/solar-system/jupiter/",
+                "https://www.nasa.gov/mission/james-webb-space-telescope/",
+                "https://www.nasa.gov/centers-and-facilities/goddard/what-is-a-black-hole/",
+                "https://www.nasa.gov/general/what-is-dark-energy/",
+                "https://www.nasa.gov/general/what-is-the-big-bang/",
+                "https://www.nasa.gov/solar-system/earth/",
+                "https://www.nasa.gov/mission/apollo-11/",
+                # National Geographic (15 URLs)
+                "https://www.nationalgeographic.com/environment/article/plate-tectonics",
+                "https://www.nationalgeographic.com/environment/article/ecosystems",
+                "https://www.nationalgeographic.com/history/article/ancient-egypt",
+                "https://www.nationalgeographic.com/science/article/dna",
+                "https://www.nationalgeographic.com/environment/article/climate-change",
+                "https://www.nationalgeographic.com/science/article/black-holes",
+                "https://www.nationalgeographic.com/science/article/photosynthesis",
+                "https://www.nationalgeographic.com/history/article/renaissance",
+                "https://www.nationalgeographic.com/science/article/quantum-mechanics",
+                "https://en.wikipedia.org/wiki/Quantum_mechanics",
+                "https://www.nationalgeographic.com/history/article/roman-empire",
+                "https://www.nationalgeographic.com/environment/article/oceanic-crust",
+                "https://www.nationalgeographic.com/science/article/thermodynamics",
+                "https://www.nationalgeographic.com/history/article/mongol-empire",
+                "https://www.nationalgeographic.com/science/article/volcanoes",
+                "https://www.nationalgeographic.com/history/article/industrial-revolution",
+                # History.com (15 URLs)
+                "https://www.history.com/topics/world-war-ii",
+                "https://www.history.com/topics/world-war-i",
+                "https://www.history.com/topics/industrial-revolution",
+                "https://www.history.com/topics/french-revolution",
+                "https://www.history.com/topics/american-revolution",
+                "https://www.history.com/topics/cold-war",
+                "https://www.history.com/topics/middle-ages",
+                "https://www.history.com/topics/great-depression",
+                "https://www.history.com/topics/civil-rights-movement",
+                "https://www.history.com/topics/space-race",
+                "https://www.history.com/topics/berlin-wall",
+                "https://www.history.com/topics/colonial-africa",
+                "https://www.history.com/topics/indian-independence",
+                "https://www.history.com/topics/vietnam-war",
+                "https://www.history.com/topics/ancient-rome",
+                # Britannica (10 URLs)
+                "https://www.britannica.com/science/quantum-mechanics",
+                "https://www.britannica.com/science/calculus",
+                "https://www.britannica.com/science/dna",
+                "https://www.britannica.com/science/photosynthesis",
+                "https://www.britannica.com/history/renaissance",
+                "https://www.britannica.com/science/black-hole",
+                "https://www.britannica.com/science/climate-change",
+                "https://www.britannica.com/history/industrial-revolution",
+                "https://www.britannica.com/history/ancient-egypt",
+                "https://www.britannica.com/history/world-war-ii"
             ]
-            logger.info("Scraping and storing Wikipedia content...")
+            logger.info("Scraping and storing content...")
             await scrape_and_store(scraper, vector_store, urls, index_path, texts_path)
             logger.info("Scraping completed.")
 
+        logger.info("Launching Streamlit UI...")
         run_ui(rag_pipeline)
 
     except Exception as e:

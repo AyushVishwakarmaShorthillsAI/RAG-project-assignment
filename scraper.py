@@ -1,45 +1,78 @@
-import abc
-import logging
 import aiohttp
-from bs4 import BeautifulSoup
-from typing import List
 import asyncio
+from bs4 import BeautifulSoup
+import logging
 
-# Configure logging
-logging.basicConfig(filename='rag_project.log', level=logging.INFO, 
-                    format='%(asctime)s - %(levelname)s - %(message)s')
-
-class BaseScraper(abc.ABC):
-    """Abstract base class for web scrapers."""
-    @abc.abstractmethod
-    async def scrape(self, url: str) -> List[str]:
-        """Scrape data from a given URL and return cleaned text."""
-        pass
-
-class WikipediaScraper(BaseScraper):
-    """Concrete scraper for Wikipedia pages using async requests."""
-    async def scrape(self, url: str, max_retries: int = 3) -> List[str]:
-        for attempt in range(max_retries):
+class WikipediaScraper:
+    """A scraper for extracting text content from web pages."""
+    
+    def __init__(self):
+        logging.info("WikipediaScraper initialized.")
+    
+    async def scrape(self, url: str) -> list:
+        """Scrape text content from a given URL."""
+        try:
             async with aiohttp.ClientSession() as session:
-                try:
-                    async with session.get(url, timeout=10) as response:
-                        response.raise_for_status()
-                        text = await response.text()
-                        soup = BeautifulSoup(text, 'html.parser')
-                        paragraphs = soup.find_all('p')
-                        cleaned_text = [p.get_text().strip() for p in paragraphs if p.get_text().strip()]
-                        logging.info(f"Scraped {len(cleaned_text)} paragraphs from {url}")
-                        return cleaned_text
-                except aiohttp.ClientResponseError as e:
-                    if e.status in (429, 503) and attempt < max_retries - 1:
-                        wait_time = 2 ** attempt
-                        logging.warning(f"Retry {attempt + 1}/{max_retries} for {url} after {wait_time}s: {str(e)}")
-                        await asyncio.sleep(wait_time)
-                        continue
-                    logging.error(f"Error scraping {url}: {str(e)}")
-                    return []
-                except Exception as e:
-                    logging.error(f"Error scraping {url}: {str(e)}")
-                    return []
-        logging.error(f"Failed to scrape {url} after {max_retries} attempts")
-        return []
+                async with session.get(url, timeout=10) as response:
+                    if response.status != 200:
+                        logging.error(f"Failed to fetch {url}: Status {response.status}")
+                        return []
+                    
+                    html = await response.text()
+                    soup = BeautifulSoup(html, 'html.parser')
+                    
+                    # Remove script and style elements
+                    for script in soup(["script", "style"]):
+                        script.decompose()
+                    
+                    # Extract text from paragraphs, headings, and other relevant tags
+                    texts = []
+                    # Target different tags based on the website
+                    if "wikipedia.org" in url:
+                        # Wikipedia-specific scraping
+                        content = soup.find('div', {'id': 'mw-content-text'})
+                        if content:
+                            paragraphs = content.find_all('p')
+                            texts.extend([para.get_text(strip=True) for para in paragraphs if para.get_text(strip=True)])
+                    elif "nasa.gov" in url:
+                        # NASA-specific scraping
+                        content = soup.find('div', class_='article-body') or soup.find('div', class_='content')
+                        if content:
+                            paragraphs = content.find_all('p')
+                            texts.extend([para.get_text(strip=True) for para in paragraphs if para.get_text(strip=True)])
+                    elif "nationalgeographic.com" in url:
+                        # National Geographic-specific scraping (updated for new structure)
+                        content = soup.find('div', class_='Article__Content') or soup.find('section', class_='article__body')
+                        if content:
+                            paragraphs = content.find_all('p')
+                            texts.extend([para.get_text(strip=True) for para in paragraphs if para.get_text(strip=True)])
+                    elif "history.com" in url:
+                        # History.com-specific scraping (updated for new structure)
+                        content = soup.find('div', class_='article-content') or soup.find('div', class_='content-wrapper')
+                        if content:
+                            paragraphs = content.find_all('p')
+                            texts.extend([para.get_text(strip=True) for para in paragraphs if para.get_text(strip=True)])
+                    elif "britannica.com" in url:
+                        # Britannica-specific scraping (updated for new structure)
+                        content = soup.find('div', class_='article-content') or soup.find('section', class_='md-content')
+                        if content:
+                            paragraphs = content.find_all('p')
+                            texts.extend([para.get_text(strip=True) for para in paragraphs if para.get_text(strip=True)])
+                    else:
+                        # Generic scraping for other websites
+                        paragraphs = soup.find_all(['p', 'h1', 'h2', 'h3'])
+                        texts.extend([elem.get_text(strip=True) for elem in paragraphs if elem.get_text(strip=True)])
+                    
+                    # Filter out empty or very short texts
+                    texts = [text for text in texts if len(text) > 50]
+                    
+                    if not texts:
+                        logging.warning(f"No valid content extracted from {url}")
+                    else:
+                        logging.info(f"Extracted {len(texts)} text segments from {url}")
+                    
+                    return texts
+        
+        except Exception as e:
+            logging.error(f"Error scraping {url}: {str(e)}")
+            return []
