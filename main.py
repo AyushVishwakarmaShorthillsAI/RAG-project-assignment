@@ -5,6 +5,8 @@ import sys
 import torch
 import time
 import os
+from all_Urls import URLS
+
 
 try:
     from .scraper import WikipediaScraper
@@ -21,7 +23,7 @@ except ImportError:
 
 from sentence_transformers import SentenceTransformer
 
-# Logging setup
+# Logging setup for general application logs
 logging.basicConfig(
     filename='rag_project.log',
     level=logging.INFO,
@@ -29,6 +31,20 @@ logging.basicConfig(
 )
 logger = logging.getLogger()
 logger.addHandler(logging.StreamHandler(sys.stdout))
+
+# Separate logger for Q&A interactions
+qa_logger = logging.getLogger('qa_interactions')
+qa_handler = logging.FileHandler('qa_interactions.log')
+qa_handler.setFormatter(logging.Formatter('%(asctime)s - Question: %(message)s'))
+qa_logger.addHandler(qa_handler)
+qa_logger.setLevel(logging.INFO)
+
+# Logger for answers to ensure proper formatting
+qa_answer_logger = logging.getLogger('qa_interactions_answer')
+qa_answer_handler = logging.FileHandler('qa_interactions.log', mode='a')
+qa_answer_handler.setFormatter(logging.Formatter('%(asctime)s - Answer: %(message)s'))
+qa_answer_logger.addHandler(qa_answer_handler)
+qa_answer_logger.setLevel(logging.INFO)
 
 RUN_FLAG = False  # Prevents multiple Streamlit executions
 
@@ -63,6 +79,9 @@ def run_ui(rag_pipeline: RAGPipeline):
                 start = time.time()
                 answer = rag_pipeline.process(question)
                 duration = time.time() - start
+                # Log Q&A pair to qa_interactions.log
+                qa_logger.info(question)
+                qa_answer_logger.info(answer)
                 # Update session state
                 st.session_state.last_question = question
                 st.session_state.answer = answer
@@ -113,70 +132,12 @@ async def main_async():
 
         # Only scrape if files don't exist
         if not os.path.exists(index_path) or not os.path.exists(texts_path):
-            urls = [
-                "https://en.wikipedia.org/wiki/Evolution",
-                "https://en.wikipedia.org/wiki/Genetics",
-                "https://en.wikipedia.org/wiki/Periodic_table",
-                "https://en.wikipedia.org/wiki/Chemical_bonding",
-                "https://en.wikipedia.org/wiki/Plate_tectonics",
-                "https://en.wikipedia.org/wiki/Big_Bang",
-                "https://en.wikipedia.org/wiki/Black_hole",
-                "https://en.wikipedia.org/wiki/Photosynthesis",
-                "https://en.wikipedia.org/wiki/Quantum_mechanics",
-                "https://en.wikipedia.org/wiki/Relativity_theory",
-                "https://en.wikipedia.org/wiki/Climate_change",
-                "https://en.wikipedia.org/wiki/Ecosystem",
-                "https://en.wikipedia.org/wiki/Neuroscience",
-                "https://en.wikipedia.org/wiki/Immunology",
-                "https://en.wikipedia.org/wiki/DNA",
-                "https://en.wikipedia.org/wiki/RNA",
-                "https://en.wikipedia.org/wiki/Photosynthetic_pigment",
-                "https://en.wikipedia.org/wiki/Atomic_structure",
-                "https://en.wikipedia.org/wiki/Thermodynamics",
-                "https://en.wikipedia.org/wiki/Astrophysics",
-                "https://en.wikipedia.org/wiki/World_War_I",
-                "https://en.wikipedia.org/wiki/World_War_II",
-                "https://en.wikipedia.org/wiki/Renaissance",
-                "https://en.wikipedia.org/wiki/Industrial_Revolution",
-                "https://en.wikipedia.org/wiki/French_Revolution",
-                "https://en.wikipedia.org/wiki/American_Revolution",
-                "https://en.wikipedia.org/wiki/Cold_War",
-                "https://en.wikipedia.org/wiki/Ancient_Egypt",
-                "https://en.wikipedia.org/wiki/Roman_Empire",
-                "https://en.wikipedia.org/wiki/Middle_Ages",
-                "https://en.wikipedia.org/wiki/Great_Depression",
-                "https://en.wikipedia.org/wiki/Civil_Rights_Movement",
-                "https://en.wikipedia.org/wiki/Space_Race",
-                "https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall",
-                "https://en.wikipedia.org/wiki/Colonization_of_Africa",
-                "https://en.wikipedia.org/wiki/Indian_Independence_Movement",
-                "https://en.wikipedia.org/wiki/Byzantine_Empire",
-                "https://en.wikipedia.org/wiki/Mongol_Empire",
-                "https://en.wikipedia.org/wiki/History_of_China",
-                "https://en.wikipedia.org/wiki/Vietnam_War",
-                "https://en.wikipedia.org/wiki/Calculus",
-                "https://en.wikipedia.org/wiki/Algebra",
-                "https://en.wikipedia.org/wiki/Geometry",
-                "https://en.wikipedia.org/wiki/Trigonometry",
-                "https://en.wikipedia.org/wiki/Number_theory",
-                "https://en.wikipedia.org/wiki/Probability_theory",
-                "https://en.wikipedia.org/wiki/Statistics",
-                "https://en.wikipedia.org/wiki/Set_theory",
-                "https://en.wikipedia.org/wiki/Linear_algebra",
-                "https://en.wikipedia.org/wiki/Differential_equations",
-                "https://en.wikipedia.org/wiki/Game_theory",
-                "https://en.wikipedia.org/wiki/Topology",
-                "https://en.wikipedia.org/wiki/Chaos_theory",
-                "https://en.wikipedia.org/wiki/Graph_theory",
-                "https://en.wikipedia.org/wiki/Mathematical_logic",
-                "https://en.wikipedia.org/wiki/William_Shakespeare",
-                "https://en.wikipedia.org/wiki/Homer",
-                "https://en.wikipedia.org/wiki/Iliad",
-            ]
-            logger.info("Scraping and storing Wikipedia content...")
+            urls = URLS
+            logger.info("Scraping and storing content...")
             await scrape_and_store(scraper, vector_store, urls, index_path, texts_path)
             logger.info("Scraping completed.")
 
+        logger.info("Launching Streamlit UI...")
         run_ui(rag_pipeline)
 
     except Exception as e:

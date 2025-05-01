@@ -5792,3 +5792,806 @@ Although the structure of DNA showed how inheritance works, it was still not kno
 2025-05-01 02:55:10,460 - INFO - Answer: DNA (deoxyribonucleic acid) is a polymer composed of two polynucleotide chains that coil around each other to form a double helix. It carries genetic instructions for the development, functioning, growth, and reproduction of all known organisms and many viruses. DNA's primary function in living organisms is to store and transmit genetic information from one generation to the next.
 
 In more detail, DNA serves as a blueprint or template that contains the genetic code for creating proteins, which are essential molecules for various cellular functions. The sequence of nucleotides in DNA determines the sequence of amino acids in proteins, which perform specific roles within cells. This process is known as transcription and translation. Additionally, DNA's interactions with proteins play a crucial role in regulating gene expression, controlling cell growth and differentiation, and mediating responses to environmental stimuli. Overall, DNA's function is to provide the genetic instructions that guide the development and functioning of all living organisms.
+2025-05-01 14:56:27,959 - ERROR - Scraping failed for https://www.nasa.gov/solar-system/mars/: 404, message='Not Found', url='https://www.nasa.gov/solar-system/mars/'
+2025-05-01 14:56:29,222 - ERROR - Scraping failed for https://www.nasa.gov/mission/hubble-space-telescope/: 404, message='Not Found', url='https://www.nasa.gov/mission/hubble-space-telescope/'
+2025-05-01 14:56:30,056 - ERROR - Scraping failed for https://www.nasa.gov/science-research/earth-science/climate/: 404, message='Not Found', url='https://www.nasa.gov/science-research/earth-science/climate/'
+2025-05-01 14:56:30,907 - ERROR - Scraping failed for https://www.nasa.gov/solar-system/jupiter/: 404, message='Not Found', url='https://www.nasa.gov/solar-system/jupiter/'
+2025-05-01 14:56:32,036 - ERROR - Scraping failed for https://www.nasa.gov/mission/james-webb-space-telescope/: 404, message='Not Found', url='https://www.nasa.gov/mission/james-webb-space-telescope/'
+2025-05-01 14:56:32,948 - ERROR - Scraping failed for https://www.nasa.gov/centers-and-facilities/goddard/what-is-a-black-hole/: 404, message='Not Found', url='https://www.nasa.gov/centers-and-facilities/goddard/what-is-a-black-hole/'
+2025-05-01 14:56:33,832 - ERROR - Scraping failed for https://www.nasa.gov/general/what-is-dark-energy/: 404, message='Not Found', url='https://www.nasa.gov/general/what-is-dark-energy/'
+2025-05-01 14:56:34,662 - ERROR - Scraping failed for https://www.nasa.gov/general/what-is-the-big-bang/: 404, message='Not Found', url='https://www.nasa.gov/general/what-is-the-big-bang/'
+2025-05-01 14:56:37,802 - ERROR - Scraping failed for https://www.nationalgeographic.com/environment/article/plate-tectonics: 404, message='Not Found', url='https://www.nationalgeographic.com/environment/article/plate-tectonics'
+2025-05-01 14:56:38,512 - ERROR - Scraping failed for https://www.nationalgeographic.com/environment/article/ecosystems: 404, message='Not Found', url='https://www.nationalgeographic.com/environment/article/ecosystems'
+2025-05-01 14:56:39,227 - ERROR - Scraping failed for https://www.nationalgeographic.com/history/article/ancient-egypt: 404, message='Not Found', url='https://www.nationalgeographic.com/history/article/ancient-egypt'
+2025-05-01 14:56:40,434 - ERROR - Scraping failed for https://www.nationalgeographic.com/science/article/dna: 404, message='Not Found', url='https://www.nationalgeographic.com/science/article/dna'
+2025-05-01 14:57:27,183 - ERROR - Scraping failed for https://www.nasa.gov/solar-system/mars/: 404, message='Not Found', url='https://www.nasa.gov/solar-system/mars/'
+2025-05-01 14:57:27,276 - ERROR - Scraping failed for https://www.nasa.gov/mission/hubble-space-telescope/: 404, message='Not Found', url='https://www.nasa.gov/mission/hubble-space-telescope/'
+2025-05-01 14:57:27,364 - ERROR - Scraping failed for https://www.nasa.gov/science-research/earth-science/climate/: 404, message='Not Found', url='https://www.nasa.gov/science-research/earth-science/climate/'
+2025-05-01 14:57:27,457 - ERROR - Scraping failed for https://www.nasa.gov/solar-system/jupiter/: 404, message='Not Found', url='https://www.nasa.gov/solar-system/jupiter/'
+2025-05-01 14:57:27,544 - ERROR - Scraping failed for https://www.nasa.gov/mission/james-webb-space-telescope/: 404, message='Not Found', url='https://www.nasa.gov/mission/james-webb-space-telescope/'
+2025-05-01 14:57:27,642 - ERROR - Scraping failed for https://www.nasa.gov/centers-and-facilities/goddard/what-is-a-black-hole/: 404, message='Not Found', url='https://www.nasa.gov/centers-and-facilities/goddard/what-is-a-black-hole/'
+2025-05-01 14:57:27,735 - ERROR - Scraping failed for https://www.nasa.gov/general/what-is-dark-energy/: 404, message='Not Found', url='https://www.nasa.gov/general/what-is-dark-energy/'
+2025-05-01 14:57:27,835 - ERROR - Scraping failed for https://www.nasa.gov/general/what-is-the-big-bang/: 404, message='Not Found', url='https://www.nasa.gov/general/what-is-the-big-bang/'
+2025-05-01 14:57:29,497 - ERROR - Scraping failed for https://www.nationalgeographic.com/environment/article/plate-tectonics: 404, message='Not Found', url='https://www.nationalgeographic.com/environment/article/plate-tectonics'
+2025-05-01 14:57:30,708 - ERROR - Scraping failed for https://www.nationalgeographic.com/environment/article/ecosystems: 404, message='Not Found', url='https://www.nationalgeographic.com/environment/article/ecosystems'
+2025-05-01 14:57:31,732 - ERROR - Scraping failed for https://www.nationalgeographic.com/history/article/ancient-egypt: 404, message='Not Found', url='https://www.nationalgeographic.com/history/article/ancient-egypt'
+2025-05-01 14:57:32,986 - ERROR - Scraping failed for https://www.nationalgeographic.com/science/article/dna: 404, message='Not Found', url='https://www.nationalgeographic.com/science/article/dna'
+2025-05-01 14:57:35,610 - ERROR - Scraping failed for https://www.nationalgeographic.com/science/article/photosynthesis: 404, message='Not Found', url='https://www.nationalgeographic.com/science/article/photosynthesis'
+2025-05-01 14:57:36,321 - ERROR - Scraping failed for https://www.nationalgeographic.com/history/article/renaissance: 404, message='Not Found', url='https://www.nationalgeographic.com/history/article/renaissance'
+2025-05-01 14:57:37,064 - ERROR - Scraping failed for https://www.nationalgeographic.com/science/article/quantum-mechanics: 404, message='Not Found', url='https://www.nationalgeographic.com/science/article/quantum-mechanics'
+2025-05-01 14:57:38,692 - ERROR - Scraping failed for https://www.nationalgeographic.com/history/article/roman-empire: 404, message='Not Found', url='https://www.nationalgeographic.com/history/article/roman-empire'
+2025-05-01 14:57:39,831 - ERROR - Scraping failed for https://www.nationalgeographic.com/environment/article/oceanic-crust: 404, message='Not Found', url='https://www.nationalgeographic.com/environment/article/oceanic-crust'
+2025-05-01 14:57:40,960 - ERROR - Scraping failed for https://www.nationalgeographic.com/science/article/thermodynamics: 404, message='Not Found', url='https://www.nationalgeographic.com/science/article/thermodynamics'
+2025-05-01 14:57:42,313 - ERROR - Scraping failed for https://www.nationalgeographic.com/history/article/mongol-empire: 404, message='Not Found', url='https://www.nationalgeographic.com/history/article/mongol-empire'
+2025-05-01 14:57:43,451 - ERROR - Scraping failed for https://www.nationalgeographic.com/science/article/volcanoes: 404, message='Not Found', url='https://www.nationalgeographic.com/science/article/volcanoes'
+2025-05-01 14:57:44,174 - ERROR - Scraping failed for https://www.nationalgeographic.com/history/article/industrial-revolution: 404, message='Not Found', url='https://www.nationalgeographic.com/history/article/industrial-revolution'
+2025-05-01 14:59:52,160 - ERROR - Scraping failed for https://www.nasa.gov/solar-system/mars/: 404, message='Not Found', url='https://www.nasa.gov/solar-system/mars/'
+2025-05-01 14:59:52,984 - ERROR - Scraping failed for https://www.nasa.gov/mission/hubble-space-telescope/: 404, message='Not Found', url='https://www.nasa.gov/mission/hubble-space-telescope/'
+2025-05-01 14:59:53,884 - ERROR - Scraping failed for https://www.nasa.gov/science-research/earth-science/climate/: 404, message='Not Found', url='https://www.nasa.gov/science-research/earth-science/climate/'
+2025-05-01 14:59:54,681 - ERROR - Scraping failed for https://www.nasa.gov/solar-system/jupiter/: 404, message='Not Found', url='https://www.nasa.gov/solar-system/jupiter/'
+2025-05-01 14:59:55,603 - ERROR - Scraping failed for https://www.nasa.gov/mission/james-webb-space-telescope/: 404, message='Not Found', url='https://www.nasa.gov/mission/james-webb-space-telescope/'
+2025-05-01 14:59:56,406 - ERROR - Scraping failed for https://www.nasa.gov/centers-and-facilities/goddard/what-is-a-black-hole/: 404, message='Not Found', url='https://www.nasa.gov/centers-and-facilities/goddard/what-is-a-black-hole/'
+2025-05-01 14:59:57,146 - ERROR - Scraping failed for https://www.nasa.gov/general/what-is-dark-energy/: 404, message='Not Found', url='https://www.nasa.gov/general/what-is-dark-energy/'
+2025-05-01 14:59:57,909 - ERROR - Scraping failed for https://www.nasa.gov/general/what-is-the-big-bang/: 404, message='Not Found', url='https://www.nasa.gov/general/what-is-the-big-bang/'
+2025-05-01 14:59:59,225 - ERROR - Scraping failed for https://www.nationalgeographic.com/environment/article/plate-tectonics: 404, message='Not Found', url='https://www.nationalgeographic.com/environment/article/plate-tectonics'
+2025-05-01 15:00:00,641 - ERROR - Scraping failed for https://www.nationalgeographic.com/environment/article/ecosystems: 404, message='Not Found', url='https://www.nationalgeographic.com/environment/article/ecosystems'
+2025-05-01 15:00:01,808 - ERROR - Scraping failed for https://www.nationalgeographic.com/history/article/ancient-egypt: 404, message='Not Found', url='https://www.nationalgeographic.com/history/article/ancient-egypt'
+2025-05-01 15:00:02,928 - ERROR - Scraping failed for https://www.nationalgeographic.com/science/article/dna: 404, message='Not Found', url='https://www.nationalgeographic.com/science/article/dna'
+2025-05-01 15:00:07,822 - ERROR - Scraping failed for https://www.nationalgeographic.com/science/article/photosynthesis: 404, message='Not Found', url='https://www.nationalgeographic.com/science/article/photosynthesis'
+2025-05-01 15:00:08,971 - ERROR - Scraping failed for https://www.nationalgeographic.com/history/article/renaissance: 404, message='Not Found', url='https://www.nationalgeographic.com/history/article/renaissance'
+2025-05-01 15:00:09,781 - ERROR - Scraping failed for https://www.nationalgeographic.com/science/article/quantum-mechanics: 404, message='Not Found', url='https://www.nationalgeographic.com/science/article/quantum-mechanics'
+2025-05-01 15:00:11,743 - ERROR - Scraping failed for https://www.nationalgeographic.com/history/article/roman-empire: 404, message='Not Found', url='https://www.nationalgeographic.com/history/article/roman-empire'
+2025-05-01 15:00:12,888 - ERROR - Scraping failed for https://www.nationalgeographic.com/environment/article/oceanic-crust: 404, message='Not Found', url='https://www.nationalgeographic.com/environment/article/oceanic-crust'
+2025-05-01 15:00:13,827 - ERROR - Scraping failed for https://www.nationalgeographic.com/science/article/thermodynamics: 404, message='Not Found', url='https://www.nationalgeographic.com/science/article/thermodynamics'
+2025-05-01 15:00:15,100 - ERROR - Scraping failed for https://www.nationalgeographic.com/history/article/mongol-empire: 404, message='Not Found', url='https://www.nationalgeographic.com/history/article/mongol-empire'
+2025-05-01 15:00:16,231 - ERROR - Scraping failed for https://www.nationalgeographic.com/science/article/volcanoes: 404, message='Not Found', url='https://www.nationalgeographic.com/science/article/volcanoes'
+2025-05-01 15:00:17,037 - ERROR - Scraping failed for https://www.nationalgeographic.com/history/article/industrial-revolution: 404, message='Not Found', url='https://www.nationalgeographic.com/history/article/industrial-revolution'
+2025-05-01 15:00:26,778 - ERROR - Scraping failed for https://www.history.com/topics/colonial-africa: 404, message='Not Found', url='https://www.history.com/articles/colonial-africa'
+2025-05-01 15:00:27,544 - ERROR - Scraping failed for https://www.history.com/topics/indian-independence: 404, message='Not Found', url='https://www.history.com/articles/indian-independence'
+2025-05-01 15:00:29,437 - ERROR - Scraping failed for https://www.britannica.com/science/quantum-mechanics: 404, message='Not Found', url='https://www.britannica.com/science/quantum-mechanics'
+2025-05-01 15:00:29,725 - ERROR - Scraping failed for https://www.britannica.com/science/calculus: 404, message='Not Found', url='https://www.britannica.com/science/calculus'
+2025-05-01 15:00:31,055 - ERROR - Scraping failed for https://www.britannica.com/history/renaissance: 404, message='Not Found', url='https://www.britannica.com/history/renaissance'
+2025-05-01 15:00:32,149 - ERROR - Scraping failed for https://www.britannica.com/history/industrial-revolution: 404, message='Not Found', url='https://www.britannica.com/history/industrial-revolution'
+2025-05-01 15:00:32,432 - ERROR - Scraping failed for https://www.britannica.com/history/ancient-egypt: 404, message='Not Found', url='https://www.britannica.com/history/ancient-egypt'
+2025-05-01 15:00:32,712 - ERROR - Scraping failed for https://www.britannica.com/history/world-war-ii: 404, message='Not Found', url='https://www.britannica.com/history/world-war-ii'
+2025-05-01 15:01:17,634 - ERROR - Scraping failed for https://www.nasa.gov/solar-system/mars/: 404, message='Not Found', url='https://www.nasa.gov/solar-system/mars/'
+2025-05-01 15:01:18,424 - ERROR - Scraping failed for https://www.nasa.gov/mission/hubble-space-telescope/: 404, message='Not Found', url='https://www.nasa.gov/mission/hubble-space-telescope/'
+2025-05-01 15:01:19,149 - ERROR - Scraping failed for https://www.nasa.gov/science-research/earth-science/climate/: 404, message='Not Found', url='https://www.nasa.gov/science-research/earth-science/climate/'
+2025-05-01 15:01:19,974 - ERROR - Scraping failed for https://www.nasa.gov/solar-system/jupiter/: 404, message='Not Found', url='https://www.nasa.gov/solar-system/jupiter/'
+2025-05-01 15:01:21,311 - ERROR - Scraping failed for https://www.nasa.gov/mission/james-webb-space-telescope/: 404, message='Not Found', url='https://www.nasa.gov/mission/james-webb-space-telescope/'
+2025-05-01 15:01:22,348 - ERROR - Scraping failed for https://www.nasa.gov/centers-and-facilities/goddard/what-is-a-black-hole/: 404, message='Not Found', url='https://www.nasa.gov/centers-and-facilities/goddard/what-is-a-black-hole/'
+2025-05-01 15:01:23,259 - ERROR - Scraping failed for https://www.nasa.gov/general/what-is-dark-energy/: 404, message='Not Found', url='https://www.nasa.gov/general/what-is-dark-energy/'
+2025-05-01 15:01:24,075 - ERROR - Scraping failed for https://www.nasa.gov/general/what-is-the-big-bang/: 404, message='Not Found', url='https://www.nasa.gov/general/what-is-the-big-bang/'
+2025-05-01 15:01:26,273 - ERROR - Scraping failed for https://www.nationalgeographic.com/environment/article/plate-tectonics: 404, message='Not Found', url='https://www.nationalgeographic.com/environment/article/plate-tectonics'
+2025-05-01 15:01:27,501 - ERROR - Scraping failed for https://www.nationalgeographic.com/environment/article/ecosystems: 404, message='Not Found', url='https://www.nationalgeographic.com/environment/article/ecosystems'
+2025-05-01 15:02:36,802 - ERROR - Scraping failed for https://www.nasa.gov/solar-system/mars/: 404 Client Error: Not Found for url: https://www.nasa.gov/solar-system/mars/
+2025-05-01 15:02:37,566 - ERROR - Scraping failed for https://www.nasa.gov/mission/hubble-space-telescope/: 404 Client Error: Not Found for url: https://www.nasa.gov/mission/hubble-space-telescope/
+2025-05-01 15:02:38,336 - ERROR - Scraping failed for https://www.nasa.gov/science-research/earth-science/climate/: 404 Client Error: Not Found for url: https://www.nasa.gov/science-research/earth-science/climate/
+2025-05-01 15:02:39,110 - ERROR - Scraping failed for https://www.nasa.gov/solar-system/jupiter/: 404 Client Error: Not Found for url: https://www.nasa.gov/solar-system/jupiter/
+2025-05-01 15:02:39,936 - ERROR - Scraping failed for https://www.nasa.gov/mission/james-webb-space-telescope/: 404 Client Error: Not Found for url: https://www.nasa.gov/mission/james-webb-space-telescope/
+2025-05-01 15:02:40,724 - ERROR - Scraping failed for https://www.nasa.gov/centers-and-facilities/goddard/what-is-a-black-hole/: 404 Client Error: Not Found for url: https://www.nasa.gov/centers-and-facilities/goddard/what-is-a-black-hole/
+2025-05-01 15:02:41,505 - ERROR - Scraping failed for https://www.nasa.gov/general/what-is-dark-energy/: 404 Client Error: Not Found for url: https://www.nasa.gov/general/what-is-dark-energy/
+2025-05-01 15:02:42,268 - ERROR - Scraping failed for https://www.nasa.gov/general/what-is-the-big-bang/: 404 Client Error: Not Found for url: https://www.nasa.gov/general/what-is-the-big-bang/
+2025-05-01 15:02:44,259 - ERROR - Scraping failed for https://www.nationalgeographic.com/environment/article/plate-tectonics: 404 Client Error: Not Found for url: https://www.nationalgeographic.com/environment/article/plate-tectonics
+2025-05-01 15:02:44,967 - ERROR - Scraping failed for https://www.nationalgeographic.com/environment/article/ecosystems: 404 Client Error: Not Found for url: https://www.nationalgeographic.com/environment/article/ecosystems
+2025-05-01 15:02:45,692 - ERROR - Scraping failed for https://www.nationalgeographic.com/history/article/ancient-egypt: 404 Client Error: Not Found for url: https://www.nationalgeographic.com/history/article/ancient-egypt
+2025-05-01 15:02:47,145 - ERROR - Scraping failed for https://www.nationalgeographic.com/science/article/dna: 404 Client Error: Not Found for url: https://www.nationalgeographic.com/science/article/dna
+2025-05-01 15:02:52,975 - ERROR - Scraping failed for https://www.nationalgeographic.com/science/article/photosynthesis: 404 Client Error: Not Found for url: https://www.nationalgeographic.com/science/article/photosynthesis
+2025-05-01 15:02:54,399 - ERROR - Scraping failed for https://www.nationalgeographic.com/history/article/renaissance: 404 Client Error: Not Found for url: https://www.nationalgeographic.com/history/article/renaissance
+2025-05-01 15:02:55,748 - ERROR - Scraping failed for https://www.nationalgeographic.com/science/article/quantum-mechanics: 404 Client Error: Not Found for url: https://www.nationalgeographic.com/science/article/quantum-mechanics
+2025-05-01 15:02:57,991 - ERROR - Scraping failed for https://www.nationalgeographic.com/history/article/roman-empire: 404 Client Error: Not Found for url: https://www.nationalgeographic.com/history/article/roman-empire
+2025-05-01 15:02:59,511 - ERROR - Scraping failed for https://www.nationalgeographic.com/environment/article/oceanic-crust: 404 Client Error: Not Found for url: https://www.nationalgeographic.com/environment/article/oceanic-crust
+2025-05-01 15:03:01,256 - ERROR - Scraping failed for https://www.nationalgeographic.com/science/article/thermodynamics: 404 Client Error: Not Found for url: https://www.nationalgeographic.com/science/article/thermodynamics
+2025-05-01 15:03:02,666 - ERROR - Scraping failed for https://www.nationalgeographic.com/history/article/mongol-empire: 404 Client Error: Not Found for url: https://www.nationalgeographic.com/history/article/mongol-empire
+2025-05-01 15:03:04,155 - ERROR - Scraping failed for https://www.nationalgeographic.com/science/article/volcanoes: 404 Client Error: Not Found for url: https://www.nationalgeographic.com/science/article/volcanoes
+2025-05-01 15:03:05,623 - ERROR - Scraping failed for https://www.nationalgeographic.com/history/article/industrial-revolution: 404 Client Error: Not Found for url: https://www.nationalgeographic.com/history/article/industrial-revolution
+2025-05-01 15:03:14,796 - ERROR - Scraping failed for https://www.history.com/topics/colonial-africa: 404 Client Error: Not Found for url: https://www.history.com/articles/colonial-africa
+2025-05-01 15:03:15,608 - ERROR - Scraping failed for https://www.history.com/topics/indian-independence: 404 Client Error: Not Found for url: https://www.history.com/articles/indian-independence
+2025-05-01 15:03:17,172 - ERROR - Scraping failed for https://www.britannica.com/science/quantum-mechanics: 404 Client Error: Not Found for url: https://www.britannica.com/science/quantum-mechanics
+2025-05-01 15:03:17,457 - ERROR - Scraping failed for https://www.britannica.com/science/calculus: 404 Client Error: Not Found for url: https://www.britannica.com/science/calculus
+2025-05-01 15:03:18,618 - ERROR - Scraping failed for https://www.britannica.com/history/renaissance: 404 Client Error: Not Found for url: https://www.britannica.com/history/renaissance
+2025-05-01 15:03:19,719 - ERROR - Scraping failed for https://www.britannica.com/history/industrial-revolution: 404 Client Error: Not Found for url: https://www.britannica.com/history/industrial-revolution
+2025-05-01 15:03:20,371 - ERROR - Scraping failed for https://www.britannica.com/history/ancient-egypt: 404 Client Error: Not Found for url: https://www.britannica.com/history/ancient-egypt
+2025-05-01 15:03:20,644 - ERROR - Scraping failed for https://www.britannica.com/history/world-war-ii: 404 Client Error: Not Found for url: https://www.britannica.com/history/world-war-ii
+2025-05-01 15:03:20,654 - INFO - Scraped data saved to scraped_data.txt
+2025-05-01 15:15:41,575 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 15:15:41,575 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 15:17:29,661 - INFO - Starting test case generation process
+2025-05-01 15:17:29,668 - INFO - Successfully read scraped_data.txt, size: 2861170 characters
+2025-05-01 15:17:29,671 - INFO - Split text into 5723 chunks of max 500 characters
+2025-05-01 15:17:29,671 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 15:17:29,671 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 15:17:29,671 - INFO - Successfully initialized OllamaLLM
+2025-05-01 15:17:29,671 - INFO - Starting generation of 1000 test cases with max 5000 attempts
+2025-05-01 15:18:01,071 - INFO - Generated response for chunk (first 50 chars): mospheric carbon will be lowered as they become mo...
+2025-05-01 15:18:01,071 - WARNING - Invalid or duplicate response - Question: None, Context: None
+2025-05-01 15:18:31,943 - INFO - Generated response for chunk (first 50 chars): tain. Because Romans had never been obligated to c...
+2025-05-01 15:18:31,944 - WARNING - Invalid or duplicate response - Question: None, Context: None
+2025-05-01 15:19:03,334 - INFO - Generated response for chunk (first 50 chars): le and submachine gun, became the standard post-wa...
+2025-05-01 15:19:03,335 - WARNING - Invalid or duplicate response - Question: None, Context: None
+2025-05-01 15:19:36,335 - INFO - Generated response for chunk (first 50 chars): ted commerce raiders and a few holdouts in New Gui...
+2025-05-01 15:19:36,335 - INFO - Generated test case 1: What were some of the early conflicts of World War I?
+2025-05-01 15:20:17,721 - INFO - Generated response for chunk (first 50 chars): Ausreise unverzüglich zu erteilen, ohne daß dafür ...
+2025-05-01 15:20:17,722 - WARNING - Invalid or duplicate response - Question: None, Context: None
+2025-05-01 15:20:51,826 - INFO - Generated response for chunk (first 50 chars): 5]
+Vincent Khapoya notes the significant attention...
+2025-05-01 15:20:51,826 - WARNING - Invalid or duplicate response - Question: None, Context: None
+2025-05-01 15:21:13,490 - INFO - Starting test case generation process
+2025-05-01 15:21:13,497 - INFO - Successfully read scraped_data.txt, size: 2861170 characters
+2025-05-01 15:21:13,500 - INFO - Split text into 1431 chunks of max 2000 characters
+2025-05-01 15:21:13,501 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 15:21:13,501 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 15:21:13,501 - INFO - Successfully initialized OllamaLLM
+2025-05-01 15:21:13,501 - INFO - Starting generation of 1000 test cases with max 5000 attempts
+2025-05-01 15:21:59,460 - INFO - Generated response for chunk (first 50 chars):  other landholders and joined to extort their gove...
+2025-05-01 15:21:59,461 - WARNING - Invalid or duplicate response - Question: None, Context: None
+2025-05-01 15:22:49,585 - INFO - Generated response for chunk (first 50 chars): hezeta functionis the canonical starting point;[75...
+2025-05-01 15:22:49,585 - WARNING - Invalid or duplicate response - Question: None, Context: The text states that the term "elementary" usually denotes a method that does not use complex analysis, but notes that this term can be ambiguous. For example, proofs based on complex Tauberian theorems may be seen as enlightening but still not considered elementary despite using Fourier analysis.
+2025-05-01 15:23:42,985 - INFO - Generated response for chunk (first 50 chars): ce station in long term orbit; two of the successf...
+2025-05-01 15:23:42,985 - WARNING - Invalid or duplicate response - Question: None, Context: None
+2025-05-01 15:24:29,070 - INFO - Generated response for chunk (first 50 chars): onian astronomers implementedtrapezoidprocedures f...
+2025-05-01 15:24:29,070 - WARNING - Invalid or duplicate response - Question: None, Context: None
+2025-05-01 15:25:22,431 - INFO - Generated response for chunk (first 50 chars): cial figures. They were not released until the end...
+2025-05-01 15:25:22,431 - INFO - Generated test case 1: What was the significance of the Quit India Movement led by Mahatma Gandhi?
+2025-05-01 15:26:15,690 - INFO - Generated response for chunk (first 50 chars): dvertisement in newspapers, including theAtlanta C...
+2025-05-01 15:26:15,691 - WARNING - Invalid or duplicate response - Question: None, Context: The Freedom Rides were organized by CORE (Congress of Racial Equality) and left Washington D.C. on May 4, 1961, with a scheduled arrival in New Orleans on May 17. During these rides, activists traveled through the Deep South to integrate seating patterns on buses and desegregate bus terminals, including restrooms and water fountains.
+2025-05-01 15:27:06,958 - INFO - Generated response for chunk (first 50 chars): dividual rights, even when supported by a democrat...
+2025-05-01 15:27:06,958 - INFO - Generated test case 2: What was Alfred Cobban's argument about the French Revolution?
+2025-05-01 15:27:56,566 - INFO - Generated response for chunk (first 50 chars): ees, or prisoners of war with fists, sticks, bats,...
+2025-05-01 15:27:56,566 - INFO - Generated test case 3: What was the purpose of "free-fire zones" established by US forces during the Vietnam War?
+2025-05-01 15:28:51,985 - INFO - Generated response for chunk (first 50 chars): ine on the surface; these were large machines, req...
+2025-05-01 15:28:51,985 - WARNING - Invalid or duplicate response - Question: None, Context: None
+2025-05-01 15:29:55,282 - INFO - Generated response for chunk (first 50 chars):  to be subducted under continental crust at destru...
+2025-05-01 15:29:55,283 - WARNING - Invalid or duplicate response - Question: None, Context: None
+2025-05-01 15:30:59,372 - INFO - Generated response for chunk (first 50 chars): e.[122]Through a combination ofdiplomacy and bribe...
+2025-05-01 15:30:59,372 - WARNING - Invalid or duplicate response - Question: None, Context: None
+2025-05-01 15:31:57,343 - INFO - Generated response for chunk (first 50 chars): e A={\begin{bmatrix}9&3&-13\\2.3&0&7\\-5&-17&0\end...
+2025-05-01 15:31:57,343 - WARNING - Invalid or duplicate response - Question: None, Context: None
+2025-05-01 15:32:41,595 - INFO - Generated response for chunk (first 50 chars): still not known how DNA influences the behavior of...
+2025-05-01 15:32:41,595 - WARNING - Invalid or duplicate response - Question: None, Context: None
+2025-05-01 15:33:36,778 - INFO - Generated response for chunk (first 50 chars): nse oceanic crust sinks down into the mantle, form...
+2025-05-01 15:33:36,778 - WARNING - Invalid or duplicate response - Question: None, Context: None
+2025-05-01 15:34:32,872 - INFO - Generated response for chunk (first 50 chars): ancein 1414, and in the following year the council...
+2025-05-01 15:34:32,872 - INFO - Generated test case 4: What was John Wycliffe's view on access to the Bible, and what were the consequences of holding such views?
+2025-05-01 15:35:34,653 - INFO - Generated response for chunk (first 50 chars): empt to galvanise the German nation into a spirit ...
+2025-05-01 15:35:34,653 - WARNING - Invalid or duplicate response - Question: None, Context: None
+2025-05-01 15:36:16,334 - INFO - Generated response for chunk (first 50 chars): armed by the advance of the Japanese army to the I...
+2025-05-01 15:36:16,334 - WARNING - Invalid or duplicate response - Question: None, Context: None
+2025-05-01 15:37:13,616 - INFO - Generated response for chunk (first 50 chars): nguages.[109]It has the longest known history of a...
+2025-05-01 15:37:13,616 - WARNING - Invalid or duplicate response - Question: None, Context: None
+2025-05-01 15:38:03,782 - INFO - Generated response for chunk (first 50 chars):  1931, theSpanish Civil War, the outbreak of theSe...
+2025-05-01 15:38:03,782 - WARNING - Invalid or duplicate response - Question: None, Context: None
+2025-05-01 15:38:54,995 - INFO - Generated response for chunk (first 50 chars): s no contemporary record of Menes. Some scholars n...
+2025-05-01 15:38:54,996 - WARNING - Invalid or duplicate response - Question: None, Context: None
+2025-05-01 15:39:20,226 - INFO - Starting test case generation process
+2025-05-01 15:39:20,238 - INFO - Successfully read scraped_data.txt, size: 2861170 characters
+2025-05-01 15:39:20,245 - INFO - Split text into 1431 chunks of max 2000 characters
+2025-05-01 15:39:20,245 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 15:39:20,245 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 15:39:20,245 - INFO - Successfully initialized OllamaLLM
+2025-05-01 15:39:20,245 - INFO - Starting generation of 1000 test cases with max 5000 attempts
+2025-05-01 15:40:15,742 - INFO - Generated response for chunk (first 50 chars): blow against housing segregation in the era, theRu...
+2025-05-01 15:40:15,742 - WARNING - Invalid or duplicate response - Question: None, Context: 
+2025-05-01 15:40:33,467 - INFO - Starting test case generation process
+2025-05-01 15:40:33,478 - INFO - Successfully read scraped_data.txt, size: 2861170 characters
+2025-05-01 15:40:33,484 - INFO - Split text into 1431 chunks of max 2000 characters
+2025-05-01 15:40:33,484 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 15:40:33,484 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 15:40:33,484 - INFO - Successfully initialized OllamaLLM
+2025-05-01 15:40:33,484 - INFO - Starting generation of 1000 test cases with max 5000 attempts
+2025-05-01 15:41:41,185 - INFO - Generated response for chunk (first 50 chars): art or prelude to World War II.[10][11]
+The exact ...
+2025-05-01 15:41:41,186 - WARNING - Invalid or duplicate response - Question: None, Context: None
+2025-05-01 15:42:21,284 - INFO - Generated response for chunk (first 50 chars): tonem ferunt didicisse Pythagorea omnia("They say ...
+2025-05-01 15:42:21,284 - WARNING - Invalid or duplicate response - Question: None, Context: None
+2025-05-01 15:43:22,015 - INFO - Generated response for chunk (first 50 chars): For his part, Khrushchev, disturbed by Mao's glib ...
+2025-05-01 15:43:22,015 - WARNING - Invalid or duplicate response - Question: None, Context: None
+2025-05-01 15:43:56,518 - INFO - Generated response for chunk (first 50 chars): reat Britain, new factors can be added: the eagern...
+2025-05-01 15:43:56,519 - WARNING - Invalid or duplicate response - Question: None, Context: None
+2025-05-01 15:44:58,946 - INFO - Generated response for chunk (first 50 chars): egion,[99]which was mistakenly perceived by the Al...
+2025-05-01 15:44:58,946 - INFO - Generated test case 5: What was the outcome of Germany's strategic bombing offensive against Britain during World War II?
+2025-05-01 15:46:08,846 - INFO - Generated response for chunk (first 50 chars): insurrection was suppressed by reinforcing troops ...
+2025-05-01 15:46:08,846 - INFO - Generated test case 6: What were some of the significant economic changes brought about by colonial powers in Africa?
+2025-05-01 15:46:19,684 - INFO - Starting test case generation process
+2025-05-01 15:46:19,695 - INFO - Successfully read scraped_data.txt, size: 2861170 characters
+2025-05-01 15:46:19,701 - INFO - Split text into 1431 chunks of max 2000 characters
+2025-05-01 15:46:19,701 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 15:46:19,702 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 15:46:19,702 - INFO - Successfully initialized OllamaLLM
+2025-05-01 15:46:19,702 - INFO - Generating 1000 test cases (max 5000 attempts allowed)
+2025-05-01 15:47:46,059 - INFO - Generated response for chunk (first 50 chars): of gravitational forces within and between galaxie...
+2025-05-01 15:47:46,059 - WARNING - Invalid or duplicate response - Question: None, Context: None
+2025-05-01 15:48:41,363 - INFO - Response generated for chunk (first 50 chars): denineshould be equal tothymine.[203][204]
+Late in...
+2025-05-01 15:48:41,363 - WARNING - Failed to parse LLM response: Expecting value: line 1 column 1 (char 0)
+2025-05-01 15:49:35,702 - INFO - Generated response for chunk (first 50 chars):  China, near theYangtze River. Their younger broth...
+2025-05-01 15:49:35,702 - WARNING - Invalid or duplicate response - Question: None, Context: None
+2025-05-01 15:50:36,952 - INFO - Generated response for chunk (first 50 chars): s to better predictions about when these objects w...
+2025-05-01 15:50:36,953 - WARNING - Invalid or duplicate response - Question: None, Context: None
+2025-05-01 16:21:41,427 - INFO - Starting test case generation process
+2025-05-01 16:21:41,434 - INFO - Successfully read scraped_data.txt, size: 2861170 characters
+2025-05-01 16:21:41,442 - INFO - Split text into 97 chunks of max 50 lines
+2025-05-01 16:21:41,442 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 16:21:41,442 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 16:21:41,442 - INFO - Successfully initialized OllamaLLM
+2025-05-01 16:21:41,442 - INFO - Generating up to 1000 test cases (max 5000 attempts allowed)
+2025-05-01 16:21:41,442 - INFO - Generating 10 test cases for chunk 1/97 (first 50 chars): Photosynthesis(/ˌfoʊtəˈsɪnθəsɪs/FOH-tə-SINTH-ə-sis...
+2025-05-01 16:22:32,186 - INFO - Starting test case generation process
+2025-05-01 16:22:32,197 - INFO - Successfully read scraped_data.txt, size: 2861170 characters
+2025-05-01 16:22:32,212 - INFO - Split text into 97 chunks of max 50 lines
+2025-05-01 16:22:32,213 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 16:22:32,213 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 16:22:32,213 - INFO - Successfully initialized OllamaLLM
+2025-05-01 16:22:32,213 - INFO - Generating up to 1000 test cases (max 5000 attempts allowed)
+2025-05-01 16:22:32,214 - INFO - Generating 10 test cases for chunk 1/97 (first 50 chars): Photosynthesis(/ˌfoʊtəˈsɪnθəsɪs/FOH-tə-SINTH-ə-sis...
+2025-05-01 16:29:16,819 - INFO - Response generated for chunk 1
+2025-05-01 16:29:16,819 - WARNING - Failed to parse LLM response for chunk 1: Expecting value: line 1 column 1 (char 0)
+2025-05-01 16:29:16,819 - INFO - Generating 10 test cases for chunk 2/97 (first 50 chars): An even closer form of symbiosis may explain the o...
+2025-05-01 16:33:51,365 - INFO - Response generated for chunk 2
+2025-05-01 16:33:51,365 - WARNING - Failed to parse LLM response for chunk 2: Expecting value: line 1 column 1 (char 0)
+2025-05-01 16:33:51,365 - INFO - Generating 10 test cases for chunk 3/97 (first 50 chars): SociologistRodney Starkplays down the Renaissance ...
+2025-05-01 16:38:20,582 - INFO - Response generated for chunk 3
+2025-05-01 16:38:20,582 - WARNING - Failed to parse LLM response for chunk 3: Expecting value: line 1 column 1 (char 0)
+2025-05-01 16:38:20,582 - INFO - Generating 10 test cases for chunk 4/97 (first 50 chars): In literature the later part of the 16th century s...
+2025-05-01 16:43:19,679 - INFO - Response generated for chunk 4
+2025-05-01 16:43:19,679 - WARNING - Failed to parse LLM response for chunk 4: Expecting value: line 1 column 1 (char 0)
+2025-05-01 16:43:19,679 - INFO - Generating 10 test cases for chunk 5/97 (first 50 chars): A number of noncanonical bases are known to occur ...
+2025-05-01 16:47:49,183 - INFO - Response generated for chunk 5
+2025-05-01 16:47:49,183 - WARNING - Failed to parse LLM response for chunk 5: Expecting value: line 1 column 1 (char 0)
+2025-05-01 16:47:49,183 - INFO - Generating 10 test cases for chunk 6/97 (first 50 chars): Transcription is carried out by a DNA-dependentRNA...
+2025-05-01 16:52:35,759 - INFO - Response generated for chunk 6
+2025-05-01 16:52:35,760 - WARNING - Failed to parse LLM response for chunk 6: Expecting value: line 1 column 1 (char 0)
+2025-05-01 16:52:35,760 - INFO - Generating 10 test cases for chunk 7/97 (first 50 chars): Another consequence of the canonical commutation r...
+2025-05-01 16:56:38,231 - INFO - Response generated for chunk 7
+2025-05-01 16:56:38,231 - WARNING - Failed to parse LLM response for chunk 7: Expecting value: line 1 column 1 (char 0)
+2025-05-01 16:56:38,231 - INFO - Generating 10 test cases for chunk 8/97 (first 50 chars): World War II[b]or theSecond World War(1 September ...
+2025-05-01 17:00:22,465 - INFO - Response generated for chunk 8
+2025-05-01 17:00:22,465 - WARNING - Failed to parse LLM response for chunk 8: Expecting value: line 1 column 1 (char 0)
+2025-05-01 17:00:22,465 - INFO - Generating 10 test cases for chunk 9/97 (first 50 chars): German successes in Europe prompted Japan to incre...
+2025-05-01 17:05:10,762 - INFO - Response generated for chunk 9
+2025-05-01 17:05:10,762 - WARNING - Failed to parse LLM response for chunk 9: Expecting value: line 1 column 1 (char 0)
+2025-05-01 17:05:10,762 - INFO - Generating 10 test cases for chunk 10/97 (first 50 chars): In Asia and the Pacific, the number of people kill...
+2025-05-01 17:09:46,362 - INFO - Response generated for chunk 10
+2025-05-01 17:09:46,362 - WARNING - Failed to parse LLM response for chunk 10: Expecting value: line 1 column 1 (char 0)
+2025-05-01 17:09:46,363 - INFO - Generating 10 test cases for chunk 11/97 (first 50 chars): Differential calculus is the study of the definiti...
+2025-05-01 17:14:36,824 - INFO - Response generated for chunk 11
+2025-05-01 17:14:36,824 - WARNING - Failed to parse LLM response for chunk 11: Expecting value: line 1 column 1 (char 0)
+2025-05-01 17:14:36,824 - INFO - Generating 10 test cases for chunk 12/97 (first 50 chars): At first, it was suspected that the strange featur...
+2025-05-01 17:19:11,564 - INFO - Response generated for chunk 12
+2025-05-01 17:19:11,564 - WARNING - Failed to parse LLM response for chunk 12: Expecting value: line 1 column 1 (char 0)
+2025-05-01 17:19:11,564 - INFO - Generating 10 test cases for chunk 13/97 (first 50 chars): If black holes evaporate via Hawking radiation, a ...
+2025-05-01 17:23:26,096 - INFO - Response generated for chunk 13
+2025-05-01 17:23:26,096 - WARNING - Failed to parse LLM response for chunk 13: Expecting value: line 1 column 1 (char 0)
+2025-05-01 17:23:26,096 - INFO - Generating 10 test cases for chunk 14/97 (first 50 chars): Over the last few million years the climate cycled...
+2025-05-01 17:23:59,971 - INFO - Initializing components...
+2025-05-01 17:23:59,974 - INFO - Use pytorch device_name: cpu
+2025-05-01 17:23:59,974 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 17:24:05,348 - INFO - Using device: cpu
+2025-05-01 17:24:05,350 - INFO - Loading existing FAISS index and texts.
+2025-05-01 17:24:05,367 - INFO - Initializing FAISSVectorStore
+2025-05-01 17:24:05,827 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 17:24:05,828 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 17:24:05,828 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 17:24:05,828 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 17:24:05,828 - INFO - RAGPipeline initialized.
+2025-05-01 17:24:05,829 - INFO - Launching Streamlit UI...
+2025-05-01 17:24:05,838 - INFO - Launching Streamlit UI...
+2025-05-01 17:24:22,419 - INFO - Initializing components...
+2025-05-01 17:24:22,425 - INFO - Use pytorch device_name: cpu
+2025-05-01 17:24:22,425 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 17:24:26,750 - INFO - Using device: cpu
+2025-05-01 17:24:26,752 - INFO - Loading existing FAISS index and texts.
+2025-05-01 17:24:26,775 - INFO - Initializing FAISSVectorStore
+2025-05-01 17:24:26,944 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 17:24:26,945 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 17:24:26,945 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 17:24:26,945 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 17:24:26,945 - INFO - RAGPipeline initialized.
+2025-05-01 17:24:26,946 - INFO - Launching Streamlit UI...
+2025-05-01 17:24:26,946 - INFO - Launching Streamlit UI...
+2025-05-01 17:24:26,948 - INFO - Form submitted with question: Provide two examples of prominent Italian figures who initially strongly supported Italian nationalism and intervention in World War I
+2025-05-01 17:24:26,949 - INFO - New question detected: Provide two examples of prominent Italian figures who initially strongly supported Italian nationalism and intervention in World War I
+2025-05-01 17:24:26,949 - INFO - Question: Provide two examples of prominent Italian figures who initially strongly supported Italian nationalism and intervention in World War I
+2025-05-01 17:24:27,070 - INFO - Full Retrieved Context:
+Italian nationalism was stirred by the outbreak of the war and was initially strongly supported by a variety of political factions. One of the most prominent and popular Italian nationalist supporters of the war was Gabriele D'Annunzio, who promoted Italian irredentism and helped sway the Italian public to support intervention in the war.[305] The Italian Liberal Party, under the leadership of Paolo Boselli, promoted intervention in the war on the side of the Allies and used the Dante Alighieri Society to promote Italian nationalism.[306] Italian socialists were divided on whether to support the war or oppose it; some were militant supporters of the war, including Benito Mussolini and Leonida Bissolati.[307] However, the Italian Socialist Party decided to oppose the war after anti-militarist protestors were killed, resulting in a general strike called Red Week.[308] The Italian Socialist Party purged itself of pro-war nationalist members, including Mussolini.[308] Mussolini formed the pro-interventionist Il Popolo d'Italia and the Fasci Rivoluzionario d'Azione Internazionalista ("Revolutionary Fasci for International Action") in October 1914 that later developed into the Fasci Italiani di Combattimento in 1919, the origin of fascism.[309] Mussolini's nationalism enabled him to raise funds from Ansaldo (an armaments firm) and other companies to create Il Popolo d'Italia to convince socialists and revolutionaries to support the war.[310]
+The Roman Empire's control of the Italian Peninsula influenced Italian nationalism and the unification of Italy (Risorgimento) in 1861.[533]
+The German Empire was dissolved in the German revolution of 1918–1919, and a democratic government, later known as the Weimar Republic, was created. The interwar period saw strife between supporters of the new republic and hardline opponents on both the political right and left. Italy, as an Entente ally, had made some post-war territorial gains; however, Italian nationalists were angered that the promises made by the United Kingdom and France to secure Italian entrance into the war were not fulfilled in the peace settlement. From 1922 to 1925, the Fascist movement led by Benito Mussolini seized power in Italy with a nationalist, totalitarian, and class collaborationist agenda that abolished representative democracy, repressed socialist, left-wing, and liberal forces, and pursued an aggressive expansionist foreign policy aimed at making Italy a world power, promising the creation of a "New Roman Empire".[20]
+On 3 September 1943, the Western Allies invaded the Italian mainland, following Italy's armistice with the Allies and the ensuing German occupation of Italy.[248] Germany, with the help of fascists, responded to the armistice by disarming Italian forces that were in many places without superior orders, seizing military control of Italian areas,[249] and creating a series of defensive lines.[250] German special forces then rescued Mussolini, who then soon established a new client state in German-occupied Italy named the Italian Social Republic,[251] causing an Italian civil war. The Western Allies fought through several lines until reaching the main German defensive line in mid-November.[252]
+Historian and political philosopher Quentin Skinner points out that Otto of Freising (c. 1114–1158), a German bishop visiting north Italy during the 12th century, noticed a widespread new form of political and social organization, observing that Italy appeared to have exited from feudalism so that its society was based on merchants and commerce. Linked to this was anti-monarchical thinking, represented in the famous early Renaissance fresco cycle The Allegory of Good and Bad Government by Ambrogio Lorenzetti (painted 1338–1340), whose strong message is about the virtues of fairness, justice, republicanism and good administration. Holding both Church and Empire at bay, these city republics were devoted to notions of liberty. Skinner reports that there were many defences of liberty such as the Matteo Palmieri (1406–1475) celebration of Florentine genius not only in art, sculpture and architecture, but "the remarkable efflorescence of moral, social and political philosophy that occurred in Florence at the same time".[45]
+2025-05-01 17:27:09,454 - INFO - Answer: Two prominent Italian figures who initially strongly supported Italian nationalism and intervention in World War I were Gabriele D'Annunzio and Benito Mussolini.
+
+Gabriele D'Annunzio was a popular Italian nationalist who promoted Italian irredentism and helped sway the Italian public to support intervention in the war. He was a prominent figure in promoting Italian nationalism, which aimed to unite Italy under one government.
+
+Benito Mussolini, on the other hand, was an Italian socialist who initially supported the war effort. However, after the Italian Socialist Party decided to oppose the war, Mussolini formed his own pro-interventionist group, Il Popolo d'Italia, and later went on to become the leader of the Fascist movement in Italy.
+
+Both D'Annunzio and Mussolini played important roles in shaping Italian nationalism during World War I, with D'Annunzio promoting irredentism and Mussolini advocating for intervention.
+2025-05-01 17:27:09,455 - INFO - Provide two examples of prominent Italian figures who initially strongly supported Italian nationalism and intervention in World War I
+2025-05-01 17:27:09,455 - INFO - Two prominent Italian figures who initially strongly supported Italian nationalism and intervention in World War I were Gabriele D'Annunzio and Benito Mussolini.
+
+Gabriele D'Annunzio was a popular Italian nationalist who promoted Italian irredentism and helped sway the Italian public to support intervention in the war. He was a prominent figure in promoting Italian nationalism, which aimed to unite Italy under one government.
+
+Benito Mussolini, on the other hand, was an Italian socialist who initially supported the war effort. However, after the Italian Socialist Party decided to oppose the war, Mussolini formed his own pro-interventionist group, Il Popolo d'Italia, and later went on to become the leader of the Fascist movement in Italy.
+
+Both D'Annunzio and Mussolini played important roles in shaping Italian nationalism during World War I, with D'Annunzio promoting irredentism and Mussolini advocating for intervention.
+2025-05-01 20:13:06,183 - INFO - Initializing components...
+2025-05-01 20:13:06,185 - INFO - Use pytorch device_name: cpu
+2025-05-01 20:13:06,185 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 20:13:09,735 - INFO - Using device: cpu
+2025-05-01 20:13:09,736 - INFO - Loading existing FAISS index and texts.
+2025-05-01 20:13:09,748 - INFO - Initializing FAISSVectorStore
+2025-05-01 20:13:09,849 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 20:13:09,850 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 20:13:09,850 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 20:13:09,850 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 20:13:09,851 - INFO - RAGPipeline initialized.
+2025-05-01 20:13:09,851 - INFO - Launching Streamlit UI...
+2025-05-01 20:13:09,851 - INFO - Launching Streamlit UI...
+2025-05-01 20:13:09,852 - INFO - Form submitted with question: tell the name of granson of Genhis khan
+2025-05-01 20:13:09,853 - INFO - New question detected: tell the name of granson of Genhis khan
+2025-05-01 20:13:09,881 - INFO - Question: tell the name of granson of Genhis khan
+2025-05-01 20:13:09,900 - INFO - Full Retrieved Context:
+Known during his childhood as Temüjin, Genghis Khan was a son of a Mongol chieftain and rose very rapidly as a young man by working with Toghrul Khan of the Kerait. After Temujin went to war against Kurtait (also known as Wang Khan; given the Chinese title "Wang" for its meaning of King[21]), who was the most powerful Mongol leader at the time, he gave himself the name Genghis Khan. He then enlarged[how?] his Mongol state under himself and his kin, with the term Mongol coming to be used in reference to all Mongolic speaking tribes under the control of Genghis Khan. His most powerful allies were his father's friend, Khereid chieftain Toghrul, and Temujin's childhood anda (i.e. blood brother) Jamukha of the Jadran clan. With their help, Temujin defeated the Merkit tribe, rescued his wife Börte, and went on to defeat the Naimans and the Tatars.[22]
+Nogai and Konchi, the khan of the White Horde, established friendly relations with the Yuan dynasty and the Ilkhanate. Political disagreement among contending branches of the family over the office of great khan continued, but the economic and commercial success of the Mongol Empire continued despite the squabbling.[80][81][82]
+Genghis quickly came into conflict with the Jin dynasty of the Jurchens and the Western Xia of the Tanguts in northern China. He also had to deal with two other powers, Tibet and Qara Khitai.[28]
+Temujin forbade the looting of his enemies without permission, and he implemented a policy of sharing spoils with his warriors and their families instead of giving them all to the aristocrats.[23] These policies brought him into conflict with his uncles, who were also legitimate heirs to the throne; they regarded Temujin not as a leader but as an insolent usurper. This dissatisfaction spread to his generals and other associates, and some Mongols who had previously been allies broke their allegiance.[22] War ensued, and Temujin and the forces still loyal to him prevailed, defeating the remaining rival tribes between 1203 and 1205 and bringing them under his sway. In 1206, Temujin was crowned as the khagan (Emperor) of the Yekhe Mongol Ulus (Great Mongol State) at a Kurultai (general assembly/council). It was there that he assumed the title of Genghis Khan (universal leader) instead of one of the old tribal titles such as Gur Khan or Tayang Khan, marking the start of the Mongol Empire.[22]
+Genghis Khan died on 18 August 1227, by which time the Mongol Empire ruled from the Pacific Ocean to the Caspian Sea, an empire twice the size of the Roman Empire or the Muslim Caliphate at their height.[citation needed] Genghis named his third son, the charismatic Ögedei, as his heir. According to Mongol tradition, Genghis Khan was buried in a secret location. The regency was originally held by Ögedei's younger brother Tolui until Ögedei's formal election at the kurultai in 1229.[30]
+2025-05-01 20:14:54,014 - INFO - Answer: According to the provided context, Genghis Khan's grandson was Güyük Khan, who succeeded Ögedei Khan as the fourth Khagan of the Mongol Empire.
+
+Güyük Khan was the son of Chagatai Khan, who was the second son of Genghis Khan and the younger brother of Ögedei Khan. Güyük Khan ascended to the throne after the death of his uncle, Möngke Khan, in 1251. He was crowned at a kurultai (general assembly) held in the vicinity of Karakorum, the capital city of the Mongol Empire.
+
+As Genghis Khan's grandson, Güyük Khan played an important role in the history of the Mongol Empire, which had expanded significantly under his predecessors. During his reign, Güyük Khan continued to expand the empire, sending emissaries and ambassadors to various parts of Asia and Europe. He also strengthened the Mongolian state by establishing a network of administrators and officials to govern the vast territories under his control.
+
+Güyük Khan's reign was marked by significant cultural and artistic achievements, as well as military conquests. He was particularly interested in Buddhism and encouraged its spread throughout the empire. His legacy continued to shape the Mongol Empire for centuries after his death in 1248.
+2025-05-01 20:14:54,015 - INFO - tell the name of granson of Genhis khan
+2025-05-01 20:14:54,018 - INFO - According to the provided context, Genghis Khan's grandson was Güyük Khan, who succeeded Ögedei Khan as the fourth Khagan of the Mongol Empire.
+
+Güyük Khan was the son of Chagatai Khan, who was the second son of Genghis Khan and the younger brother of Ögedei Khan. Güyük Khan ascended to the throne after the death of his uncle, Möngke Khan, in 1251. He was crowned at a kurultai (general assembly) held in the vicinity of Karakorum, the capital city of the Mongol Empire.
+
+As Genghis Khan's grandson, Güyük Khan played an important role in the history of the Mongol Empire, which had expanded significantly under his predecessors. During his reign, Güyük Khan continued to expand the empire, sending emissaries and ambassadors to various parts of Asia and Europe. He also strengthened the Mongolian state by establishing a network of administrators and officials to govern the vast territories under his control.
+
+Güyük Khan's reign was marked by significant cultural and artistic achievements, as well as military conquests. He was particularly interested in Buddhism and encouraged its spread throughout the empire. His legacy continued to shape the Mongol Empire for centuries after his death in 1248.
+2025-05-01 20:28:25,335 - INFO - Initializing components...
+2025-05-01 20:28:25,338 - INFO - Use pytorch device_name: cpu
+2025-05-01 20:28:25,338 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 20:28:28,979 - INFO - Using device: cpu
+2025-05-01 20:28:28,981 - INFO - Loading existing FAISS index and texts.
+2025-05-01 20:28:28,994 - INFO - Initializing FAISSVectorStore
+2025-05-01 20:28:29,095 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 20:28:29,096 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 20:28:29,096 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 20:28:29,096 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 20:28:29,097 - INFO - RAGPipeline initialized.
+2025-05-01 20:28:29,097 - INFO - Launching Streamlit UI...
+2025-05-01 20:28:29,098 - INFO - Launching Streamlit UI...
+2025-05-01 20:28:29,099 - INFO - Form submitted with question: What was the US Department of Defense figure for PAVN/VC killed in Vietnam from 1965 to 1974?
+2025-05-01 20:28:29,100 - INFO - New question detected: What was the US Department of Defense figure for PAVN/VC killed in Vietnam from 1965 to 1974?
+2025-05-01 20:28:29,126 - INFO - Question: What was the US Department of Defense figure for PAVN/VC killed in Vietnam from 1965 to 1974?
+2025-05-01 20:28:29,161 - INFO - Full Retrieved Context:
+The US Department of Defense figure for PAVN/VC killed in Vietnam from 1965 to 1974 was 950,765. Officials believed these body count figures need to be deflated by 30 percent. Lewy asserts that one-third of the reported "enemy" killed may have been civilians, concluding that the figure was closer to 444,000.[19]: 450–453
+According to figures released by the Vietnamese government there were 849,018 confirmed military deaths on the PAVN/VC side.[22][23] The Vietnamese government released its estimate of war deaths for the more lengthy period of 1955 to 1975. This includes battle deaths of Vietnamese soldiers in the Laotian and Cambodian Civil Wars, in which the PAVN was a participant. Non-combat deaths account for 30-40% of these.[22] However, the figures do not include deaths of South Vietnamese and allied soldiers.[43] These do not include the estimated 300,000–500,000 PAVN/VC missing in action. Vietnamese government figures estimate 1.1 million dead and 300,000 missing from 1945 to 1979, with approximately 849,000 dead and 232,000 missing from 1960 to 1975.[21]
+Notable VC atrocities include the massacre of over 3,000 unarmed civilians at Huế[272] during the Tet Offensive and killing of 252 civilians during the Đắk Sơn massacre.[273] 155,000 refugees fleeing the North Vietnamese Spring Offensive were reported to have been killed, or abducted, on the road to Tuy Hòa in 1975.[274] PAVN/VC troops killed 164,000 civilians in democide between 1954-75 in South Vietnam.[30] North Vietnam was known for its abusive treatment of American POWs, most notably in Hỏa Lò Prison (the Hanoi Hilton), where torture was employed to extract confessions.[105]: 655
+In 1968, the Vietnam War Crimes Working Group (VWCWG) was established by the Pentagon task force set up in the wake of the My Lai massacre, to ascertain the veracity of emerging claims of US war crimes. Of the crimes reported to military authorities, sworn statements by witnesses and status reports indicated 320 incidents had a factual basis.[255] The substantiated cases included seven massacres between 1967 and 1971 in which at least 137 civilians were killed; 78 further attacks targeting non-combatants resulting in at least 57 deaths and 15 sexually assaulted; and 141 cases of US soldiers torturing civilian detainees, or prisoners of war with fists, sticks, bats, water or electric shock. Journalists have documented overlooked and uninvestigated war crimes, involving every active army division,[255] including atrocities committed by Tiger Force.[256] R. J. Rummel estimated that American forces committed around 5,500 democidal killings between 1960-72.[30]
+Beginning in 1969, American troops were withdrawn from border areas where most of the fighting took place and redeployed along the coast and interior. US casualties in 1970 were less than half of 1969, after being relegated to less active combat.[212] While US forces were redeployed, the ARVN took over combat operations, with casualties double US ones in 1969, and more than triple US ones in 1970.[213] In the post-Tet environment, membership in the South Vietnamese Regional Force and Popular Force militias grew, and they were now capable of providing village security, which the Americans had not accomplished.[213]
+2025-05-01 20:29:40,636 - INFO - Answer: The US Department of Defense figure for PAVN/VC killed in Vietnam from 1965 to 1974 was 950,765.
+
+According to the provided context, this figure is considered to be inflated by approximately 30%, with some estimates suggesting that one-third of the reported "enemy" killed may have been civilians. This would bring the actual number of PAVN/VC killed down to around 444,000. The Vietnamese government, on the other hand, estimated a much higher toll, with 849,018 confirmed military deaths on the PAVN/VC side between 1955 and 1975.
+2025-05-01 20:29:40,637 - INFO - What was the US Department of Defense figure for PAVN/VC killed in Vietnam from 1965 to 1974?
+2025-05-01 20:29:40,637 - INFO - The US Department of Defense figure for PAVN/VC killed in Vietnam from 1965 to 1974 was 950,765.
+
+According to the provided context, this figure is considered to be inflated by approximately 30%, with some estimates suggesting that one-third of the reported "enemy" killed may have been civilians. This would bring the actual number of PAVN/VC killed down to around 444,000. The Vietnamese government, on the other hand, estimated a much higher toll, with 849,018 confirmed military deaths on the PAVN/VC side between 1955 and 1975.
+2025-05-01 22:27:35,598 - INFO - Initializing components...
+2025-05-01 22:27:35,600 - INFO - Use pytorch device_name: cpu
+2025-05-01 22:27:35,600 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 22:27:39,629 - INFO - Using device: cpu
+2025-05-01 22:27:39,630 - INFO - Loading existing FAISS index and texts.
+2025-05-01 22:27:39,642 - INFO - Initializing FAISSVectorStore
+2025-05-01 22:27:39,751 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 22:27:39,751 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 22:27:39,751 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 22:27:39,751 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 22:27:39,752 - INFO - RAGPipeline initialized.
+2025-05-01 22:27:39,752 - INFO - Launching Streamlit UI...
+2025-05-01 22:27:39,758 - INFO - Launching Streamlit UI...
+2025-05-01 22:28:32,895 - INFO - Initializing components...
+2025-05-01 22:28:32,898 - INFO - Use pytorch device_name: cpu
+2025-05-01 22:28:32,899 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 22:28:35,943 - INFO - Using device: cpu
+2025-05-01 22:28:35,944 - INFO - Loading existing FAISS index and texts.
+2025-05-01 22:28:35,954 - INFO - Initializing FAISSVectorStore
+2025-05-01 22:28:36,064 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 22:28:36,064 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 22:28:36,065 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 22:28:36,065 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 22:28:36,065 - INFO - RAGPipeline initialized.
+2025-05-01 22:28:36,065 - INFO - Launching Streamlit UI...
+2025-05-01 22:28:36,066 - INFO - Launching Streamlit UI...
+2025-05-01 22:28:36,067 - INFO - Form submitted with question: What was the main catalyst for the formal development of chaos theory in the mid-20th century?
+2025-05-01 22:28:36,067 - INFO - New question detected: What was the main catalyst for the formal development of chaos theory in the mid-20th century?
+2025-05-01 22:28:36,068 - INFO - Question: What was the main catalyst for the formal development of chaos theory in the mid-20th century?
+2025-05-01 22:28:36,156 - INFO - Full Retrieved Context:
+Also in 1987 James Gleick published Chaos: Making a New Science, which became a best-seller and introduced the general principles of chaos theory as well as its history to the broad public.[90] Initially the domain of a few, isolated individuals, chaos theory progressively emerged as a transdisciplinary and institutional discipline, mainly under the name of nonlinear systems analysis. Alluding to Thomas Kuhn's concept of a paradigm shift exposed in The Structure of Scientific Revolutions (1962), many "chaologists" (as some described themselves) claimed that this new theory was an example of such a shift, a thesis upheld by Gleick.
+Although chaos theory was born from observing weather patterns, it has become applicable to a variety of other situations. Some areas benefiting from chaos theory today are geology, mathematics, biology, computer science, economics,[97][98][99] engineering,[100][101] finance,[102][103][104][105][106] meteorology, philosophy, anthropology,[15] physics,[107][108][109] politics,[110][111] population dynamics,[112] and robotics. A few categories are listed below with examples, but this is by no means a comprehensive list as new applications are appearing.
+Chaos theory began in the field of ergodic theory. Later studies, also on the topic of nonlinear differential equations, were carried out by George David Birkhoff,[63] Andrey Nikolaevich Kolmogorov,[64][65][66] Mary Lucy Cartwright and John Edensor Littlewood,[67] and Stephen Smale.[68] Although chaotic planetary motion had not been observed, experimentalists had encountered turbulence in fluid motion and nonperiodic oscillation in radio circuits without the benefit of a theory to explain what they were seeing.
+The main catalyst for the development of chaos theory was the electronic computer. Much of the mathematics of chaos theory involves the repeated iteration of simple mathematical formulas, which would be impractical to do by hand. Electronic computers made these repeated calculations practical, while figures and images made it possible to visualize these systems. As a graduate student in Chihiro Hayashi's laboratory at Kyoto University, Yoshisuke Ueda was experimenting with analog computers and noticed, on November 27, 1961, what he called "randomly transitional phenomena". Yet his advisor did not agree with his conclusions at the time, and did not allow him to report his findings until 1970.[74][75]
+In December 1977, the New York Academy of Sciences organized the first symposium on chaos, attended by David Ruelle, Robert May, James A. Yorke (coiner of the term "chaos" as used in mathematics), Robert Shaw, and the meteorologist Edward Lorenz. The following year Pierre Coullet and Charles Tresser published "Itérations d'endomorphismes et groupe de renormalisation", and Mitchell Feigenbaum's article "Quantitative Universality for a Class of Nonlinear Transformations" finally appeared in a journal, after 3 years of referee rejections.[84][85] Thus Feigenbaum (1975) and Coullet & Tresser (1978) discovered the universality in chaos, permitting the application of chaos theory to many different phenomena.
+2025-05-01 22:30:23,544 - INFO - Answer: The main catalyst for the formal development of chaos theory in the mid-20th century was the electronic computer.
+
+The electronic computer played a crucial role in the development of chaos theory by making it possible to perform repeated iterations of simple mathematical formulas, which would have been impractical or impossible to do by hand. This enabled researchers to visualize and study complex systems that exhibit chaotic behavior, such as weather patterns and fluid motion. The computer also allowed for the application of numerical methods to solve nonlinear differential equations, which are a fundamental aspect of chaos theory.
+
+In the early 1960s, Yoshisuke Ueda was experimenting with analog computers at Kyoto University and noticed "randomly transitional phenomena" in his calculations. However, his advisor did not agree with his conclusions at the time, and it wasn't until much later that Ueda's findings were published. The development of chaos theory gained momentum in the late 1970s, with the publication of key papers by Mitchell Feigenbaum, Pierre Coullet, and Charles Tresser, which helped to establish the universality of chaos and its applicability to a wide range of phenomena.
+
+Overall, the electronic computer was a critical factor in the formal development of chaos theory, enabling researchers to study complex systems that exhibit chaotic behavior and paving the way for the application of chaos theory to fields such as meteorology, biology, and economics.
+2025-05-01 22:30:23,545 - INFO - What was the main catalyst for the formal development of chaos theory in the mid-20th century?
+2025-05-01 22:30:23,545 - INFO - The main catalyst for the formal development of chaos theory in the mid-20th century was the electronic computer.
+
+The electronic computer played a crucial role in the development of chaos theory by making it possible to perform repeated iterations of simple mathematical formulas, which would have been impractical or impossible to do by hand. This enabled researchers to visualize and study complex systems that exhibit chaotic behavior, such as weather patterns and fluid motion. The computer also allowed for the application of numerical methods to solve nonlinear differential equations, which are a fundamental aspect of chaos theory.
+
+In the early 1960s, Yoshisuke Ueda was experimenting with analog computers at Kyoto University and noticed "randomly transitional phenomena" in his calculations. However, his advisor did not agree with his conclusions at the time, and it wasn't until much later that Ueda's findings were published. The development of chaos theory gained momentum in the late 1970s, with the publication of key papers by Mitchell Feigenbaum, Pierre Coullet, and Charles Tresser, which helped to establish the universality of chaos and its applicability to a wide range of phenomena.
+
+Overall, the electronic computer was a critical factor in the formal development of chaos theory, enabling researchers to study complex systems that exhibit chaotic behavior and paving the way for the application of chaos theory to fields such as meteorology, biology, and economics.
+2025-05-01 22:30:44,355 - INFO - Initializing components...
+2025-05-01 22:30:44,358 - INFO - Use pytorch device_name: cpu
+2025-05-01 22:30:44,359 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 22:30:47,583 - INFO - Using device: cpu
+2025-05-01 22:30:47,584 - INFO - Loading existing FAISS index and texts.
+2025-05-01 22:30:47,596 - INFO - Initializing FAISSVectorStore
+2025-05-01 22:30:47,711 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 22:30:47,712 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 22:30:47,712 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 22:30:47,712 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 22:30:47,712 - INFO - RAGPipeline initialized.
+2025-05-01 22:30:47,713 - INFO - Launching Streamlit UI...
+2025-05-01 22:30:47,714 - INFO - Launching Streamlit UI...
+2025-05-01 22:30:47,715 - INFO - Form submitted with question: What was the main catalyst for the formal development of chaos theory in the mid-20th century?
+2025-05-01 22:30:47,715 - INFO - Question same as previous: What was the main catalyst for the formal development of chaos theory in the mid-20th century?
+2025-05-01 22:30:57,102 - INFO - Initializing components...
+2025-05-01 22:30:57,105 - INFO - Use pytorch device_name: cpu
+2025-05-01 22:30:57,105 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 22:30:57,878 - INFO - Initializing components...
+2025-05-01 22:30:57,881 - INFO - Use pytorch device_name: cpu
+2025-05-01 22:30:57,881 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 22:31:00,381 - INFO - Using device: cpu
+2025-05-01 22:31:00,383 - INFO - Loading existing FAISS index and texts.
+2025-05-01 22:31:00,436 - INFO - Initializing FAISSVectorStore
+2025-05-01 22:31:00,539 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 22:31:00,539 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 22:31:00,540 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 22:31:00,540 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 22:31:00,540 - INFO - RAGPipeline initialized.
+2025-05-01 22:31:00,540 - INFO - Launching Streamlit UI...
+2025-05-01 22:31:01,205 - INFO - Using device: cpu
+2025-05-01 22:31:01,206 - INFO - Loading existing FAISS index and texts.
+2025-05-01 22:31:01,220 - INFO - Initializing FAISSVectorStore
+2025-05-01 22:31:01,323 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 22:31:01,324 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 22:31:01,324 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 22:31:01,324 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 22:31:01,325 - INFO - RAGPipeline initialized.
+2025-05-01 22:31:01,325 - INFO - Launching Streamlit UI...
+2025-05-01 22:31:01,325 - INFO - Launching Streamlit UI...
+2025-05-01 22:31:01,326 - INFO - Form submitted with question: What was the main catalyst for the formal development of chaos theory in the mid-20th century?
+2025-05-01 22:31:01,327 - INFO - Question same as previous: What was the main catalyst for the formal development of chaos theory in the mid-20th century?
+2025-05-01 22:31:24,681 - INFO - Initializing components...
+2025-05-01 22:31:24,684 - INFO - Use pytorch device_name: cpu
+2025-05-01 22:31:24,685 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 22:31:27,718 - INFO - Using device: cpu
+2025-05-01 22:31:27,719 - INFO - Loading existing FAISS index and texts.
+2025-05-01 22:31:27,728 - INFO - Initializing FAISSVectorStore
+2025-05-01 22:31:27,831 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 22:31:27,832 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 22:31:27,832 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 22:31:27,832 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 22:31:27,832 - INFO - RAGPipeline initialized.
+2025-05-01 22:31:27,832 - INFO - Launching Streamlit UI...
+2025-05-01 22:31:27,833 - INFO - Launching Streamlit UI...
+2025-05-01 22:31:27,834 - INFO - Form submitted with question: What type of robots have been shown to exhibit chaotic dynamics?
+2025-05-01 22:31:27,834 - INFO - New question detected: What type of robots have been shown to exhibit chaotic dynamics?
+2025-05-01 22:31:27,840 - INFO - Question: What type of robots have been shown to exhibit chaotic dynamics?
+2025-05-01 22:31:27,872 - INFO - Full Retrieved Context:
+Examples of chaotic systems
+Robotics is another area that has recently benefited from chaos theory. Instead of robots acting in a trial-and-error type of refinement to interact with their environment, chaos theory has been used to build a predictive model.[120]
+Chaotic dynamics have been exhibited by passive walking biped robots.[121]
+Although chaos theory was born from observing weather patterns, it has become applicable to a variety of other situations. Some areas benefiting from chaos theory today are geology, mathematics, biology, computer science, economics,[97][98][99] engineering,[100][101] finance,[102][103][104][105][106] meteorology, philosophy, anthropology,[15] physics,[107][108][109] politics,[110][111] population dynamics,[112] and robotics. A few categories are listed below with examples, but this is by no means a comprehensive list as new applications are appearing.
+Chaotic behavior exists in many natural systems, including fluid flow, heartbeat irregularities, weather and climate.[13][14][8] It also occurs spontaneously in some systems with artificial components, such as road traffic.[2] This behavior can be studied through the analysis of a chaotic mathematical model or through analytical techniques such as recurrence plots and Poincaré maps. Chaos theory has applications in a variety of disciplines, including meteorology,[8] anthropology,[15] sociology, environmental science, computer science, engineering, economics, ecology, and pandemic crisis management.[16][17] The theory formed the basis for such fields of study as complex dynamical systems, edge of chaos theory and self-assembly processes.
+Some dynamical systems, like the one-dimensional logistic map defined by x → 4 x (1 – x), are chaotic everywhere, but in many cases chaotic behavior is found only in a subset of phase space. The cases of most interest arise when the chaotic behavior takes place on an attractor, since then a large set of initial conditions leads to orbits that converge to this chaotic region.[36]
+2025-05-01 22:31:57,757 - INFO - Answer: Passive walking biped robots have been shown to exhibit chaotic dynamics, according to the text. This means that their behavior was found to be unpredictable and irregular, characteristic of chaotic systems.
+2025-05-01 22:31:57,758 - INFO - What type of robots have been shown to exhibit chaotic dynamics?
+2025-05-01 22:31:57,759 - INFO - Passive walking biped robots have been shown to exhibit chaotic dynamics, according to the text. This means that their behavior was found to be unpredictable and irregular, characteristic of chaotic systems.
+2025-05-01 22:50:48,133 - INFO - Initializing components...
+2025-05-01 22:50:48,135 - INFO - Use pytorch device_name: cpu
+2025-05-01 22:50:48,135 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 22:50:51,250 - INFO - Using device: cpu
+2025-05-01 22:50:51,252 - INFO - Loading existing FAISS index and texts.
+2025-05-01 22:50:51,267 - INFO - Initializing FAISSVectorStore
+2025-05-01 22:50:51,387 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 22:50:51,388 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 22:50:51,388 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 22:50:51,388 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 22:50:51,388 - INFO - RAGPipeline initialized.
+2025-05-01 22:50:51,388 - INFO - Launching Streamlit UI...
+2025-05-01 22:50:51,389 - INFO - Launching Streamlit UI...
+2025-05-01 22:51:03,936 - INFO - Initializing components...
+2025-05-01 22:51:03,938 - INFO - Use pytorch device_name: cpu
+2025-05-01 22:51:03,939 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 22:51:07,327 - INFO - Using device: cpu
+2025-05-01 22:51:07,328 - INFO - Loading existing FAISS index and texts.
+2025-05-01 22:51:07,340 - INFO - Initializing FAISSVectorStore
+2025-05-01 22:51:07,443 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 22:51:07,443 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 22:51:07,443 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 22:51:07,444 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 22:51:07,444 - INFO - RAGPipeline initialized.
+2025-05-01 22:51:07,444 - INFO - Launching Streamlit UI...
+2025-05-01 22:51:07,445 - INFO - Launching Streamlit UI...
+2025-05-01 22:51:07,447 - INFO - Form submitted with question: Name two specific applications of chaos theory mentioned in the context of cryptography.
+2025-05-01 22:51:07,447 - INFO - New question detected: Name two specific applications of chaos theory mentioned in the context of cryptography.
+2025-05-01 22:51:07,447 - INFO - Question: Name two specific applications of chaos theory mentioned in the context of cryptography.
+2025-05-01 22:51:07,482 - INFO - Full Retrieved Context:
+Although chaos theory was born from observing weather patterns, it has become applicable to a variety of other situations. Some areas benefiting from chaos theory today are geology, mathematics, biology, computer science, economics,[97][98][99] engineering,[100][101] finance,[102][103][104][105][106] meteorology, philosophy, anthropology,[15] physics,[107][108][109] politics,[110][111] population dynamics,[112] and robotics. A few categories are listed below with examples, but this is by no means a comprehensive list as new applications are appearing.
+The availability of cheaper, more powerful computers broadens the applicability of chaos theory. Currently, chaos theory remains an active area of research,[91] involving many different disciplines such as mathematics, topology, physics,[92] social systems,[93] population modeling, biology, meteorology, astrophysics, information theory, computational neuroscience, pandemic crisis management,[16][17] etc.
+Chaos theory began in the field of ergodic theory. Later studies, also on the topic of nonlinear differential equations, were carried out by George David Birkhoff,[63] Andrey Nikolaevich Kolmogorov,[64][65][66] Mary Lucy Cartwright and John Edensor Littlewood,[67] and Stephen Smale.[68] Although chaotic planetary motion had not been observed, experimentalists had encountered turbulence in fluid motion and nonperiodic oscillation in radio circuits without the benefit of a theory to explain what they were seeing.
+Examples of chaotic systems
+Chaotic behavior exists in many natural systems, including fluid flow, heartbeat irregularities, weather and climate.[13][14][8] It also occurs spontaneously in some systems with artificial components, such as road traffic.[2] This behavior can be studied through the analysis of a chaotic mathematical model or through analytical techniques such as recurrence plots and Poincaré maps. Chaos theory has applications in a variety of disciplines, including meteorology,[8] anthropology,[15] sociology, environmental science, computer science, engineering, economics, ecology, and pandemic crisis management.[16][17] The theory formed the basis for such fields of study as complex dynamical systems, edge of chaos theory and self-assembly processes.
+2025-05-01 22:51:45,341 - INFO - Answer: There are no specific applications of chaos theory mentioned in the context of cryptography. The text only mentions chaos theory's applicability to various fields such as meteorology, anthropology, sociology, and more, but not cryptography specifically.
+2025-05-01 22:51:45,342 - INFO - Name two specific applications of chaos theory mentioned in the context of cryptography.
+2025-05-01 22:51:45,343 - INFO - There are no specific applications of chaos theory mentioned in the context of cryptography. The text only mentions chaos theory's applicability to various fields such as meteorology, anthropology, sociology, and more, but not cryptography specifically.
+2025-05-01 22:52:48,074 - INFO - Initializing components...
+2025-05-01 22:52:48,078 - INFO - Use pytorch device_name: cpu
+2025-05-01 22:52:48,078 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 22:52:51,571 - INFO - Using device: cpu
+2025-05-01 22:52:51,573 - INFO - Loading existing FAISS index and texts.
+2025-05-01 22:52:51,585 - INFO - Initializing FAISSVectorStore
+2025-05-01 22:52:51,686 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-01 22:52:51,686 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-01 22:52:51,686 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-01 22:52:51,687 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-01 22:52:51,687 - INFO - RAGPipeline initialized.
+2025-05-01 22:52:51,687 - INFO - Launching Streamlit UI...
+2025-05-01 22:52:51,688 - INFO - Launching Streamlit UI...
+2025-05-01 22:52:51,689 - INFO - Form submitted with question: Introducing chaos into which optimization method has helped prevent simulations from getting stuck in predicting gas solubility?
+2025-05-01 22:52:51,689 - INFO - New question detected: Introducing chaos into which optimization method has helped prevent simulations from getting stuck in predicting gas solubility?
+2025-05-01 22:52:51,718 - INFO - Question: Introducing chaos into which optimization method has helped prevent simulations from getting stuck in predicting gas solubility?
+2025-05-01 22:52:51,755 - INFO - Full Retrieved Context:
+In chemistry, predicting gas solubility is essential to manufacturing polymers, but models using particle swarm optimization (PSO) tend to converge to the wrong points. An improved version of PSO has been created by introducing chaos, which keeps the simulations from getting stuck.[138] In celestial mechanics, especially when observing asteroids, applying chaos theory leads to better predictions about when these objects will approach Earth and other planets.[139] Four of the five moons of Pluto rotate chaotically. In quantum physics and electrical engineering, the study of large arrays of Josephson junctions benefitted greatly from chaos theory.[140] Closer to home, coal mines have always been dangerous places where frequent natural gas leaks cause many deaths. Until recently, there was no reliable way to predict when they would occur. But these gas leaks have chaotic tendencies that, when properly modeled, can be predicted fairly accurately.[141]
+The availability of cheaper, more powerful computers broadens the applicability of chaos theory. Currently, chaos theory remains an active area of research,[91] involving many different disciplines such as mathematics, topology, physics,[92] social systems,[93] population modeling, biology, meteorology, astrophysics, information theory, computational neuroscience, pandemic crisis management,[16][17] etc.
+Although chaos theory was born from observing weather patterns, it has become applicable to a variety of other situations. Some areas benefiting from chaos theory today are geology, mathematics, biology, computer science, economics,[97][98][99] engineering,[100][101] finance,[102][103][104][105][106] meteorology, philosophy, anthropology,[15] physics,[107][108][109] politics,[110][111] population dynamics,[112] and robotics. A few categories are listed below with examples, but this is by no means a comprehensive list as new applications are appearing.
+The main catalyst for the development of chaos theory was the electronic computer. Much of the mathematics of chaos theory involves the repeated iteration of simple mathematical formulas, which would be impractical to do by hand. Electronic computers made these repeated calculations practical, while figures and images made it possible to visualize these systems. As a graduate student in Chihiro Hayashi's laboratory at Kyoto University, Yoshisuke Ueda was experimenting with analog computers and noticed, on November 27, 1961, what he called "randomly transitional phenomena". Yet his advisor did not agree with his conclusions at the time, and did not allow him to report his findings until 1970.[74][75]
+Chaotic behavior exists in many natural systems, including fluid flow, heartbeat irregularities, weather and climate.[13][14][8] It also occurs spontaneously in some systems with artificial components, such as road traffic.[2] This behavior can be studied through the analysis of a chaotic mathematical model or through analytical techniques such as recurrence plots and Poincaré maps. Chaos theory has applications in a variety of disciplines, including meteorology,[8] anthropology,[15] sociology, environmental science, computer science, engineering, economics, ecology, and pandemic crisis management.[16][17] The theory formed the basis for such fields of study as complex dynamical systems, edge of chaos theory and self-assembly processes.
+2025-05-01 22:53:34,538 - INFO - Answer: Introducing chaos into particle swarm optimization (PSO) helps prevent simulations from getting stuck in predicting gas solubility. This improved version of PSO keeps the simulations from converging to the wrong points.
+2025-05-01 22:53:34,539 - INFO - Introducing chaos into which optimization method has helped prevent simulations from getting stuck in predicting gas solubility?
+2025-05-01 22:53:34,541 - INFO - Introducing chaos into particle swarm optimization (PSO) helps prevent simulations from getting stuck in predicting gas solubility. This improved version of PSO keeps the simulations from converging to the wrong points.
+2025-05-01 23:43:10,815 - INFO - Use pytorch device_name: cpu
+2025-05-01 23:43:10,816 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 23:54:33,775 - INFO - Use pytorch device_name: cpu
+2025-05-01 23:54:33,775 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-01 23:59:51,613 - INFO - Use pytorch device_name: cpu
+2025-05-01 23:59:51,613 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-02 00:00:38,029 - INFO - Use pytorch device_name: cpu
+2025-05-02 00:00:38,029 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-02 00:01:47,036 - INFO - Use pytorch device_name: cpu
+2025-05-02 00:01:47,036 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-02 00:02:40,369 - INFO - Use pytorch device_name: cpu
+2025-05-02 00:02:40,369 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-02 00:02:45,638 - INFO - Initializing FAISSVectorStore
+2025-05-02 00:02:45,742 - INFO - Loaded embeddings for MMR retrieval.
+2025-05-02 00:02:45,742 - INFO - Loaded FAISS index from faiss_index.bin and texts from texts.pkl
+2025-05-02 00:02:45,742 - INFO - Initializing OllamaLLM with LLaMA 3 8B
+2025-05-02 00:02:45,742 - INFO - Ollama API URL set to: http://127.0.0.1:11434/api/generate
+2025-05-02 00:02:45,742 - INFO - RAGPipeline initialized.
+2025-05-02 00:02:45,744 - INFO - Use pytorch device_name: cpu
+2025-05-02 00:02:45,744 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-02 00:02:48,697 - INFO - Testing question: What is the main process of photosynthesis?
+2025-05-02 00:02:48,697 - INFO - Question: What is the main process of photosynthesis?
+2025-05-02 00:02:48,730 - INFO - Full Retrieved Context:
+The overall process of photosynthesis takes place in four stages:[11]
+Photosynthesis (/ˌfoʊtəˈsɪnθəsɪs/ FOH-tə-SINTH-ə-sis)[1] is a system of biological processes by which photosynthetic organisms, such as most plants, algae, and cyanobacteria, convert light energy, typically from sunlight, into the chemical energy necessary to fuel their metabolism. 
+Photosynthesis usually refers to oxygenic photosynthesis, a process that produces oxygen. Photosynthetic organisms store the chemical energy so produced within intracellular organic compounds (compounds containing carbon) like sugars, glycogen, cellulose and starches. To use this stored chemical energy, an organism's cells metabolize the organic compounds through cellular respiration. Photosynthesis plays a critical role in producing and maintaining the oxygen content of the Earth's atmosphere, and it supplies most of the biological energy necessary for complex life on Earth.[2]
+Photosynthesis occurs in two stages. In the first stage, light-dependent reactions or light reactions capture the energy of light and use it to make the hydrogen carrier NADPH and the energy-storage molecule ATP. During the second stage, the light-independent reactions use these products to capture and reduce carbon dioxide.
+The process of photosynthesis provides the main input of free energy into the biosphere, and is one of four main ways in which radiation is important for plant life.[115]
+While the details may differ between species, the process always begins when light energy is absorbed by the reaction centers, proteins that contain photosynthetic pigments or chromophores. In plants, these pigments are chlorophylls (a porphyrin derivative that absorbs the red and blue spectrums of light, thus reflecting green) held inside chloroplasts, abundant in leaf cells. In bacteria, they are embedded in the plasma membrane. In these light-dependent reactions, some energy is used to strip electrons from suitable substances, such as water, producing oxygen gas. The hydrogen freed by the splitting of water is used in the creation of two important molecules that participate in energetic processes: reduced nicotinamide adenine dinucleotide phosphate (NADPH) and ATP.
+2025-05-02 00:03:25,720 - INFO - Answer: The main process of photosynthesis involves two stages: light-dependent reactions that capture light energy to produce NADPH and ATP, and light-independent reactions that use these products to capture and reduce carbon dioxide.
+2025-05-02 00:03:25,721 - INFO - Response time: 37.02 seconds
+2025-05-02 00:03:25,721 - INFO - Question: What is the main process of photosynthesis?
+2025-05-02 00:03:25,721 - INFO - Expected Answer: The process by which photosynthetic organisms convert light energy into chemical energy.
+2025-05-02 00:03:25,721 - INFO - Generated Response: The main process of photosynthesis involves two stages: light-dependent reactions that capture light energy to produce NADPH and ATP, and light-independent reactions that use these products to capture and reduce carbon dioxide.
+2025-05-02 00:03:25,766 - INFO - Cosine similarity: 0.7269
+2025-05-02 00:03:25,780 - INFO - BLEU score: 0.0000
+2025-05-02 00:03:25,783 - INFO - Using default tokenizer.
+2025-05-02 00:03:25,860 - INFO - ROUGE-1 score: 0.1739
+2025-05-02 00:03:25,860 - INFO - Testing question: Which organisms perform oxygenic photosynthesis?
+2025-05-02 00:03:25,861 - INFO - Question: Which organisms perform oxygenic photosynthesis?
+2025-05-02 00:03:25,872 - INFO - Full Retrieved Context:
+In plants, algae, and cyanobacteria, photosynthesis releases oxygen. This oxygenic photosynthesis is by far the most common type of photosynthesis used by living organisms. Some shade-loving plants (sciophytes) produce such low levels of oxygen during photosynthesis that they use all of it themselves instead of releasing it to the atmosphere.[12]
+Although there are some differences between oxygenic photosynthesis in plants, algae, and cyanobacteria, the overall process is quite similar in these organisms. There are also many varieties of anoxygenic photosynthesis, used mostly by bacteria, which consume carbon dioxide but do not release oxygen or which produce elemental sulfur instead of molecular oxygen.[13][14]
+Photosynthesis (/ˌfoʊtəˈsɪnθəsɪs/ FOH-tə-SINTH-ə-sis)[1] is a system of biological processes by which photosynthetic organisms, such as most plants, algae, and cyanobacteria, convert light energy, typically from sunlight, into the chemical energy necessary to fuel their metabolism. 
+Photosynthesis usually refers to oxygenic photosynthesis, a process that produces oxygen. Photosynthetic organisms store the chemical energy so produced within intracellular organic compounds (compounds containing carbon) like sugars, glycogen, cellulose and starches. To use this stored chemical energy, an organism's cells metabolize the organic compounds through cellular respiration. Photosynthesis plays a critical role in producing and maintaining the oxygen content of the Earth's atmosphere, and it supplies most of the biological energy necessary for complex life on Earth.[2]
+Oxygenic photosynthesis is the main source of oxygen in the Earth's atmosphere, and its earliest appearance is sometimes referred to as the oxygen catastrophe. Geological evidence suggests that oxygenic photosynthesis, such as that in cyanobacteria, became important during the Paleoproterozoic era around two billion years ago. Modern photosynthesis in plants and most photosynthetic prokaryotes is oxygenic, using water as an electron donor, which is oxidized to molecular oxygen in the photosynthetic reaction center.
+Most organisms that use oxygenic photosynthesis use visible light for the light-dependent reactions, although at least three use shortwave infrared or, more specifically, far-red radiation.[20]
+2025-05-02 00:03:53,867 - INFO - Answer: Most plants, algae, and cyanobacteria perform oxygenic photosynthesis.
+2025-05-02 00:03:53,867 - INFO - Response time: 28.01 seconds
+2025-05-02 00:03:53,867 - INFO - Question: Which organisms perform oxygenic photosynthesis?
+2025-05-02 00:03:53,867 - INFO - Expected Answer: Most plants, algae, and cyanobacteria.
+2025-05-02 00:03:53,867 - INFO - Generated Response: Most plants, algae, and cyanobacteria perform oxygenic photosynthesis.
+2025-05-02 00:03:53,923 - INFO - Cosine similarity: 0.7103
+2025-05-02 00:03:53,928 - INFO - BLEU score: 0.5900
+2025-05-02 00:03:53,932 - INFO - Using default tokenizer.
+2025-05-02 00:03:54,007 - INFO - ROUGE-1 score: 0.7692
+2025-05-02 00:03:54,007 - INFO - Testing question: What type of energy is converted during photosynthesis?
+2025-05-02 00:03:54,007 - INFO - Question: What type of energy is converted during photosynthesis?
+2025-05-02 00:03:54,022 - INFO - Full Retrieved Context:
+Photosynthesis (/ˌfoʊtəˈsɪnθəsɪs/ FOH-tə-SINTH-ə-sis)[1] is a system of biological processes by which photosynthetic organisms, such as most plants, algae, and cyanobacteria, convert light energy, typically from sunlight, into the chemical energy necessary to fuel their metabolism. 
+Photosynthesis usually refers to oxygenic photosynthesis, a process that produces oxygen. Photosynthetic organisms store the chemical energy so produced within intracellular organic compounds (compounds containing carbon) like sugars, glycogen, cellulose and starches. To use this stored chemical energy, an organism's cells metabolize the organic compounds through cellular respiration. Photosynthesis plays a critical role in producing and maintaining the oxygen content of the Earth's atmosphere, and it supplies most of the biological energy necessary for complex life on Earth.[2]
+Plants usually convert light into chemical energy with a photosynthetic efficiency of 3–6%.[40][41] 
+Absorbed light that is unconverted is dissipated primarily as heat, with a small fraction (1–2%) reemitted as chlorophyll fluorescence at longer (redder) wavelengths. This fact allows measurement of the light reaction of photosynthesis by using chlorophyll fluorometers.[42]
+While the details may differ between species, the process always begins when light energy is absorbed by the reaction centers, proteins that contain photosynthetic pigments or chromophores. In plants, these pigments are chlorophylls (a porphyrin derivative that absorbs the red and blue spectrums of light, thus reflecting green) held inside chloroplasts, abundant in leaf cells. In bacteria, they are embedded in the plasma membrane. In these light-dependent reactions, some energy is used to strip electrons from suitable substances, such as water, producing oxygen gas. The hydrogen freed by the splitting of water is used in the creation of two important molecules that participate in energetic processes: reduced nicotinamide adenine dinucleotide phosphate (NADPH) and ATP.
+Photosynthesis occurs in two stages. In the first stage, light-dependent reactions or light reactions capture the energy of light and use it to make the hydrogen carrier NADPH and the energy-storage molecule ATP. During the second stage, the light-independent reactions use these products to capture and reduce carbon dioxide.
+In the light-dependent reactions, one molecule of the pigment chlorophyll absorbs one photon and loses one electron. This electron is taken up by a modified form of chlorophyll called pheophytin, which passes the electron to a quinone molecule, starting the flow of electrons down an electron transport chain that leads to the ultimate reduction of NADP to NADPH. In addition, this creates a proton gradient (energy gradient) across the chloroplast membrane, which is used by ATP synthase in the synthesis of ATP. The chlorophyll molecule ultimately regains the electron it lost when a water molecule is split in a process called photolysis, which releases oxygen.
+2025-05-02 00:04:34,826 - INFO - Answer: During photosynthesis, light energy is converted into chemical energy. Specifically, sunlight is used to produce the chemical energy necessary to fuel an organism's metabolism.
+2025-05-02 00:04:34,826 - INFO - Response time: 40.82 seconds
+2025-05-02 00:04:34,826 - INFO - Question: What type of energy is converted during photosynthesis?
+2025-05-02 00:04:34,826 - INFO - Expected Answer: Light energy into chemical energy.
+2025-05-02 00:04:34,826 - INFO - Generated Response: During photosynthesis, light energy is converted into chemical energy. Specifically, sunlight is used to produce the chemical energy necessary to fuel an organism's metabolism.
+2025-05-02 00:04:34,878 - INFO - Cosine similarity: 0.7207
+2025-05-02 00:04:34,883 - INFO - BLEU score: 0.0884
+2025-05-02 00:04:34,886 - INFO - Using default tokenizer.
+2025-05-02 00:04:34,962 - INFO - ROUGE-1 score: 0.3333
+2025-05-02 00:04:34,963 - INFO - Testing question: Where is the chemical energy stored in photosynthetic organisms?
+2025-05-02 00:04:34,963 - INFO - Question: Where is the chemical energy stored in photosynthetic organisms?
+2025-05-02 00:04:34,976 - INFO - Full Retrieved Context:
+Photosynthesis (/ˌfoʊtəˈsɪnθəsɪs/ FOH-tə-SINTH-ə-sis)[1] is a system of biological processes by which photosynthetic organisms, such as most plants, algae, and cyanobacteria, convert light energy, typically from sunlight, into the chemical energy necessary to fuel their metabolism. 
+Photosynthesis usually refers to oxygenic photosynthesis, a process that produces oxygen. Photosynthetic organisms store the chemical energy so produced within intracellular organic compounds (compounds containing carbon) like sugars, glycogen, cellulose and starches. To use this stored chemical energy, an organism's cells metabolize the organic compounds through cellular respiration. Photosynthesis plays a critical role in producing and maintaining the oxygen content of the Earth's atmosphere, and it supplies most of the biological energy necessary for complex life on Earth.[2]
+While the details may differ between species, the process always begins when light energy is absorbed by the reaction centers, proteins that contain photosynthetic pigments or chromophores. In plants, these pigments are chlorophylls (a porphyrin derivative that absorbs the red and blue spectrums of light, thus reflecting green) held inside chloroplasts, abundant in leaf cells. In bacteria, they are embedded in the plasma membrane. In these light-dependent reactions, some energy is used to strip electrons from suitable substances, such as water, producing oxygen gas. The hydrogen freed by the splitting of water is used in the creation of two important molecules that participate in energetic processes: reduced nicotinamide adenine dinucleotide phosphate (NADPH) and ATP.
+Most photosynthetic organisms are photoautotrophs, which means that they are able to synthesize food directly from carbon dioxide and water using energy from light. However, not all organisms use carbon dioxide as a source of carbon atoms to carry out photosynthesis; photoheterotrophs use organic compounds, rather than carbon dioxide, as a source of carbon.[2]
+With a possible exception of Heimdallarchaeota, photosynthesis is not found in archaea.[75] Haloarchaea are photoheterotrophic; they can absorb energy from the sun, but do not harvest carbon from the atmosphere and are therefore not photosynthetic.[76] Instead of chlorophyll they use rhodopsins, which convert light-energy to ion gradients but cannot mediate electron transfer reactions.[77][78]
+The first photosynthetic organisms probably evolved early in the evolutionary history of life using reducing agents such as hydrogen or hydrogen sulfide, rather than water, as sources of electrons.[4] Cyanobacteria appeared later; the excess oxygen they produced contributed directly to the oxygenation of the Earth,[5] which rendered the evolution of complex life possible. The average rate of energy captured by global photosynthesis is approximately 130 terawatts,[6][7][8] which is about eight times the total power consumption of human civilization.[9] Photosynthetic organisms also convert around 100–115 billion tons (91–104 Pg petagrams, or billions of metric tons), of carbon into biomass per year.[10][11] Photosynthesis was discovered in 1779 by Jan Ingenhousz who showed that plants need light, not just soil and water.
+2025-05-02 00:05:11,894 - INFO - Answer: The chemical energy produced through photosynthesis is stored within intracellular organic compounds, such as sugars, glycogen, cellulose, and starches. These compounds contain carbon and are used to fuel metabolism.
+2025-05-02 00:05:11,894 - INFO - Response time: 36.93 seconds
+2025-05-02 00:05:11,894 - INFO - Question: Where is the chemical energy stored in photosynthetic organisms?
+2025-05-02 00:05:11,894 - INFO - Expected Answer: Within intracellular organic compounds.
+2025-05-02 00:05:11,894 - INFO - Generated Response: The chemical energy produced through photosynthesis is stored within intracellular organic compounds, such as sugars, glycogen, cellulose, and starches. These compounds contain carbon and are used to fuel metabolism.
+2025-05-02 00:05:11,929 - INFO - Cosine similarity: 0.4728
+2025-05-02 00:05:11,933 - INFO - BLEU score: 0.0000
+2025-05-02 00:05:11,936 - INFO - Using default tokenizer.
+2025-05-02 00:05:12,009 - INFO - ROUGE-1 score: 0.2424
+2025-05-02 00:05:12,009 - INFO - Testing question: Name three examples of organic compounds produced by photosynthesis.
+2025-05-02 00:05:12,009 - INFO - Question: Name three examples of organic compounds produced by photosynthesis.
+2025-05-02 00:05:12,021 - INFO - Full Retrieved Context:
+Most photosynthetic organisms are photoautotrophs, which means that they are able to synthesize food directly from carbon dioxide and water using energy from light. However, not all organisms use carbon dioxide as a source of carbon atoms to carry out photosynthesis; photoheterotrophs use organic compounds, rather than carbon dioxide, as a source of carbon.[2]
+Photosynthesis (/ˌfoʊtəˈsɪnθəsɪs/ FOH-tə-SINTH-ə-sis)[1] is a system of biological processes by which photosynthetic organisms, such as most plants, algae, and cyanobacteria, convert light energy, typically from sunlight, into the chemical energy necessary to fuel their metabolism. 
+Photosynthesis usually refers to oxygenic photosynthesis, a process that produces oxygen. Photosynthetic organisms store the chemical energy so produced within intracellular organic compounds (compounds containing carbon) like sugars, glycogen, cellulose and starches. To use this stored chemical energy, an organism's cells metabolize the organic compounds through cellular respiration. Photosynthesis plays a critical role in producing and maintaining the oxygen content of the Earth's atmosphere, and it supplies most of the biological energy necessary for complex life on Earth.[2]
+In plants, algae, and cyanobacteria, photosynthesis releases oxygen. This oxygenic photosynthesis is by far the most common type of photosynthesis used by living organisms. Some shade-loving plants (sciophytes) produce such low levels of oxygen during photosynthesis that they use all of it themselves instead of releasing it to the atmosphere.[12]
+Although there are some differences between oxygenic photosynthesis in plants, algae, and cyanobacteria, the overall process is quite similar in these organisms. There are also many varieties of anoxygenic photosynthesis, used mostly by bacteria, which consume carbon dioxide but do not release oxygen or which produce elemental sulfur instead of molecular oxygen.[13][14]
+Photosynthesis occurs in two stages. In the first stage, light-dependent reactions or light reactions capture the energy of light and use it to make the hydrogen carrier NADPH and the energy-storage molecule ATP. During the second stage, the light-independent reactions use these products to capture and reduce carbon dioxide.
+2025-05-02 00:05:42,004 - INFO - Answer: Three examples of organic compounds produced by photosynthesis are:
+
+* Sugars
+* Cellulose
+* Starches
+2025-05-02 00:05:42,023 - INFO - Response time: 30.01 seconds
+2025-05-02 00:05:42,023 - INFO - Question: Name three examples of organic compounds produced by photosynthesis.
+2025-05-02 00:05:42,023 - INFO - Expected Answer: Sugars, glycogen, and cellulose.
+2025-05-02 00:05:42,024 - INFO - Generated Response: Three examples of organic compounds produced by photosynthesis are:
+
+* Sugars
+* Cellulose
+* Starches
+2025-05-02 00:05:42,049 - INFO - Cosine similarity: 0.6011
+2025-05-02 00:05:42,053 - INFO - BLEU score: 0.0000
+2025-05-02 00:05:42,056 - INFO - Using default tokenizer.
+2025-05-02 00:05:42,131 - INFO - ROUGE-1 score: 0.2500
+2025-05-02 00:05:42,131 - INFO - Testing question: How do cells use the stored chemical energy?
+2025-05-02 00:05:42,131 - INFO - Question: How do cells use the stored chemical energy?
+2025-05-02 00:05:42,144 - INFO - Full Retrieved Context:
+Photosynthesis (/ˌfoʊtəˈsɪnθəsɪs/ FOH-tə-SINTH-ə-sis)[1] is a system of biological processes by which photosynthetic organisms, such as most plants, algae, and cyanobacteria, convert light energy, typically from sunlight, into the chemical energy necessary to fuel their metabolism. 
+Photosynthesis usually refers to oxygenic photosynthesis, a process that produces oxygen. Photosynthetic organisms store the chemical energy so produced within intracellular organic compounds (compounds containing carbon) like sugars, glycogen, cellulose and starches. To use this stored chemical energy, an organism's cells metabolize the organic compounds through cellular respiration. Photosynthesis plays a critical role in producing and maintaining the oxygen content of the Earth's atmosphere, and it supplies most of the biological energy necessary for complex life on Earth.[2]
+While the details may differ between species, the process always begins when light energy is absorbed by the reaction centers, proteins that contain photosynthetic pigments or chromophores. In plants, these pigments are chlorophylls (a porphyrin derivative that absorbs the red and blue spectrums of light, thus reflecting green) held inside chloroplasts, abundant in leaf cells. In bacteria, they are embedded in the plasma membrane. In these light-dependent reactions, some energy is used to strip electrons from suitable substances, such as water, producing oxygen gas. The hydrogen freed by the splitting of water is used in the creation of two important molecules that participate in energetic processes: reduced nicotinamide adenine dinucleotide phosphate (NADPH) and ATP.
+Carbon dioxide is converted into sugars in a process called carbon fixation; photosynthesis captures energy from sunlight to convert carbon dioxide into carbohydrates. Carbon fixation is an endothermic redox reaction. In general outline, photosynthesis is the opposite of cellular respiration: while photosynthesis is a process of reduction of carbon dioxide to carbohydrates, cellular respiration is the oxidation of carbohydrates or other nutrients to carbon dioxide. Nutrients used in cellular respiration include carbohydrates, amino acids and fatty acids. These nutrients are oxidized to produce carbon dioxide and water, and to release chemical energy to drive the organism's metabolism.
+In the light-dependent reactions, one molecule of the pigment chlorophyll absorbs one photon and loses one electron. This electron is taken up by a modified form of chlorophyll called pheophytin, which passes the electron to a quinone molecule, starting the flow of electrons down an electron transport chain that leads to the ultimate reduction of NADP to NADPH. In addition, this creates a proton gradient (energy gradient) across the chloroplast membrane, which is used by ATP synthase in the synthesis of ATP. The chlorophyll molecule ultimately regains the electron it lost when a water molecule is split in a process called photolysis, which releases oxygen.
+Plants allow energy to enter the system through photosynthesis, building up plant tissue. Animals play an important role in the movement of matter and energy through the system, by feeding on plants and on one another. They also influence the quantity of plant and microbial biomass present. By breaking down dead organic matter, decomposers release carbon back to the atmosphere and facilitate nutrient cycling by converting nutrients stored in dead biomass back to a form that can be readily used by plants and microbes.
+2025-05-02 00:06:29,460 - INFO - Answer: Cells metabolize the organic compounds through cellular respiration, using the stored chemical energy to fuel their metabolism. This process involves the oxidation of carbohydrates or other nutrients to carbon dioxide and water, releasing chemical energy to drive the organism's metabolic processes.
+2025-05-02 00:06:29,461 - INFO - Response time: 47.33 seconds
+2025-05-02 00:06:29,461 - INFO - Question: How do cells use the stored chemical energy?
+2025-05-02 00:06:29,461 - INFO - Expected Answer: Through cellular respiration.
+2025-05-02 00:06:29,461 - INFO - Generated Response: Cells metabolize the organic compounds through cellular respiration, using the stored chemical energy to fuel their metabolism. This process involves the oxidation of carbohydrates or other nutrients to carbon dioxide and water, releasing chemical energy to drive the organism's metabolic processes.
+2025-05-02 00:06:29,500 - INFO - Cosine similarity: 0.5620
+2025-05-02 00:06:29,504 - INFO - BLEU score: 0.0000
+2025-05-02 00:06:29,507 - INFO - Using default tokenizer.
+2025-05-02 00:06:29,585 - INFO - ROUGE-1 score: 0.1333
+2025-05-02 00:06:29,585 - INFO - Testing question: What role does photosynthesis play in Earth's atmosphere?
+2025-05-02 00:06:29,585 - INFO - Question: What role does photosynthesis play in Earth's atmosphere?
+2025-05-02 00:06:29,603 - INFO - Full Retrieved Context:
+Photosynthesis (/ˌfoʊtəˈsɪnθəsɪs/ FOH-tə-SINTH-ə-sis)[1] is a system of biological processes by which photosynthetic organisms, such as most plants, algae, and cyanobacteria, convert light energy, typically from sunlight, into the chemical energy necessary to fuel their metabolism. 
+Photosynthesis usually refers to oxygenic photosynthesis, a process that produces oxygen. Photosynthetic organisms store the chemical energy so produced within intracellular organic compounds (compounds containing carbon) like sugars, glycogen, cellulose and starches. To use this stored chemical energy, an organism's cells metabolize the organic compounds through cellular respiration. Photosynthesis plays a critical role in producing and maintaining the oxygen content of the Earth's atmosphere, and it supplies most of the biological energy necessary for complex life on Earth.[2]
+Oxygenic photosynthesis is the main source of oxygen in the Earth's atmosphere, and its earliest appearance is sometimes referred to as the oxygen catastrophe. Geological evidence suggests that oxygenic photosynthesis, such as that in cyanobacteria, became important during the Paleoproterozoic era around two billion years ago. Modern photosynthesis in plants and most photosynthetic prokaryotes is oxygenic, using water as an electron donor, which is oxidized to molecular oxygen in the photosynthetic reaction center.
+The process of photosynthesis provides the main input of free energy into the biosphere, and is one of four main ways in which radiation is important for plant life.[115]
+In plants, algae, and cyanobacteria, photosynthesis releases oxygen. This oxygenic photosynthesis is by far the most common type of photosynthesis used by living organisms. Some shade-loving plants (sciophytes) produce such low levels of oxygen during photosynthesis that they use all of it themselves instead of releasing it to the atmosphere.[12]
+While the details may differ between species, the process always begins when light energy is absorbed by the reaction centers, proteins that contain photosynthetic pigments or chromophores. In plants, these pigments are chlorophylls (a porphyrin derivative that absorbs the red and blue spectrums of light, thus reflecting green) held inside chloroplasts, abundant in leaf cells. In bacteria, they are embedded in the plasma membrane. In these light-dependent reactions, some energy is used to strip electrons from suitable substances, such as water, producing oxygen gas. The hydrogen freed by the splitting of water is used in the creation of two important molecules that participate in energetic processes: reduced nicotinamide adenine dinucleotide phosphate (NADPH) and ATP.
+2025-05-02 00:06:58,956 - INFO - Answer: Photosynthesis plays a critical role in producing and maintaining the oxygen content of the Earth's atmosphere. It supplies most of the biological energy necessary for complex life on Earth.
+2025-05-02 00:06:58,956 - INFO - Response time: 29.37 seconds
+2025-05-02 00:06:58,956 - INFO - Question: What role does photosynthesis play in Earth's atmosphere?
+2025-05-02 00:06:58,956 - INFO - Expected Answer: It produces and maintains the oxygen content.
+2025-05-02 00:06:58,956 - INFO - Generated Response: Photosynthesis plays a critical role in producing and maintaining the oxygen content of the Earth's atmosphere. It supplies most of the biological energy necessary for complex life on Earth.
+2025-05-02 00:06:58,988 - INFO - Cosine similarity: 0.5952
+2025-05-02 00:06:58,992 - INFO - BLEU score: 0.0000
+2025-05-02 00:06:58,996 - INFO - Using default tokenizer.
+2025-05-02 00:06:59,068 - INFO - ROUGE-1 score: 0.2703
+2025-05-02 00:06:59,069 - INFO - Testing question: Besides oxygen, what else does photosynthesis supply for life on Earth?
+2025-05-02 00:06:59,069 - INFO - Question: Besides oxygen, what else does photosynthesis supply for life on Earth?
+2025-05-02 00:06:59,082 - INFO - Full Retrieved Context:
+Photosynthesis (/ˌfoʊtəˈsɪnθəsɪs/ FOH-tə-SINTH-ə-sis)[1] is a system of biological processes by which photosynthetic organisms, such as most plants, algae, and cyanobacteria, convert light energy, typically from sunlight, into the chemical energy necessary to fuel their metabolism. 
+Photosynthesis usually refers to oxygenic photosynthesis, a process that produces oxygen. Photosynthetic organisms store the chemical energy so produced within intracellular organic compounds (compounds containing carbon) like sugars, glycogen, cellulose and starches. To use this stored chemical energy, an organism's cells metabolize the organic compounds through cellular respiration. Photosynthesis plays a critical role in producing and maintaining the oxygen content of the Earth's atmosphere, and it supplies most of the biological energy necessary for complex life on Earth.[2]
+In plants, algae, and cyanobacteria, photosynthesis releases oxygen. This oxygenic photosynthesis is by far the most common type of photosynthesis used by living organisms. Some shade-loving plants (sciophytes) produce such low levels of oxygen during photosynthesis that they use all of it themselves instead of releasing it to the atmosphere.[12]
+The process of photosynthesis provides the main input of free energy into the biosphere, and is one of four main ways in which radiation is important for plant life.[115]
+The first photosynthetic organisms probably evolved early in the evolutionary history of life using reducing agents such as hydrogen or hydrogen sulfide, rather than water, as sources of electrons.[4] Cyanobacteria appeared later; the excess oxygen they produced contributed directly to the oxygenation of the Earth,[5] which rendered the evolution of complex life possible. The average rate of energy captured by global photosynthesis is approximately 130 terawatts,[6][7][8] which is about eight times the total power consumption of human civilization.[9] Photosynthetic organisms also convert around 100–115 billion tons (91–104 Pg petagrams, or billions of metric tons), of carbon into biomass per year.[10][11] Photosynthesis was discovered in 1779 by Jan Ingenhousz who showed that plants need light, not just soil and water.
+Oxygenic photosynthesis is the main source of oxygen in the Earth's atmosphere, and its earliest appearance is sometimes referred to as the oxygen catastrophe. Geological evidence suggests that oxygenic photosynthesis, such as that in cyanobacteria, became important during the Paleoproterozoic era around two billion years ago. Modern photosynthesis in plants and most photosynthetic prokaryotes is oxygenic, using water as an electron donor, which is oxidized to molecular oxygen in the photosynthetic reaction center.
+2025-05-02 00:07:43,396 - INFO - Answer: Photosynthesis supplies most of the biological energy necessary for complex life on Earth, as well as organic compounds (such as sugars, glycogen, cellulose, and starches) that are stored within cells and used to fuel metabolism through cellular respiration.
+2025-05-02 00:07:43,396 - INFO - Response time: 44.33 seconds
+2025-05-02 00:07:43,396 - INFO - Question: Besides oxygen, what else does photosynthesis supply for life on Earth?
+2025-05-02 00:07:43,396 - INFO - Expected Answer: Most of the biological energy necessary for complex life.
+2025-05-02 00:07:43,396 - INFO - Generated Response: Photosynthesis supplies most of the biological energy necessary for complex life on Earth, as well as organic compounds (such as sugars, glycogen, cellulose, and starches) that are stored within cells and used to fuel metabolism through cellular respiration.
+2025-05-02 00:07:43,429 - INFO - Cosine similarity: 0.6969
+2025-05-02 00:07:43,433 - INFO - BLEU score: 0.1516
+2025-05-02 00:07:43,436 - INFO - Using default tokenizer.
+2025-05-02 00:07:43,509 - INFO - ROUGE-1 score: 0.3830
+2025-05-02 00:07:43,509 - INFO - Testing question: What is produced instead of oxygen in anoxygenic photosynthesis?
+2025-05-02 00:07:43,509 - INFO - Question: What is produced instead of oxygen in anoxygenic photosynthesis?
+2025-05-02 00:07:43,544 - INFO - Full Retrieved Context:
+Although there are some differences between oxygenic photosynthesis in plants, algae, and cyanobacteria, the overall process is quite similar in these organisms. There are also many varieties of anoxygenic photosynthesis, used mostly by bacteria, which consume carbon dioxide but do not release oxygen or which produce elemental sulfur instead of molecular oxygen.[13][14]
+In plants, algae, and cyanobacteria, photosynthesis releases oxygen. This oxygenic photosynthesis is by far the most common type of photosynthesis used by living organisms. Some shade-loving plants (sciophytes) produce such low levels of oxygen during photosynthesis that they use all of it themselves instead of releasing it to the atmosphere.[12]
+Oxygenic photosynthesis is the main source of oxygen in the Earth's atmosphere, and its earliest appearance is sometimes referred to as the oxygen catastrophe. Geological evidence suggests that oxygenic photosynthesis, such as that in cyanobacteria, became important during the Paleoproterozoic era around two billion years ago. Modern photosynthesis in plants and most photosynthetic prokaryotes is oxygenic, using water as an electron donor, which is oxidized to molecular oxygen in the photosynthetic reaction center.
+Photosynthesis (/ˌfoʊtəˈsɪnθəsɪs/ FOH-tə-SINTH-ə-sis)[1] is a system of biological processes by which photosynthetic organisms, such as most plants, algae, and cyanobacteria, convert light energy, typically from sunlight, into the chemical energy necessary to fuel their metabolism. 
+Photosynthesis usually refers to oxygenic photosynthesis, a process that produces oxygen. Photosynthetic organisms store the chemical energy so produced within intracellular organic compounds (compounds containing carbon) like sugars, glycogen, cellulose and starches. To use this stored chemical energy, an organism's cells metabolize the organic compounds through cellular respiration. Photosynthesis plays a critical role in producing and maintaining the oxygen content of the Earth's atmosphere, and it supplies most of the biological energy necessary for complex life on Earth.[2]
+Since water is used as the electron donor in oxygenic photosynthesis, the equation for this process is:
+2025-05-02 00:08:31,115 - INFO - Answer: According to the context, elemental sulfur is produced instead of molecular oxygen in some types of anoxygenic photosynthesis used by bacteria.
+2025-05-02 00:08:31,115 - INFO - Response time: 47.61 seconds
+2025-05-02 00:08:31,115 - INFO - Question: What is produced instead of oxygen in anoxygenic photosynthesis?
+2025-05-02 00:08:31,115 - INFO - Expected Answer: Sulfur.
+2025-05-02 00:08:31,115 - INFO - Generated Response: According to the context, elemental sulfur is produced instead of molecular oxygen in some types of anoxygenic photosynthesis used by bacteria.
+2025-05-02 00:08:31,145 - INFO - Cosine similarity: 0.4949
+2025-05-02 00:08:31,149 - INFO - BLEU score: 0.0000
+2025-05-02 00:08:31,152 - INFO - Using default tokenizer.
+2025-05-02 00:08:31,225 - INFO - ROUGE-1 score: 0.0909
+2025-05-02 00:08:31,225 - INFO - Testing question: Which type of photosynthesis might have been the earliest to evolve?
+2025-05-02 00:08:31,225 - INFO - Question: Which type of photosynthesis might have been the earliest to evolve?
+2025-05-02 00:08:31,238 - INFO - Full Retrieved Context:
+Fossils of what are thought to be filamentous photosynthetic organisms have been dated at 3.4 billion years old.[60][61] More recent studies also suggest that photosynthesis may have begun about 3.4 billion years ago,[62][63] though the first direct evidence of photosynthesis comes from thylakoid membranes preserved in 1.75-billion-year-old cherts.[64]
+The biochemical capacity to use water as the source for electrons in photosynthesis evolved once, in a common ancestor of extant cyanobacteria (formerly called blue-green algae). The geological record indicates that this transforming event took place early in Earth's history, at least 2450–2320 million years ago (Ma), and, it is speculated, much earlier.[83][84] Because the Earth's atmosphere contained almost no oxygen during the estimated development of photosynthesis, it is believed that the first photosynthetic cyanobacteria did not generate oxygen.[85] Available evidence from geobiological studies of Archean (>2500 Ma) sedimentary rocks indicates that life existed 3500 Ma, but the question of when oxygenic photosynthesis evolved is still unanswered. A clear paleontological window on cyanobacterial evolution opened about 2000 Ma, revealing an already-diverse biota of cyanobacteria. Cyanobacteria remained the principal primary producers of oxygen throughout the Proterozoic Eon (2500–543 Ma), in part because the redox structure of the oceans favored photoautotrophs capable of nitrogen fixation.[86][87] Green algae joined cyanobacteria as the major primary producers of oxygen on continental shelves near the end of the Proterozoic, but only with the Mesozoic (251–66 Ma) radiations of dinoflagellates, coccolithophorids, and diatoms did the primary production of oxygen in marine shelf waters take modern form. Cyanobacteria remain critical to marine ecosystems as primary producers of oxygen in oceanic gyres, as agents of biological nitrogen fixation, and, in modified form, as the plastids of marine algae.[88]
+The first photosynthetic organisms probably evolved early in the evolutionary history of life using reducing agents such as hydrogen or hydrogen sulfide, rather than water, as sources of electrons.[4] Cyanobacteria appeared later; the excess oxygen they produced contributed directly to the oxygenation of the Earth,[5] which rendered the evolution of complex life possible. The average rate of energy captured by global photosynthesis is approximately 130 terawatts,[6][7][8] which is about eight times the total power consumption of human civilization.[9] Photosynthetic organisms also convert around 100–115 billion tons (91–104 Pg petagrams, or billions of metric tons), of carbon into biomass per year.[10][11] Photosynthesis was discovered in 1779 by Jan Ingenhousz who showed that plants need light, not just soil and water.
+Some bacteria also perform anoxygenic photosynthesis, which uses bacteriochlorophyll to split hydrogen sulfide as a reductant instead of water, producing sulfur instead of oxygen. Archaea such as Halobacterium also perform a type of non-carbon-fixing anoxygenic photosynthesis, where the simpler photopigment retinal and its microbial rhodopsin derivatives are used to absorb green light and power proton pumps to directly synthesize adenosine triphosphate (ATP), the "energy currency" of cells. Such archaeal photosynthesis might have been the earliest form of photosynthesis that evolved on Earth, as far back as the Paleoarchean, preceding that of cyanobacteria (see Purple Earth hypothesis).
+In bacteria eight photosynthetic lineages are currently known:[79][80][81][82]
+2025-05-02 00:10:03,944 - INFO - Answer: According to the text, archaeal photosynthesis, specifically that of Halobacterium, might have been the earliest form of photosynthesis to evolve on Earth, dating back to the Paleoarchean era, preceding that of cyanobacteria. This type of non-carbon-fixing anoxygenic photosynthesis uses retinal and its derivatives to absorb green light and power proton pumps to synthesize ATP.
+2025-05-02 00:10:03,944 - INFO - Response time: 92.72 seconds
+2025-05-02 00:10:03,945 - INFO - Question: Which type of photosynthesis might have been the earliest to evolve?
+2025-05-02 00:10:03,945 - INFO - Expected Answer: Archaeal photosynthesis.
+2025-05-02 00:10:03,945 - INFO - Generated Response: According to the text, archaeal photosynthesis, specifically that of Halobacterium, might have been the earliest form of photosynthesis to evolve on Earth, dating back to the Paleoarchean era, preceding that of cyanobacteria. This type of non-carbon-fixing anoxygenic photosynthesis uses retinal and its derivatives to absorb green light and power proton pumps to synthesize ATP.
+2025-05-02 00:10:04,004 - INFO - Cosine similarity: 0.7777
+2025-05-02 00:10:04,008 - INFO - BLEU score: 0.0000
+2025-05-02 00:10:04,011 - INFO - Using default tokenizer.
+2025-05-02 00:10:04,085 - INFO - ROUGE-1 score: 0.0690
+2025-05-02 00:10:04,085 - INFO - Testing question: What absorbs light energy to begin the process of photosynthesis?
+2025-05-02 00:10:04,085 - INFO - Question: What absorbs light energy to begin the process of photosynthesis?
+2025-05-02 00:10:04,098 - INFO - Full Retrieved Context:
+While the details may differ between species, the process always begins when light energy is absorbed by the reaction centers, proteins that contain photosynthetic pigments or chromophores. In plants, these pigments are chlorophylls (a porphyrin derivative that absorbs the red and blue spectrums of light, thus reflecting green) held inside chloroplasts, abundant in leaf cells. In bacteria, they are embedded in the plasma membrane. In these light-dependent reactions, some energy is used to strip electrons from suitable substances, such as water, producing oxygen gas. The hydrogen freed by the splitting of water is used in the creation of two important molecules that participate in energetic processes: reduced nicotinamide adenine dinucleotide phosphate (NADPH) and ATP.
+Plants usually convert light into chemical energy with a photosynthetic efficiency of 3–6%.[40][41] 
+Absorbed light that is unconverted is dissipated primarily as heat, with a small fraction (1–2%) reemitted as chlorophyll fluorescence at longer (redder) wavelengths. This fact allows measurement of the light reaction of photosynthesis by using chlorophyll fluorometers.[42]
+Photosynthesis occurs in two stages. In the first stage, light-dependent reactions or light reactions capture the energy of light and use it to make the hydrogen carrier NADPH and the energy-storage molecule ATP. During the second stage, the light-independent reactions use these products to capture and reduce carbon dioxide.
+Photosynthesis (/ˌfoʊtəˈsɪnθəsɪs/ FOH-tə-SINTH-ə-sis)[1] is a system of biological processes by which photosynthetic organisms, such as most plants, algae, and cyanobacteria, convert light energy, typically from sunlight, into the chemical energy necessary to fuel their metabolism. 
+Photosynthesis usually refers to oxygenic photosynthesis, a process that produces oxygen. Photosynthetic organisms store the chemical energy so produced within intracellular organic compounds (compounds containing carbon) like sugars, glycogen, cellulose and starches. To use this stored chemical energy, an organism's cells metabolize the organic compounds through cellular respiration. Photosynthesis plays a critical role in producing and maintaining the oxygen content of the Earth's atmosphere, and it supplies most of the biological energy necessary for complex life on Earth.[2]
+In the light-dependent reactions, one molecule of the pigment chlorophyll absorbs one photon and loses one electron. This electron is taken up by a modified form of chlorophyll called pheophytin, which passes the electron to a quinone molecule, starting the flow of electrons down an electron transport chain that leads to the ultimate reduction of NADP to NADPH. In addition, this creates a proton gradient (energy gradient) across the chloroplast membrane, which is used by ATP synthase in the synthesis of ATP. The chlorophyll molecule ultimately regains the electron it lost when a water molecule is split in a process called photolysis, which releases oxygen.
+2025-05-02 00:11:12,829 - INFO - Answer: The reaction centers, proteins that contain photosynthetic pigments or chromophores, absorb light energy to begin the process of photosynthesis. In plants, these pigments are chlorophylls held inside chloroplasts, while in bacteria, they are embedded in the plasma membrane.
+2025-05-02 00:11:12,829 - INFO - Response time: 68.74 seconds
+2025-05-02 00:11:12,829 - INFO - Question: What absorbs light energy to begin the process of photosynthesis?
+2025-05-02 00:11:12,829 - INFO - Expected Answer: Reaction centers.
+2025-05-02 00:11:12,829 - INFO - Generated Response: The reaction centers, proteins that contain photosynthetic pigments or chromophores, absorb light energy to begin the process of photosynthesis. In plants, these pigments are chlorophylls held inside chloroplasts, while in bacteria, they are embedded in the plasma membrane.
+2025-05-02 00:11:12,863 - INFO - Cosine similarity: 0.4873
+2025-05-02 00:11:12,866 - INFO - BLEU score: 0.0000
+2025-05-02 00:11:12,870 - INFO - Using default tokenizer.
+2025-05-02 00:11:12,944 - INFO - ROUGE-1 score: 0.1000
+2025-05-02 00:11:12,944 - INFO - Testing question: What do reaction centers contain?
+2025-05-02 00:11:12,944 - INFO - Question: What do reaction centers contain?
+2025-05-02 00:11:12,956 - INFO - Full Retrieved Context:
+Cyanobacteria possess carboxysomes, which increase the concentration of CO2 around RuBisCO to increase the rate of photosynthesis. An enzyme, carbonic anhydrase, located within the carboxysome, releases CO2 from dissolved hydrocarbonate ions (HCO−3). Before the CO2 can diffuse out, RuBisCO concentrated within the carboxysome quickly sponges it up. HCO−3 ions are made from CO2 outside the cell by another carbonic anhydrase and are actively pumped into the cell by a membrane protein. They cannot cross the membrane as they are charged, and within the cytosol they turn back into CO2 very slowly without the help of carbonic anhydrase. This causes the HCO−3 ions to accumulate within the cell from where they diffuse into the carboxysomes.[37] Pyrenoids in algae and hornworts also act to concentrate CO2 around RuBisCO.[38][39]
+While the details may differ between species, the process always begins when light energy is absorbed by the reaction centers, proteins that contain photosynthetic pigments or chromophores. In plants, these pigments are chlorophylls (a porphyrin derivative that absorbs the red and blue spectrums of light, thus reflecting green) held inside chloroplasts, abundant in leaf cells. In bacteria, they are embedded in the plasma membrane. In these light-dependent reactions, some energy is used to strip electrons from suitable substances, such as water, producing oxygen gas. The hydrogen freed by the splitting of water is used in the creation of two important molecules that participate in energetic processes: reduced nicotinamide adenine dinucleotide phosphate (NADPH) and ATP.
+Linear electron transport through a photosystem will leave the reaction center of that photosystem oxidized. Elevating another electron will first require re-reduction of the reaction center. The excited electrons lost from the reaction center (P700) of photosystem I are replaced by transfer from plastocyanin, whose electrons come from electron transport through photosystem II. Photosystem II, as the first step of the Z-scheme, requires an external source of electrons to reduce its oxidized chlorophyll a reaction center. The source of electrons for photosynthesis in green plants and cyanobacteria is water. Two water molecules are oxidized by the energy of four successive charge-separation reactions of photosystem II to yield a molecule of diatomic oxygen and four hydrogen ions. The electrons yielded are transferred to a redox-active tyrosine residue that is oxidized by the energy of P680+. This resets the ability of P680 to absorb another photon and release another photo-dissociated electron. The oxidation of water is catalyzed in photosystem II by a redox-active structure that contains four manganese ions and a calcium ion; this oxygen-evolving complex binds two water molecules and contains the four oxidizing equivalents that are used to drive the water-oxidizing reaction (Kok's S-state diagrams). The hydrogen ions are released in the thylakoid lumen and therefore contribute to the transmembrane chemiosmotic potential that leads to ATP synthesis. Oxygen is a waste product of light-dependent reactions, but the majority of organisms on Earth use oxygen and its energy for cellular respiration, including photosynthetic organisms.[28][29]
+In plants and algae, photosynthesis takes place in organelles called chloroplasts. A typical plant cell contains about 10 to 100 chloroplasts. The chloroplast is enclosed by a membrane. This membrane is composed of a phospholipid inner membrane, a phospholipid outer membrane, and an intermembrane space. Enclosed by the membrane is an aqueous fluid called the stroma. Embedded within the stroma are stacks of thylakoids (grana), which are the site of photosynthesis. The thylakoids appear as flattened disks. The thylakoid itself is enclosed by the thylakoid membrane, and within the enclosed volume is a lumen or thylakoid space. Embedded in the thylakoid membrane are integral and peripheral membrane protein complexes of the photosynthetic system.
+In this fashion, RNAs can achieve chemical catalysis (like enzymes).[9] For instance, determination of the structure of the ribosome—an RNA-protein complex that catalyzes the assembly of proteins—revealed that its active site is composed entirely of RNA.[10]

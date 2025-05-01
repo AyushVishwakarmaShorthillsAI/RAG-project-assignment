@@ -33,8 +33,7 @@ class RAGPipeline:
         prompt = (
             f"Context:\n{context_str}\n\n"
             f"Question: {question}\n"
-            f"Based on the provided context, answer the question in brief, "
-            f"explaining the key points and providing context."
+            f"Based on the provided context, answer the question in brief."
         )
         
         # Generate response using the LLM

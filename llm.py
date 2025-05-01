@@ -20,21 +20,19 @@ class OllamaLLM(BaseLLM):
     def __init__(self):
         logging.info("Initializing OllamaLLM with LLaMA 3 8B")
         self.model_name = "llama3:8b"
-        # Use OLLAMA_HOST environment variable if set, otherwise default to 11434
+       
         ollama_host = os.getenv("OLLAMA_HOST", "127.0.0.1:11434")
         self.api_url = f"http://{ollama_host}/api/generate"
         logging.info(f"Ollama API URL set to: {self.api_url}")
     
     def generate(self, prompt: str) -> str:
         try:
-            # Test if the server is reachable
             test_response = requests.get(self.api_url.replace("/generate", "/tags"))
             if test_response.status_code != 200:
                 raise Exception(f"Ollama server not reachable: {test_response.status_code} - {test_response.text}")
             
-            # Modify the prompt to request a detailed response
-            detailed_prompt = f"{prompt}\nProvide a detailed answer in at least 3-4 lines, explaining the context and key points."
-            # Prepare the payload for Ollama's API
+            detailed_prompt = f"{prompt}\nProvide a brief answer in under 3 lines."
+           
             payload = {
                 "model": self.model_name,
                 "prompt": detailed_prompt,
@@ -43,7 +41,7 @@ class OllamaLLM(BaseLLM):
                 "max_tokens": 150,  # Increased to allow for longer responses
                 "stream": True
             }
-            # Send request to Ollama API with streaming enabled
+
             with requests.post(self.api_url, json=payload, stream=True) as response:
                 response.raise_for_status()  # Raise an error for bad status codes
                 full_response = ""

@@ -1,141 +1,169 @@
-import unittest
-import asyncio
+import torch
+import pytest
+import time
 import logging
 import os
+from main import RAGPipeline, OllamaLLM, FAISSVectorStore, SentenceTransformer
+from sklearn.metrics.pairwise import cosine_similarity
 from sentence_transformers import SentenceTransformer
-from scraper import WikipediaScraper
-from vector_store import FAISSVectorStore
-from llm import OllamaLLM
-from rag_pipeline import RAGPipeline
+from evaluate import load  # For BLEU and ROUGE scores
+import numpy as np
+import importlib.util
 
-# Configure logging for tests
-logging.basicConfig(
-    filename='test_rag_system.log',
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s'
-)
+# Configure logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
-class TestRAGSystem(unittest.TestCase):
-    """Unit tests for RAG system components."""
-    def setUp(self):
-        embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
-        self.scraper = WikipediaScraper()
-        self.vector_store = FAISSVectorStore(embedding_model)
-        self.llm = OllamaLLM()
-        self.pipeline = RAGPipeline(self.vector_store, self.llm, embedding_model)
-        # Define a list of URLs for testing
-        self.urls = [
-            "https://en.wikipedia.org/wiki/Photosynthesis",
-            "https://en.wikipedia.org/wiki/Renaissance",
-            "https://en.wikipedia.org/wiki/DNA",
-            "https://en.wikipedia.org/wiki/Quantum_mechanics",
-            "https://en.wikipedia.org/wiki/World_War_II",
-            "https://en.wikipedia.org/wiki/Calculus",
-            "https://en.wikipedia.org/wiki/Black_hole",
-            "https://en.wikipedia.org/wiki/Climate_change",
-            "https://en.wikipedia.org/wiki/Industrial_Revolution",
-            "https://en.wikipedia.org/wiki/William_Shakespeare",
-            "https://en.wikipedia.org/wiki/Ancient_Egypt"
-        ]
+# Fixture to set up RAG pipeline
+@pytest.fixture(scope="session")
+def rag_pipeline():
+    logger.info("Setting up RAG pipeline...")
+    embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    embedding_model = embedding_model.to(device)
     
-    def test_scraper_multiple_urls(self):
-        """Test the scraper with multiple URLs."""
-        async def test():
-            for url in self.urls:
-                texts = await self.scraper.scrape(url)
-                self.assertGreater(len(texts), 0, f"Scraper failed to retrieve texts from {url}")
-                logging.info(f"Successfully scraped {url}")
-        asyncio.run(test())
+    index_path = "faiss_index.bin"
+    texts_path = "texts.pkl"
     
-    def test_pipeline_factual_question(self):
-        """Test the RAG pipeline with a factual question."""
-        # First, scrape and store data
-        async def prepare_data():
-            for url in self.urls:
-                texts = await self.scraper.scrape(url)
-                embeddings = self.vector_store.embedding_model.encode(texts).tolist()
-                self.vector_store.store(texts, embeddings)
-        asyncio.run(prepare_data())
+    if os.path.exists(index_path) and os.path.exists(texts_path):
+        vector_store = FAISSVectorStore.load(embedding_model, index_path, texts_path)
+        logger.info("Loaded existing FAISS index and texts.")
+    else:
+        raise FileNotFoundError("FAISS index or texts file not found. Run scraping and indexing first.")
+    
+    llm = OllamaLLM()
+    pipeline = RAGPipeline(vector_store, llm, embedding_model)
+    return pipeline
+
+# Fixture to load test cases from all_test_cases.py
+@pytest.fixture(scope="session")
+def test_cases():
+    logger.info("Loading test cases from all_test_cases.py...")
+    spec = importlib.util.spec_from_file_location("all_test_cases", "all_test_cases.py")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module.test_cases
+
+# Initialize metrics collectors
+results = []
+pass_count = 0
+fail_count = 0
+response_times = []
+cosine_similarities = []
+bleu_scores = []
+rouge_scores = []
+
+# Load evaluation metrics
+bleu = load("bleu")
+rouge = load("rouge")
+
+# Test function to evaluate each test case
+def test_rag_response(rag_pipeline, test_cases):
+    global pass_count, fail_count, results
+    
+    embedder = SentenceTransformer('all-MiniLM-L6-v2')
+    
+    for test_case in test_cases:
+        question = test_case["Question"]
+        expected_answer = test_case["Answer"]
+        context = test_case["Context"]
         
-        question = "What is photosynthesis?"
-        answer = self.pipeline.process(question)
-        self.assertIsInstance(answer, str, "Pipeline failed to generate a string response")
-        self.assertIn("chlorophyll", answer.lower(), "Answer does not contain expected keyword 'chlorophyll'")
-        logging.info(f"Question: {question}\nAnswer: {answer}")
-    
-    def test_pipeline_list_question(self):
-        """Test the RAG pipeline with a question requiring a list (e.g., major figures)."""
-        question = "Who were the major figures in the Renaissance?"
-        answer = self.pipeline.process(question)
-        self.assertIsInstance(answer, str, "Pipeline failed to generate a string response")
-        expected_figures = ["leonardo da vinci", "michelangelo", "petrarch"]
-        for figure in expected_figures:
-            self.assertIn(figure.lower(), answer.lower(), f"Answer does not contain expected figure '{figure}'")
-        logging.info(f"Question: {question}\nAnswer: {answer}")
-    
-    def test_pipeline_descriptive_question(self):
-        """Test the RAG pipeline with a descriptive question."""
-        question = "What caused World War II?"
-        answer = self.pipeline.process(question)
-        self.assertIsInstance(answer, str, "Pipeline failed to generate a string response")
-        self.assertIn("germany", answer.lower(), "Answer does not contain expected keyword 'Germany'")
-        logging.info(f"Question: {question}\nAnswer: {answer}")
-    
-    def test_vector_store(self):
-        """Test the vector store's ability to store and query data."""
-        texts = ["Test document about the Renaissance"]
-        embeddings = self.vector_store.embedding_model.encode(texts).tolist()
-        self.vector_store.store(texts, embeddings)
-        query_embedding = embeddings[0]
-        results = self.vector_store.query(query_embedding, top_k=1)
-        self.assertEqual(results[0], "Test document about the Renaissance", "Vector store query failed")
-    
-    def test_stress_1000_interactions(self):
-        """Stress test the pipeline with 1000 Q&A interactions."""
-        questions = [
-            "What is photosynthesis?",
-            "Who were the major figures in the Renaissance?",
-            "What caused World War II?",
-            "What is a black hole?",
-            "What is calculus?"
-        ]
-        # Repeat questions to reach 1000 interactions
-        for i in range(200):  # 200 iterations * 5 questions = 1000 interactions
-            for question in questions:
-                answer = self.pipeline.process(question)
-                self.assertIsInstance(answer, str, f"Pipeline failed at interaction {i+1} for question: {question}")
-                logging.info(f"Interaction {i*5 + questions.index(question) + 1}: Question: {question}\nAnswer: {answer}")
-    
-    def test_edge_case_empty_question(self):
-        """Test the pipeline with an empty question."""
-        question = ""
-        answer = self.pipeline.process(question)
-        self.assertIn("error", answer.lower(), "Pipeline did not handle empty question gracefully")
-        logging.info(f"Question: {question}\nAnswer: {answer}")
-    
-    def test_edge_case_invalid_question(self):
-        """Test the pipeline with an invalid question."""
-        question = "12345!@#$%"
-        answer = self.pipeline.process(question)
-        self.assertIsInstance(answer, str, "Pipeline failed to handle invalid question")
-        logging.info(f"Question: {question}\nAnswer: {answer}")
-    
-    def test_logging(self):
-        """Test if Q&A interactions are logged correctly."""
-        log_file = 'rag_project.log'
-        # Clear the log file before the test
-        if os.path.exists(log_file):
-            os.remove(log_file)
+        logger.info(f"Testing question: {question}")
         
-        question = "What is DNA?"
-        answer = self.pipeline.process(question)
+        # Run the question through the RAG pipeline
+        start_time = time.time()
+        response = rag_pipeline.process(question)
+        duration = time.time() - start_time
+        response_times.append(duration)
+        logger.info(f"Response time: {duration:.2f} seconds")
         
-        # Check if the log file exists and contains the interaction
-        self.assertTrue(os.path.exists(log_file), "Log file was not created")
-        with open(log_file, 'r') as f:
-            log_content = f.read()
-            self.assertIn(question, log_content, "Question was not logged")
-            self.assertIn(answer, log_content, "Answer was not logged")
+        # Log the Q&A pair
+        logger.info(f"Question: {question}")
+        logger.info(f"Expected Answer: {expected_answer}")
+        logger.info(f"Generated Response: {response}")
+        
+        # Evaluate response
+        test_result = {
+            "question": question,
+            "expected_answer": expected_answer,
+            "generated_response": response,
+            "context": context,
+            "response_time": duration
+        }
+        
+        # Exact match
+        exact_match = expected_answer.lower() in response.lower()
+        test_result["exact_match"] = exact_match
+        
+        # Cosine similarity
+        response_embedding = embedder.encode(response)
+        expected_embedding = embedder.encode(expected_answer)
+        similarity = cosine_similarity([response_embedding], [expected_embedding])[0][0]
+        cosine_similarities.append(similarity)
+        test_result["cosine_similarity"] = similarity
+        logger.info(f"Cosine similarity: {similarity:.4f}")
+        
+        # BLEU score
+        bleu_score = bleu.compute(predictions=[response], references=[[expected_answer]])["bleu"]
+        bleu_scores.append(bleu_score)
+        test_result["bleu_score"] = bleu_score
+        logger.info(f"BLEU score: {bleu_score:.4f}")
+        
+        # ROUGE score
+        rouge_score = rouge.compute(predictions=[response], references=[expected_answer])["rouge1"]
+        rouge_scores.append(rouge_score)
+        test_result["rouge1_score"] = rouge_score
+        logger.info(f"ROUGE-1 score: {rouge_score:.4f}")
+        
+        # Determine pass/fail
+        passed = exact_match or similarity > 0.7
+        test_result["passed"] = passed
+        if passed:
+            pass_count += 1
+        else:
+            fail_count += 1
+        
+        results.append(test_result)
+    
+    # After all tests, save evaluation results
+    evaluation_summary = {
+        "total_tests": len(test_cases),
+        "pass_count": pass_count,
+        "fail_count": fail_count,
+        "pass_rate": pass_count / len(test_cases) if test_cases else 0,
+        "average_response_time": float(np.mean(response_times)) if response_times else 0,
+        "average_cosine_similarity": float(np.mean(cosine_similarities)) if cosine_similarities else 0,
+        "average_bleu_score": float(np.mean(bleu_scores)) if bleu_scores else 0,
+        "average_rouge1_score": float(np.mean(rouge_scores)) if rouge_scores else 0,
+        "detailed_results": results
+    }
+    
+    # Save to file
+    with open("evaluation_results.json", "w", encoding="utf-8") as f:
+        json.dump(evaluation_summary, f, indent=2)
+    logger.info("Evaluation results saved to evaluation_results.json")
+    
+    # Assert overall pass rate
+    assert evaluation_summary["pass_rate"] >= 0.8, f"Pass rate too low: {evaluation_summary['pass_rate']:.2%}"
 
 if __name__ == "__main__":
-    unittest.main()
+    # Load test cases for manual run
+    spec = importlib.util.spec_from_file_location("all_test_cases", "all_test_cases.py")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    test_data = module.test_cases
+    
+    # Set up RAG pipeline
+    embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    embedding_model = embedding_model.to(device)
+    index_path = "faiss_index.bin"
+    texts_path = "texts.pkl"
+    
+    if os.path.exists(index_path) and os.path.exists(texts_path):
+        vector_store = FAISSVectorStore.load(embedding_model, index_path, texts_path)
+        llm = OllamaLLM()
+        pipeline = RAGPipeline(vector_store, llm, embedding_model)
+        test_rag_response(pipeline, test_data)
+    else:
+        logger.error("FAISS index or texts file not found. Run scraping and indexing first.")
