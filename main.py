@@ -1,252 +1,197 @@
-import abc
 import logging
-import requests
-from bs4 import BeautifulSoup
-import chromadb
-from sentence_transformers import SentenceTransformer
-from transformers import pipeline
 import streamlit as st
-import unittest
-from uuid import uuid4
-import time
 import sys
+import torch
+import time
+import os
+import json
+from all_Urls import URLS
 
-# Configure logging
-logging.basicConfig(filename='rag_project.log', level=logging.INFO, 
-                    format='%(asctime)s - %(levelname)s - %(message)s')
+try:
+    from .scraper import WikipediaScraper
+    from .vector_store import FAISSVectorStore
+    from .llm import OllamaLLM
+    from .rag_pipeline import RAGPipeline
+    from .data_processing import scrape_and_store
+except ImportError:
+    from scraper import WikipediaScraper
+    from vector_store import FAISSVectorStore
+    from llm import OllamaLLM
+    from rag_pipeline import RAGPipeline
+    from data_processing import scrape_and_store
 
-class BaseScraper(abc.ABC):
-    """Abstract base class for web scrapers."""
-    @abc.abstractmethod
-    def scrape(self, url: str) -> list:
-        """Scrape data from a given URL and return cleaned text."""
-        pass
+from sentence_transformers import SentenceTransformer
 
-class WikipediaScraper(BaseScraper):
-    """Concrete scraper for Wikipedia pages."""
-    def scrape(self, url: str) -> list:
-        try:
-            response = requests.get(url)
-            response.raise_for_status()
-            soup = BeautifulSoup(response.text, 'html.parser')
-            paragraphs = soup.find_all('p')
-            cleaned_text = [p.get_text().strip() for p in paragraphs if p.get_text().strip()]
-            logging.info(f"Scraped {len(cleaned_text)} paragraphs from {url}")
-            return cleaned_text
-        except Exception as e:
-            logging.error(f"Error scraping {url}: {str(e)}")
-            return []
+# Logging setup
+logging.basicConfig(
+    filename='rag_project.log',
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger()
+logger.addHandler(logging.StreamHandler(sys.stdout))
 
-class BaseVectorStore(abc.ABC):
-    """Abstract base class for vector stores."""
-    @abc.abstractmethod
-    def store(self, texts: list, embeddings: list):
-        """Store texts and their embeddings."""
-        pass
-    
-    @abc.abstractmethod
-    def query(self, query_embedding: list, top_k: int) -> list:
-        """Query the vector store for relevant texts."""
-        pass
+RUN_FLAG = False
 
-class ChromaVectorStore(BaseVectorStore):
-    """Concrete vector store using ChromaDB."""
-    def __init__(self, embedding_model: SentenceTransformer):
-        logging.info("Initializing ChromaVectorStore")
-        self.client = chromadb.Client()
-        self.collection = self.client.get_or_create_collection(name="rag_collection")
-        self.embedding_model = embedding_model
-    
-    def store(self, texts: list, embeddings: list):
-        ids = [str(uuid4()) for _ in texts]
-        self.collection.add(documents=texts, embeddings=embeddings, ids=ids)
-        logging.info(f"Stored {len(texts)} documents in ChromaDB")
-    
-    def query(self, query_embedding: list, top_k: int) -> list:
-        results = self.collection.query(query_embeddings=[query_embedding], n_results=top_k)
-        return results['documents'][0]
-    
-    def count_documents(self) -> int:
-        """Return the number of documents in the collection efficiently with debugging."""
-        result = self.collection.get(include=[])  # Avoid loading documents
-        logging.info(f"ChromaDB get result: {result}")  # Debug the raw response
-        return len(result['ids']) if result['ids'] else 0
+def log_interaction(question, answer):
+    log_entry = {
+        "question": question.strip(),
+        "answer": answer.strip()
+    }
+    try:
+        with open("qa_interactions.log", "a", encoding="utf-8") as log_file:
+            log_file.write(json.dumps(log_entry) + "\n")
+        logger.info(f"Logged interaction: Question='{question}', Answer='{answer}'")
+    except Exception as e:
+        logger.error(f"Error logging interaction: {e}")
 
-class BaseLLM(abc.ABC):
-    """Abstract base class for LLMs."""
-    @abc.abstractmethod
-    def generate(self, prompt: str) -> str:
-        """Generate a response based on the prompt."""
-        pass
+def display_history():
+    st.sidebar.subheader("Previous Q&A History")
+    st.sidebar.markdown("---")
 
-class HuggingFaceLLM(BaseLLM):
-    """Concrete LLM using HuggingFace transformers."""
-    def __init__(self):
-        self.generator = None  # Lazy load the pipeline
-    
-    def generate(self, prompt: str) -> str:
-        if self.generator is None:
-            logging.info("Initializing HuggingFaceLLM pipeline")
-            self.generator = pipeline('text-generation', model='distilgpt2')
-        response = self.generator(
-            prompt,
-            max_new_tokens=50,
-            truncation=True,
-            num_return_sequences=1
-        )
-        return response[0]['generated_text']
+    # Debug mode toggle
+    debug_mode = st.sidebar.checkbox("Enable Debug Mode", value=False)
 
-class RAGPipeline:
-    """RAG pipeline combining retrieval and generation."""
-    def __init__(self, vector_store: BaseVectorStore, llm: BaseLLM, embedding_model: SentenceTransformer):
-        self.vector_store = vector_store
-        self.llm = llm
-        self.embedding_model = embedding_model
-    
-    def process(self, question: str) -> str:
-        query_embedding = self.embedding_model.encode(question, show_progress_bar=False).tolist()
-        retrieved_docs = self.vector_store.query(query_embedding, top_k=3)
-        context = " ".join(retrieved_docs)
-        prompt = f"Question: {question}\nContext: {context}\nAnswer:"
-        answer = self.llm.generate(prompt)
-        logging.info(f"Question: {question}\nAnswer: {answer}")
-        return answer
+    if not os.path.exists("qa_interactions.log"):
+        st.sidebar.info("No previous interactions found. (File does not exist)")
+        logger.info("qa_interactions.log does not exist.")
+        return
 
-def scrape_and_store(scraper: BaseScraper, vector_store: BaseVectorStore, urls: list):
-    """Scrape data and store in vector store only if collection is empty."""
-    doc_count = vector_store.count_documents()
-    logging.info(f"Documents in collection before processing: {doc_count}")
-    if doc_count == 0:
-        all_texts = []
-        for url in urls:
-            texts = scraper.scrape(url)
-            all_texts.extend(texts)
-            time.sleep(0.5)
-        
-        batch_size = 32
-        embeddings = []
-        for i in range(0, len(all_texts), batch_size):
-            batch = all_texts[i:i + batch_size]
-            embeddings.extend(vector_store.embedding_model.encode(batch, show_progress_bar=False).tolist())
-        
-        vector_store.store(all_texts, embeddings)
-    else:
-        logging.info("Collection already contains data. Skipping scraping and storing.")
+    try:
+        with open("qa_interactions.log", "r", encoding="utf-8") as f:
+            lines = f.readlines()
+        logger.info(f"Read {len(lines)} lines from qa_interactions.log")
+    except Exception as e:
+        logger.error(f"Error reading qa_interactions.log: {e}")
+        st.sidebar.error("Error reading interaction history.")
+        return
+
+    if not lines:
+        st.sidebar.info("No previous interactions found. (File is empty)")
+        logger.info("qa_interactions.log is empty.")
+        return
+
+    if debug_mode:
+        st.sidebar.subheader("Debug: Raw Log Content")
+        st.sidebar.code("\n".join(lines), language="json")
+
+    # Create an expander for the history to make it collapsible
+    with st.sidebar.expander("View History", expanded=True):
+        # Display entries in reverse order (most recent first)
+        history_entries = []
+        for idx, entry in enumerate(reversed(lines)):
+            try:
+                qa = json.loads(entry.strip())
+                question = qa.get("question", "").strip()
+                answer = qa.get("answer", "").strip()
+                if question and answer:
+                    history_entries.append((question, answer))
+                else:
+                    logger.warning(f"Skipping entry with missing question or answer: {entry.strip()}")
+            except json.JSONDecodeError as e:
+                logger.warning(f"Skipping malformed log entry: {entry.strip()} - Error: {e}")
+                continue
+
+        if not history_entries:
+            st.info("No valid interactions found in history.")
+            logger.info("No valid interactions found after parsing qa_interactions.log.")
+            return
+
+        # Display each entry using Streamlit components
+        for idx, (question, answer) in enumerate(history_entries):
+            st.markdown(f"**Q{len(history_entries) - idx}:** {question}")
+            st.markdown(f"**A{len(history_entries) - idx}:** {answer}")
+            st.markdown("---")
+        logger.info(f"Displayed {len(history_entries)} history entries.")
 
 def run_ui(rag_pipeline: RAGPipeline):
-    """Streamlit UI for Q&A."""
+    """Streamlit UI for querying the RAG pipeline."""
     st.title("RAG-LLM Q&A System")
-    question = st.text_input("Enter your question:")
-    if st.button("Get Answer"):
-        if question:
-            answer = rag_pipeline.process(question)
-            st.write(f"**Answer**: {answer}")
-        else:
-            st.write("Please enter a question.")
 
-class TestRAGSystem(unittest.TestCase):
-    """Unit tests for RAG system components."""
-    def setUp(self):
+    if 'last_question' not in st.session_state:
+        st.session_state.last_question = None
+    if 'answer' not in st.session_state:
+        st.session_state.answer = None
+    if 'response_time' not in st.session_state:
+        st.session_state.response_time = None
+    if 'query_processed' not in st.session_state:
+        st.session_state.query_processed = False
+    if 'form_submitted' not in st.session_state:
+        st.session_state.form_submitted = False
+
+    logger.info("Launching Streamlit UI...")
+
+    # Display the history in the sidebar
+    display_history()
+
+    st.subheader("Ask a Question")
+    with st.form("query_form"):
+        question = st.text_input("Enter your question:")
+        submitted = st.form_submit_button("Get Answer")
+
+        if submitted and question.strip():
+            logger.info(f"Form submitted with question: {question}")
+            if question != st.session_state.last_question:
+                rag_pipeline.process.cache_clear()
+                start = time.time()
+                answer = rag_pipeline.process(question)
+                duration = time.time() - start
+                log_interaction(question, answer)
+                st.session_state.last_question = question
+                st.session_state.answer = answer
+                st.session_state.response_time = duration
+                st.session_state.query_processed = True
+                st.session_state.form_submitted = True
+            else:
+                logger.info("Question same as previous.")
+
+        if st.session_state.form_submitted and st.session_state.answer:
+            st.markdown("---")
+            st.markdown(f"**Answer:** {st.session_state.answer}")
+            st.markdown(f"**Response Time:** {st.session_state.response_time:.2f} seconds")
+            st.session_state.form_submitted = False
+        elif submitted and not question.strip():
+            st.warning("Please enter a valid question.")
+
+def main():
+    global RUN_FLAG
+    if RUN_FLAG:
+        return
+    RUN_FLAG = True
+
+    logger.info("Initializing components...")
+
+    try:
+        scraper = WikipediaScraper()
         embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
-        self.scraper = WikipediaScraper()
-        self.vector_store = ChromaVectorStore(embedding_model)
-        self.llm = HuggingFaceLLM()
-        self.pipeline = RAGPipeline(self.vector_store, self.llm, embedding_model)
-    
-    def test_scraper(self):
-        url = "https://en.wikipedia.org/wiki/Photosynthesis"
-        texts = self.scraper.scrape(url)
-        self.assertGreater(len(texts), 0, "Scraper failed to retrieve texts")
-    
-    def test_pipeline(self):
-        question = "What is photosynthesis?"
-        answer = self.pipeline.process(question)
-        self.assertIsInstance(answer, str, "Pipeline failed to generate a string response")
-    
-    def test_vector_store(self):
-        texts = ["Test document"]
-        embeddings = self.vector_store.embedding_model.encode(texts).tolist()
-        self.vector_store.store(texts, embeddings)
-        query_embedding = embeddings[0]
-        results = self.vector_store.query(query_embedding, top_k=1)
-        self.assertEqual(results[0], "Test document", "Vector store query failed")
+        device = "cuda" if torch.cuda.is_available() else "cpu"
+        logger.info(f"Using device: {device}")
+        embedding_model = embedding_model.to(device)
+
+        index_path = "faiss_index.bin"
+        texts_path = "texts.pkl"
+
+        if os.path.exists(index_path) and os.path.exists(texts_path):
+            logger.info("Loading existing FAISS index and texts.")
+            vector_store = FAISSVectorStore.load(embedding_model, index_path, texts_path)
+        else:
+            logger.info("Creating new FAISS index from scratch.")
+            vector_store = FAISSVectorStore(embedding_model)
+
+        llm = OllamaLLM()
+        rag_pipeline = RAGPipeline(vector_store, llm, embedding_model)
+
+        if not os.path.exists(index_path) or not os.path.exists(texts_path):
+            urls = URLS
+            logger.info("Scraping and storing content...")
+            scrape_and_store(scraper, vector_store, urls, index_path, texts_path)
+            logger.info("Scraping completed.")
+
+        logger.info("Launching Streamlit UI...")
+        run_ui(rag_pipeline)
+
+    except Exception as e:
+        logger.exception(f"Application failed: {e}")
 
 if __name__ == "__main__":
-    logging.info("Starting script")
-    scraper = WikipediaScraper()
-    logging.info("Initializing embedding model")
-    embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
-    logging.info("Embedding model initialized")
-    vector_store = ChromaVectorStore(embedding_model)
-    llm = HuggingFaceLLM()
-    rag_pipeline = RAGPipeline(vector_store, llm, embedding_model)
-    
-    urls = [
-        "https://en.wikipedia.org/wiki/Evolution",
-        "https://en.wikipedia.org/wiki/Genetics",
-        "https://en.wikipedia.org/wiki/Periodic_table",
-        "https://en.wikipedia.org/wiki/Chemical_bonding",
-        "https://en.wikipedia.org/wiki/Plate_tectonics",
-        "https://en.wikipedia.org/wiki/Big_Bang",
-        "https://en.wikipedia.org/wiki/Black_hole",
-        "https://en.wikipedia.org/wiki/Photosynthesis",
-        "https://en.wikipedia.org/wiki/Quantum_mechanics",
-        "https://en.wikipedia.org/wiki/Relativity_theory",
-        "https://en.wikipedia.org/wiki/Climate_change",
-        "https://en.wikipedia.org/wiki/Ecosystem",
-        "https://en.wikipedia.org/wiki/Neuroscience",
-        "https://en.wikipedia.org/wiki/Immunology",
-        "https://en.wikipedia.org/wiki/DNA",
-        "https://en.wikipedia.org/wiki/RNA",
-        "https://en.wikipedia.org/wiki/Photosynthetic_pigment",
-        "https://en.wikipedia.org/wiki/Atomic_structure",
-        "https://en.wikipedia.org/wiki/Thermodynamics",
-        "https://en.wikipedia.org/wiki/Astrophysics",
-        "https://en.wikipedia.org/wiki/World_War_I",
-        "https://en.wikipedia.org/wiki/World_War_II",
-        "https://en.wikipedia.org/wiki/Renaissance",
-        "https://en.wikipedia.org/wiki/Industrial_Revolution",
-        "https://en.wikipedia.org/wiki/French_Revolution",
-        "https://en.wikipedia.org/wiki/American_Revolution",
-        "https://en.wikipedia.org/wiki/Cold_War",
-        "https://en.wikipedia.org/wiki/Ancient_Egypt",
-        "https://en.wikipedia.org/wiki/Roman_Empire",
-        "https://en.wikipedia.org/wiki/Middle_Ages",
-        "https://en.wikipedia.org/wiki/Great_Depression",
-        "https://en.wikipedia.org/wiki/Civil_Rights_Movement",
-        "https://en.wikipedia.org/wiki/Space_Race",
-        "https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall",
-        "https://en.wikipedia.org/wiki/Colonization_of_Africa",
-        "https://en.wikipedia.org/wiki/Indian_Independence_Movement",
-        "https://en.wikipedia.org/wiki/Byzantine_Empire",
-        "https://en.wikipedia.org/wiki/Mongol_Empire",
-        "https://en.wikipedia.org/wiki/History_of_China",
-        "https://en.wikipedia.org/wiki/Vietnam_War",
-        "https://en.wikipedia.org/wiki/Calculus",
-        "https://en.wikipedia.org/wiki/Algebra",
-        "https://en.wikipedia.org/wiki/Geometry",
-        "https://en.wikipedia.org/wiki/Trigonometry",
-        "https://en.wikipedia.org/wiki/Number_theory",
-        "https://en.wikipedia.org/wiki/Probability_theory",
-        "https://en.wikipedia.org/wiki/Statistics",
-        "https://en.wikipedia.org/wiki/Set_theory",
-        "https://en.wikipedia.org/wiki/Linear_algebra",
-        "https://en.wikipedia.org/wiki/Differential_equations",
-        "https://en.wikipedia.org/wiki/Game_theory",
-        "https://en.wikipedia.org/wiki/Topology",
-        "https://en.wikipedia.org/wiki/Chaos_theory",
-        "https://en.wikipedia.org/wiki/Graph_theory",
-        "https://en.wikipedia.org/wiki/Mathematical_logic",
-        "https://en.wikipedia.org/wiki/William_Shakespeare",
-        "https://en.wikipedia.org/wiki/Homer",
-        "https://en.wikipedia.org/wiki/Iliad",
-    ]
-    logging.info("Starting scrape_and_store")
-    scrape_and_store(scraper, vector_store, urls)
-    logging.info("Finished scrape_and_store")
-    
-    logging.info("Starting Streamlit UI")
-    run_ui(rag_pipeline)
-    
-    if "test" in sys.argv:
-        unittest.main(argv=[''])
+    main()
