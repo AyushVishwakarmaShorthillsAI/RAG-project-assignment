@@ -1,0 +1,275 @@
+2025-05-02 14:13:32,447 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/Photosynthesis
+2025-05-02 14:13:33,166 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/Photosynthesis
+2025-05-02 14:13:33,383 - INFO - Extracted 82 paragraphs from https://en.wikipedia.org/wiki/Photosynthesis
+2025-05-02 14:13:33,384 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/Renaissance
+2025-05-02 14:13:34,140 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/Renaissance
+2025-05-02 14:13:34,417 - INFO - Extracted 106 paragraphs from https://en.wikipedia.org/wiki/Renaissance
+2025-05-02 14:13:34,418 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/DNA
+2025-05-02 14:13:35,059 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/DNA
+2025-05-02 14:13:35,503 - INFO - Extracted 90 paragraphs from https://en.wikipedia.org/wiki/DNA
+2025-05-02 14:13:35,503 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/Quantum_mechanics
+2025-05-02 14:13:36,010 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/Quantum_mechanics
+2025-05-02 14:13:36,246 - INFO - Extracted 70 paragraphs from https://en.wikipedia.org/wiki/Quantum_mechanics
+2025-05-02 14:13:36,247 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/World_War_II
+2025-05-02 14:13:36,833 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/World_War_II
+2025-05-02 14:13:37,408 - INFO - Extracted 119 paragraphs from https://en.wikipedia.org/wiki/World_War_II
+2025-05-02 14:13:37,408 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/Calculus
+2025-05-02 14:13:37,885 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/Calculus
+2025-05-02 14:13:38,071 - INFO - Extracted 64 paragraphs from https://en.wikipedia.org/wiki/Calculus
+2025-05-02 14:13:38,072 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/Black_hole
+2025-05-02 14:13:38,716 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/Black_hole
+2025-05-02 14:13:39,185 - INFO - Extracted 108 paragraphs from https://en.wikipedia.org/wiki/Black_hole
+2025-05-02 14:13:39,185 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/Climate_change
+2025-05-02 14:13:39,777 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/Climate_change
+2025-05-02 14:13:40,142 - INFO - Extracted 100 paragraphs from https://en.wikipedia.org/wiki/Climate_change
+2025-05-02 14:13:40,142 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/Industrial_Revolution
+2025-05-02 14:13:40,723 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/Industrial_Revolution
+2025-05-02 14:13:41,411 - INFO - Extracted 218 paragraphs from https://en.wikipedia.org/wiki/Industrial_Revolution
+2025-05-02 14:13:41,411 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/William_Shakespeare
+2025-05-02 14:13:41,933 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/William_Shakespeare
+2025-05-02 14:13:42,321 - INFO - Extracted 63 paragraphs from https://en.wikipedia.org/wiki/William_Shakespeare
+2025-05-02 14:13:42,322 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/Ancient_Egypt
+2025-05-02 14:13:42,835 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/Ancient_Egypt
+2025-05-02 14:13:43,294 - INFO - Extracted 104 paragraphs from https://en.wikipedia.org/wiki/Ancient_Egypt
+2025-05-02 14:13:43,295 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/Evolution
+2025-05-02 14:13:43,880 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/Evolution
+2025-05-02 14:13:44,253 - INFO - Extracted 97 paragraphs from https://en.wikipedia.org/wiki/Evolution
+2025-05-02 14:13:44,253 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/Genetics
+2025-05-02 14:13:44,740 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/Genetics
+2025-05-02 14:13:45,337 - INFO - Extracted 61 paragraphs from https://en.wikipedia.org/wiki/Genetics
+2025-05-02 14:13:45,337 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/Periodic_table
+2025-05-02 14:13:45,960 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/Periodic_table
+2025-05-02 14:13:46,781 - INFO - Extracted 106 paragraphs from https://en.wikipedia.org/wiki/Periodic_table
+2025-05-02 14:13:46,782 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/Chemical_bonding
+2025-05-02 14:13:47,775 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/Chemical_bonding
+2025-05-02 14:13:47,859 - INFO - Extracted 42 paragraphs from https://en.wikipedia.org/wiki/Chemical_bonding
+2025-05-02 14:13:47,860 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/Plate_tectonics
+2025-05-02 14:13:48,359 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/Plate_tectonics
+2025-05-02 14:13:48,549 - INFO - Extracted 86 paragraphs from https://en.wikipedia.org/wiki/Plate_tectonics
+2025-05-02 14:13:48,550 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/Big_Bang
+2025-05-02 14:13:49,083 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/Big_Bang
+2025-05-02 14:13:49,312 - INFO - Extracted 89 paragraphs from https://en.wikipedia.org/wiki/Big_Bang
+2025-05-02 14:13:49,313 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/Photosynthetic_pigment
+2025-05-02 14:13:49,813 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/Photosynthetic_pigment
+2025-05-02 14:13:49,834 - INFO - Extracted 7 paragraphs from https://en.wikipedia.org/wiki/Photosynthetic_pigment
+2025-05-02 14:13:49,835 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/Atomic_structure
+2025-05-02 14:13:50,536 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/Atomic_structure
+2025-05-02 14:13:50,973 - INFO - Extracted 81 paragraphs from https://en.wikipedia.org/wiki/Atomic_structure
+2025-05-02 14:13:50,974 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/Thermodynamics
+2025-05-02 14:13:51,419 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/Thermodynamics
+2025-05-02 14:13:51,551 - INFO - Extracted 57 paragraphs from https://en.wikipedia.org/wiki/Thermodynamics
+2025-05-02 14:13:51,552 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/Astrophysics
+2025-05-02 14:13:52,163 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/Astrophysics
+2025-05-02 14:13:52,241 - INFO - Extracted 23 paragraphs from https://en.wikipedia.org/wiki/Astrophysics
+2025-05-02 14:13:52,242 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/World_War_I
+2025-05-02 14:13:52,798 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/World_War_I
+2025-05-02 14:13:53,140 - INFO - Extracted 144 paragraphs from https://en.wikipedia.org/wiki/World_War_I
+2025-05-02 14:13:53,141 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/French_Revolution
+2025-05-02 14:13:53,697 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/French_Revolution
+2025-05-02 14:13:54,232 - INFO - Extracted 140 paragraphs from https://en.wikipedia.org/wiki/French_Revolution
+2025-05-02 14:13:54,232 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/American_Revolution
+2025-05-02 14:13:54,850 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/American_Revolution
+2025-05-02 14:13:55,415 - INFO - Extracted 148 paragraphs from https://en.wikipedia.org/wiki/American_Revolution
+2025-05-02 14:13:55,416 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/Cold_War
+2025-05-02 14:13:55,987 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/Cold_War
+2025-05-02 14:13:56,401 - INFO - Extracted 157 paragraphs from https://en.wikipedia.org/wiki/Cold_War
+2025-05-02 14:13:56,401 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/Roman_Empire
+2025-05-02 14:13:56,990 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/Roman_Empire
+2025-05-02 14:13:57,686 - INFO - Extracted 150 paragraphs from https://en.wikipedia.org/wiki/Roman_Empire
+2025-05-02 14:13:57,687 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/Middle_Ages
+2025-05-02 14:13:58,198 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/Middle_Ages
+2025-05-02 14:13:58,456 - INFO - Extracted 99 paragraphs from https://en.wikipedia.org/wiki/Middle_Ages
+2025-05-02 14:13:58,456 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/Great_Depression
+2025-05-02 14:13:59,000 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/Great_Depression
+2025-05-02 14:13:59,572 - INFO - Extracted 146 paragraphs from https://en.wikipedia.org/wiki/Great_Depression
+2025-05-02 14:13:59,573 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/Civil_Rights_Movement
+2025-05-02 14:14:02,304 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/Civil_Rights_Movement
+2025-05-02 14:14:02,902 - INFO - Extracted 233 paragraphs from https://en.wikipedia.org/wiki/Civil_Rights_Movement
+2025-05-02 14:14:02,903 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/Space_Race
+2025-05-02 14:14:03,464 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/Space_Race
+2025-05-02 14:14:03,874 - INFO - Extracted 150 paragraphs from https://en.wikipedia.org/wiki/Space_Race
+2025-05-02 14:14:03,875 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall
+2025-05-02 14:14:04,318 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall
+2025-05-02 14:14:04,452 - INFO - Extracted 77 paragraphs from https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall
+2025-05-02 14:14:04,453 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/Colonization_of_Africa
+2025-05-02 14:14:05,398 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/Colonization_of_Africa
+2025-05-02 14:14:05,466 - INFO - Extracted 30 paragraphs from https://en.wikipedia.org/wiki/Colonization_of_Africa
+2025-05-02 14:14:05,467 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/Indian_Independence_Movement
+2025-05-02 14:14:06,219 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/Indian_Independence_Movement
+2025-05-02 14:14:06,815 - INFO - Extracted 128 paragraphs from https://en.wikipedia.org/wiki/Indian_Independence_Movement
+2025-05-02 14:14:06,816 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/Byzantine_Empire
+2025-05-02 14:14:07,317 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/Byzantine_Empire
+2025-05-02 14:14:07,654 - INFO - Extracted 81 paragraphs from https://en.wikipedia.org/wiki/Byzantine_Empire
+2025-05-02 14:14:07,654 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/Mongol_Empire
+2025-05-02 14:14:08,178 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/Mongol_Empire
+2025-05-02 14:14:08,654 - INFO - Extracted 115 paragraphs from https://en.wikipedia.org/wiki/Mongol_Empire
+2025-05-02 14:14:08,654 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/History_of_China
+2025-05-02 14:14:09,177 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/History_of_China
+2025-05-02 14:14:09,375 - INFO - Extracted 113 paragraphs from https://en.wikipedia.org/wiki/History_of_China
+2025-05-02 14:14:09,376 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/Vietnam_War
+2025-05-02 14:14:09,978 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/Vietnam_War
+2025-05-02 14:14:10,599 - INFO - Extracted 159 paragraphs from https://en.wikipedia.org/wiki/Vietnam_War
+2025-05-02 14:14:10,600 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/Algebra
+2025-05-02 14:14:12,103 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/Algebra
+2025-05-02 14:14:12,345 - INFO - Extracted 57 paragraphs from https://en.wikipedia.org/wiki/Algebra
+2025-05-02 14:14:12,345 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/Geometry
+2025-05-02 14:14:13,551 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/Geometry
+2025-05-02 14:14:13,730 - INFO - Extracted 69 paragraphs from https://en.wikipedia.org/wiki/Geometry
+2025-05-02 14:14:13,730 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/Trigonometry
+2025-05-02 14:14:14,211 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/Trigonometry
+2025-05-02 14:14:14,611 - INFO - Extracted 48 paragraphs from https://en.wikipedia.org/wiki/Trigonometry
+2025-05-02 14:14:14,612 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/Number_theory
+2025-05-02 14:14:15,111 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/Number_theory
+2025-05-02 14:14:15,290 - INFO - Extracted 70 paragraphs from https://en.wikipedia.org/wiki/Number_theory
+2025-05-02 14:14:15,291 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/Probability_theory
+2025-05-02 14:14:15,706 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/Probability_theory
+2025-05-02 14:14:15,807 - INFO - Extracted 49 paragraphs from https://en.wikipedia.org/wiki/Probability_theory
+2025-05-02 14:14:15,808 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/Statistics
+2025-05-02 14:14:16,261 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/Statistics
+2025-05-02 14:14:16,409 - INFO - Extracted 75 paragraphs from https://en.wikipedia.org/wiki/Statistics
+2025-05-02 14:14:16,410 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/Set_theory
+2025-05-02 14:14:16,860 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/Set_theory
+2025-05-02 14:14:17,297 - INFO - Extracted 51 paragraphs from https://en.wikipedia.org/wiki/Set_theory
+2025-05-02 14:14:17,297 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/Linear_algebra
+2025-05-02 14:14:17,768 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/Linear_algebra
+2025-05-02 14:14:17,920 - INFO - Extracted 102 paragraphs from https://en.wikipedia.org/wiki/Linear_algebra
+2025-05-02 14:14:17,921 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/Differential_equations
+2025-05-02 14:14:18,583 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/Differential_equations
+2025-05-02 14:14:18,675 - INFO - Extracted 37 paragraphs from https://en.wikipedia.org/wiki/Differential_equations
+2025-05-02 14:14:18,675 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/Game_theory
+2025-05-02 14:14:19,233 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/Game_theory
+2025-05-02 14:14:19,453 - INFO - Extracted 113 paragraphs from https://en.wikipedia.org/wiki/Game_theory
+2025-05-02 14:14:19,453 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/Topology
+2025-05-02 14:14:19,839 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/Topology
+2025-05-02 14:14:20,160 - INFO - Extracted 47 paragraphs from https://en.wikipedia.org/wiki/Topology
+2025-05-02 14:14:20,161 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/Chaos_theory
+2025-05-02 14:14:20,661 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/Chaos_theory
+2025-05-02 14:14:20,888 - INFO - Extracted 70 paragraphs from https://en.wikipedia.org/wiki/Chaos_theory
+2025-05-02 14:14:20,888 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/Graph_theory
+2025-05-02 14:14:21,331 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/Graph_theory
+2025-05-02 14:14:21,462 - INFO - Extracted 62 paragraphs from https://en.wikipedia.org/wiki/Graph_theory
+2025-05-02 14:14:21,463 - INFO - Starting scrape for URL: https://www.nasa.gov/solar-system/mars/
+2025-05-02 14:14:22,472 - ERROR - Scraping failed for https://www.nasa.gov/solar-system/mars/: 404 Client Error: Not Found for url: https://www.nasa.gov/solar-system/mars/
+2025-05-02 14:14:22,473 - INFO - Starting scrape for URL: https://www.nasa.gov/mission/hubble-space-telescope/
+2025-05-02 14:14:23,300 - ERROR - Scraping failed for https://www.nasa.gov/mission/hubble-space-telescope/: 404 Client Error: Not Found for url: https://www.nasa.gov/mission/hubble-space-telescope/
+2025-05-02 14:14:23,302 - INFO - Starting scrape for URL: https://www.nasa.gov/science-research/earth-science/climate/
+2025-05-02 14:14:24,142 - ERROR - Scraping failed for https://www.nasa.gov/science-research/earth-science/climate/: 404 Client Error: Not Found for url: https://www.nasa.gov/science-research/earth-science/climate/
+2025-05-02 14:14:24,143 - INFO - Starting scrape for URL: https://www.nasa.gov/solar-system/jupiter/
+2025-05-02 14:14:24,964 - ERROR - Scraping failed for https://www.nasa.gov/solar-system/jupiter/: 404 Client Error: Not Found for url: https://www.nasa.gov/solar-system/jupiter/
+2025-05-02 14:14:24,965 - INFO - Starting scrape for URL: https://www.nasa.gov/mission/james-webb-space-telescope/
+2025-05-02 14:14:25,755 - ERROR - Scraping failed for https://www.nasa.gov/mission/james-webb-space-telescope/: 404 Client Error: Not Found for url: https://www.nasa.gov/mission/james-webb-space-telescope/
+2025-05-02 14:14:25,757 - INFO - Starting scrape for URL: https://www.nasa.gov/centers-and-facilities/goddard/what-is-a-black-hole/
+2025-05-02 14:14:26,520 - ERROR - Scraping failed for https://www.nasa.gov/centers-and-facilities/goddard/what-is-a-black-hole/: 404 Client Error: Not Found for url: https://www.nasa.gov/centers-and-facilities/goddard/what-is-a-black-hole/
+2025-05-02 14:14:26,521 - INFO - Starting scrape for URL: https://www.nasa.gov/general/what-is-dark-energy/
+2025-05-02 14:14:27,405 - ERROR - Scraping failed for https://www.nasa.gov/general/what-is-dark-energy/: 404 Client Error: Not Found for url: https://www.nasa.gov/general/what-is-dark-energy/
+2025-05-02 14:14:27,406 - INFO - Starting scrape for URL: https://www.nasa.gov/general/what-is-the-big-bang/
+2025-05-02 14:14:28,200 - ERROR - Scraping failed for https://www.nasa.gov/general/what-is-the-big-bang/: 404 Client Error: Not Found for url: https://www.nasa.gov/general/what-is-the-big-bang/
+2025-05-02 14:14:28,201 - INFO - Starting scrape for URL: https://www.nasa.gov/solar-system/earth/
+2025-05-02 14:14:29,712 - INFO - Successfully fetched URL: https://www.nasa.gov/solar-system/earth/
+2025-05-02 14:14:29,770 - INFO - Extracted 0 paragraphs from https://www.nasa.gov/solar-system/earth/
+2025-05-02 14:14:29,771 - INFO - Starting scrape for URL: https://www.nasa.gov/mission/apollo-11/
+2025-05-02 14:14:31,017 - INFO - Successfully fetched URL: https://www.nasa.gov/mission/apollo-11/
+2025-05-02 14:14:31,096 - INFO - Extracted 0 paragraphs from https://www.nasa.gov/mission/apollo-11/
+2025-05-02 14:14:31,097 - INFO - Starting scrape for URL: https://www.nationalgeographic.com/environment/article/plate-tectonics
+2025-05-02 14:14:32,835 - ERROR - Scraping failed for https://www.nationalgeographic.com/environment/article/plate-tectonics: 404 Client Error: Not Found for url: https://www.nationalgeographic.com/environment/article/plate-tectonics
+2025-05-02 14:14:32,836 - INFO - Starting scrape for URL: https://www.nationalgeographic.com/environment/article/ecosystems
+2025-05-02 14:14:34,611 - ERROR - Scraping failed for https://www.nationalgeographic.com/environment/article/ecosystems: 404 Client Error: Not Found for url: https://www.nationalgeographic.com/environment/article/ecosystems
+2025-05-02 14:14:34,613 - INFO - Starting scrape for URL: https://www.nationalgeographic.com/history/article/ancient-egypt
+2025-05-02 14:14:36,105 - ERROR - Scraping failed for https://www.nationalgeographic.com/history/article/ancient-egypt: 404 Client Error: Not Found for url: https://www.nationalgeographic.com/history/article/ancient-egypt
+2025-05-02 14:14:36,106 - INFO - Starting scrape for URL: https://www.nationalgeographic.com/science/article/dna
+2025-05-02 14:14:37,629 - ERROR - Scraping failed for https://www.nationalgeographic.com/science/article/dna: 404 Client Error: Not Found for url: https://www.nationalgeographic.com/science/article/dna
+2025-05-02 14:14:37,630 - INFO - Starting scrape for URL: https://www.nationalgeographic.com/environment/article/climate-change
+2025-05-02 14:14:39,722 - INFO - Successfully fetched URL: https://www.nationalgeographic.com/environment/article/climate-change
+2025-05-02 14:14:39,739 - INFO - Extracted 0 paragraphs from https://www.nationalgeographic.com/environment/article/climate-change
+2025-05-02 14:14:39,739 - INFO - Starting scrape for URL: https://www.nationalgeographic.com/science/article/black-holes
+2025-05-02 14:14:42,058 - INFO - Successfully fetched URL: https://www.nationalgeographic.com/science/article/black-holes
+2025-05-02 14:14:42,078 - INFO - Extracted 0 paragraphs from https://www.nationalgeographic.com/science/article/black-holes
+2025-05-02 14:14:42,080 - INFO - Starting scrape for URL: https://www.nationalgeographic.com/science/article/photosynthesis
+2025-05-02 14:14:43,651 - INFO - Successfully fetched URL: https://www.nationalgeographic.com/science/article/photosynthesis
+2025-05-02 14:14:43,666 - INFO - Extracted 0 paragraphs from https://www.nationalgeographic.com/science/article/photosynthesis
+2025-05-02 14:14:43,667 - INFO - Starting scrape for URL: https://www.nationalgeographic.com/history/article/renaissance
+2025-05-02 14:14:45,149 - ERROR - Scraping failed for https://www.nationalgeographic.com/history/article/renaissance: 404 Client Error: Not Found for url: https://www.nationalgeographic.com/history/article/renaissance
+2025-05-02 14:14:45,150 - INFO - Starting scrape for URL: https://www.nationalgeographic.com/science/article/quantum-mechanics
+2025-05-02 14:14:46,377 - ERROR - Scraping failed for https://www.nationalgeographic.com/science/article/quantum-mechanics: 404 Client Error: Not Found for url: https://www.nationalgeographic.com/science/article/quantum-mechanics
+2025-05-02 14:14:46,378 - INFO - Starting scrape for URL: https://en.wikipedia.org/wiki/Quantum_mechanics
+2025-05-02 14:14:47,036 - INFO - Successfully fetched URL: https://en.wikipedia.org/wiki/Quantum_mechanics
+2025-05-02 14:14:47,741 - INFO - Extracted 70 paragraphs from https://en.wikipedia.org/wiki/Quantum_mechanics
+2025-05-02 14:14:47,742 - INFO - Starting scrape for URL: https://www.nationalgeographic.com/history/article/roman-empire
+2025-05-02 14:14:49,216 - ERROR - Scraping failed for https://www.nationalgeographic.com/history/article/roman-empire: 404 Client Error: Not Found for url: https://www.nationalgeographic.com/history/article/roman-empire
+2025-05-02 14:14:49,217 - INFO - Starting scrape for URL: https://www.nationalgeographic.com/environment/article/oceanic-crust
+2025-05-02 14:14:50,053 - ERROR - Scraping failed for https://www.nationalgeographic.com/environment/article/oceanic-crust: 404 Client Error: Not Found for url: https://www.nationalgeographic.com/environment/article/oceanic-crust
+2025-05-02 14:14:50,055 - INFO - Starting scrape for URL: https://www.nationalgeographic.com/science/article/thermodynamics
+2025-05-02 14:14:50,890 - ERROR - Scraping failed for https://www.nationalgeographic.com/science/article/thermodynamics: 404 Client Error: Not Found for url: https://www.nationalgeographic.com/science/article/thermodynamics
+2025-05-02 14:14:50,891 - INFO - Starting scrape for URL: https://www.nationalgeographic.com/history/article/mongol-empire
+2025-05-02 14:14:52,371 - ERROR - Scraping failed for https://www.nationalgeographic.com/history/article/mongol-empire: 404 Client Error: Not Found for url: https://www.nationalgeographic.com/history/article/mongol-empire
+2025-05-02 14:14:52,373 - INFO - Starting scrape for URL: https://www.nationalgeographic.com/science/article/volcanoes
+2025-05-02 14:14:53,865 - ERROR - Scraping failed for https://www.nationalgeographic.com/science/article/volcanoes: 404 Client Error: Not Found for url: https://www.nationalgeographic.com/science/article/volcanoes
+2025-05-02 14:14:53,866 - INFO - Starting scrape for URL: https://www.nationalgeographic.com/history/article/industrial-revolution
+2025-05-02 14:14:55,346 - ERROR - Scraping failed for https://www.nationalgeographic.com/history/article/industrial-revolution: 404 Client Error: Not Found for url: https://www.nationalgeographic.com/history/article/industrial-revolution
+2025-05-02 14:14:55,347 - INFO - Starting scrape for URL: https://www.history.com/topics/world-war-ii
+2025-05-02 14:14:55,888 - INFO - Successfully fetched URL: https://www.history.com/topics/world-war-ii
+2025-05-02 14:14:56,173 - INFO - Extracted 0 paragraphs from https://www.history.com/topics/world-war-ii
+2025-05-02 14:14:56,174 - INFO - Starting scrape for URL: https://www.history.com/topics/world-war-i
+2025-05-02 14:14:56,545 - INFO - Successfully fetched URL: https://www.history.com/topics/world-war-i
+2025-05-02 14:14:56,662 - INFO - Extracted 0 paragraphs from https://www.history.com/topics/world-war-i
+2025-05-02 14:14:56,663 - INFO - Starting scrape for URL: https://www.history.com/topics/industrial-revolution
+2025-05-02 14:14:57,241 - INFO - Successfully fetched URL: https://www.history.com/topics/industrial-revolution
+2025-05-02 14:14:57,301 - INFO - Extracted 0 paragraphs from https://www.history.com/topics/industrial-revolution
+2025-05-02 14:14:57,302 - INFO - Starting scrape for URL: https://www.history.com/topics/french-revolution
+2025-05-02 14:14:57,923 - INFO - Successfully fetched URL: https://www.history.com/topics/french-revolution
+2025-05-02 14:14:57,981 - INFO - Extracted 0 paragraphs from https://www.history.com/topics/french-revolution
+2025-05-02 14:14:57,982 - INFO - Starting scrape for URL: https://www.history.com/topics/american-revolution
+2025-05-02 14:14:58,624 - INFO - Successfully fetched URL: https://www.history.com/topics/american-revolution
+2025-05-02 14:14:59,083 - INFO - Extracted 0 paragraphs from https://www.history.com/topics/american-revolution
+2025-05-02 14:14:59,083 - INFO - Starting scrape for URL: https://www.history.com/topics/cold-war
+2025-05-02 14:14:59,731 - INFO - Successfully fetched URL: https://www.history.com/topics/cold-war
+2025-05-02 14:14:59,856 - INFO - Extracted 0 paragraphs from https://www.history.com/topics/cold-war
+2025-05-02 14:14:59,859 - INFO - Starting scrape for URL: https://www.history.com/topics/middle-ages
+2025-05-02 14:15:00,239 - INFO - Successfully fetched URL: https://www.history.com/topics/middle-ages
+2025-05-02 14:15:00,328 - INFO - Extracted 0 paragraphs from https://www.history.com/topics/middle-ages
+2025-05-02 14:15:00,329 - INFO - Starting scrape for URL: https://www.history.com/topics/great-depression
+2025-05-02 14:15:00,926 - INFO - Successfully fetched URL: https://www.history.com/topics/great-depression
+2025-05-02 14:15:01,007 - INFO - Extracted 0 paragraphs from https://www.history.com/topics/great-depression
+2025-05-02 14:15:01,008 - INFO - Starting scrape for URL: https://www.history.com/topics/civil-rights-movement
+2025-05-02 14:15:01,694 - INFO - Successfully fetched URL: https://www.history.com/topics/civil-rights-movement
+2025-05-02 14:15:01,763 - INFO - Extracted 0 paragraphs from https://www.history.com/topics/civil-rights-movement
+2025-05-02 14:15:01,764 - INFO - Starting scrape for URL: https://www.history.com/topics/space-race
+2025-05-02 14:15:02,612 - INFO - Successfully fetched URL: https://www.history.com/topics/space-race
+2025-05-02 14:15:02,660 - INFO - Extracted 0 paragraphs from https://www.history.com/topics/space-race
+2025-05-02 14:15:02,661 - INFO - Starting scrape for URL: https://www.history.com/topics/berlin-wall
+2025-05-02 14:15:03,579 - INFO - Successfully fetched URL: https://www.history.com/topics/berlin-wall
+2025-05-02 14:15:03,636 - INFO - Extracted 0 paragraphs from https://www.history.com/topics/berlin-wall
+2025-05-02 14:15:03,637 - INFO - Starting scrape for URL: https://www.history.com/topics/colonial-africa
+2025-05-02 14:15:04,488 - ERROR - Scraping failed for https://www.history.com/topics/colonial-africa: 404 Client Error: Not Found for url: https://www.history.com/articles/colonial-africa
+2025-05-02 14:15:04,489 - INFO - Starting scrape for URL: https://www.history.com/topics/indian-independence
+2025-05-02 14:15:05,312 - ERROR - Scraping failed for https://www.history.com/topics/indian-independence: 404 Client Error: Not Found for url: https://www.history.com/articles/indian-independence
+2025-05-02 14:15:05,314 - INFO - Starting scrape for URL: https://www.history.com/topics/vietnam-war
+2025-05-02 14:15:05,928 - INFO - Successfully fetched URL: https://www.history.com/topics/vietnam-war
+2025-05-02 14:15:06,016 - INFO - Extracted 0 paragraphs from https://www.history.com/topics/vietnam-war
+2025-05-02 14:15:06,017 - INFO - Starting scrape for URL: https://www.history.com/topics/ancient-rome
+2025-05-02 14:15:06,615 - INFO - Successfully fetched URL: https://www.history.com/topics/ancient-rome
+2025-05-02 14:15:06,712 - INFO - Extracted 0 paragraphs from https://www.history.com/topics/ancient-rome
+2025-05-02 14:15:06,713 - INFO - Starting scrape for URL: https://www.britannica.com/science/quantum-mechanics
+2025-05-02 14:15:07,205 - ERROR - Scraping failed for https://www.britannica.com/science/quantum-mechanics: 404 Client Error: Not Found for url: https://www.britannica.com/science/quantum-mechanics
+2025-05-02 14:15:07,206 - INFO - Starting scrape for URL: https://www.britannica.com/science/calculus
+2025-05-02 14:15:07,458 - ERROR - Scraping failed for https://www.britannica.com/science/calculus: 404 Client Error: Not Found for url: https://www.britannica.com/science/calculus
+2025-05-02 14:15:07,459 - INFO - Starting scrape for URL: https://www.britannica.com/science/dna
+2025-05-02 14:15:07,900 - INFO - Successfully fetched URL: https://www.britannica.com/science/dna
+2025-05-02 14:15:07,930 - INFO - Extracted 0 paragraphs from https://www.britannica.com/science/dna
+2025-05-02 14:15:07,931 - INFO - Starting scrape for URL: https://www.britannica.com/science/photosynthesis
+2025-05-02 14:15:08,302 - INFO - Successfully fetched URL: https://www.britannica.com/science/photosynthesis
+2025-05-02 14:15:08,338 - INFO - Extracted 0 paragraphs from https://www.britannica.com/science/photosynthesis
+2025-05-02 14:15:08,339 - INFO - Starting scrape for URL: https://www.britannica.com/history/renaissance
+2025-05-02 14:15:08,916 - ERROR - Scraping failed for https://www.britannica.com/history/renaissance: 404 Client Error: Not Found for url: https://www.britannica.com/history/renaissance
+2025-05-02 14:15:08,916 - INFO - Starting scrape for URL: https://www.britannica.com/science/black-hole
+2025-05-02 14:15:09,259 - INFO - Successfully fetched URL: https://www.britannica.com/science/black-hole
+2025-05-02 14:15:09,289 - INFO - Extracted 0 paragraphs from https://www.britannica.com/science/black-hole
+2025-05-02 14:15:09,290 - INFO - Starting scrape for URL: https://www.britannica.com/science/climate-change
+2025-05-02 14:15:09,587 - INFO - Successfully fetched URL: https://www.britannica.com/science/climate-change
+2025-05-02 14:15:09,623 - INFO - Extracted 0 paragraphs from https://www.britannica.com/science/climate-change
+2025-05-02 14:15:09,624 - INFO - Starting scrape for URL: https://www.britannica.com/history/industrial-revolution
+2025-05-02 14:15:09,929 - ERROR - Scraping failed for https://www.britannica.com/history/industrial-revolution: 404 Client Error: Not Found for url: https://www.britannica.com/history/industrial-revolution
+2025-05-02 14:15:09,931 - INFO - Starting scrape for URL: https://www.britannica.com/history/ancient-egypt
+2025-05-02 14:15:10,201 - ERROR - Scraping failed for https://www.britannica.com/history/ancient-egypt: 404 Client Error: Not Found for url: https://www.britannica.com/history/ancient-egypt
+2025-05-02 14:15:10,202 - INFO - Starting scrape for URL: https://www.britannica.com/history/world-war-ii
+2025-05-02 14:15:10,473 - ERROR - Scraping failed for https://www.britannica.com/history/world-war-ii: 404 Client Error: Not Found for url: https://www.britannica.com/history/world-war-ii

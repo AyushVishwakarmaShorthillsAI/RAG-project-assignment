@@ -62,7 +62,7 @@ rouge = load("rouge")
 def test_rag_response(rag_pipeline, test_cases):
     global pass_count, fail_count, results
     
-    embedder = SentenceTransformer('all-MiniLM-L6-v2')
+    embedder = SentenceTransformer('BAAI/bge-large-en-v1.5')
     
     for test_case in test_cases:
         question = test_case["Question"]

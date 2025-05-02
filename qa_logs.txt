@@ -1,0 +1,10 @@
+Timestamp: 2025-05-02 15:23:02
+Question: What is DNA and what is its function in living organisms?
+Answer: DNA (Deoxyribonucleic acid) is an organic chemical that contains genetic information and instructions for protein synthesis. Its primary function is to code genetic information for the transmission of inherited traits, allowing all living organisms to grow, reproduce, and function properly.
+Response Time: 0.00 seconds
+--------------------------------------------------
+Timestamp: 2025-05-02 15:25:05
+Question: Why world war 1 started
+Answer: World War I started due to the assassination of Archduke Franz Ferdinand, triggered by growing tensions between great powers and rising economic competition. The spark was ignited when Gavrilo Princip, a Bosnian Serb, assassinated the heir to the Austro-Hungarian throne on June 28, 1914.
+Response Time: 39.75 seconds
+--------------------------------------------------
