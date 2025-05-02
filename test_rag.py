@@ -9,6 +9,7 @@ from sentence_transformers import SentenceTransformer
 from evaluate import load  # For BLEU and ROUGE scores
 import numpy as np
 import importlib.util
+import json
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)

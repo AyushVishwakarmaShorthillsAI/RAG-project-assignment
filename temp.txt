@@ -1,0 +1,487 @@
+
+
+{\displaystyle B={\frac {1}{\sqrt {2}}}{\begin{pmatrix}1&i\\i&1\end{pmatrix}}}
+
+, which means that when a photon meets the beam splitter it will either stay on the same path with a probability amplitude of 
+
+
+
+1
+
+/
+
+
+
+2
+
+
+
+
+{\displaystyle 1/{\sqrt {2}}}
+
+, or be reflected to the other path with a probability amplitude of 
+
+
+
+i
+
+/
+
+
+
+2
+
+
+
+
+{\displaystyle i/{\sqrt {2}}}
+
+. The phase shifter on the upper arm is modelled as the unitary matrix 
+
+
+
+P
+=
+
+
+(
+
+
+
+1
+
+
+0
+
+
+
+
+0
+
+
+
+e
+
+i
+Δ
+Φ
+
+
+
+
+
+)
+
+
+
+
+{\displaystyle P={\begin{pmatrix}1&0\\0&e^{i\Delta \Phi }\end{pmatrix}}}
+
+, which means that if the photon is on the "upper" path it will gain a relative phase of 
+
+
+
+Δ
+Φ
+
+
+{\displaystyle \Delta \Phi }
+
+, and it will stay unchanged if it is in the lower path.
+A photon that enters the interferometer from the left will then be acted upon with a beam splitter 
+
+
+
+B
+
+
+{\displaystyle B}
+
+, a phase shifter 
+
+
+
+P
+
+
+{\displaystyle P}
+
+, and another beam splitter 
+
+
+
+B
+
+
+{\displaystyle B}
+
+, and so end up in the state
+
+
+
+
+B
+P
+B
+
+ψ
+
+l
+
+
+=
+i
+
+e
+
+i
+Δ
+Φ
+
+/
+
+2
+
+
+
+
+(
+
+
+
+−
+sin
+
+(
+Δ
+Φ
+
+/
+
+2
+)
+
+
+
+
+cos
+
+(
+Δ
+Φ
+
+/
+
+2
+)
+
+
+
+)
+
+
+,
+
+
+{\displaystyle BPB\psi _{l}=ie^{i\Delta \Phi /2}{\begin{pmatrix}-\sin(\Delta \Phi /2)\\\cos(\Delta \Phi /2)\end{pmatrix}},}
+
+
+and the probabilities that it will be detected at the right or at the top are given respectively by
+
+
+
+
+p
+(
+u
+)
+=
+
+|
+
+⟨
+
+ψ
+
+u
+
+
+,
+B
+P
+B
+
+ψ
+
+l
+
+
+⟩
+
+
+|
+
+
+2
+
+
+=
+
+cos
+
+2
+
+
+
+
+
+
+Δ
+Φ
+
+2
+
+
+,
+
+
+{\displaystyle p(u)=|\langle \psi _{u},BPB\psi _{l}\rangle |^{2}=\cos ^{2}{\frac {\Delta \Phi }{2}},}
+
+
+
+
+
+
+p
+(
+l
+)
+=
+
+|
+
+⟨
+
+ψ
+
+l
+
+
+,
+B
+P
+B
+
+ψ
+
+l
+
+
+⟩
+
+
+|
+
+
+2
+
+
+=
+
+sin
+
+2
+
+
+
+
+
+
+Δ
+Φ
+
+2
+
+
+.
+
+
+{\displaystyle p(l)=|\langle \psi _{l},BPB\psi _{l}\rangle |^{2}=\sin ^{2}{\frac {\Delta \Phi }{2}}.}
+
+
+One can therefore use the Mach–Zehnder interferometer to estimate the phase shift by estimating these probabilities.
+The Mach–Zehnder interferometer (MZI) illustrates the concepts of superposition and interference with linear algebra in dimension 2, rather than differential equations. It can be seen as a simplified version of the double-slit experiment, but it is of interest in its own right, for example in the delayed choice quantum eraser, the Elitzur–Vaidman bomb tester, and in studies of quantum entanglement.[35][36]
+Answer: The behavior of a photon in a Mach-Zehnder interferometer without a blocked path suggests that it does not take one path or another after the first beam splitter, but rather remains in a genuine quantum superposition of the two paths. This is because both beam splitters are unitary matrices, meaning they preserve the norm and phase of the photon's state.
+Response time: 91.71 seconds
+Question: What does the behavior of a photon in a Mach-Zehnder interferometer (without a blocked path) suggest about its state after the first beam splitter?
+Expected Answer: It is in a genuine quantum superposition of the two paths.
+Generated Response: The behavior of a photon in a Mach-Zehnder interferometer without a blocked path suggests that it does not take one path or another after the first beam splitter, but rather remains in a genuine quantum superposition of the two paths. This is because both beam splitters are unitary matrices, meaning they preserve the norm and phase of the photon's state.
+Batches: 100%|█| 1/1 [00:00<00
+Batches: 100%|█| 1/1 [00:00<00
+Cosine similarity: 0.5120
+BLEU score: 0.1381
+Using default tokenizer.
+ROUGE-1 score: 0.3014
+Testing question: Name two fields of science and technology that are dependent upon quantum mechanics.
+Question: Name two fields of science and technology that are dependent upon quantum mechanics.
+Batches: 100%|█| 1/1 [00:00<00
+Full Retrieved Context:
+The following titles, all by working physicists, attempt to communicate quantum theory to lay people, using a minimum of technical apparatus:
+Quantum mechanics is the fundamental physical theory that describes the behavior of matter and of light; its unusual characteristics typically occur at and below the scale of atoms.[2]: 1.1  It is the foundation of all quantum physics, which includes quantum chemistry, quantum field theory, quantum technology, and quantum information science.
+In many aspects, modern technology operates at a scale where quantum effects are significant. Important applications of quantum theory include quantum chemistry, quantum optics, quantum computing, superconducting magnets, light-emitting diodes, the optical amplifier and the laser, the transistor and semiconductors such as the microprocessor, medical and research imaging such as magnetic resonance imaging and electron microscopy.[39] Explanations for many biological and physical phenomena are rooted in the nature of the chemical bond, most notably the macro-molecule DNA.
+Quantum mechanics has had enormous success in explaining many of the features of our universe, with regard to small-scale and discrete quantities and interactions which cannot be explained by classical methods.[note 2] Quantum mechanics is often the only theory that can reveal the individual behaviors of the subatomic particles that make up all forms of matter (electrons, protons, neutrons, photons, and others). Solid-state physics and materials science are dependent upon quantum mechanics.[38]
+Relational quantum mechanics appeared in the late 1990s as a modern derivative of Copenhagen-type ideas,[72] and Quantum Bayesianism was developed some years later.[73]
+Answer: Here is the answer:
+
+Two fields of science and technology that are dependent upon quantum mechanics are:
+
+* Solid-state physics
+* Materials science
+Response time: 23.83 seconds
+Question: Name two fields of science and technology that are dependent upon quantum mechanics.
+Expected Answer: Solid-state physics and materials science.
+Generated Response: Here is the answer:
+
+Two fields of science and technology that are dependent upon quantum mechanics are:
+
+* Solid-state physics
+* Materials science
+Batches: 100%|█| 1/1 [00:00<00
+Batches: 100%|█| 1/1 [00:00<00
+Cosine similarity: 0.5970
+BLEU score: 0.0000
+Using default tokenizer.
+ROUGE-1 score: 0.4286
+Testing question: Give two examples of medical or research imaging technologies that are important applications of quantum theory.
+Question: Give two examples of medical or research imaging technologies that are important applications of quantum theory.
+Batches: 100%|█| 1/1 [00:00<00
+Full Retrieved Context:
+In many aspects, modern technology operates at a scale where quantum effects are significant. Important applications of quantum theory include quantum chemistry, quantum optics, quantum computing, superconducting magnets, light-emitting diodes, the optical amplifier and the laser, the transistor and semiconductors such as the microprocessor, medical and research imaging such as magnetic resonance imaging and electron microscopy.[39] Explanations for many biological and physical phenomena are rooted in the nature of the chemical bond, most notably the macro-molecule DNA.
+The following titles, all by working physicists, attempt to communicate quantum theory to lay people, using a minimum of technical apparatus:
+Quantum mechanics arose gradually from theories to explain observations that could not be reconciled with classical physics, such as Max Planck's solution in 1900 to the black-body radiation problem, and the correspondence between energy and frequency in Albert Einstein's 1905 paper, which explained the photoelectric effect. These early attempts to understand microscopic phenomena, now known as the "old quantum theory", led to the full development of quantum mechanics in the mid-1920s by Niels Bohr, Erwin Schrödinger, Werner Heisenberg, Max Born, Paul Dirac and others. The modern theory is formulated in various specially developed mathematical formalisms. In one of them, a mathematical entity called the wave function provides information, in the form of probability amplitudes, about what measurements of a particle's energy, momentum, and other physical properties may yield.
+Although being a young area of geometry, it has many applications in computer vision, image processing, computer-aided design, medical imaging, etc.[125]
+It is not possible to present these concepts in more than a superficial way without introducing the mathematics involved; understanding quantum mechanics requires not only manipulating complex numbers, but also linear algebra, differential equations, group theory, and other more advanced subjects.[18][19] Accordingly, this article will present a mathematical formulation of quantum mechanics and survey its application to some useful and oft-studied examples.
+Answer: Two examples of medical or research imaging technologies that are important applications of quantum theory are:
+
+* Magnetic Resonance Imaging (MRI)
+* Electron Microscopy
+Response time: 31.35 seconds
+Question: Give two examples of medical or research imaging technologies that are important applications of quantum theory.
+Expected Answer: Magnetic resonance imaging and electron microscopy.
+Generated Response: Two examples of medical or research imaging technologies that are important applications of quantum theory are:
+
+* Magnetic Resonance Imaging (MRI)
+* Electron Microscopy
+Batches: 100%|███████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 78.39it/s]
+Batches: 100%|██████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 106.31it/s]
+Cosine similarity: 0.4799
+BLEU score: 0.0000
+Using default tokenizer.
+ROUGE-1 score: 0.3571
+Testing question: What heuristic principle guides the choice of Hilbert spaces and operators in obtaining a quantitative description of a quantum system by stating that quantum predictions should reduce to classical ones at large quantum numbers?
+Question: What heuristic principle guides the choice of Hilbert spaces and operators in obtaining a quantitative description of a quantum system by stating that quantum predictions should reduce to classical ones at large quantum numbers?
+Batches: 100%|███████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 76.48it/s]
+Full Retrieved Context:
+The rules of quantum mechanics assert that the state space of a system is a Hilbert space and that observables of the system are Hermitian operators acting on vectors in that space – although they do not tell us which Hilbert space or which operators. These can be chosen appropriately in order to obtain a quantitative description of a quantum system, a necessary step in making physical predictions. An important guide for making these choices is the correspondence principle, a heuristic which states that the predictions of quantum mechanics reduce to those of classical mechanics in the regime of large quantum numbers.[40] One can also start from an established classical model of a particular system, and then try to guess the underlying quantum model that would give rise to the classical model in the correspondence limit. This approach is known as quantization.[41]: 299 [42]
+One consequence of the mathematical rules of quantum mechanics is a tradeoff in predictability between measurable quantities. The most famous form of this uncertainty principle says that no matter how a quantum particle is prepared or how carefully experiments upon it are arranged, it is impossible to have a precise prediction for a measurement of its position and also at the same time for a measurement of its momentum.[7]: 427–435
+The time evolution of a quantum state is described by the Schrödinger equation:
+
+
+
+
+i
+ℏ
+
+
+∂
+
+∂
+t
+
+
+
+ψ
+(
+t
+)
+=
+H
+ψ
+(
+t
+)
+.
+
+
+{\displaystyle i\hbar {\frac {\partial }{\partial t}}\psi (t)=H\psi (t).}
+
+
+Here 
+
+
+
+H
+
+
+{\displaystyle H}
+
+ denotes the Hamiltonian, the observable corresponding to the total energy of the system, and 
+
+
+
+ℏ
+
+
+{\displaystyle \hbar }
+
+ is the reduced Planck constant. The constant 
+
+
+
+i
+ℏ
+
+
+{\displaystyle i\hbar }
+
+ is introduced so that the Hamiltonian is reduced to the classical Hamiltonian in cases where the quantum system can be approximated by a classical system; the ability to make such an approximation in certain limits is called the correspondence principle.
+Quantum mechanics allows the calculation of properties and behaviour of physical systems. It is typically applied to microscopic systems: molecules, atoms and subatomic particles. It has been demonstrated to hold for complex molecules with thousands of atoms,[4] but its application to human beings raises philosophical problems, such as Wigner's friend, and its application to the universe as a whole remains speculative.[5] Predictions of quantum mechanics have been verified experimentally to an extremely high degree of accuracy. For example, the refinement of quantum mechanics for the interaction of light and matter, known as quantum electrodynamics (QED), has been shown to agree with experiment to within 1 part in 1012 when predicting the magnetic properties of an electron.[6]
+Quantum systems have bound states that are quantized to discrete values of energy, momentum, angular momentum, and other quantities, in contrast to classical systems where these quantities can be measured continuously. Measurements of quantum systems show characteristics of both particles and waves (wave–particle duality), and there are limits to how accurately the value of a physical quantity can be predicted prior to its measurement, given a complete set of initial conditions (the uncertainty principle).
+Answer: The correspondence principle is a heuristic principle that guides the choice of Hilbert spaces and operators. It states that quantum predictions should reduce to classical ones at large quantum numbers.
+Response time: 44.20 seconds
+Question: What heuristic principle guides the choice of Hilbert spaces and operators in obtaining a quantitative description of a quantum system by stating that quantum predictions should reduce to classical ones at large quantum numbers?
+Expected Answer: The correspondence principle.
+Generated Response: The correspondence principle is a heuristic principle that guides the choice of Hilbert spaces and operators. It states that quantum predictions should reduce to classical ones at large quantum numbers.
+Batches: 100%|███████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 78.17it/s]
+Batches: 100%|██████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 115.98it/s]
+Cosine similarity: 0.7266
+BLEU score: 0.0000
+Using default tokenizer.
+ROUGE-1 score: 0.1818
+Testing question: What field studies the relationship between classical and quantum descriptions in chaotic systems, which lack good quantum numbers?
+Question: What field studies the relationship between classical and quantum descriptions in chaotic systems, which lack good quantum numbers?
+Batches: 100%|███████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 92.29it/s]
+Full Retrieved Context:
+Complications arise with chaotic systems, which do not have good quantum numbers, and quantum chaos studies the relationship between classical and quantum descriptions in these systems.[41]: 353
+Examples of chaotic systems
+Although chaos theory was born from observing weather patterns, it has become applicable to a variety of other situations. Some areas benefiting from chaos theory today are geology, mathematics, biology, computer science, economics,[97][98][99] engineering,[100][101] finance,[102][103][104][105][106] meteorology, philosophy, anthropology,[15] physics,[107][108][109] politics,[110][111] population dynamics,[112] and robotics. A few categories are listed below with examples, but this is by no means a comprehensive list as new applications are appearing.
+Chaos theory began in the field of ergodic theory. Later studies, also on the topic of nonlinear differential equations, were carried out by George David Birkhoff,[63] Andrey Nikolaevich Kolmogorov,[64][65][66] Mary Lucy Cartwright and John Edensor Littlewood,[67] and Stephen Smale.[68] Although chaotic planetary motion had not been observed, experimentalists had encountered turbulence in fluid motion and nonperiodic oscillation in radio circuits without the benefit of a theory to explain what they were seeing.
+Quantum mechanics can describe many systems that classical physics cannot. Classical physics can describe many aspects of nature at an ordinary (macroscopic and (optical) microscopic) scale, but is not sufficient for describing them at very small submicroscopic (atomic and subatomic) scales. Classical mechanics can be derived from quantum mechanics as an approximation that is valid at ordinary scales.[3]
+Answer: Quantum chaos studies the relationship between classical and quantum descriptions in chaotic systems that lack good quantum numbers.
+Response time: 24.16 seconds
+Question: What field studies the relationship between classical and quantum descriptions in chaotic systems, which lack good quantum numbers?
+Expected Answer: Quantum chaos.
+Generated Response: Quantum chaos studies the relationship between classical and quantum descriptions in chaotic systems that lack good quantum numbers.
+Batches: 100%|███████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 90.84it/s]
+Batches: 100%|██████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 143.47it/s]
+Cosine similarity: 0.7311
+BLEU score: 0.0000
+Using default tokenizer.
+ROUGE-1 score: 0.2000
+Traceback (most recent call last):
+  File "/home/shtlp_0059/Desktop/RAG/Assignment/test_rag.py", line 167, in <module>
+    test_rag_response(pipeline, test_data)
+  File "/home/shtlp_0059/Desktop/RAG/Assignment/test_rag.py", line 143, in test_rag_response
+    json.dump(evaluation_summary, f, indent=2)
+    ^^^^
+NameError: name 'json' is not defined. Did you forget to import 'json'?
