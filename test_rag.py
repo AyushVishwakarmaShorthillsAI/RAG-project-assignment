@@ -11,15 +11,22 @@ import numpy as np
 import importlib.util
 import json
 
-# Configure logging
+# Configure logging for console output
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
+
+# Configure logging for Q&A interactions during testing
+qa_test_logger = logging.getLogger('qa_test_interactions')
+qa_test_handler = logging.FileHandler('qa_interaction.log')
+qa_test_handler.setFormatter(logging.Formatter('%(asctime)s - %(message)s'))
+qa_test_logger.addHandler(qa_test_handler)
+qa_test_logger.setLevel(logging.INFO)
 
 # Fixture to set up RAG pipeline
 @pytest.fixture(scope="session")
 def rag_pipeline():
     logger.info("Setting up RAG pipeline...")
-    embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
+    embedding_model = SentenceTransformer('BAAI/bge-large-en-v1.5')
     device = "cuda" if torch.cuda.is_available() else "cpu"
     embedding_model = embedding_model.to(device)
     
@@ -58,18 +65,31 @@ rouge_scores = []
 bleu = load("bleu")
 rouge = load("rouge")
 
+# File to store intermediate test case results
+INTERMEDIATE_RESULTS_FILE = "intermediate_test_results.json"
+
 # Test function to evaluate each test case
 def test_rag_response(rag_pipeline, test_cases):
     global pass_count, fail_count, results
     
     embedder = SentenceTransformer('all-MiniLM-L6-v2')
+    total_cases = len(test_cases)
     
-    for test_case in test_cases:
+    # Initialize the intermediate results file
+    with open(INTERMEDIATE_RESULTS_FILE, "w", encoding="utf-8") as f:
+        json.dump([], f)  # Start with an empty list
+    
+    for idx, test_case in enumerate(test_cases, 1):
         question = test_case["Question"]
         expected_answer = test_case["Answer"]
         context = test_case["Context"]
         
         logger.info(f"Testing question: {question}")
+        logger.info(f"Progress: Processed {idx}/{total_cases} test cases ({(idx/total_cases)*100:.2f}%)")
+        
+        # Log the question to qa_interaction.log
+        qa_test_logger.info(f"Question: {question}")
+        qa_test_logger.info(f"Expected Answer: {expected_answer}")
         
         # Run the question through the RAG pipeline
         start_time = time.time()
@@ -78,10 +98,11 @@ def test_rag_response(rag_pipeline, test_cases):
         response_times.append(duration)
         logger.info(f"Response time: {duration:.2f} seconds")
         
-        # Log the Q&A pair
+        # Log the Q&A pair to console and qa_interaction.log
         logger.info(f"Question: {question}")
         logger.info(f"Expected Answer: {expected_answer}")
         logger.info(f"Generated Response: {response}")
+        qa_test_logger.info(f"Generated Response: {response}")
         
         # Evaluate response
         test_result = {
@@ -101,19 +122,19 @@ def test_rag_response(rag_pipeline, test_cases):
         expected_embedding = embedder.encode(expected_answer)
         similarity = cosine_similarity([response_embedding], [expected_embedding])[0][0]
         cosine_similarities.append(similarity)
-        test_result["cosine_similarity"] = similarity
+        test_result["cosine_similarity"] = float(similarity)  # Convert to float for JSON serialization
         logger.info(f"Cosine similarity: {similarity:.4f}")
         
         # BLEU score
         bleu_score = bleu.compute(predictions=[response], references=[[expected_answer]])["bleu"]
         bleu_scores.append(bleu_score)
-        test_result["bleu_score"] = bleu_score
+        test_result["bleu_score"] = float(bleu_score)
         logger.info(f"BLEU score: {bleu_score:.4f}")
         
         # ROUGE score
         rouge_score = rouge.compute(predictions=[response], references=[expected_answer])["rouge1"]
         rouge_scores.append(rouge_score)
-        test_result["rouge1_score"] = rouge_score
+        test_result["rouge1_score"] = float(rouge_score)
         logger.info(f"ROUGE-1 score: {rouge_score:.4f}")
         
         # Determine pass/fail
@@ -125,13 +146,20 @@ def test_rag_response(rag_pipeline, test_cases):
             fail_count += 1
         
         results.append(test_result)
+        
+        # Append the test result to the intermediate file
+        with open(INTERMEDIATE_RESULTS_FILE, "r+", encoding="utf-8") as f:
+            intermediate_data = json.load(f)
+            intermediate_data.append(test_result)
+            f.seek(0)
+            json.dump(intermediate_data, f, indent=2)
     
     # After all tests, save evaluation results
     evaluation_summary = {
         "total_tests": len(test_cases),
         "pass_count": pass_count,
         "fail_count": fail_count,
-        "pass_rate": pass_count / len(test_cases) if test_cases else 0,
+        "pass_rate": float(pass_count / len(test_cases)) if test_cases else 0,
         "average_response_time": float(np.mean(response_times)) if response_times else 0,
         "average_cosine_similarity": float(np.mean(cosine_similarities)) if cosine_similarities else 0,
         "average_bleu_score": float(np.mean(bleu_scores)) if bleu_scores else 0,

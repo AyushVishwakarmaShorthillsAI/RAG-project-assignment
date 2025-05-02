@@ -111,7 +111,7 @@ async def main_async():
     try:
         # Load models
         scraper = WikipediaScraper()
-        embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
+        embedding_model = SentenceTransformer('BAAI/bge-large-en-v1.5')
         device = "cuda" if torch.cuda.is_available() else "cpu"
         logger.info(f"Using device: {device}")
         embedding_model = embedding_model.to(device)

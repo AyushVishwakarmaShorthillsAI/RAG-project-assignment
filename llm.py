@@ -4,6 +4,7 @@ import requests
 import os
 import json
 
+
 # Configure logging
 logging.basicConfig(filename='rag_project.log', level=logging.INFO, 
                     format='%(asctime)s - %(levelname)s - %(message)s')
@@ -31,14 +32,14 @@ class OllamaLLM(BaseLLM):
             if test_response.status_code != 200:
                 raise Exception(f"Ollama server not reachable: {test_response.status_code} - {test_response.text}")
             
-            detailed_prompt = f"{prompt}\nProvide a brief answer in under 3 lines."
+            PROMPT = f"{prompt}\nProvide a to the point brief answer to the asked question using the context."
            
             payload = {
                 "model": self.model_name,
-                "prompt": detailed_prompt,
+                "prompt": PROMPT,
                 # "temperature": 0.5,
                 # "top_p": 0.85,
-                "max_tokens": 150,  # Increased to allow for longer responses
+                "max_tokens": 150, 
                 "stream": True
             }
 
