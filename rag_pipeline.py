@@ -1,6 +1,5 @@
 import logging
 from functools import lru_cache
-from typing import List
 
 class RAGPipeline:
     """RAG pipeline integrating vector store and LLM for question answering."""
@@ -14,7 +13,7 @@ class RAGPipeline:
     @lru_cache(maxsize=128)
     def process(self, question: str) -> str:
         """Process a question through the RAG pipeline."""
-        logging.info(f"Question: {question}")
+        logging.info(f"Processing question: {question}")
         
         # Encode the question
         query_embedding = self.embedding_model.encode([question]).tolist()[0]
@@ -27,7 +26,6 @@ class RAGPipeline:
         
         # Combine contexts into a single string
         context_str = "\n".join(contexts)
-        logging.info(f"Full Retrieved Context:\n{context_str}")
         
         # Prepare the prompt with context and question
         prompt = (
@@ -38,5 +36,5 @@ class RAGPipeline:
         
         # Generate response using the LLM
         answer = self.llm.generate(prompt)
-        logging.info(f"Answer: {answer}")
+        logging.info(f"Generated answer: {answer}")
         return answer
