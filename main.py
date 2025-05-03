@@ -4,6 +4,7 @@ import torch
 import time
 import os
 import json
+
 from app.all_Urls import URLS
 from app.scraper import WikipediaScraper
 from app.vector_store import FAISSVectorStore
@@ -13,7 +14,7 @@ from app.data_processing import scrape_and_store
 from sentence_transformers import SentenceTransformer
 
 # === Logging Setup ===
-LOG_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "logs"))
+LOG_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "logs"))
 os.makedirs(LOG_DIR, exist_ok=True)
 
 RAG_LOG_PATH = os.path.join(LOG_DIR, "rag_project.log")
@@ -132,8 +133,8 @@ def main():
         logger.info(f"Using device: {device}")
         embedding_model = embedding_model.to(device)
 
-        index_path = "faiss_index.bin"
-        texts_path = "texts.pkl"
+        index_path = "./app/faiss_index.bin"
+        texts_path = "./app/texts.pkl"
 
         if os.path.exists(index_path) and os.path.exists(texts_path):
             logger.info("Loading existing FAISS index and texts.")

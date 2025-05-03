@@ -8,6 +8,7 @@ import numpy as np
 import importlib.util
 import json
 from sentence_transformers import SentenceTransformer
+from sklearn.metrics.pairwise import cosine_similarity
 from evaluate import load  # For BLEU and ROUGE scores
 
 # Add project root to Python path
@@ -24,7 +25,9 @@ os.makedirs(log_dir, exist_ok=True)
 print(f"Log directory resolved to: {log_dir}")
 
 # Import from app module
-from app.main import RAGPipeline, OllamaLLM, FAISSVectorStore
+from app.rag_pipeline import RAGPipeline
+from app.llm import OllamaLLM
+from app.vector_store import FAISSVectorStore
 
 # Paths to log files
 qa_test_log_path = os.path.join(log_dir, 'qa_testing.log')
@@ -52,6 +55,11 @@ def rag_pipeline():
 
     index_path = os.path.join("..", "app", "faiss_index.bin")
     texts_path = os.path.join("..", "app", "texts.pkl")
+
+    print(f"Index path: {os.path.abspath(index_path)}")
+    print(f"Texts path: {os.path.abspath(texts_path)}")
+    print(f"Index exists? {os.path.exists(index_path)}")
+    print(f"Texts exists? {os.path.exists(texts_path)}")
 
     if os.path.exists(index_path) and os.path.exists(texts_path):
         vector_store = FAISSVectorStore.load(embedding_model, index_path, texts_path)

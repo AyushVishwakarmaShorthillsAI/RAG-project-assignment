@@ -7,15 +7,24 @@ from typing import List, Optional
 import pickle
 import os
 
-# Ensure the logs directory exists
-logs_dir = 'logs'
-if not os.path.exists(logs_dir):
-    os.makedirs(logs_dir)
+# Get script directory (should be inside app/)
+script_dir = os.path.dirname(__file__)
+# Project root is one level up from app/
+project_root = os.path.dirname(script_dir)
 
-# Configure logging
-logging.basicConfig(filename=os.path.join(logs_dir, 'rag_project.log'), level=logging.INFO,
-                    format='%(asctime)s - %(levelname)s - %(message)s')
+# === Configure Logging ===
+logs_dir = os.path.join(project_root, "logs")
+os.makedirs(logs_dir, exist_ok=True)
 
+print(f'logs_dir:{logs_dir}')
+
+logging.basicConfig(
+    filename=os.path.join(logs_dir, "rag_project.log"),
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
+
+# === Vector Store Implementation ===
 class BaseVectorStore(abc.ABC):
     """Abstract base class for vector stores."""
     @abc.abstractmethod
@@ -23,8 +32,9 @@ class BaseVectorStore(abc.ABC):
         pass
 
     @abc.abstractmethod
-    def query(self, query_embedding: List[float], top_k: int, use_mmr: bool) -> List[str]:
+    def query(self, query_embedding: List[float], top_k: int) -> List[str]:
         pass
+
 
 class FAISSVectorStore(BaseVectorStore):
     """Concrete vector store using FAISS for faster retrieval."""
@@ -46,60 +56,45 @@ class FAISSVectorStore(BaseVectorStore):
         self.embeddings.extend(embeddings_np.tolist())
         logging.info(f"Stored {len(texts)} documents in FAISS")
 
-    def query(self, query_embedding: List[float], top_k: int = 5, use_mmr: bool = False) -> List[str]:
+    def query(self, query_embedding: List[float], top_k: int = 5) -> List[str]:
+        if self.index.ntotal == 0:
+            logging.warning("FAISS index is empty. No vectors to search.")
+            return []
+
         query_np = np.array([query_embedding], dtype=np.float32)
         faiss.normalize_L2(query_np)
-
-        _, indices = self.index.search(query_np, top_k * 2 if use_mmr else top_k)
-        selected_texts = [self.texts[i] for i in indices[0]]
-
-        if use_mmr:
-            selected_embeddings = [self.embeddings[i] for i in indices[0]]
-            return self._mmr(query_embedding, selected_embeddings, selected_texts, top_k)
-
+        _, indices = self.index.search(query_np, top_k)
+        # Ensure indices are valid and within text range
+        valid_indices = [i for i in indices[0] if 0 <= i < len(self.texts)]
+        if not valid_indices:
+            logging.warning("No valid indices found in FAISS search result.")
+            return []
+        selected_texts = [self.texts[i] for i in valid_indices]
         return selected_texts
 
-    def _mmr(self, query_embedding, doc_embeddings, texts, k=5, lambda_param=0.5) -> List[str]:
-        selected = []
-        selected_indices = []
-        # Use pre-stored embeddings for MMR
-        similarity_to_query = np.dot(doc_embeddings, np.array(query_embedding).reshape(-1, 1)).flatten()
-
-        while len(selected) < k and len(selected) < len(texts):
-            scores = []
-            for i in range(len(texts)):
-                if i in selected_indices:
-                    continue
-                relevance = similarity_to_query[i]
-                diversity = max(
-                    np.dot(doc_embeddings[i], doc_embeddings[j])
-                    for j in selected_indices
-                ) if selected_indices else 0
-                mmr_score = lambda_param * relevance - (1 - lambda_param) * diversity
-                scores.append((mmr_score, i))
-
-            scores.sort(reverse=True)
-            _, best_idx = scores[0]
-            selected.append(texts[best_idx])
-            selected_indices.append(best_idx)
-
-        return selected
-
     def save(self, index_path: str = "faiss_index.bin", texts_path: str = "texts.pkl", emb_path: str = "embeddings.pkl"):
-        faiss.write_index(self.index, index_path)
-        with open(texts_path, 'wb') as f:
+        full_index_path = index_path
+        full_texts_path = texts_path
+        full_emb_path = emb_path
+
+        faiss.write_index(self.index, full_index_path)
+        with open(full_texts_path, 'wb') as f:
             pickle.dump(self.texts, f)
-        with open(emb_path, 'wb') as f:
+        with open(full_emb_path, 'wb') as f:
             pickle.dump(self.embeddings, f)
-        logging.info(f"Saved FAISS index to {index_path}, texts to {texts_path}, and embeddings to {emb_path}")
+        logging.info(f"Saved FAISS index to {full_index_path}, texts to {full_texts_path}, and embeddings to {full_emb_path}")
 
     @classmethod
     def load(cls, embedding_model: SentenceTransformer,
              index_path: str = "faiss_index.bin",
              texts_path: str = "texts.pkl",
              emb_path: str = "embeddings.pkl"):
+
+        print(f"[load] Checking index at: {index_path}")
+        print(f"[load] Checking texts at: {texts_path}")
+
         if not (os.path.exists(index_path) and os.path.exists(texts_path)):
-            raise FileNotFoundError("FAISS index or texts file not found")
+            raise FileNotFoundError(f"FAISS index or texts file not found. Checked:\n{index_path}\n{texts_path}")
 
         index = faiss.read_index(index_path)
         with open(texts_path, 'rb') as f:
@@ -112,10 +107,10 @@ class FAISSVectorStore(BaseVectorStore):
         if os.path.exists(emb_path):
             with open(emb_path, 'rb') as f:
                 instance.embeddings = pickle.load(f)
-            logging.info("Loaded embeddings for MMR retrieval.")
+            logging.info("Loaded embeddings.")
         else:
             instance.embeddings = []
-            logging.warning("Embeddings file not found. MMR will not be available unless re-stored.")
+            logging.warning("Embeddings file not found.")
 
         logging.info(f"Loaded FAISS index from {index_path} and texts from {texts_path}")
         return instance

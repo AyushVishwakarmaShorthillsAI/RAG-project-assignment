@@ -5,7 +5,7 @@ from app.vector_store import BaseVectorStore
 
 # Configure logging
 logging.basicConfig(
-    filename='rag_project.log',
+    filename='../logs/rag_project.log',
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
@@ -13,6 +13,8 @@ logging.basicConfig(
 def scrape_and_store(scraper: WikipediaScraper, vector_store: BaseVectorStore, urls: list, 
                      index_path: str = "faiss_index.bin", texts_path: str = "texts.pkl"):
     """Scrape data and store in vector store, or load existing data."""
+    index_path = os.path.join("app", "faiss_index.bin")
+    texts_path = os.path.join("app", "texts.pkl")
     if os.path.exists(index_path) and os.path.exists(texts_path):
         logging.info("Existing FAISS index and texts found. Skipping scraping.")
         return
