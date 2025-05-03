@@ -1,0 +1,10 @@
+{
+  "total_tests": 148,
+  "pass_count": 47,
+  "fail_count": 101,
+  "pass_rate": 0.31756756756756754,
+  "average_response_time": 43.29884768660004,
+  "average_cosine_similarity": 0.4817490577697754,
+  "average_bleu_score": 0.020302399648158585,
+  "average_rouge1_score": 0.1996745157349497
+}
