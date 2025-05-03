@@ -4,12 +4,12 @@ import torch
 import time
 import os
 import json
-from all_Urls import URLS
-from scraper import WikipediaScraper
-from vector_store import FAISSVectorStore
-from llm import OllamaLLM
-from rag_pipeline import RAGPipeline
-from data_processing import scrape_and_store
+from app.all_Urls import URLS
+from app.scraper import WikipediaScraper
+from app.vector_store import FAISSVectorStore
+from app.llm import OllamaLLM
+from app.rag_pipeline import RAGPipeline
+from app.data_processing import scrape_and_store
 from sentence_transformers import SentenceTransformer
 
 # === Logging Setup ===

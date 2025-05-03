@@ -7,16 +7,16 @@ import torch
 import faiss
 from unittest.mock import MagicMock, mock_open, patch
 
-# Fix the path to import project modules correctly
-sys.path.insert(0, os.path.abspath(os.getcwd()))
+# Add the root directory to sys.path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-# Import project modules
-from scraper import WikipediaScraper, save_scraped_data
-from rag_pipeline import RAGPipeline
-from llm import OllamaLLM
-from main import log_interaction, display_history, run_ui, main
+# Updated imports based on new structure
+from app.scraper import WikipediaScraper, save_scraped_data
+from app.rag_pipeline import RAGPipeline
+from app.llm import OllamaLLM
+from app.main import log_interaction, display_history, run_ui, main
 from app.data_processing import scrape_and_store
-from vector_store import FAISSVectorStore
+from app.vector_store import FAISSVectorStore
 from sentence_transformers import SentenceTransformer
 
 # --- FIXTURES ---

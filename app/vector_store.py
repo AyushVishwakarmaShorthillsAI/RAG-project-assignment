@@ -7,8 +7,13 @@ from typing import List, Optional
 import pickle
 import os
 
+# Ensure the logs directory exists
+logs_dir = 'logs'
+if not os.path.exists(logs_dir):
+    os.makedirs(logs_dir)
+
 # Configure logging
-logging.basicConfig(filename='rag_project.log', level=logging.INFO,
+logging.basicConfig(filename=os.path.join(logs_dir, 'rag_project.log'), level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 class BaseVectorStore(abc.ABC):
@@ -26,16 +31,16 @@ class FAISSVectorStore(BaseVectorStore):
     def __init__(self, embedding_model: SentenceTransformer, dimension: int = 384):
         logging.info("Initializing FAISSVectorStore")
         self.embedding_model = embedding_model
-        self.index = faiss.IndexFlatL2(dimension) 
+        self.index = faiss.IndexFlatL2(dimension)
         self.texts = []
-        self.embeddings = []  
+        self.embeddings = []
 
     def store(self, texts: List[str], embeddings: List[List[float]]):
         if not texts:
             logging.warning("No texts provided for storing.")
             return
         embeddings_np = np.array(embeddings, dtype=np.float32)
-        faiss.normalize_L2(embeddings_np)  
+        faiss.normalize_L2(embeddings_np)
         self.index.add(embeddings_np)
         self.texts.extend(texts)
         self.embeddings.extend(embeddings_np.tolist())
@@ -87,12 +92,12 @@ class FAISSVectorStore(BaseVectorStore):
         with open(emb_path, 'wb') as f:
             pickle.dump(self.embeddings, f)
         logging.info(f"Saved FAISS index to {index_path}, texts to {texts_path}, and embeddings to {emb_path}")
-    
+
     @classmethod
     def load(cls, embedding_model: SentenceTransformer,
-            index_path: str = "faiss_index.bin",
-            texts_path: str = "texts.pkl",
-            emb_path: str = "embeddings.pkl"):
+             index_path: str = "faiss_index.bin",
+             texts_path: str = "texts.pkl",
+             emb_path: str = "embeddings.pkl"):
         if not (os.path.exists(index_path) and os.path.exists(texts_path)):
             raise FileNotFoundError("FAISS index or texts file not found")
 

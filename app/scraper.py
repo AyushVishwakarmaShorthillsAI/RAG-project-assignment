@@ -2,7 +2,8 @@ import requests
 from bs4 import BeautifulSoup
 import logging
 import tenacity
-from all_Urls import URLS
+from app.all_Urls import URLS
+
 
 # Configure logging (use the same logger as other files)
 logging.basicConfig(

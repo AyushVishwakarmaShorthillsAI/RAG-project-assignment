@@ -1,7 +1,7 @@
 import logging
 import os
-from scraper import WikipediaScraper
-from vector_store import BaseVectorStore
+from app.scraper import WikipediaScraper
+from app.vector_store import BaseVectorStore
 
 # Configure logging
 logging.basicConfig(
