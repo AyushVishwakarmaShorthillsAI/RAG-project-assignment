@@ -149,13 +149,6 @@ The system follows a standard RAG pipeline:
 
 ### ✨ Features:
 
-- Clean, intuitive interface
-- Real-time question answering
-- Interaction history display
-- Response time tracking
-
-### 🎯 UI Components:
-
 - Question input form
 - Answer display
 - Response time metrics
@@ -191,22 +184,11 @@ The system follows a standard RAG pipeline:
      - Large batch processing
      - Special character handling
      - Empty input scenarios
-   - Integration testing between components
    - Mock testing for external dependencies
 
 3. **Logging and Monitoring**
    - Detailed interaction logs
-   - Performance tracking
    - Error monitoring
-
-## 🛠️ Improvements and Enhancements
-
-- Efficient text processing pipeline
-- Using more Quick Vector Storage and Retrieval
-- High performance Text Embedding LLM
-- Enchanced User-friendly interface
-- Performance optimization by chaning
-- Asynchronous scraping and test case evaluation
 
 ## 🚀 How to Run
 
@@ -227,8 +209,9 @@ python main.py
 - Enhanced evaluation metrics
 - Support for more document types
 - Improved chunking strategies
-- Advanced reranking techniques
-- Multilingual support
+- Using more Quick Vector Storage and Retrieval
+- High performance Text Embedding LLM
+- Asynchronous scraping and test case evaluation
 
 ## 📄 Documentation
 
