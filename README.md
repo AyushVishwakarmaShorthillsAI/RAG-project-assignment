@@ -67,43 +67,43 @@ The system follows a standard RAG pipeline:
 
 ```
 ┌───────────────┐
-│ 1️⃣ Data      │  📚 Scrape multi-source content (Wikipedia, NASA, NatGeo, History, Britannica)
+│ 1️⃣ Data       │  📚 Scrape multi-source content (Wikipedia, NASA, NatGeo, History, Britannica)
 │ Collection    │
 └──────┬────────┘
        │
        ▼
 ┌───────────────┐
-│ 2️⃣ Processing│  🧹 Clean & chunk data, extract metadata, validate
+│ 2️⃣ Processing │  🧹 Clean & chunk data, extract metadata, validate
 │    Phase      │
 └──────┬────────┘
        │
        ▼
 ┌──────────────┐
-│ 3️⃣ Embedding│  🤖 Embed text with SOTA model, store in FAISS
+│ 3️⃣ Embedding │  🤖 Embed text with SOTA model, store in FAISS
 │    Phase     │
 └──────┬───────┘
        │
        ▼
 ┌────────────────────┐
-│ 4️⃣ Query          │  ❓ User input ➡️ Embed query ➡️ Retrieve context from FAISS
+│ 4️⃣ Query           │  ❓ User input ➡️ Embed query ➡️ Retrieve context from FAISS
 │   Processing       │
 └──────┬─────────────┘
        │
        ▼
 ┌──────────────────────┐
-│ 5️⃣ Answer           │  🧠 LLM answer generation, context prep, formatting
+│ 5️⃣ Answer            │  🧠 LLM answer generation, context prep, formatting
 │   Generation         │
 └──────┬───────────────┘
        │
        ▼
 ┌────────────────────────────┐
-│ 6️⃣ QA Test Case           │  ✍️ Manual 1000+ Q&A test cases, categorize, validate, document
+│ 6️⃣ QA Test Case            │  ✍️ Manual 1000+ Q&A test cases, categorize, validate, document
 │    Generation              │
 └──────┬─────────────────────┘
        │
        ▼
 ┌───────────────┐
-│ 7️⃣ Evaluation│  📊 Evaluate & log metrics
+│ 7️⃣ Evaluation │  📊 Evaluate & log metrics
 │    Phase      │
 └───────────────┘
 ```
