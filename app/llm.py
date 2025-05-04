@@ -26,7 +26,7 @@ class OllamaLLM(BaseLLM):
             if test_response.status_code != 200:
                 raise Exception(f"Ollama server not reachable: {test_response.status_code} - {test_response.text}")
             
-            prompt_with_instruction = f"{prompt}\nProvide a to the point brief answer to the asked question using the context."
+            prompt_with_instruction = f"{prompt}\nAnswer the question briefly and to the point using the context. Expand only if necessary."
             payload = {
                 "model": self.model_name,
                 "prompt": prompt_with_instruction,

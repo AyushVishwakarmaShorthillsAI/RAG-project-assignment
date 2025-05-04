@@ -8,3 +8,7 @@ sentence-transformers
 streamlit
 tenacity
 torch
+scikit-learn
+transformers
+evaluate
+bert-score

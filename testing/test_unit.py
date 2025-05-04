@@ -7,10 +7,8 @@ import torch
 import faiss
 from unittest.mock import MagicMock, mock_open, patch
 
-# Add root directory to PYTHONPATH so that 'app' becomes importable
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-# Corrected imports from app/
 from app.scraper import WikipediaScraper, save_scraped_data
 from app.rag_pipeline import RAGPipeline
 from app.llm import OllamaLLM
@@ -34,7 +32,7 @@ def setup_components():
 @pytest.fixture
 def faiss_store():
     embedding_model = MagicMock()
-    embedding_model.encode.return_value = np.random.rand(2, 384)  # Mock embeddings
+    embedding_model.encode.return_value = np.random.rand(2, 384)
     return FAISSVectorStore(embedding_model, dimension=384)
 
 
@@ -158,7 +156,7 @@ def test_display_history_parsing(mocker):
     mock_st = mocker.patch("main.st")
 
     display_history()
-    assert mock_st.sidebar.expander.call_count == 2  # Should skip invalid entry
+    assert mock_st.sidebar.expander.call_count == 2
 
 
 # --- DATA PROCESSING TESTS ---

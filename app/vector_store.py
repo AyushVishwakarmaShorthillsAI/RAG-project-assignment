@@ -7,16 +7,12 @@ from typing import List, Optional
 import pickle
 import os
 
-# Get script directory (should be inside app/)
 script_dir = os.path.dirname(__file__)
-# Project root is one level up from app/
 project_root = os.path.dirname(script_dir)
 
 # === Configure Logging ===
 logs_dir = os.path.join(project_root, "logs")
 os.makedirs(logs_dir, exist_ok=True)
-
-print(f'logs_dir:{logs_dir}')
 
 logging.basicConfig(
     filename=os.path.join(logs_dir, "rag_project.log"),
@@ -63,12 +59,14 @@ class FAISSVectorStore(BaseVectorStore):
 
         query_np = np.array([query_embedding], dtype=np.float32)
         faiss.normalize_L2(query_np)
+
         _, indices = self.index.search(query_np, top_k)
-        # Ensure indices are valid and within text range
         valid_indices = [i for i in indices[0] if 0 <= i < len(self.texts)]
+
         if not valid_indices:
             logging.warning("No valid indices found in FAISS search result.")
             return []
+
         selected_texts = [self.texts[i] for i in valid_indices]
         return selected_texts
 
@@ -82,6 +80,7 @@ class FAISSVectorStore(BaseVectorStore):
             pickle.dump(self.texts, f)
         with open(full_emb_path, 'wb') as f:
             pickle.dump(self.embeddings, f)
+
         logging.info(f"Saved FAISS index to {full_index_path}, texts to {full_texts_path}, and embeddings to {full_emb_path}")
 
     @classmethod
@@ -89,9 +88,6 @@ class FAISSVectorStore(BaseVectorStore):
              index_path: str = "faiss_index.bin",
              texts_path: str = "texts.pkl",
              emb_path: str = "embeddings.pkl"):
-
-        print(f"[load] Checking index at: {index_path}")
-        print(f"[load] Checking texts at: {texts_path}")
 
         if not (os.path.exists(index_path) and os.path.exists(texts_path)):
             raise FileNotFoundError(f"FAISS index or texts file not found. Checked:\n{index_path}\n{texts_path}")
