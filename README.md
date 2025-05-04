@@ -39,7 +39,7 @@ Assignment/
 │   └── vector_store.py     # Vector store implementation
 │
 ├── testing/                # Testing related files
-│   ├── test_rag.py        # RAG pipeline testing
+│   ├── test_rag.py        # QA testing
 │   ├── test_unit.py       # Unit testing
 │  
 ├── test_cases/           # Test cases
@@ -137,6 +137,14 @@ The system follows a standard RAG pipeline:
 - Persistent storage of embeddings and texts
 - Efficient retrieval for real-time Q&A
 
+## 🔎 Retrieval & RAG Pipeline
+
+- Embedding of user query
+- Similarity search in FAISS vector store
+- FAISS vector store retrieves top-k relevant chunks
+- Retrieved context and question sent to LLM for answer generation
+- LLM generates the final response
+
 ## 🖥️ Streamlit UI Chatbot
 
 ### ✨ Features:
@@ -222,13 +230,7 @@ python main.py
 - Advanced reranking techniques
 - Multilingual support
 
-## 📜 License
+## 📄 Documentation
 
-MIT License
-
-## 🙏 Acknowledgements
-
-- HuggingFace for Transformers
-- Meta for FAISS
-- Streamlit for UI framework
-- Wikipedia for content 
+For a detailed explanation of each project file and its role in the pipeline, see:
+[project-file-explain-doc](https://shorthillstech.sharepoint.com/:fl:/g/contentstorage/CSP_50cb9b3f-f5a4-4ab6-92e4-91bc8701321a/EUyCBVreyJhBmGBgl9twR1EBJXGJkKs2fvKp3GPIZwRJdg?e=FPQKgr&nav=cz0lMkZjb250ZW50c3RvcmFnZSUyRkNTUF81MGNiOWIzZi1mNWE0LTRhYjYtOTJlNC05MWJjODcwMTMyMWEmZD1iJTIxUDV2TFVLVDF0a3FTNUpHOGh3RXlHcVpQcmRIbnJhVkZwNEx0S2JCM2dITWk0V3JHVnBmN1FZUTJRUkdRSzJSUyZmPTAxV1NDUU9GS01RSUNWVlhXSVRCQVpRWURBUzdOWEFSMlImYz0lMkYmYT1Mb29wQXBwJnA9JTQwZmx1aWR4JTJGbG9vcC1wYWdlLWNvbnRhaW5lciZ4PSU3QiUyMnclMjIlM0ElMjJUMFJUVUh4emFHOXlkR2hwYkd4emRHVmphQzV6YUdGeVpYQnZhVzUwTG1OdmJYeGlJVkExZGt4VlMxUXhkR3R4VXpWS1J6aG9kMFY1UjNGYVVISmtTRzV5WVZaR2NEUk1kRXRpUWpOblNFMXBORmR5UjFad1pqZFJXVkV5VVZKSFVVc3lVbE44TURGWFUwTlJUMFpQTmxsTVNVRkhUak5LVVVwRFdVZExXRWRWVDBsRVRFY3pSQSUzRCUzRCUyMiUyQyUyMmklMjIlM0ElMjIyYzEyZjIwNS02YjAyLTQ4MWItODZjNC1lYmQ0Y2ZmMDJhYTMlMjIlN0Q%3D)
