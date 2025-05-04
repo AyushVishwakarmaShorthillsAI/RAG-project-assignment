@@ -65,52 +65,48 @@ The system follows a standard RAG pipeline:
 
 ## 🔄 Workflow
 
-### 1️⃣ Data Collection Phase
-- Initialize scrapers for multiple sources
-- Define target URLs from diverse domains:
-  - Science and Technology (NASA, Wikipedia)
-  - History and Culture (History.com, Britannica)
-  - Environment and Nature (National Geographic)
-  - Mathematics and Physics (Wikipedia, Britannica)
-- Extract and clean content from each source
-- Store raw data in structured format
-
-### 2️⃣ Processing Phase
-- Text cleaning and normalization
-- Content chunking with overlap
-- Metadata extraction
-- Quality checks and validation
-
-### 3️⃣ Embedding Phase
-- Load embedding model
-- Generate vector representations
-- Optimize for semantic search
-- Store embeddings in FAISS
-
-### 4️⃣ Query Processing
-- User question input
-- Query embedding generation
-- Similarity search in FAISS
-- Context retrieval and ranking
-
-### 5️⃣ Answer Generation
-- Context preparation
-- LLM prompt engineering
-- Answer generation
-- Response formatting
-
-### 6️⃣ QA Test Case Generation
-- Manual creation of 1000 diverse Q&A pairs using gemini.
-- Categorization of questions by complexity
-- Validation of answers against source content
-- Documentation of test cases in structured format
-- Creation of ground truth dataset for evaluation
-
-### 7️⃣ Evaluation Phase
-- Automated testing
-- Performance metrics calculation
-- Quality assessment
-- Logging and reporting
+```
+┌───────────────┐
+│ 1️⃣ Data      │  📚 Scrape multi-source content (Wikipedia, NASA, NatGeo, History, Britannica)
+│ Collection    │
+└──────┬────────┘
+       │
+       ▼
+┌───────────────┐
+│ 2️⃣ Processing│  🧹 Clean & chunk data, extract metadata, validate
+│    Phase      │
+└──────┬────────┘
+       │
+       ▼
+┌──────────────┐
+│ 3️⃣ Embedding│  🤖 Embed text with SOTA model, store in FAISS
+│    Phase     │
+└──────┬───────┘
+       │
+       ▼
+┌────────────────────┐
+│ 4️⃣ Query          │  ❓ User input ➡️ Embed query ➡️ Retrieve context from FAISS
+│   Processing       │
+└──────┬─────────────┘
+       │
+       ▼
+┌──────────────────────┐
+│ 5️⃣ Answer           │  🧠 LLM answer generation, context prep, formatting
+│   Generation         │
+└──────┬───────────────┘
+       │
+       ▼
+┌────────────────────────────┐
+│ 6️⃣ QA Test Case           │  ✍️ Manual 1000+ Q&A test cases, categorize, validate, document
+│    Generation              │
+└──────┬─────────────────────┘
+       │
+       ▼
+┌───────────────┐
+│ 7️⃣ Evaluation│  📊 Evaluate & log metrics
+│    Phase      │
+└───────────────┘
+```
 
 ## 🌐 Scraping Pipeline
 
