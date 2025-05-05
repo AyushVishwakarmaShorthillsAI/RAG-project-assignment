@@ -46,7 +46,7 @@ qa_test_logger.setLevel(logging.INFO)
 @pytest.fixture(scope="session")
 def rag_pipeline():
     logger.info("Setting up RAG pipeline...")
-    embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
+    embedding_model = SentenceTransformer('BAAI/bge-large-en-v1.5')
     device = "cuda" if torch.cuda.is_available() else "cpu"
     embedding_model = embedding_model.to(device)
 
@@ -99,7 +99,7 @@ EXTRACTED_SCORES_FILE = os.path.join("..", "evaluations", "extracted_score.json"
 def test_rag_response(rag_pipeline, test_cases):
     global pass_count, fail_count, results, extracted_scores
 
-    embedder = SentenceTransformer('all-MiniLM-L6-v2')
+    embedder = SentenceTransformer('BAAI/bge-large-en-v1.5')
     total_cases = len(test_cases)
 
     # Initialize intermediate results file
@@ -216,7 +216,7 @@ if __name__ == "__main__":
     spec.loader.exec_module(module)
     test_data = module.test_cases
 
-    embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
+    embedding_model = SentenceTransformer('BAAI/bge-large-en-v1.5')
     device = "cuda" if torch.cuda.is_available() else "cpu"
     embedding_model = embedding_model.to(device)
 
