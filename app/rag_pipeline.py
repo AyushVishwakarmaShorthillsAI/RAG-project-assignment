@@ -10,7 +10,7 @@ class RAGPipeline:
         self.embedding_model = embedding_model
         logging.info("RAGPipeline initialized.")
     
-    @lru_cache(maxsize=128)
+    @lru_cache(maxsize=128) # repeated questions are cached(128 unique questions)
     def process(self, question: str) -> str:
         """Process a question through the RAG pipeline."""
         logging.info(f"Processing question: {question}")
@@ -31,7 +31,7 @@ class RAGPipeline:
         prompt = (
             f"Context:\n{context_str}\n\n"
             f"Question: {question}\n"
-            f"Based on the provided context, answer the question in brief."
+            f"Based on the provided context, answer the question in brief. Don't expand, be to the point."
         )
         
         # Generate response using the LLM

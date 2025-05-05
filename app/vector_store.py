@@ -75,13 +75,22 @@ class FAISSVectorStore(BaseVectorStore):
         full_texts_path = texts_path
         full_emb_path = emb_path
 
-        faiss.write_index(self.index, full_index_path)
+        # Only write the index if it's not empty
+        if self.index.ntotal > 0:
+            faiss.write_index(self.index, full_index_path)
+            logging.info(f"Saved FAISS index ({self.index.ntotal} vectors) to {full_index_path}")
+        else:
+            logging.warning(f"FAISS index is empty. Skipping index file write to {full_index_path}.")
+            # Optionally, create an empty file to signify completion if needed elsewhere
+            # open(full_index_path, 'a').close()
+
+        # Always save texts and embeddings (even if empty)
         with open(full_texts_path, 'wb') as f:
             pickle.dump(self.texts, f)
         with open(full_emb_path, 'wb') as f:
             pickle.dump(self.embeddings, f)
 
-        logging.info(f"Saved FAISS index to {full_index_path}, texts to {full_texts_path}, and embeddings to {full_emb_path}")
+        logging.info(f"Saved texts ({len(self.texts)}) to {full_texts_path} and embeddings ({len(self.embeddings)}) to {full_emb_path}")
 
     @classmethod
     def load(cls, embedding_model: SentenceTransformer,

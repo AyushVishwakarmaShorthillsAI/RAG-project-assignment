@@ -3,11 +3,18 @@ from bs4 import BeautifulSoup
 import logging
 import tenacity
 from app.all_Urls import URLS
+import os
+# Ensure the logs directory exists
+log_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'logs'))
+os.makedirs(log_dir, exist_ok=True)
 
+log_file = os.path.join(log_dir, 'rag_project.log')
+
+# print(log_file)
 
 # Configure logging (use the same logger as other files)
 logging.basicConfig(
-    filename='rag_project.log',
+    filename=log_file,
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )

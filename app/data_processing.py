@@ -1,8 +1,10 @@
 import logging
 import os
+import torch
 from app.scraper import WikipediaScraper
 from app.vector_store import BaseVectorStore
 
+# needed to change the log file path to the logs directory
 # Configure logging
 logging.basicConfig(
     filename='../logs/rag_project.log',
@@ -37,6 +39,6 @@ def scrape_and_store(scraper: WikipediaScraper, vector_store: BaseVectorStore, u
             ).tolist()
         )
     
-    vector_store.store(all_texts, embeddings)
-    vector_store.save(index_path, texts_path)
+    vector_store.store(all_texts, embeddings)        # saves in memory
+    vector_store.save(index_path, texts_path)        # saves to disk
     logging.info("Data scraping and storing completed.")

@@ -159,18 +159,32 @@ The system follows a standard RAG pipeline:
 ### 📊 Evaluation Components:
 
 1. **QA Evaluation**
-   - Automated testing framework
-   - Multiple(1000+) QA test cases
-   - Performance metrics:
-     - **BERT F1 Score (0.911)**: Measures semantic similarity between generated and reference answers
-     - **Cosine Similarity (0.747)**: Evaluates vector space similarity between answers
-     - **BLEU Score (0.222)**: Measures n-gram overlap between generated and reference answers
-     - **ROUGE Score (0.488)**: Evaluates recall of n-grams between answers
-     - **METEOR Score (0.566)**: Considers word alignment and synonym matching
-     - **Entailment Analysis**:
-       - Contradiction Rate: 46.08% (411 cases)
-       - Entailment Rate: 43.83% (391 cases)
-       - Neutral Rate: 10.09% (90 cases)
+
+- Automated testing framework
+- Multiple (1000+) QA test cases
+- Performance metrics:
+  - **BERT F1 Score**: Measures semantic similarity between generated and reference answers
+  - **Cosine Similarity**: Evaluates vector space similarity between answers
+  - **BLEU Score**: Measures n-gram overlap between generated and reference answers
+  - **ROUGE Score**: Evaluates recall of n-grams between answers
+  - **METEOR Score**: Considers word alignment and synonym matching
+  - **Entailment Analysis**:
+    - Contradiction Rate
+    - Entailment Rate
+    - Neutral Rate
+
+### Performance Scores
+
+| Metric              | Score/Value       | Meaning                                   |
+|---------------------|-------------------|-------------------------------------------|
+| BERT F1 Score       | 0.911             | High semantic similarity                  |
+| Cosine Similarity   | 0.747             | Good vector space similarity              |
+| BLEU Score          | 0.222             | Low n-gram overlap                        |
+| ROUGE Score         | 0.488             | Moderate n-gram recall                    |
+| METEOR Score        | 0.566             | Moderate word alignment                   |
+| Contradiction Rate  | 46.08% (411 cases) | High contradiction rate                  |
+| Entailment Rate     | 43.83% (391 cases) | High entailment rate                     |
+| Neutral Rate        | 10.09% (90 cases)  | Low neutral rate                         |
 
 2. **Unit Testing**
    - Comprehensive test suite for core components:
@@ -191,17 +205,45 @@ The system follows a standard RAG pipeline:
 
 ## 🚀 How to Run
 
-1. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
+**Prerequisites:**
 
-2. Run the main application:
-```bash
-python main.py
-```
+*   **Python 3.8+**: Ensure you have Python installed.
+*   **Git**: For cloning the repository.
+*   **Ollama**: This project uses Ollama to run the language model locally.
+    *   Follow the official installation instructions for your OS: [https://ollama.com/download](https://ollama.com/download)
+    *   After installing Ollama, pull the required model (e.g., Llama 3 8B Instruct):
+        ```bash
+        ollama pull llama3:8b-instruct
+        ```
+        *(Ensure the model name matches the one configured in `app/llm.py` if different)*
 
-3. Access the Streamlit UI in your browser
+**Setup & Execution:**
+
+1.  **Clone the repository:**
+    ```bash
+    git clone <your-repository-url>  # Replace <your-repository-url> with the actual URL
+    cd Assignment
+    ```
+
+2.  **Create and activate a virtual environment (Recommended):**
+    ```bash
+    python -m venv rag_env
+    source rag_env/bin/activate  # On Windows use `rag_env\Scripts\activate`
+    ```
+
+3.  **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4.  **Ensure Ollama is running:** Make sure the Ollama application or service is running in the background before starting the application.
+
+5.  **Run the main application:**
+    ```bash
+    python main.py
+    ```
+
+6.  **Access the Streamlit UI:** Open your web browser and navigate to the local URL provided by Streamlit (usually `http://localhost:8501`).
 
 ## 🔮 Future Work
 
