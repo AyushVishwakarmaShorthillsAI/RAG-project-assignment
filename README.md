@@ -19,8 +19,7 @@ This project implements an end-to-end Retrieval-Augmented Generation (RAG) syste
 - 🎨 **User-friendly Interface**: Streamlit-based UI with real-time interaction
 - 📊 **Robust Evaluation**: Comprehensive testing and evaluation framework
 - 📝 **Detailed Logging**: Complete interaction history and performance tracking
-- ⚡ **Performance Optimization**: Fast retrieval and response times
-
+  
 ## 📁 Folder Structure
 
 ```
