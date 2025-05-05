@@ -4,6 +4,7 @@ import torch
 import time
 import os
 import json
+from collections import OrderedDict
 
 from app.all_Urls import URLS
 from app.scraper import WikipediaScraper
@@ -12,6 +13,9 @@ from app.llm import OllamaLLM
 from app.rag_pipeline import RAGPipeline
 from app.data_processing import scrape_and_store
 from sentence_transformers import SentenceTransformer
+
+# === Configuration ===
+MAX_CACHE_SIZE = 1000  # Configurable cache size for question-answer pairs
 
 # === Logging Setup ===
 LOG_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "logs"))
@@ -91,37 +95,80 @@ def display_history():
 def run_ui(rag_pipeline: RAGPipeline):
     st.title("RAG-LLM Q&A System")
 
+    # Initialize session state
     if 'last_question' not in st.session_state:
         st.session_state.last_question = None
     if 'answer' not in st.session_state:
         st.session_state.answer = None
     if 'response_time' not in st.session_state:
         st.session_state.response_time = None
+    if 'question_cache' not in st.session_state:
+        st.session_state.question_cache = OrderedDict()  # Cache for question-answer pairs
+        # Load cache from QA_LOG_PATH
+        if os.path.exists(QA_LOG_PATH):
+            try:
+                with open(QA_LOG_PATH, "r", encoding="utf-8") as f:
+                    lines = f.readlines()
+                for line in reversed(lines):  # Prioritize recent entries
+                    try:
+                        qa = json.loads(line.strip())
+                        question = qa.get("question", "").strip()
+                        answer = qa.get("answer", "").strip()
+                        if question and answer:
+                            normalized_question = question.lower().strip()
+                            st.session_state.question_cache[normalized_question] = answer
+                            # Enforce cache size limit
+                            if len(st.session_state.question_cache) > MAX_CACHE_SIZE:
+                                st.session_state.question_cache.popitem(last=False)
+                    except json.JSONDecodeError as e:
+                        logger.warning(f"Skipping malformed cache entry: {line.strip()} - Error: {e}")
+            except Exception as e:
+                logger.error(f"Error loading cache from qa_interactions.log: {e}")
 
     display_history()
 
     st.subheader("Ask a Question")
-    with st.form("query_form"):
-        question = st.text_input("Enter your question:")
+    with st.form("query_form", clear_on_submit=True):
+        question = st.text_area("Enter your question:", height=100, key="question_input_area")
         submitted = st.form_submit_button("Get Answer")
 
-        if submitted and question.strip():
-            logger.info(f"Form submitted with question: {question}")
-            if question != st.session_state.last_question:
-                rag_pipeline.process.cache_clear()
-                start = time.time()
-                answer = rag_pipeline.process(question)
-                duration = time.time() - start
-                log_interaction(question, answer)
+        if submitted:
+            if not question.strip():
+                st.warning("Please enter something.")
+            else:
+                # Display the question immediately after submission
+                st.markdown("---")
+                st.markdown(f"**Question:** {question}")
+                st.write("Fetching answer...")  # Visual cue while processing
+
+                logger.info(f"Form submitted with question: {question}")
+                normalized_question = question.lower().strip()
+                # Check cache first
+                if normalized_question in st.session_state.question_cache:
+                    logger.info(f"Cache hit for question: {question}")
+                    answer = st.session_state.question_cache[normalized_question]
+                    duration = 1.0  # No processing time for cached answers
+                else:
+                    # Process with RAG pipeline
+                    if question != st.session_state.last_question:
+                        rag_pipeline.process.cache_clear()
+                        start = time.time()
+                        answer = rag_pipeline.process(question)
+                        duration = time.time() - start
+                        log_interaction(question, answer)
+                        # Update cache
+                        st.session_state.question_cache[normalized_question] = answer
+                        # Enforce cache size limit
+                        if len(st.session_state.question_cache) > MAX_CACHE_SIZE:
+                            st.session_state.question_cache.popitem(last=False)
+
                 st.session_state.last_question = question
                 st.session_state.answer = answer
                 st.session_state.response_time = duration
 
-            st.markdown("---")
-            st.markdown(f"**Answer:** {st.session_state.answer}")
-            st.markdown(f"**Response Time:** {st.session_state.response_time:.2f} seconds")
-        elif submitted:
-            st.warning("Please enter a valid question.")
+                # Display the final answer and response time (question is already displayed above)
+                st.markdown(f"**Answer:** {st.session_state.answer}")
+                st.markdown(f"**Response Time:** {st.session_state.response_time:.2f} seconds")
 
 # === Main Function ===
 def main():
