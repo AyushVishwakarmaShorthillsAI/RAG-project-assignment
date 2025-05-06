@@ -27,7 +27,9 @@ meteor_metric = load("meteor")
 bertscore_metric = load("bertscore", lang="en")
 
 # === Initialize NLI Pipeline ===
-nli_pipeline = pipeline("text-classification", model="cross-encoder/nli-deberta-v3-base")
+# nli_pipeline = pipeline("text-classification", model="cross-encoder/nli-deberta-v3-base") # Old text-classification version
+nli_pipeline = pipeline("zero-shot-classification", model="cross-encoder/nli-deberta-v3-base") # Using zero-shot with DeBERTa NLI model
+labels = ["entailment", "neutral", "contradiction"] # Candidate labels for zero-shot
 
 # === Load Embedder for Semantic Similarity ===
 embedder = SentenceTransformer('all-MiniLM-L6-v2')
@@ -42,20 +44,21 @@ def compute_bertscore(reference, prediction):
     )
     return result["f1"][0]
 
-def classify_nli(premise_text, hypothesis_text):
+def classify_nli(text_to_classify, context_premise): # Renamed for clarity in zero-shot context
     """
-    Use NLI model to predict relationship: Does premise_text entail/contradict/neutral to hypothesis_text?
+    Use zero-shot-classification pipeline to classify the `text_to_classify`
+    against standard NLI labels, considering the `context_premise` implicitly.
     Returns 'entailment', 'contradiction', or 'neutral'.
-    The underlying model (e.g., facebook/bart-large-mnli) is trained to determine
-    if the hypothesis is entailed by, contradicts, or is neutral to the premise.
+    Note: The zero-shot pipeline primarily classifies the first argument
+    against the candidate_labels. The second argument is not directly used
+    by this specific pipeline but kept for consistent function signature.
     """
-    # The text-classification pipeline with an NLI model takes premise first, then hypothesis.
-    # Pass the input as a list containing the tuple: [(premise, hypothesis)]
-    # Add padding=True and truncation=True to handle sequences of different lengths.
-    results = nli_pipeline([(premise_text, hypothesis_text)], padding=True, truncation=True) # Pass as list containing tuple
-    # Example result: [{'label': 'entailment', 'score': 0.99}]
-    # Extract label from the first result in the list
-    return results[0]["label"]
+    # The zero-shot pipeline classifies the first argument (`text_to_classify`)
+    # against the `candidate_labels`.
+    result = nli_pipeline(text_to_classify, candidate_labels=labels)
+    # Example result: {'sequence': '...', 'labels': ['entailment', 'neutral', 'contradiction'], 'scores': [0.9, 0.05, 0.05]}
+    # Return the label with the highest score.
+    return result["labels"][0]
 
 # === Main Function ===
 def enhance_evaluation_results(input_path: str, output_path: str, summary_path: str):
@@ -110,7 +113,8 @@ def enhance_evaluation_results(input_path: str, output_path: str, summary_path: 
         item["bert_f1_score"] = float(bert_f1)
         bert_f1_scores.append(bert_f1)
 
-        # NLI Classification
+        # NLI Classification using zero-shot
+        # We want to classify the generated_response based on its relationship to the expected_answer.
         nli_label = classify_nli(generated_response, expected_answer)
         item["nli_label"] = nli_label
         item["contradiction"] = nli_label == "contradiction"

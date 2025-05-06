@@ -183,10 +183,9 @@ The system follows a standard RAG pipeline:
 | ROUGE Score         | 0.488             | Moderate n-gram recall                    |
 | METEOR Score        | 0.566             | Moderate word alignment                   |
 | Contradiction Rate  | 5.04%             | Low rate (45/892 cases) where generated answer contradicts reference
-| Entailment Rate     | 3.25%             | Very low rate (29/892 cases) where generated answer aligns with reference
-| Neutral Rate        | 91.70%            | Very high rate (818/892 cases) with no clear logical relationship
+| Entailment Rate     | 3.25%             | Very low rate (29/892 cases) 
+| Neutral Rate        | 91.70%            | Very high rate (818/892 cases)
 
-*Note: Entailment analysis performed on 892 valid test cases.*
 
 2. **Unit Testing**
    - Comprehensive test suite for core components:
