@@ -5,9 +5,9 @@
   "average_bleu_score": 0.22184049325601662,
   "average_rouge_score": 0.4877882394707904,
   "average_meteor_score": 0.565718736841153,
-  "total_contradictions": 45,
-  "total_neutrals": 818,
-  "total_entailments": 29,
-  "contradiction_rate": 0.0504,
-  "entailment_rate": 0.0325
+  "total_contradictions": 203,
+  "total_neutrals": 107,
+  "total_entailments": 582,
+  "contradiction_rate": 0.2276,
+  "entailment_rate": 0.6525
 }
