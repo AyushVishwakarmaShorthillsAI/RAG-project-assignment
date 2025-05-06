@@ -182,9 +182,11 @@ The system follows a standard RAG pipeline:
 | BLEU Score          | 0.222             | Low n-gram overlap                        |
 | ROUGE Score         | 0.488             | Moderate n-gram recall                    |
 | METEOR Score        | 0.566             | Moderate word alignment                   |
-| Contradiction Rate  | 46.08% (411 cases) | High contradiction rate                  |
-| Entailment Rate     | 43.83% (391 cases) | High entailment rate                     |
-| Neutral Rate        | 10.09% (90 cases)  | Low neutral rate                         |
+| Contradiction Rate  | 5.04%             | Low rate (45/892 cases) where generated answer contradicts reference
+| Entailment Rate     | 3.25%             | Very low rate (29/892 cases) where generated answer aligns with reference
+| Neutral Rate        | 91.70%            | Very high rate (818/892 cases) with no clear logical relationship
+
+*Note: Entailment analysis performed on 892 valid test cases.*
 
 2. **Unit Testing**
    - Comprehensive test suite for core components:
@@ -221,7 +223,7 @@ The system follows a standard RAG pipeline:
 
 1.  **Clone the repository:**
     ```bash
-    git clone <your-repository-url>  # Replace <your-repository-url> with the actual URL
+    git clone https://github.com/AyushVishwakarmaShorthillsAI/RAG-project-assignment 
     cd Assignment
     ```
 

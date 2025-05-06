@@ -17,8 +17,8 @@ EVAL_DIR = os.path.join(PROJECT_ROOT, "evaluations")
 os.makedirs(EVAL_DIR, exist_ok=True)
 
 INPUT_FILE = os.path.join(EVAL_DIR, "test_scores.json")
-OUTPUT_FILE = os.path.join(EVAL_DIR, "enhanced_test_scores.json")
-SUMMARY_FILE = os.path.join(EVAL_DIR, "evaluation_summary.json")
+OUTPUT_FILE = os.path.join(EVAL_DIR, "final_all_enhanced_scores.json")
+SUMMARY_FILE = os.path.join(EVAL_DIR, "enchanced_final_avg_score.json")
 
 # === Load Metrics Libraries ===
 bleu_metric = load("bleu")
@@ -27,8 +27,7 @@ meteor_metric = load("meteor")
 bertscore_metric = load("bertscore", lang="en")
 
 # === Initialize NLI Pipeline ===
-nli_pipeline = pipeline("zero-shot-classification", model="facebook/bart-large-mnli")
-labels = ["entailment", "neutral", "contradiction"]
+nli_pipeline = pipeline("text-classification", model="cross-encoder/nli-deberta-v3-base")
 
 # === Load Embedder for Semantic Similarity ===
 embedder = SentenceTransformer('all-MiniLM-L6-v2')
@@ -43,17 +42,20 @@ def compute_bertscore(reference, prediction):
     )
     return result["f1"][0]
 
-def classify_nli(premise, hypothesis):
+def classify_nli(premise_text, hypothesis_text):
     """
-    Use zero-shot-classification to simulate NLI prediction.
-    This returns the label (entailment, contradiction, or neutral)
-    that best matches the hypothesis relative to the premise.
+    Use NLI model to predict relationship: Does premise_text entail/contradict/neutral to hypothesis_text?
+    Returns 'entailment', 'contradiction', or 'neutral'.
+    The underlying model (e.g., facebook/bart-large-mnli) is trained to determine
+    if the hypothesis is entailed by, contradicts, or is neutral to the premise.
     """
-    result = nli_pipeline(
-        hypothesis,
-        candidate_labels=labels
-    )
-    return result["labels"][0]
+    # The text-classification pipeline with an NLI model takes premise first, then hypothesis.
+    # Pass the input as a list containing the tuple: [(premise, hypothesis)]
+    # Add padding=True and truncation=True to handle sequences of different lengths.
+    results = nli_pipeline([(premise_text, hypothesis_text)], padding=True, truncation=True) # Pass as list containing tuple
+    # Example result: [{'label': 'entailment', 'score': 0.99}]
+    # Extract label from the first result in the list
+    return results[0]["label"]
 
 # === Main Function ===
 def enhance_evaluation_results(input_path: str, output_path: str, summary_path: str):
@@ -109,7 +111,7 @@ def enhance_evaluation_results(input_path: str, output_path: str, summary_path: 
         bert_f1_scores.append(bert_f1)
 
         # NLI Classification
-        nli_label = classify_nli(expected_answer, generated_response)
+        nli_label = classify_nli(generated_response, expected_answer)
         item["nli_label"] = nli_label
         item["contradiction"] = nli_label == "contradiction"
         item["neutral"] = nli_label == "neutral"

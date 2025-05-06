@@ -1,0 +1,13 @@
+{
+  "total_questions": 892,
+  "average_bert_f1_score": 0.9110316236591125,
+  "average_cosine_similarity": 0.7471340894699097,
+  "average_bleu_score": 0.22184049325601662,
+  "average_rouge_score": 0.4877882394707904,
+  "average_meteor_score": 0.565718736841153,
+  "total_contradictions": 45,
+  "total_neutrals": 818,
+  "total_entailments": 29,
+  "contradiction_rate": 0.0504,
+  "entailment_rate": 0.0325
+}
